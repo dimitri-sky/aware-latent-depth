@@ -69,17 +69,26 @@ def trivial_solvers() -> dict:
 
 
 def discrimination(device: str) -> dict:
+    """Per-family focused training: joint 7-family training at this budget starves
+    each family (~570 steps/family) below the level where depth can matter — verified
+    by probe run EXP-000-probe-rewrite-8L-s0-8bee22 (21.5% single-family vs 2.0%
+    mixed). Per-family runs mirror the budget density of real experiments (EXP-001
+    trains 2 families over 6000 steps)."""
+    from sage.generators import CORE_FAMILIES
+
     common = dict(vocab_size=259, d_model=256, n_heads=4, n_kv_heads=2, d_ff=704,
                   max_seq_len=1024)
-    tc = TrainConfig(families=FAMS, steps=4000, batch_size=32, seq_len=768, seed=0,
-                     lr=6e-4, warmup=400, eval_limit=200)
-    res = {}
-    for n_layers, mid in [(4, "gate-tfpp-4L"), (8, "gate-tfpp-8L")]:
-        mcfg = ModelConfig(arch="tf_pp", n_layers=n_layers, **common)
-        r = train_one(mcfg, tc, exp_id="EXP-000", model_id=mid, device=device,
-                      notes="validity gate")
-        res[mid] = {fam: sum(v[1] for v in stats.values()) / max(1, sum(v[0] for v in stats.values()))
-                    for fam, stats in r["results"].items() if not fam.startswith("_")}
+    res: dict = {"gate-tfpp-4L": {}, "gate-tfpp-8L": {}}
+    for fam in CORE_FAMILIES:
+        tc = TrainConfig(families=[fam], steps=2500, batch_size=32, seq_len=768,
+                         seed=0, lr=6e-4, warmup=250, eval_limit=200)
+        for n_layers, mid in [(4, "gate-tfpp-4L"), (8, "gate-tfpp-8L")]:
+            mcfg = ModelConfig(arch="tf_pp", n_layers=n_layers, **common)
+            r = train_one(mcfg, tc, exp_id="EXP-000", model_id=f"{mid}-{fam}",
+                          device=device, notes="validity gate per-family")
+            stats = r["results"][fam]
+            res[mid][fam] = (sum(v[1] for v in stats.values())
+                             / max(1, sum(v[0] for v in stats.values())))
     return res
 
 

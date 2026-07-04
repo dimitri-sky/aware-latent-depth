@@ -39,6 +39,10 @@ class TrainConfig:
     eval_dir: str = "data/sage/eval"
     eval_limit: int | None = 300
     log_every: int = 100
+    # GPU duty-cycle throttle: sleep this fraction of each step's duration.
+    # 0.25 keeps sustained load ~80% — protects consumer PSUs from the transient-spike
+    # shutdowns observed on this box (local hardware crashed at full duty cycle).
+    throttle: float = 0.25
 
 
 def lr_at(step: int, tc: TrainConfig) -> float:
@@ -90,6 +94,10 @@ def train_one(mcfg: ModelConfig, tc: TrainConfig, exp_id: str, model_id: str,
             opt.step()
             # FLOPs are paid on every processed token, not just supervised ones
             tokens_seen += int(x.numel())
+            if tc.throttle > 0 and device == "cuda":
+                torch.cuda.synchronize()
+                step_dt = (time.time() - t0) / max(1, step + 1)
+                time.sleep(min(0.2, step_dt * tc.throttle))
             losses.append(loss.item())
             step += 1
             if step % tc.log_every == 0:

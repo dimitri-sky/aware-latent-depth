@@ -14,9 +14,9 @@
       "copy_last": 0.0
     },
     "algo_exec": {
-      "majority": 0.115625,
-      "nn_overlap": 0.075,
-      "copy_last": 0.234375
+      "majority": 0.159375,
+      "nn_overlap": 0.065625,
+      "copy_last": 0.0
     },
     "rule_shift": {
       "majority": 0.0375,
@@ -24,13 +24,13 @@
       "copy_last": 0.0
     },
     "compress": {
-      "majority": 0.003125,
-      "nn_overlap": 0.009375,
+      "majority": 0.00625,
+      "nn_overlap": 0.01875,
       "copy_last": 0.0
     },
     "state_guard": {
-      "majority": 0.153125,
-      "nn_overlap": 0.190625,
+      "majority": 0.171875,
+      "nn_overlap": 0.1875,
       "copy_last": 0.0
     },
     "fresh_dsl": {
@@ -41,22 +41,22 @@
   },
   "disc": {
     "gate-tfpp-4L": {
-      "dsl_learn": 0.11,
-      "rewrite": 0.01,
-      "algo_exec": 0.44,
-      "rule_shift": 0.135,
-      "compress": 0.0375,
-      "state_guard": 0.17,
-      "fresh_dsl": 0.055
+      "dsl_learn": 0.09,
+      "rewrite": 0.0,
+      "algo_exec": 0.1,
+      "rule_shift": 0.165,
+      "compress": 0.011363636363636364,
+      "state_guard": 0.18,
+      "fresh_dsl": 0.05
     },
     "gate-tfpp-8L": {
-      "dsl_learn": 0.075,
-      "rewrite": 0.06,
-      "algo_exec": 0.47,
-      "rule_shift": 0.14,
-      "compress": 0.025,
-      "state_guard": 0.18,
-      "fresh_dsl": 0.06
+      "dsl_learn": 0.085,
+      "rewrite": 0.02,
+      "algo_exec": 0.125,
+      "rule_shift": 0.135,
+      "compress": 0.028409090909090908,
+      "state_guard": 0.185,
+      "fresh_dsl": 0.055
     }
   }
 }
