@@ -1,0 +1,1342 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+NVIDIA GeForce RTX 4090, 24564 MiB
+algo_exec: wrote 20000 -> data/sage/train/algo_exec.jsonl
+rewrite: wrote 20000 -> data/sage/train/rewrite.jsonl
+dsl_learn: wrote 20000 -> data/sage/train/dsl_learn.jsonl
+algo_exec: wrote 400 -> data/sage/eval/algo_exec.jsonl
+rewrite: wrote 400 -> data/sage/eval/rewrite.jsonl
+dsl_learn: wrote 400 -> data/sage/eval/dsl_learn.jsonl
+........................................................................ [ 83%]
+..............                                                           [100%]
+86 passed in 5.81s
+{
+  "pass": true,
+  "audit_hash": "67486c621f8b922d",
+  "report": {
+    "canary": "ok",
+    "overlap": {
+      "ngram": 13,
+      "near_duplicates": 0,
+      "worst_coverage": 0.5,
+      "threshold": 0.8
+    }
+  }
+}
+[launch] V1-loop1 s0
+[launch] V1-loop4 s0
+[launch] V1-loop1 s1
+[V1-loop1 s1] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V1-loop1] params=11.93M hash=20bd7bbd06df
+[V1-loop1 s1] step 100/6000 loss 1.6060 157188 tok/s
+[V1-loop1 s0] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V1-loop1] params=11.93M hash=20bd7bbd06df
+[V1-loop1 s0] step 100/6000 loss 1.6415 157102 tok/s
+[V1-loop4 s0] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V1-loop4] params=11.93M hash=e9fd4e78ecd9
+[V1-loop4 s0] step 100/6000 loss 1.6383 100771 tok/s
+[V1-loop1 s0] step 200/6000 loss 0.6756 170912 tok/s
+[V1-loop1 s1] step 200/6000 loss 0.6886 167745 tok/s
+[V1-loop1 s0] step 300/6000 loss 0.6144 177568 tok/s
+[V1-loop1 s1] step 300/6000 loss 0.6337 169484 tok/s
+[V1-loop4 s0] step 200/6000 loss 0.6662 104341 tok/s
+[V1-loop1 s0] step 400/6000 loss 0.5647 178796 tok/s
+[V1-loop1 s1] step 400/6000 loss 0.6076 170780 tok/s
+[V1-loop1 s0] step 500/6000 loss 0.5272 178863 tok/s
+[V1-loop4 s0] step 300/6000 loss 0.6119 107177 tok/s
+[V1-loop1 s1] step 500/6000 loss 0.5753 171814 tok/s
+[V1-loop1 s0] step 600/6000 loss 0.4894 178132 tok/s
+[V1-loop1 s1] step 600/6000 loss 0.5605 173477 tok/s
+[V1-loop4 s0] step 400/6000 loss 0.5614 107928 tok/s
+[V1-loop1 s0] step 700/6000 loss 0.4515 177848 tok/s
+[V1-loop1 s1] step 700/6000 loss 0.5485 175178 tok/s
+[V1-loop1 s0] step 800/6000 loss 0.4633 177341 tok/s
+[V1-loop1 s1] step 800/6000 loss 0.5428 176604 tok/s
+[V1-loop4 s0] step 500/6000 loss 0.5156 108036 tok/s
+[V1-loop1 s1] step 900/6000 loss 0.5454 177993 tok/s
+[V1-loop1 s0] step 900/6000 loss 0.4441 177007 tok/s
+[V1-loop4 s0] step 600/6000 loss 0.4799 107809 tok/s
+[V1-loop1 s1] step 1000/6000 loss 0.5258 179243 tok/s
+[V1-loop1 s0] step 1000/6000 loss 0.4325 176874 tok/s
+[V1-loop1 s1] step 1100/6000 loss 0.5286 180095 tok/s
+[V1-loop1 s0] step 1100/6000 loss 0.4169 176600 tok/s
+[V1-loop4 s0] step 700/6000 loss 0.4468 107846 tok/s
+[V1-loop1 s1] step 1200/6000 loss 0.5281 180535 tok/s
+[V1-loop1 s0] step 1200/6000 loss 0.4080 176480 tok/s
+[V1-loop1 s1] step 1300/6000 loss 0.4686 180193 tok/s
+[V1-loop1 s0] step 1300/6000 loss 0.3871 176500 tok/s
+[V1-loop4 s0] step 800/6000 loss 0.4381 108598 tok/s
+[V1-loop1 s1] step 1400/6000 loss 0.4338 179849 tok/s
+[V1-loop1 s0] step 1400/6000 loss 0.3763 176397 tok/s
+[V1-loop4 s0] step 900/6000 loss 0.4192 109209 tok/s
+[V1-loop1 s1] step 1500/6000 loss 0.4258 179484 tok/s
+[V1-loop1 s0] step 1500/6000 loss 0.3745 176369 tok/s
+[V1-loop1 s1] step 1600/6000 loss 0.4190 179154 tok/s
+[V1-loop1 s0] step 1600/6000 loss 0.3639 176244 tok/s
+[V1-loop4 s0] step 1000/6000 loss 0.4111 109840 tok/s
+[V1-loop1 s1] step 1700/6000 loss 0.3990 178984 tok/s
+[V1-loop1 s0] step 1700/6000 loss 0.3459 176292 tok/s
+[V1-loop4 s0] step 1100/6000 loss 0.3919 110246 tok/s
+[V1-loop1 s1] step 1800/6000 loss 0.3899 178755 tok/s
+[V1-loop1 s0] step 1800/6000 loss 0.3504 176158 tok/s
+[V1-loop1 s1] step 1900/6000 loss 0.3825 178669 tok/s
+[V1-loop1 s0] step 1900/6000 loss 0.3349 176255 tok/s
+[V1-loop4 s0] step 1200/6000 loss 0.3850 110476 tok/s
+[V1-loop1 s1] step 2000/6000 loss 0.3612 178643 tok/s
+[V1-loop1 s0] step 2000/6000 loss 0.3283 176315 tok/s
+[V1-loop4 s0] step 1300/6000 loss 0.3788 110594 tok/s
+[V1-loop1 s1] step 2100/6000 loss 0.3504 178595 tok/s
+[V1-loop1 s0] step 2100/6000 loss 0.3183 176409 tok/s
+[V1-loop1 s1] step 2200/6000 loss 0.3421 178554 tok/s
+[V1-loop1 s0] step 2200/6000 loss 0.3010 176576 tok/s
+[V1-loop4 s0] step 1400/6000 loss 0.3637 110586 tok/s
+[V1-loop1 s1] step 2300/6000 loss 0.3385 178194 tok/s
+[V1-loop1 s0] step 2300/6000 loss 0.3069 176307 tok/s
+[V1-loop1 s1] step 2400/6000 loss 0.3335 177986 tok/s
+[V1-loop4 s0] step 1500/6000 loss 0.3548 110833 tok/s
+[V1-loop1 s0] step 2400/6000 loss 0.3056 176154 tok/s
+[V1-loop1 s1] step 2500/6000 loss 0.3249 177816 tok/s
+[V1-loop1 s0] step 2500/6000 loss 0.2901 176095 tok/s
+[V1-loop4 s0] step 1600/6000 loss 0.3525 111049 tok/s
+[V1-loop1 s1] step 2600/6000 loss 0.3162 177672 tok/s
+[V1-loop1 s0] step 2600/6000 loss 0.2721 175993 tok/s
+[V1-loop1 s1] step 2700/6000 loss 0.3002 177700 tok/s
+[V1-loop4 s0] step 1700/6000 loss 0.3272 111202 tok/s
+[V1-loop1 s0] step 2700/6000 loss 0.2676 176009 tok/s
+[V1-loop1 s1] step 2800/6000 loss 0.2903 177642 tok/s
+[V1-loop1 s0] step 2800/6000 loss 0.2724 176052 tok/s
+[V1-loop4 s0] step 1800/6000 loss 0.3410 111326 tok/s
+[V1-loop1 s1] step 2900/6000 loss 0.2971 177634 tok/s
+[V1-loop1 s0] step 2900/6000 loss 0.2680 176026 tok/s
+[V1-loop1 s1] step 3000/6000 loss 0.2737 177600 tok/s
+[V1-loop1 s0] step 3000/6000 loss 0.2619 176072 tok/s
+[V1-loop4 s0] step 1900/6000 loss 0.3388 111463 tok/s
+[V1-loop1 s1] step 3100/6000 loss 0.2788 177552 tok/s
+[V1-loop1 s0] step 3100/6000 loss 0.2522 176049 tok/s
+[V1-loop4 s0] step 2000/6000 loss 0.3215 111652 tok/s
+[V1-loop1 s1] step 3200/6000 loss 0.2617 177471 tok/s
+[V1-loop1 s0] step 3200/6000 loss 0.2410 176034 tok/s
+[V1-loop1 s1] step 3300/6000 loss 0.2488 177392 tok/s
+[V1-loop1 s0] step 3300/6000 loss 0.2321 176042 tok/s
+[V1-loop4 s0] step 2100/6000 loss 0.3165 111779 tok/s
+[V1-loop1 s1] step 3400/6000 loss 0.2407 177405 tok/s
+[V1-loop1 s0] step 3400/6000 loss 0.2241 176070 tok/s
+[V1-loop4 s0] step 2200/6000 loss 0.3057 111914 tok/s
+[V1-loop1 s1] step 3500/6000 loss 0.2429 177328 tok/s
+[V1-loop1 s0] step 3500/6000 loss 0.2156 176039 tok/s
+[V1-loop1 s1] step 3600/6000 loss 0.2377 177273 tok/s
+[V1-loop1 s0] step 3600/6000 loss 0.2186 176029 tok/s
+[V1-loop4 s0] step 2300/6000 loss 0.3045 112030 tok/s
+[V1-loop1 s1] step 3700/6000 loss 0.2227 177202 tok/s
+[V1-loop1 s0] step 3700/6000 loss 0.2031 176005 tok/s
+[V1-loop4 s0] step 2400/6000 loss 0.3029 112071 tok/s
+[V1-loop1 s1] step 3800/6000 loss 0.2135 177182 tok/s
+[V1-loop1 s0] step 3800/6000 loss 0.1853 176051 tok/s
+[V1-loop1 s1] step 3900/6000 loss 0.2141 177137 tok/s
+[V1-loop1 s0] step 3900/6000 loss 0.1802 176044 tok/s
+[V1-loop4 s0] step 2500/6000 loss 0.3000 112196 tok/s
+[V1-loop1 s1] step 4000/6000 loss 0.1938 177115 tok/s
+[V1-loop1 s0] step 4000/6000 loss 0.1814 176188 tok/s
+[V1-loop1 s1] step 4100/6000 loss 0.2057 177080 tok/s
+[V1-loop4 s0] step 2600/6000 loss 0.2757 112216 tok/s
+[V1-loop1 s0] step 4100/6000 loss 0.1718 176175 tok/s
+[V1-loop1 s1] step 4200/6000 loss 0.1974 177046 tok/s
+[V1-loop1 s0] step 4200/6000 loss 0.1668 176161 tok/s
+[V1-loop4 s0] step 2700/6000 loss 0.2740 112299 tok/s
+[V1-loop1 s1] step 4300/6000 loss 0.1872 177010 tok/s
+[V1-loop1 s0] step 4300/6000 loss 0.1593 176140 tok/s
+[V1-loop1 s1] step 4400/6000 loss 0.1784 176940 tok/s
+[V1-loop4 s0] step 2800/6000 loss 0.2818 112384 tok/s
+[V1-loop1 s0] step 4400/6000 loss 0.1510 176083 tok/s
+[V1-loop1 s1] step 4500/6000 loss 0.1631 176919 tok/s
+[V1-loop1 s0] step 4500/6000 loss 0.1407 176059 tok/s
+[V1-loop4 s0] step 2900/6000 loss 0.2760 112376 tok/s
+[V1-loop1 s1] step 4600/6000 loss 0.1580 176916 tok/s
+[V1-loop1 s0] step 4600/6000 loss 0.1436 176071 tok/s
+[V1-loop1 s1] step 4700/6000 loss 0.1670 176887 tok/s
+[V1-loop4 s0] step 3000/6000 loss 0.2662 112470 tok/s
+[V1-loop1 s0] step 4700/6000 loss 0.1249 176044 tok/s
+[V1-loop1 s1] step 4800/6000 loss 0.1710 176872 tok/s
+[V1-loop1 s0] step 4800/6000 loss 0.1334 176051 tok/s
+[V1-loop4 s0] step 3100/6000 loss 0.2623 112540 tok/s
+[V1-loop1 s1] step 4900/6000 loss 0.1578 176848 tok/s
+[V1-loop1 s0] step 4900/6000 loss 0.1327 176047 tok/s
+[V1-loop1 s1] step 5000/6000 loss 0.1521 176854 tok/s
+[V1-loop1 s0] step 5000/6000 loss 0.1292 176072 tok/s
+[V1-loop4 s0] step 3200/6000 loss 0.2457 112600 tok/s
+[V1-loop1 s1] step 5100/6000 loss 0.1381 176820 tok/s
+[V1-loop1 s0] step 5100/6000 loss 0.1194 176055 tok/s
+[V1-loop4 s0] step 3300/6000 loss 0.2392 112672 tok/s
+[V1-loop1 s1] step 5200/6000 loss 0.1409 176795 tok/s
+[V1-loop1 s0] step 5200/6000 loss 0.1145 176047 tok/s
+[V1-loop1 s1] step 5300/6000 loss 0.1432 176802 tok/s
+[V1-loop1 s0] step 5300/6000 loss 0.1072 176069 tok/s
+[V1-loop4 s0] step 3400/6000 loss 0.2411 112716 tok/s
+[V1-loop1 s1] step 5400/6000 loss 0.1312 176781 tok/s
+[V1-loop1 s0] step 5400/6000 loss 0.1091 176071 tok/s
+[V1-loop4 s0] step 3500/6000 loss 0.2236 112772 tok/s
+[V1-loop1 s1] step 5500/6000 loss 0.1311 176774 tok/s
+[V1-loop1 s0] step 5500/6000 loss 0.1083 176077 tok/s
+[V1-loop1 s1] step 5600/6000 loss 0.1319 176759 tok/s
+[V1-loop1 s0] step 5600/6000 loss 0.1036 176075 tok/s
+[V1-loop4 s0] step 3600/6000 loss 0.2328 112832 tok/s
+[V1-loop1 s1] step 5700/6000 loss 0.1230 176749 tok/s
+[V1-loop1 s0] step 5700/6000 loss 0.1008 176068 tok/s
+[V1-loop4 s0] step 3700/6000 loss 0.2301 112878 tok/s
+[V1-loop1 s1] step 5800/6000 loss 0.1224 176764 tok/s
+[V1-loop1 s0] step 5800/6000 loss 0.0989 176092 tok/s
+[V1-loop1 s1] step 5900/6000 loss 0.1282 176819 tok/s
+[V1-loop1 s0] step 5900/6000 loss 0.0968 176041 tok/s
+[V1-loop4 s0] step 3800/6000 loss 0.2090 112809 tok/s
+[V1-loop1 s1] step 6000/6000 loss 0.1273 177042 tok/s
+[V1-loop1 s0] step 6000/6000 loss 0.1032 176207 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1 s1] run_id=EXP-001B-ALGO-V1-loop1-s1-5e81ac
+  algo_exec    152/200 = 0.760
+  flops/correct = 7.06e+09
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1 s0] run_id=EXP-001B-ALGO-V1-loop1-s0-6f52bd
+  algo_exec    170/200 = 0.850
+  flops/correct = 6.31e+09
+[done rc=0] V1-loop1 s1
+[launch] V1-loop4 s1
+[done rc=0] V1-loop1 s0
+[launch] V1-loop1 s2
+[V1-loop4 s0] step 3900/6000 loss 0.2017 113269 tok/s
+[V1-loop4 s0] step 4000/6000 loss 0.1999 113654 tok/s
+[V1-loop1 s2] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V1-loop1] params=11.93M hash=20bd7bbd06df
+[V1-loop1 s2] step 100/6000 loss 1.5446 154252 tok/s
+[V1-loop4 s1] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V1-loop4] params=11.93M hash=e9fd4e78ecd9
+[V1-loop4 s1] step 100/6000 loss 1.6656 95887 tok/s
+[V1-loop1 s2] step 200/6000 loss 0.6960 165466 tok/s
+[V1-loop4 s0] step 4100/6000 loss 0.1863 113288 tok/s
+[V1-loop1 s2] step 300/6000 loss 0.6234 167765 tok/s
+[V1-loop4 s1] step 200/6000 loss 0.6869 98917 tok/s
+[V1-loop4 s0] step 4200/6000 loss 0.1882 112999 tok/s
+[V1-loop1 s2] step 400/6000 loss 0.6111 168671 tok/s
+[V1-loop4 s1] step 300/6000 loss 0.6320 100094 tok/s
+[V1-loop1 s2] step 500/6000 loss 0.5799 169604 tok/s
+[V1-loop4 s0] step 4300/6000 loss 0.1852 112723 tok/s
+[V1-loop1 s2] step 600/6000 loss 0.5774 170393 tok/s
+[V1-loop4 s1] step 400/6000 loss 0.6062 100552 tok/s
+[V1-loop1 s2] step 700/6000 loss 0.5583 170900 tok/s
+[V1-loop4 s0] step 4400/6000 loss 0.1734 112451 tok/s
+[V1-loop1 s2] step 800/6000 loss 0.5538 171053 tok/s
+[V1-loop4 s1] step 500/6000 loss 0.5722 100891 tok/s
+[V1-loop4 s0] step 4500/6000 loss 0.1651 112207 tok/s
+[V1-loop1 s2] step 900/6000 loss 0.5411 171226 tok/s
+[V1-loop1 s2] step 1000/6000 loss 0.5533 171325 tok/s
+[V1-loop4 s1] step 600/6000 loss 0.5639 101147 tok/s
+[V1-loop4 s0] step 4600/6000 loss 0.1682 111973 tok/s
+[V1-loop1 s2] step 1100/6000 loss 0.5413 171385 tok/s
+[V1-loop4 s1] step 700/6000 loss 0.5510 101305 tok/s
+[V1-loop1 s2] step 1200/6000 loss 0.5407 171588 tok/s
+[V1-loop4 s0] step 4700/6000 loss 0.1519 111739 tok/s
+[V1-loop1 s2] step 1300/6000 loss 0.5362 171637 tok/s
+[V1-loop4 s1] step 800/6000 loss 0.5461 101405 tok/s
+[V1-loop4 s0] step 4800/6000 loss 0.1511 111523 tok/s
+[V1-loop1 s2] step 1400/6000 loss 0.5191 171706 tok/s
+[V1-loop1 s2] step 1500/6000 loss 0.5314 171719 tok/s
+[V1-loop4 s1] step 900/6000 loss 0.5488 101525 tok/s
+[V1-loop4 s0] step 4900/6000 loss 0.1546 111321 tok/s
+[V1-loop1 s2] step 1600/6000 loss 0.5283 171789 tok/s
+[V1-loop4 s1] step 1000/6000 loss 0.5249 101602 tok/s
+[V1-loop1 s2] step 1700/6000 loss 0.5271 171782 tok/s
+[V1-loop4 s0] step 5000/6000 loss 0.1470 111128 tok/s
+[V1-loop1 s2] step 1800/6000 loss 0.5257 171818 tok/s
+[V1-loop4 s1] step 1100/6000 loss 0.5316 101657 tok/s
+[V1-loop4 s0] step 5100/6000 loss 0.1333 110940 tok/s
+[V1-loop1 s2] step 1900/6000 loss 0.5231 171854 tok/s
+[V1-loop1 s2] step 2000/6000 loss 0.5093 171864 tok/s
+[V1-loop4 s1] step 1200/6000 loss 0.5362 101707 tok/s
+[V1-loop4 s0] step 5200/6000 loss 0.1296 110758 tok/s
+[V1-loop1 s2] step 2100/6000 loss 0.5007 171913 tok/s
+[V1-loop4 s1] step 1300/6000 loss 0.5119 101756 tok/s
+[V1-loop1 s2] step 2200/6000 loss 0.5100 171831 tok/s
+[V1-loop4 s0] step 5300/6000 loss 0.1310 110599 tok/s
+[V1-loop1 s2] step 2300/6000 loss 0.4960 171886 tok/s
+[V1-loop4 s1] step 1400/6000 loss 0.4797 101798 tok/s
+[V1-loop4 s0] step 5400/6000 loss 0.1308 110435 tok/s
+[V1-loop1 s2] step 2400/6000 loss 0.4954 171844 tok/s
+[V1-loop1 s2] step 2500/6000 loss 0.4601 171817 tok/s
+[V1-loop4 s1] step 1500/6000 loss 0.4730 101840 tok/s
+[V1-loop4 s0] step 5500/6000 loss 0.1301 110279 tok/s
+[V1-loop1 s2] step 2600/6000 loss 0.4515 171838 tok/s
+[V1-loop4 s1] step 1600/6000 loss 0.4683 101776 tok/s
+[V1-loop1 s2] step 2700/6000 loss 0.4318 172035 tok/s
+[V1-loop4 s0] step 5600/6000 loss 0.1275 110087 tok/s
+[V1-loop1 s2] step 2800/6000 loss 0.4072 171954 tok/s
+[V1-loop4 s1] step 1700/6000 loss 0.4497 101801 tok/s
+[V1-loop1 s2] step 2900/6000 loss 0.3950 171904 tok/s
+[V1-loop4 s0] step 5700/6000 loss 0.1252 109947 tok/s
+[V1-loop1 s2] step 3000/6000 loss 0.4049 171850 tok/s
+[V1-loop4 s1] step 1800/6000 loss 0.4340 101861 tok/s
+[V1-loop4 s0] step 5800/6000 loss 0.1209 109809 tok/s
+[V1-loop1 s2] step 3100/6000 loss 0.3745 171835 tok/s
+[V1-loop4 s1] step 1900/6000 loss 0.4254 101888 tok/s
+[V1-loop1 s2] step 3200/6000 loss 0.3624 171821 tok/s
+[V1-loop4 s0] step 5900/6000 loss 0.1185 109670 tok/s
+[V1-loop1 s2] step 3300/6000 loss 0.3477 171835 tok/s
+[V1-loop4 s1] step 2000/6000 loss 0.3887 101900 tok/s
+[V1-loop1 s2] step 3400/6000 loss 0.3316 171853 tok/s
+[V1-loop4 s0] step 6000/6000 loss 0.1217 109534 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop4 s0] run_id=EXP-001B-ALGO-V1-loop4-s0-5a6467
+  algo_exec    155/200 = 0.775
+  flops/correct = 1.72e+10
+[done rc=0] V1-loop4 s0
+[launch] V1-loop4 s2
+[V1-loop1 s2] step 3500/6000 loss 0.3381 172513 tok/s
+[V1-loop4 s1] step 2100/6000 loss 0.3920 102862 tok/s
+[V1-loop1 s2] step 3600/6000 loss 0.3142 173233 tok/s
+[V1-loop4 s1] step 2200/6000 loss 0.3781 104611 tok/s
+[V1-loop1 s2] step 3700/6000 loss 0.3140 173497 tok/s
+[V1-loop4 s1] step 2300/6000 loss 0.3789 104772 tok/s
+[V1-loop1 s2] step 3800/6000 loss 0.2996 173235 tok/s
+[V1-loop4 s2] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V1-loop4] params=11.93M hash=e9fd4e78ecd9
+[V1-loop4 s2] step 100/6000 loss 1.5808 94344 tok/s
+[V1-loop1 s2] step 3900/6000 loss 0.2839 173235 tok/s
+[V1-loop4 s1] step 2400/6000 loss 0.3626 104611 tok/s
+[V1-loop4 s2] step 200/6000 loss 0.6910 97817 tok/s
+[V1-loop1 s2] step 4000/6000 loss 0.2797 173047 tok/s
+[V1-loop1 s2] step 4100/6000 loss 0.2737 173027 tok/s
+[V1-loop4 s1] step 2500/6000 loss 0.3484 104492 tok/s
+[V1-loop4 s2] step 300/6000 loss 0.6101 98931 tok/s
+[V1-loop1 s2] step 4200/6000 loss 0.2593 172907 tok/s
+[V1-loop4 s1] step 2600/6000 loss 0.3435 104446 tok/s
+[V1-loop1 s2] step 4300/6000 loss 0.2618 172671 tok/s
+[V1-loop4 s2] step 400/6000 loss 0.5966 100074 tok/s
+[V1-loop1 s2] step 4400/6000 loss 0.2539 172471 tok/s
+[V1-loop4 s1] step 2700/6000 loss 0.3203 104375 tok/s
+[V1-loop4 s2] step 500/6000 loss 0.5771 100468 tok/s
+[V1-loop1 s2] step 4500/6000 loss 0.2301 172430 tok/s
+[V1-loop1 s2] step 4600/6000 loss 0.2320 172453 tok/s
+[V1-loop4 s1] step 2800/6000 loss 0.3094 104273 tok/s
+[V1-loop4 s2] step 600/6000 loss 0.5653 100832 tok/s
+[V1-loop1 s2] step 4700/6000 loss 0.2249 172440 tok/s
+[V1-loop4 s1] step 2900/6000 loss 0.3138 104209 tok/s
+[V1-loop1 s2] step 4800/6000 loss 0.2162 172412 tok/s
+[V1-loop4 s2] step 700/6000 loss 0.5533 101061 tok/s
+[V1-loop1 s2] step 4900/6000 loss 0.2223 172398 tok/s
+[V1-loop4 s1] step 3000/6000 loss 0.2982 104154 tok/s
+[V1-loop4 s2] step 800/6000 loss 0.5389 101230 tok/s
+[V1-loop1 s2] step 5000/6000 loss 0.1997 172373 tok/s
+[V1-loop1 s2] step 5100/6000 loss 0.1949 172418 tok/s
+[V1-loop4 s1] step 3100/6000 loss 0.3038 104077 tok/s
+[V1-loop4 s2] step 900/6000 loss 0.4942 101258 tok/s
+[V1-loop1 s2] step 5200/6000 loss 0.1985 172237 tok/s
+[V1-loop4 s1] step 3200/6000 loss 0.2886 104059 tok/s
+[V1-loop1 s2] step 5300/6000 loss 0.1919 172109 tok/s
+[V1-loop4 s2] step 1000/6000 loss 0.4762 101427 tok/s
+[V1-loop1 s2] step 5400/6000 loss 0.1909 171961 tok/s
+[V1-loop4 s1] step 3300/6000 loss 0.2786 104023 tok/s
+[V1-loop4 s2] step 1100/6000 loss 0.4503 101592 tok/s
+[V1-loop1 s2] step 5500/6000 loss 0.1856 171748 tok/s
+[V1-loop1 s2] step 5600/6000 loss 0.1882 171716 tok/s
+[V1-loop4 s1] step 3400/6000 loss 0.2670 104007 tok/s
+[V1-loop4 s2] step 1200/6000 loss 0.4404 101683 tok/s
+[V1-loop1 s2] step 5700/6000 loss 0.1837 171772 tok/s
+[V1-loop4 s1] step 3500/6000 loss 0.2746 103922 tok/s
+[V1-loop4 s2] step 1300/6000 loss 0.4157 101650 tok/s
+[V1-loop1 s2] step 5800/6000 loss 0.1710 171828 tok/s
+[V1-loop1 s2] step 5900/6000 loss 0.1750 171950 tok/s
+[V1-loop4 s1] step 3600/6000 loss 0.2644 103813 tok/s
+[V1-loop4 s2] step 1400/6000 loss 0.4016 101536 tok/s
+[V1-loop1 s2] step 6000/6000 loss 0.1791 172012 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1 s2] run_id=EXP-001B-ALGO-V1-loop1-s2-425541
+  algo_exec    160/200 = 0.800
+  flops/correct = 6.71e+09
+[V1-loop4 s1] step 3700/6000 loss 0.2485 104280 tok/s
+[done rc=0] V1-loop1 s2
+[V1-loop4 s2] step 1500/6000 loss 0.3995 103065 tok/s
+[V1-loop4 s1] step 3800/6000 loss 0.2415 105055 tok/s
+[V1-loop4 s2] step 1600/6000 loss 0.3861 104940 tok/s
+[V1-loop4 s1] step 3900/6000 loss 0.2419 105802 tok/s
+[V1-loop4 s2] step 1700/6000 loss 0.3837 106668 tok/s
+[V1-loop4 s1] step 4000/6000 loss 0.2216 106516 tok/s
+[V1-loop4 s2] step 1800/6000 loss 0.3688 108247 tok/s
+[V1-loop4 s1] step 4100/6000 loss 0.2209 107216 tok/s
+[V1-loop4 s2] step 1900/6000 loss 0.3725 109718 tok/s
+[V1-loop4 s1] step 4200/6000 loss 0.2190 107891 tok/s
+[V1-loop4 s2] step 2000/6000 loss 0.3510 111090 tok/s
+[V1-loop4 s1] step 4300/6000 loss 0.2031 108551 tok/s
+[V1-loop4 s2] step 2100/6000 loss 0.3346 112358 tok/s
+[V1-loop4 s1] step 4400/6000 loss 0.1938 109172 tok/s
+[V1-loop4 s2] step 2200/6000 loss 0.3335 113506 tok/s
+[V1-loop4 s1] step 4500/6000 loss 0.1792 109772 tok/s
+[V1-loop4 s2] step 2300/6000 loss 0.3297 114589 tok/s
+[V1-loop4 s1] step 4600/6000 loss 0.1859 110354 tok/s
+[V1-loop4 s2] step 2400/6000 loss 0.3396 115610 tok/s
+[V1-loop4 s1] step 4700/6000 loss 0.1887 110915 tok/s
+[V1-loop4 s2] step 2500/6000 loss 0.3366 116548 tok/s
+[V1-loop4 s1] step 4800/6000 loss 0.1918 111455 tok/s
+[V1-loop4 s2] step 2600/6000 loss 0.3060 117415 tok/s
+[V1-loop4 s1] step 4900/6000 loss 0.1754 111973 tok/s
+[V1-loop4 s2] step 2700/6000 loss 0.2941 118229 tok/s
+[V1-loop4 s1] step 5000/6000 loss 0.1695 112462 tok/s
+[V1-loop4 s2] step 2800/6000 loss 0.2775 118955 tok/s
+[V1-loop4 s1] step 5100/6000 loss 0.1490 112957 tok/s
+[V1-loop4 s2] step 2900/6000 loss 0.2778 119704 tok/s
+[V1-loop4 s1] step 5200/6000 loss 0.1582 113439 tok/s
+[V1-loop4 s2] step 3000/6000 loss 0.2769 120399 tok/s
+[V1-loop4 s1] step 5300/6000 loss 0.1609 113903 tok/s
+[V1-loop4 s2] step 3100/6000 loss 0.2677 121053 tok/s
+[V1-loop4 s1] step 5400/6000 loss 0.1523 114351 tok/s
+[V1-loop4 s2] step 3200/6000 loss 0.2525 121681 tok/s
+[V1-loop4 s1] step 5500/6000 loss 0.1474 114778 tok/s
+[V1-loop4 s2] step 3300/6000 loss 0.2510 122217 tok/s
+[V1-loop4 s1] step 5600/6000 loss 0.1560 115212 tok/s
+[V1-loop4 s2] step 3400/6000 loss 0.2280 122796 tok/s
+[V1-loop4 s1] step 5700/6000 loss 0.1398 115604 tok/s
+[V1-loop4 s2] step 3500/6000 loss 0.2414 123294 tok/s
+[V1-loop4 s1] step 5800/6000 loss 0.1390 116012 tok/s
+[V1-loop4 s2] step 3600/6000 loss 0.2323 123798 tok/s
+[V1-loop4 s1] step 5900/6000 loss 0.1499 116408 tok/s
+[V1-loop4 s2] step 3700/6000 loss 0.2217 124288 tok/s
+[V1-loop4 s1] step 6000/6000 loss 0.1403 116789 tok/s
+[V1-loop4 s2] step 3800/6000 loss 0.2108 124765 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop4 s1] run_id=EXP-001B-ALGO-V1-loop4-s1-a7096e
+  algo_exec    159/200 = 0.795
+  flops/correct = 1.68e+10
+[done rc=0] V1-loop4 s1
+[V1-loop4 s2] step 3900/6000 loss 0.2070 125629 tok/s
+[V1-loop4 s2] step 4000/6000 loss 0.1867 126495 tok/s
+[V1-loop4 s2] step 4100/6000 loss 0.1908 127270 tok/s
+[V1-loop4 s2] step 4200/6000 loss 0.1856 128066 tok/s
+[V1-loop4 s2] step 4300/6000 loss 0.1828 128833 tok/s
+[V1-loop4 s2] step 4400/6000 loss 0.1793 129561 tok/s
+[V1-loop4 s2] step 4500/6000 loss 0.1593 130360 tok/s
+[V1-loop4 s2] step 4600/6000 loss 0.1621 131039 tok/s
+[V1-loop4 s2] step 4700/6000 loss 0.1534 131681 tok/s
+[V1-loop4 s2] step 4800/6000 loss 0.1456 132330 tok/s
+[V1-loop4 s2] step 4900/6000 loss 0.1564 132959 tok/s
+[V1-loop4 s2] step 5000/6000 loss 0.1353 133545 tok/s
+[V1-loop4 s2] step 5100/6000 loss 0.1245 134137 tok/s
+[V1-loop4 s2] step 5200/6000 loss 0.1311 134701 tok/s
+[V1-loop4 s2] step 5300/6000 loss 0.1261 135251 tok/s
+[V1-loop4 s2] step 5400/6000 loss 0.1280 135782 tok/s
+[V1-loop4 s2] step 5500/6000 loss 0.1205 136296 tok/s
+[V1-loop4 s2] step 5600/6000 loss 0.1224 136799 tok/s
+[V1-loop4 s2] step 5700/6000 loss 0.1178 137286 tok/s
+[V1-loop4 s2] step 5800/6000 loss 0.1116 137758 tok/s
+[V1-loop4 s2] step 5900/6000 loss 0.1125 138217 tok/s
+[V1-loop4 s2] step 6000/6000 loss 0.1131 138668 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop4 s2] run_id=EXP-001B-ALGO-V1-loop4-s2-709912
+  algo_exec    155/200 = 0.775
+  flops/correct = 1.72e+10
+[done rc=0] V1-loop4 s2
+EXP COMPLETE: 6/6 jobs ok
+[launch] V1-loop1 s3
+[launch] V1-loop4 s3
+[launch] V1-loop1 s4
+[V1-loop1 s4] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop1] params=11.93M hash=20bd7bbd06df
+[V1-loop1 s4] step 100/6000 loss 2.4892 164462 tok/s
+[V1-loop1 s3] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop1] params=11.93M hash=20bd7bbd06df
+[V1-loop1 s3] step 100/6000 loss 2.4553 161743 tok/s
+[V1-loop4 s3] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop4] params=11.93M hash=e9fd4e78ecd9
+[V1-loop4 s3] step 100/6000 loss 2.4608 92761 tok/s
+[V1-loop1 s4] step 200/6000 loss 1.4167 170205 tok/s
+[V1-loop1 s3] step 200/6000 loss 1.4205 168421 tok/s
+[V1-loop1 s4] step 300/6000 loss 1.1526 171868 tok/s
+[V1-loop1 s3] step 300/6000 loss 1.1489 171298 tok/s
+[V1-loop4 s3] step 200/6000 loss 1.4040 95012 tok/s
+[V1-loop1 s4] step 400/6000 loss 1.0951 172533 tok/s
+[V1-loop1 s3] step 400/6000 loss 1.0754 172173 tok/s
+[V1-loop1 s4] step 500/6000 loss 1.0668 172986 tok/s
+[V1-loop1 s3] step 500/6000 loss 1.0144 172794 tok/s
+[V1-loop4 s3] step 300/6000 loss 1.1396 95893 tok/s
+[V1-loop1 s4] step 600/6000 loss 1.0442 173459 tok/s
+[V1-loop1 s3] step 600/6000 loss 0.9692 173270 tok/s
+[V1-loop1 s4] step 700/6000 loss 1.0259 173970 tok/s
+[V1-loop1 s3] step 700/6000 loss 0.9318 173507 tok/s
+[V1-loop4 s3] step 400/6000 loss 1.0825 96128 tok/s
+[V1-loop1 s4] step 800/6000 loss 1.0121 174258 tok/s
+[V1-loop1 s3] step 800/6000 loss 0.9160 173755 tok/s
+[V1-loop1 s4] step 900/6000 loss 0.9740 174393 tok/s
+[V1-loop1 s3] step 900/6000 loss 0.9027 174087 tok/s
+[V1-loop4 s3] step 500/6000 loss 1.0245 96424 tok/s
+[V1-loop1 s4] step 1000/6000 loss 0.9520 174454 tok/s
+[V1-loop1 s3] step 1000/6000 loss 0.9006 174410 tok/s
+[V1-loop4 s3] step 600/6000 loss 0.9864 96569 tok/s
+[V1-loop1 s4] step 1100/6000 loss 0.9279 174532 tok/s
+[V1-loop1 s3] step 1100/6000 loss 0.8888 174402 tok/s
+[V1-loop1 s4] step 1200/6000 loss 0.9108 174537 tok/s
+[V1-loop1 s3] step 1200/6000 loss 0.8624 174426 tok/s
+[V1-loop4 s3] step 700/6000 loss 0.9622 96705 tok/s
+[V1-loop1 s4] step 1300/6000 loss 0.9025 174643 tok/s
+[V1-loop1 s3] step 1300/6000 loss 0.8214 174509 tok/s
+[V1-loop1 s4] step 1400/6000 loss 0.8848 174689 tok/s
+[V1-loop1 s3] step 1400/6000 loss 0.8110 174636 tok/s
+[V1-loop4 s3] step 800/6000 loss 0.9287 96866 tok/s
+[V1-loop1 s4] step 1500/6000 loss 0.8794 174760 tok/s
+[V1-loop1 s3] step 1500/6000 loss 0.8107 174710 tok/s
+[V1-loop1 s4] step 1600/6000 loss 0.8679 174836 tok/s
+[V1-loop1 s3] step 1600/6000 loss 0.8058 174788 tok/s
+[V1-loop4 s3] step 900/6000 loss 0.8957 96862 tok/s
+[V1-loop1 s4] step 1700/6000 loss 0.8628 174892 tok/s
+[V1-loop1 s3] step 1700/6000 loss 0.7922 174811 tok/s
+[V1-loop1 s4] step 1800/6000 loss 0.8532 174936 tok/s
+[V1-loop1 s3] step 1800/6000 loss 0.7922 174815 tok/s
+[V1-loop4 s3] step 1000/6000 loss 0.8865 96847 tok/s
+[V1-loop1 s4] step 1900/6000 loss 0.8434 174984 tok/s
+[V1-loop1 s3] step 1900/6000 loss 0.7867 174844 tok/s
+[V1-loop4 s3] step 1100/6000 loss 0.8720 96841 tok/s
+[V1-loop1 s4] step 2000/6000 loss 0.8314 174989 tok/s
+[V1-loop1 s3] step 2000/6000 loss 0.7574 174849 tok/s
+[V1-loop1 s4] step 2100/6000 loss 0.8346 175025 tok/s
+[V1-loop1 s3] step 2100/6000 loss 0.7661 174877 tok/s
+[V1-loop4 s3] step 1200/6000 loss 0.8569 96878 tok/s
+[V1-loop1 s4] step 2200/6000 loss 0.8112 175009 tok/s
+[V1-loop1 s3] step 2200/6000 loss 0.7499 174916 tok/s
+[V1-loop1 s4] step 2300/6000 loss 0.7928 175010 tok/s
+[V1-loop1 s3] step 2300/6000 loss 0.7307 174943 tok/s
+[V1-loop4 s3] step 1300/6000 loss 0.8284 96886 tok/s
+[V1-loop1 s4] step 2400/6000 loss 0.7952 175042 tok/s
+[V1-loop1 s3] step 2400/6000 loss 0.7212 174938 tok/s
+[V1-loop1 s4] step 2500/6000 loss 0.7599 175076 tok/s
+[V1-loop1 s3] step 2500/6000 loss 0.7162 174973 tok/s
+[V1-loop4 s3] step 1400/6000 loss 0.8180 96924 tok/s
+[V1-loop1 s4] step 2600/6000 loss 0.7242 175063 tok/s
+[V1-loop1 s3] step 2600/6000 loss 0.6938 175023 tok/s
+[V1-loop1 s4] step 2700/6000 loss 0.7117 175073 tok/s
+[V1-loop1 s3] step 2700/6000 loss 0.6846 175081 tok/s
+[V1-loop4 s3] step 1500/6000 loss 0.8059 96926 tok/s
+[V1-loop1 s4] step 2800/6000 loss 0.7180 175090 tok/s
+[V1-loop1 s3] step 2800/6000 loss 0.6780 175109 tok/s
+[V1-loop4 s3] step 1600/6000 loss 0.7931 96926 tok/s
+[V1-loop1 s4] step 2900/6000 loss 0.7098 175085 tok/s
+[V1-loop1 s3] step 2900/6000 loss 0.6777 175129 tok/s
+[V1-loop1 s4] step 3000/6000 loss 0.7028 175138 tok/s
+[V1-loop1 s3] step 3000/6000 loss 0.6694 175132 tok/s
+[V1-loop4 s3] step 1700/6000 loss 0.7650 96944 tok/s
+[V1-loop1 s4] step 3100/6000 loss 0.6739 175116 tok/s
+[V1-loop1 s3] step 3100/6000 loss 0.6609 175144 tok/s
+[V1-loop1 s4] step 3200/6000 loss 0.6604 175100 tok/s
+[V1-loop1 s3] step 3200/6000 loss 0.6535 175184 tok/s
+[V1-loop4 s3] step 1800/6000 loss 0.7643 96976 tok/s
+[V1-loop1 s4] step 3300/6000 loss 0.6764 175100 tok/s
+[V1-loop1 s3] step 3300/6000 loss 0.6487 175149 tok/s
+[V1-loop1 s4] step 3400/6000 loss 0.6684 175103 tok/s
+[V1-loop1 s3] step 3400/6000 loss 0.6510 175167 tok/s
+[V1-loop4 s3] step 1900/6000 loss 0.7543 96986 tok/s
+[V1-loop1 s4] step 3500/6000 loss 0.6392 175107 tok/s
+[V1-loop1 s3] step 3500/6000 loss 0.6339 175197 tok/s
+[V1-loop1 s4] step 3600/6000 loss 0.6331 175115 tok/s
+[V1-loop1 s3] step 3600/6000 loss 0.6379 175220 tok/s
+[V1-loop4 s3] step 2000/6000 loss 0.7263 97010 tok/s
+[V1-loop1 s4] step 3700/6000 loss 0.6416 175142 tok/s
+[V1-loop1 s3] step 3700/6000 loss 0.6440 175195 tok/s
+[V1-loop4 s3] step 2100/6000 loss 0.7318 97031 tok/s
+[V1-loop1 s4] step 3800/6000 loss 0.6004 175152 tok/s
+[V1-loop1 s3] step 3800/6000 loss 0.6172 175203 tok/s
+[V1-loop1 s4] step 3900/6000 loss 0.5831 175159 tok/s
+[V1-loop1 s3] step 3900/6000 loss 0.5942 175201 tok/s
+[V1-loop4 s3] step 2200/6000 loss 0.7129 97052 tok/s
+[V1-loop1 s4] step 4000/6000 loss 0.5783 175167 tok/s
+[V1-loop1 s3] step 4000/6000 loss 0.5997 175216 tok/s
+[V1-loop1 s4] step 4100/6000 loss 0.5704 175152 tok/s
+[V1-loop1 s3] step 4100/6000 loss 0.5842 175253 tok/s
+[V1-loop4 s3] step 2300/6000 loss 0.7040 97061 tok/s
+[V1-loop1 s4] step 4200/6000 loss 0.5693 175146 tok/s
+[V1-loop1 s3] step 4200/6000 loss 0.5812 175289 tok/s
+[V1-loop1 s4] step 4300/6000 loss 0.5768 175153 tok/s
+[V1-loop1 s3] step 4300/6000 loss 0.5712 175292 tok/s
+[V1-loop4 s3] step 2400/6000 loss 0.6831 97073 tok/s
+[V1-loop1 s4] step 4400/6000 loss 0.5710 175166 tok/s
+[V1-loop1 s3] step 4400/6000 loss 0.5694 175272 tok/s
+[V1-loop1 s4] step 4500/6000 loss 0.5689 175140 tok/s
+[V1-loop1 s3] step 4500/6000 loss 0.5772 175275 tok/s
+[V1-loop4 s3] step 2500/6000 loss 0.6860 97106 tok/s
+[V1-loop1 s4] step 4600/6000 loss 0.5570 175114 tok/s
+[V1-loop1 s3] step 4600/6000 loss 0.5664 175262 tok/s
+[V1-loop4 s3] step 2600/6000 loss 0.6507 97129 tok/s
+[V1-loop1 s4] step 4700/6000 loss 0.5506 175119 tok/s
+[V1-loop1 s3] step 4700/6000 loss 0.5674 175246 tok/s
+[V1-loop1 s4] step 4800/6000 loss 0.5673 175123 tok/s
+[V1-loop1 s3] step 4800/6000 loss 0.5558 175232 tok/s
+[V1-loop4 s3] step 2700/6000 loss 0.6561 97152 tok/s
+[V1-loop1 s4] step 4900/6000 loss 0.5603 175111 tok/s
+[V1-loop1 s3] step 4900/6000 loss 0.5560 175244 tok/s
+[V1-loop1 s4] step 5000/6000 loss 0.5538 175112 tok/s
+[V1-loop1 s3] step 5000/6000 loss 0.5543 175241 tok/s
+[V1-loop4 s3] step 2800/6000 loss 0.6475 97154 tok/s
+[V1-loop1 s4] step 5100/6000 loss 0.4909 175100 tok/s
+[V1-loop1 s3] step 5100/6000 loss 0.5174 175249 tok/s
+[V1-loop1 s4] step 5200/6000 loss 0.4958 175086 tok/s
+[V1-loop1 s3] step 5200/6000 loss 0.5252 175260 tok/s
+[V1-loop4 s3] step 2900/6000 loss 0.6462 97154 tok/s
+[V1-loop1 s4] step 5300/6000 loss 0.5059 175104 tok/s
+[V1-loop1 s3] step 5300/6000 loss 0.5213 175253 tok/s
+[V1-loop1 s4] step 5400/6000 loss 0.4926 175103 tok/s
+[V1-loop1 s3] step 5400/6000 loss 0.5100 175236 tok/s
+[V1-loop4 s3] step 3000/6000 loss 0.6320 97175 tok/s
+[V1-loop1 s4] step 5500/6000 loss 0.5074 175114 tok/s
+[V1-loop1 s3] step 5500/6000 loss 0.5184 175231 tok/s
+[V1-loop1 s4] step 5600/6000 loss 0.4970 175113 tok/s
+[V1-loop4 s3] step 3100/6000 loss 0.6203 97169 tok/s
+[V1-loop1 s3] step 5600/6000 loss 0.5136 175241 tok/s
+[V1-loop1 s4] step 5700/6000 loss 0.5036 175118 tok/s
+[V1-loop1 s3] step 5700/6000 loss 0.5156 175247 tok/s
+[V1-loop4 s3] step 3200/6000 loss 0.6237 97164 tok/s
+[V1-loop1 s4] step 5800/6000 loss 0.5034 175128 tok/s
+[V1-loop1 s3] step 5800/6000 loss 0.5334 175267 tok/s
+[V1-loop1 s4] step 5900/6000 loss 0.4949 175125 tok/s
+[V1-loop1 s3] step 5900/6000 loss 0.5056 175280 tok/s
+[V1-loop4 s3] step 3300/6000 loss 0.6244 97182 tok/s
+[V1-loop1 s4] step 6000/6000 loss 0.5081 175128 tok/s
+[V1-loop1 s3] step 6000/6000 loss 0.4969 175324 tok/s
+[V1-loop4 s3] step 3400/6000 loss 0.6171 98036 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1 s4] run_id=EXP-001B-SEEDS-V1-loop1-s4-cad619
+  rewrite      73/200 = 0.365
+  dsl_learn    31/200 = 0.155
+  flops/correct = 2.48e+10
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1 s3] run_id=EXP-001B-SEEDS-V1-loop1-s3-d9664e
+  rewrite      65/200 = 0.325
+  dsl_learn    29/200 = 0.145
+  flops/correct = 2.74e+10
+[done rc=0] V1-loop1 s4
+[launch] V1-loop4 s4
+[done rc=0] V1-loop1 s3
+[launch] V1-loop1 s5
+[V1-loop4 s3] step 3500/6000 loss 0.6035 99486 tok/s
+[V1-loop4 s3] step 3600/6000 loss 0.6098 100893 tok/s
+[V1-loop1 s5] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop1] params=11.93M hash=20bd7bbd06df
+[V1-loop1 s5] step 100/6000 loss 2.4576 153318 tok/s
+[V1-loop4 s4] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop4] params=11.93M hash=e9fd4e78ecd9
+[V1-loop4 s4] step 100/6000 loss 2.4994 89554 tok/s
+[V1-loop4 s3] step 3700/6000 loss 0.6128 100679 tok/s
+[V1-loop1 s5] step 200/6000 loss 1.3950 161048 tok/s
+[V1-loop1 s5] step 300/6000 loss 1.1436 163614 tok/s
+[V1-loop4 s4] step 200/6000 loss 1.3684 91236 tok/s
+[V1-loop4 s3] step 3800/6000 loss 0.5853 100488 tok/s
+[V1-loop1 s5] step 400/6000 loss 1.1008 165159 tok/s
+[V1-loop1 s5] step 500/6000 loss 1.0587 166000 tok/s
+[V1-loop4 s4] step 300/6000 loss 1.1336 91569 tok/s
+[V1-loop4 s3] step 3900/6000 loss 0.5627 100318 tok/s
+[V1-loop1 s5] step 600/6000 loss 1.0211 166383 tok/s
+[V1-loop1 s5] step 700/6000 loss 0.9782 166628 tok/s
+[V1-loop4 s4] step 400/6000 loss 1.0900 92187 tok/s
+[V1-loop4 s3] step 4000/6000 loss 0.5613 100156 tok/s
+[V1-loop1 s5] step 800/6000 loss 0.9537 167026 tok/s
+[V1-loop4 s4] step 500/6000 loss 1.0626 92441 tok/s
+[V1-loop1 s5] step 900/6000 loss 0.9362 167201 tok/s
+[V1-loop4 s3] step 4100/6000 loss 0.5525 99985 tok/s
+[V1-loop1 s5] step 1000/6000 loss 0.9009 167379 tok/s
+[V1-loop4 s4] step 600/6000 loss 1.0181 92560 tok/s
+[V1-loop4 s3] step 4200/6000 loss 0.5489 99819 tok/s
+[V1-loop1 s5] step 1100/6000 loss 0.8905 167541 tok/s
+[V1-loop1 s5] step 1200/6000 loss 0.8690 167563 tok/s
+[V1-loop4 s4] step 700/6000 loss 0.9906 92694 tok/s
+[V1-loop4 s3] step 4300/6000 loss 0.5382 99666 tok/s
+[V1-loop1 s5] step 1300/6000 loss 0.8313 167622 tok/s
+[V1-loop1 s5] step 1400/6000 loss 0.7967 167679 tok/s
+[V1-loop4 s4] step 800/6000 loss 0.9628 92802 tok/s
+[V1-loop4 s3] step 4400/6000 loss 0.5381 99518 tok/s
+[V1-loop1 s5] step 1500/6000 loss 0.8053 167707 tok/s
+[V1-loop1 s5] step 1600/6000 loss 0.7772 167771 tok/s
+[V1-loop4 s4] step 900/6000 loss 0.9289 92895 tok/s
+[V1-loop4 s3] step 4500/6000 loss 0.5417 99384 tok/s
+[V1-loop1 s5] step 1700/6000 loss 0.7604 167796 tok/s
+[V1-loop4 s4] step 1000/6000 loss 0.9112 92926 tok/s
+[V1-loop1 s5] step 1800/6000 loss 0.7473 167866 tok/s
+[V1-loop4 s3] step 4600/6000 loss 0.5327 99256 tok/s
+[V1-loop1 s5] step 1900/6000 loss 0.7521 167881 tok/s
+[V1-loop4 s4] step 1100/6000 loss 0.8765 92989 tok/s
+[V1-loop4 s3] step 4700/6000 loss 0.5367 99121 tok/s
+[V1-loop1 s5] step 2000/6000 loss 0.7410 167936 tok/s
+[V1-loop1 s5] step 2100/6000 loss 0.7148 167908 tok/s
+[V1-loop4 s4] step 1200/6000 loss 0.8564 92988 tok/s
+[V1-loop4 s3] step 4800/6000 loss 0.5243 98999 tok/s
+[V1-loop1 s5] step 2200/6000 loss 0.7180 167938 tok/s
+[V1-loop1 s5] step 2300/6000 loss 0.7062 167960 tok/s
+[V1-loop4 s4] step 1300/6000 loss 0.8302 93023 tok/s
+[V1-loop4 s3] step 4900/6000 loss 0.5195 98891 tok/s
+[V1-loop1 s5] step 2400/6000 loss 0.6895 167970 tok/s
+[V1-loop1 s5] step 2500/6000 loss 0.6931 167994 tok/s
+[V1-loop4 s4] step 1400/6000 loss 0.7934 93070 tok/s
+[V1-loop4 s3] step 5000/6000 loss 0.5186 98769 tok/s
+[V1-loop1 s5] step 2600/6000 loss 0.6485 168036 tok/s
+[V1-loop4 s4] step 1500/6000 loss 0.7752 93104 tok/s
+[V1-loop1 s5] step 2700/6000 loss 0.6596 168071 tok/s
+[V1-loop4 s3] step 5100/6000 loss 0.4812 98656 tok/s
+[V1-loop1 s5] step 2800/6000 loss 0.6457 168100 tok/s
+[V1-loop4 s4] step 1600/6000 loss 0.7481 93105 tok/s
+[V1-loop1 s5] step 2900/6000 loss 0.6486 168100 tok/s
+[V1-loop4 s3] step 5200/6000 loss 0.4926 98549 tok/s
+[V1-loop1 s5] step 3000/6000 loss 0.6343 168116 tok/s
+[V1-loop4 s4] step 1700/6000 loss 0.7441 93104 tok/s
+[V1-loop4 s3] step 5300/6000 loss 0.4886 98458 tok/s
+[V1-loop1 s5] step 3100/6000 loss 0.6403 168089 tok/s
+[V1-loop1 s5] step 3200/6000 loss 0.6385 168101 tok/s
+[V1-loop4 s4] step 1800/6000 loss 0.7351 93125 tok/s
+[V1-loop4 s3] step 5400/6000 loss 0.4813 98362 tok/s
+[V1-loop1 s5] step 3300/6000 loss 0.6220 168101 tok/s
+[V1-loop1 s5] step 3400/6000 loss 0.6166 168123 tok/s
+[V1-loop4 s4] step 1900/6000 loss 0.7298 93144 tok/s
+[V1-loop4 s3] step 5500/6000 loss 0.4871 98277 tok/s
+[V1-loop1 s5] step 3500/6000 loss 0.6138 168101 tok/s
+[V1-loop1 s5] step 3600/6000 loss 0.6058 168087 tok/s
+[V1-loop4 s4] step 2000/6000 loss 0.7099 93135 tok/s
+[V1-loop4 s3] step 5600/6000 loss 0.4789 98181 tok/s
+[V1-loop1 s5] step 3700/6000 loss 0.6182 168098 tok/s
+[V1-loop4 s4] step 2100/6000 loss 0.7034 93159 tok/s
+[V1-loop1 s5] step 3800/6000 loss 0.5698 168102 tok/s
+[V1-loop4 s3] step 5700/6000 loss 0.4812 98093 tok/s
+[V1-loop1 s5] step 3900/6000 loss 0.5364 168090 tok/s
+[V1-loop4 s4] step 2200/6000 loss 0.6973 93175 tok/s
+[V1-loop4 s3] step 5800/6000 loss 0.4995 98013 tok/s
+[V1-loop1 s5] step 4000/6000 loss 0.5614 168096 tok/s
+[V1-loop1 s5] step 4100/6000 loss 0.5399 168125 tok/s
+[V1-loop4 s4] step 2300/6000 loss 0.6874 93173 tok/s
+[V1-loop4 s3] step 5900/6000 loss 0.4724 97937 tok/s
+[V1-loop1 s5] step 4200/6000 loss 0.5403 168125 tok/s
+[V1-loop1 s5] step 4300/6000 loss 0.5466 168104 tok/s
+[V1-loop4 s4] step 2400/6000 loss 0.6885 93195 tok/s
+[V1-loop4 s3] step 6000/6000 loss 0.4580 97859 tok/s
+[V1-loop1 s5] step 4400/6000 loss 0.5429 168515 tok/s
+[V1-loop1 s5] step 4500/6000 loss 0.5441 169206 tok/s
+[V1-loop4 s4] step 2500/6000 loss 0.6591 93827 tok/s
+[V1-loop1 s5] step 4600/6000 loss 0.5381 169825 tok/s
+[V1-loop4 s4] step 2600/6000 loss 0.6406 94509 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop4 s3] run_id=EXP-001B-SEEDS-V1-loop4-s3-d43374
+  rewrite      86/200 = 0.430
+  dsl_learn    26/200 = 0.130
+  flops/correct = 5.71e+10
+[V1-loop1 s5] step 4700/6000 loss 0.5291 170574 tok/s
+[done rc=0] V1-loop4 s3
+[launch] V1-loop4 s5
+[V1-loop1 s5] step 4800/6000 loss 0.5313 171723 tok/s
+[V1-loop4 s4] step 2700/6000 loss 0.6330 95621 tok/s
+[V1-loop1 s5] step 4900/6000 loss 0.5343 172337 tok/s
+[V1-loop1 s5] step 5000/6000 loss 0.5199 172262 tok/s
+[V1-loop4 s5] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop4] params=11.93M hash=e9fd4e78ecd9
+[V1-loop4 s5] step 100/6000 loss 2.4755 88144 tok/s
+[V1-loop4 s4] step 2800/6000 loss 0.6524 95535 tok/s
+[V1-loop1 s5] step 5100/6000 loss 0.4723 172189 tok/s
+[V1-loop1 s5] step 5200/6000 loss 0.4704 172116 tok/s
+[V1-loop4 s5] step 200/6000 loss 1.3681 90785 tok/s
+[V1-loop4 s4] step 2900/6000 loss 0.6482 95454 tok/s
+[V1-loop1 s5] step 5300/6000 loss 0.4618 172041 tok/s
+[V1-loop4 s5] step 300/6000 loss 1.1375 91704 tok/s
+[V1-loop1 s5] step 5400/6000 loss 0.4710 171964 tok/s
+[V1-loop4 s4] step 3000/6000 loss 0.6496 95378 tok/s
+[V1-loop1 s5] step 5500/6000 loss 0.4712 171892 tok/s
+[V1-loop4 s5] step 400/6000 loss 1.0977 92289 tok/s
+[V1-loop4 s4] step 3100/6000 loss 0.6309 95307 tok/s
+[V1-loop1 s5] step 5600/6000 loss 0.4708 171828 tok/s
+[V1-loop1 s5] step 5700/6000 loss 0.4575 171782 tok/s
+[V1-loop4 s5] step 500/6000 loss 1.0666 92592 tok/s
+[V1-loop4 s4] step 3200/6000 loss 0.6193 95264 tok/s
+[V1-loop1 s5] step 5800/6000 loss 0.4702 171734 tok/s
+[V1-loop1 s5] step 5900/6000 loss 0.4558 171676 tok/s
+[V1-loop4 s5] step 600/6000 loss 1.0507 92705 tok/s
+[V1-loop4 s4] step 3300/6000 loss 0.6402 95204 tok/s
+[V1-loop1 s5] step 6000/6000 loss 0.4682 171615 tok/s
+[V1-loop4 s5] step 700/6000 loss 1.0280 94767 tok/s
+[V1-loop4 s4] step 3400/6000 loss 0.6351 95598 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1 s5] run_id=EXP-001B-SEEDS-V1-loop1-s5-1ad2a7
+  rewrite      74/200 = 0.370
+  dsl_learn    24/200 = 0.120
+  flops/correct = 2.63e+10
+[V1-loop4 s5] step 800/6000 loss 1.0092 97342 tok/s
+[V1-loop4 s4] step 3500/6000 loss 0.6029 96187 tok/s
+[done rc=0] V1-loop1 s5
+[V1-loop4 s5] step 900/6000 loss 0.9849 100462 tok/s
+[V1-loop4 s4] step 3600/6000 loss 0.6005 96952 tok/s
+[V1-loop4 s5] step 1000/6000 loss 0.9425 103086 tok/s
+[V1-loop4 s4] step 3700/6000 loss 0.6113 97690 tok/s
+[V1-loop4 s5] step 1100/6000 loss 0.9286 105303 tok/s
+[V1-loop4 s4] step 3800/6000 loss 0.5758 98404 tok/s
+[V1-loop4 s5] step 1200/6000 loss 0.9108 107249 tok/s
+[V1-loop4 s4] step 3900/6000 loss 0.5683 99088 tok/s
+[V1-loop4 s5] step 1300/6000 loss 0.8803 108951 tok/s
+[V1-loop4 s4] step 4000/6000 loss 0.5617 99742 tok/s
+[V1-loop4 s5] step 1400/6000 loss 0.8561 110459 tok/s
+[V1-loop4 s4] step 4100/6000 loss 0.5536 100369 tok/s
+[V1-loop4 s4] step 4200/6000 loss 0.5543 100993 tok/s
+[V1-loop4 s5] step 1500/6000 loss 0.8581 111750 tok/s
+[V1-loop4 s5] step 1600/6000 loss 0.8286 112932 tok/s
+[V1-loop4 s4] step 4300/6000 loss 0.5548 101576 tok/s
+[V1-loop4 s5] step 1700/6000 loss 0.8119 114019 tok/s
+[V1-loop4 s4] step 4400/6000 loss 0.5528 102134 tok/s
+[V1-loop4 s5] step 1800/6000 loss 0.7974 115020 tok/s
+[V1-loop4 s4] step 4500/6000 loss 0.5465 102682 tok/s
+[V1-loop4 s5] step 1900/6000 loss 0.7999 115916 tok/s
+[V1-loop4 s4] step 4600/6000 loss 0.5380 103207 tok/s
+[V1-loop4 s5] step 2000/6000 loss 0.7866 116737 tok/s
+[V1-loop4 s4] step 4700/6000 loss 0.5370 103716 tok/s
+[V1-loop4 s5] step 2100/6000 loss 0.7565 117474 tok/s
+[V1-loop4 s4] step 4800/6000 loss 0.5482 104219 tok/s
+[V1-loop4 s5] step 2200/6000 loss 0.7562 118171 tok/s
+[V1-loop4 s4] step 4900/6000 loss 0.5390 104699 tok/s
+[V1-loop4 s5] step 2300/6000 loss 0.7354 118804 tok/s
+[V1-loop4 s4] step 5000/6000 loss 0.5344 105172 tok/s
+[V1-loop4 s5] step 2400/6000 loss 0.7224 119391 tok/s
+[V1-loop4 s4] step 5100/6000 loss 0.4883 105618 tok/s
+[V1-loop4 s5] step 2500/6000 loss 0.7015 119923 tok/s
+[V1-loop4 s4] step 5200/6000 loss 0.4883 106059 tok/s
+[V1-loop4 s5] step 2600/6000 loss 0.6532 120430 tok/s
+[V1-loop4 s4] step 5300/6000 loss 0.5027 106483 tok/s
+[V1-loop4 s5] step 2700/6000 loss 0.6657 120898 tok/s
+[V1-loop4 s4] step 5400/6000 loss 0.4890 106890 tok/s
+[V1-loop4 s5] step 2800/6000 loss 0.6350 121361 tok/s
+[V1-loop4 s4] step 5500/6000 loss 0.5038 107289 tok/s
+[V1-loop4 s5] step 2900/6000 loss 0.6323 121774 tok/s
+[V1-loop4 s4] step 5600/6000 loss 0.4924 107682 tok/s
+[V1-loop4 s5] step 3000/6000 loss 0.6225 122185 tok/s
+[V1-loop4 s4] step 5700/6000 loss 0.4997 108054 tok/s
+[V1-loop4 s5] step 3100/6000 loss 0.6174 122548 tok/s
+[V1-loop4 s4] step 5800/6000 loss 0.4982 108420 tok/s
+[V1-loop4 s5] step 3200/6000 loss 0.6093 122896 tok/s
+[V1-loop4 s4] step 5900/6000 loss 0.4883 108763 tok/s
+[V1-loop4 s5] step 3300/6000 loss 0.5853 123238 tok/s
+[V1-loop4 s4] step 6000/6000 loss 0.5009 109108 tok/s
+[V1-loop4 s5] step 3400/6000 loss 0.5728 124005 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop4 s4] run_id=EXP-001B-SEEDS-V1-loop4-s4-9a9560
+  rewrite      90/200 = 0.450
+  dsl_learn    17/200 = 0.085
+  flops/correct = 5.98e+10
+[done rc=0] V1-loop4 s4
+[V1-loop4 s5] step 3500/6000 loss 0.5708 125415 tok/s
+[V1-loop4 s5] step 3600/6000 loss 0.5560 127153 tok/s
+[V1-loop4 s5] step 3700/6000 loss 0.5580 128779 tok/s
+[V1-loop4 s5] step 3800/6000 loss 0.5298 130345 tok/s
+[V1-loop4 s5] step 3900/6000 loss 0.5040 131888 tok/s
+[V1-loop4 s5] step 4000/6000 loss 0.5219 133393 tok/s
+[V1-loop4 s5] step 4100/6000 loss 0.4938 134947 tok/s
+[V1-loop4 s5] step 4200/6000 loss 0.4981 136369 tok/s
+[V1-loop4 s5] step 4300/6000 loss 0.5052 137718 tok/s
+[V1-loop4 s5] step 4400/6000 loss 0.4995 139163 tok/s
+[V1-loop4 s5] step 4500/6000 loss 0.4984 140540 tok/s
+[V1-loop4 s5] step 4600/6000 loss 0.4861 141876 tok/s
+[V1-loop4 s5] step 4700/6000 loss 0.4841 143199 tok/s
+[V1-loop4 s5] step 4800/6000 loss 0.4772 144484 tok/s
+[V1-loop4 s5] step 4900/6000 loss 0.4800 145732 tok/s
+[V1-loop4 s5] step 5000/6000 loss 0.4668 146955 tok/s
+[V1-loop4 s5] step 5100/6000 loss 0.4443 148108 tok/s
+[V1-loop4 s5] step 5200/6000 loss 0.4384 149288 tok/s
+[V1-loop4 s5] step 5300/6000 loss 0.4275 150415 tok/s
+[V1-loop4 s5] step 5400/6000 loss 0.4379 151512 tok/s
+[V1-loop4 s5] step 5500/6000 loss 0.4346 152510 tok/s
+[V1-loop4 s5] step 5600/6000 loss 0.4431 153506 tok/s
+[V1-loop4 s5] step 5700/6000 loss 0.4232 154510 tok/s
+[V1-loop4 s5] step 5800/6000 loss 0.4319 155483 tok/s
+[V1-loop4 s5] step 5900/6000 loss 0.4201 156395 tok/s
+[V1-loop4 s5] step 6000/6000 loss 0.4311 157360 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop4 s5] run_id=EXP-001B-SEEDS-V1-loop4-s5-908c32
+  rewrite      119/200 = 0.595
+  dsl_learn    20/200 = 0.100
+  flops/correct = 4.6e+10
+[done rc=0] V1-loop4 s5
+EXP COMPLETE: 6/6 jobs ok
+[launch] V1-loop1-fm s0
+[launch] V1-loop1-fm s1
+[launch] V1-loop1-fm s2
+[V1-loop1-fm s2] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop1-fm] params=11.93M hash=20bd7bbd06df
+[V1-loop1-fm s2] step 100/15000 loss 2.4367 166825 tok/s
+[V1-loop1-fm s0] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop1-fm] params=11.93M hash=20bd7bbd06df
+[V1-loop1-fm s0] step 100/15000 loss 2.4546 166628 tok/s
+[V1-loop1-fm s1] 40000 train sequences (0 skipped), ~9,955,288 tokens/epoch
+[V1-loop1-fm] params=11.93M hash=20bd7bbd06df
+[V1-loop1-fm s1] step 100/15000 loss 2.4611 165763 tok/s
+[V1-loop1-fm s0] step 200/15000 loss 1.3851 174629 tok/s
+[V1-loop1-fm s1] step 200/15000 loss 1.3772 173665 tok/s
+[V1-loop1-fm s2] step 200/15000 loss 1.4012 174410 tok/s
+[V1-loop1-fm s0] step 300/15000 loss 1.1425 177030 tok/s
+[V1-loop1-fm s2] step 300/15000 loss 1.1504 177232 tok/s
+[V1-loop1-fm s1] step 300/15000 loss 1.1379 176549 tok/s
+[V1-loop1-fm s0] step 400/15000 loss 1.0840 178638 tok/s
+[V1-loop1-fm s1] step 400/15000 loss 1.0979 177827 tok/s
+[V1-loop1-fm s2] step 400/15000 loss 1.0995 178547 tok/s
+[V1-loop1-fm s0] step 500/15000 loss 1.0677 179924 tok/s
+[V1-loop1-fm s1] step 500/15000 loss 1.0622 178635 tok/s
+[V1-loop1-fm s2] step 500/15000 loss 1.0437 179122 tok/s
+[V1-loop1-fm s0] step 600/15000 loss 1.0424 180377 tok/s
+[V1-loop1-fm s1] step 600/15000 loss 1.0333 179491 tok/s
+[V1-loop1-fm s2] step 600/15000 loss 1.0088 179634 tok/s
+[V1-loop1-fm s0] step 700/15000 loss 1.0043 180912 tok/s
+[V1-loop1-fm s1] step 700/15000 loss 1.0242 179889 tok/s
+[V1-loop1-fm s2] step 700/15000 loss 0.9577 180077 tok/s
+[V1-loop1-fm s0] step 800/15000 loss 0.9512 181136 tok/s
+[V1-loop1-fm s1] step 800/15000 loss 0.9989 180277 tok/s
+[V1-loop1-fm s2] step 800/15000 loss 0.9219 180332 tok/s
+[V1-loop1-fm s0] step 900/15000 loss 0.9290 181394 tok/s
+[V1-loop1-fm s2] step 900/15000 loss 0.8888 180501 tok/s
+[V1-loop1-fm s1] step 900/15000 loss 0.9771 180571 tok/s
+[V1-loop1-fm s0] step 1000/15000 loss 0.8764 181629 tok/s
+[V1-loop1-fm s1] step 1000/15000 loss 0.9275 180791 tok/s
+[V1-loop1-fm s2] step 1000/15000 loss 0.8996 180721 tok/s
+[V1-loop1-fm s0] step 1100/15000 loss 0.8622 181726 tok/s
+[V1-loop1-fm s1] step 1100/15000 loss 0.8900 181061 tok/s
+[V1-loop1-fm s2] step 1100/15000 loss 0.8599 180773 tok/s
+[V1-loop1-fm s0] step 1200/15000 loss 0.8343 181855 tok/s
+[V1-loop1-fm s2] step 1200/15000 loss 0.8307 180769 tok/s
+[V1-loop1-fm s1] step 1200/15000 loss 0.8575 181237 tok/s
+[V1-loop1-fm s0] step 1300/15000 loss 0.8117 181865 tok/s
+[V1-loop1-fm s1] step 1300/15000 loss 0.8179 181342 tok/s
+[V1-loop1-fm s2] step 1300/15000 loss 0.8100 180777 tok/s
+[V1-loop1-fm s0] step 1400/15000 loss 0.7890 181929 tok/s
+[V1-loop1-fm s1] step 1400/15000 loss 0.7780 181479 tok/s
+[V1-loop1-fm s2] step 1400/15000 loss 0.7919 180845 tok/s
+[V1-loop1-fm s0] step 1500/15000 loss 0.7890 182023 tok/s
+[V1-loop1-fm s2] step 1500/15000 loss 0.7932 180945 tok/s
+[V1-loop1-fm s1] step 1500/15000 loss 0.7793 181415 tok/s
+[V1-loop1-fm s0] step 1600/15000 loss 0.7822 182079 tok/s
+[V1-loop1-fm s2] step 1600/15000 loss 0.7844 181147 tok/s
+[V1-loop1-fm s1] step 1600/15000 loss 0.7715 181426 tok/s
+[V1-loop1-fm s0] step 1700/15000 loss 0.7592 182165 tok/s
+[V1-loop1-fm s1] step 1700/15000 loss 0.7560 181479 tok/s
+[V1-loop1-fm s2] step 1700/15000 loss 0.7834 181166 tok/s
+[V1-loop1-fm s0] step 1800/15000 loss 0.7548 182228 tok/s
+[V1-loop1-fm s1] step 1800/15000 loss 0.7464 181639 tok/s
+[V1-loop1-fm s2] step 1800/15000 loss 0.7671 181186 tok/s
+[V1-loop1-fm s0] step 1900/15000 loss 0.7501 182264 tok/s
+[V1-loop1-fm s1] step 1900/15000 loss 0.7333 181642 tok/s
+[V1-loop1-fm s2] step 1900/15000 loss 0.7629 181253 tok/s
+[V1-loop1-fm s0] step 2000/15000 loss 0.7365 182172 tok/s
+[V1-loop1-fm s2] step 2000/15000 loss 0.7633 181338 tok/s
+[V1-loop1-fm s1] step 2000/15000 loss 0.7253 181685 tok/s
+[V1-loop1-fm s0] step 2100/15000 loss 0.7217 182235 tok/s
+[V1-loop1-fm s2] step 2100/15000 loss 0.7469 181363 tok/s
+[V1-loop1-fm s1] step 2100/15000 loss 0.7120 181718 tok/s
+[V1-loop1-fm s0] step 2200/15000 loss 0.7362 182214 tok/s
+[V1-loop1-fm s2] step 2200/15000 loss 0.7397 181425 tok/s
+[V1-loop1-fm s1] step 2200/15000 loss 0.6926 181742 tok/s
+[V1-loop1-fm s0] step 2300/15000 loss 0.7094 182235 tok/s
+[V1-loop1-fm s2] step 2300/15000 loss 0.7319 181448 tok/s
+[V1-loop1-fm s1] step 2300/15000 loss 0.6943 181767 tok/s
+[V1-loop1-fm s0] step 2400/15000 loss 0.7201 182240 tok/s
+[V1-loop1-fm s2] step 2400/15000 loss 0.7143 181537 tok/s
+[V1-loop1-fm s1] step 2400/15000 loss 0.6923 181750 tok/s
+[V1-loop1-fm s0] step 2500/15000 loss 0.7086 182288 tok/s
+[V1-loop1-fm s2] step 2500/15000 loss 0.6998 181556 tok/s
+[V1-loop1-fm s1] step 2500/15000 loss 0.6892 181758 tok/s
+[V1-loop1-fm s0] step 2600/15000 loss 0.6768 182340 tok/s
+[V1-loop1-fm s1] step 2600/15000 loss 0.6513 181768 tok/s
+[V1-loop1-fm s2] step 2600/15000 loss 0.6912 181600 tok/s
+[V1-loop1-fm s0] step 2700/15000 loss 0.6801 182366 tok/s
+[V1-loop1-fm s1] step 2700/15000 loss 0.6692 181776 tok/s
+[V1-loop1-fm s2] step 2700/15000 loss 0.6769 181685 tok/s
+[V1-loop1-fm s0] step 2800/15000 loss 0.6796 182392 tok/s
+[V1-loop1-fm s2] step 2800/15000 loss 0.6784 181675 tok/s
+[V1-loop1-fm s1] step 2800/15000 loss 0.6433 181792 tok/s
+[V1-loop1-fm s0] step 2900/15000 loss 0.6748 182425 tok/s
+[V1-loop1-fm s2] step 2900/15000 loss 0.6663 181693 tok/s
+[V1-loop1-fm s1] step 2900/15000 loss 0.6397 181797 tok/s
+[V1-loop1-fm s0] step 3000/15000 loss 0.6698 182460 tok/s
+[V1-loop1-fm s2] step 3000/15000 loss 0.6732 181757 tok/s
+[V1-loop1-fm s1] step 3000/15000 loss 0.6372 181787 tok/s
+[V1-loop1-fm s0] step 3100/15000 loss 0.6668 182497 tok/s
+[V1-loop1-fm s2] step 3100/15000 loss 0.6684 181814 tok/s
+[V1-loop1-fm s1] step 3100/15000 loss 0.6416 181786 tok/s
+[V1-loop1-fm s0] step 3200/15000 loss 0.6678 182531 tok/s
+[V1-loop1-fm s2] step 3200/15000 loss 0.6754 181891 tok/s
+[V1-loop1-fm s1] step 3200/15000 loss 0.6241 181787 tok/s
+[V1-loop1-fm s0] step 3300/15000 loss 0.6544 182550 tok/s
+[V1-loop1-fm s2] step 3300/15000 loss 0.6564 181932 tok/s
+[V1-loop1-fm s1] step 3300/15000 loss 0.6193 181783 tok/s
+[V1-loop1-fm s0] step 3400/15000 loss 0.6624 182545 tok/s
+[V1-loop1-fm s2] step 3400/15000 loss 0.6546 181913 tok/s
+[V1-loop1-fm s1] step 3400/15000 loss 0.6085 181830 tok/s
+[V1-loop1-fm s0] step 3500/15000 loss 0.6575 182546 tok/s
+[V1-loop1-fm s2] step 3500/15000 loss 0.6680 181884 tok/s
+[V1-loop1-fm s1] step 3500/15000 loss 0.6101 181850 tok/s
+[V1-loop1-fm s0] step 3600/15000 loss 0.6464 182559 tok/s
+[V1-loop1-fm s2] step 3600/15000 loss 0.6498 181894 tok/s
+[V1-loop1-fm s1] step 3600/15000 loss 0.6021 181893 tok/s
+[V1-loop1-fm s0] step 3700/15000 loss 0.6481 182565 tok/s
+[V1-loop1-fm s2] step 3700/15000 loss 0.6546 181893 tok/s
+[V1-loop1-fm s1] step 3700/15000 loss 0.5939 181904 tok/s
+[V1-loop1-fm s0] step 3800/15000 loss 0.6214 182562 tok/s
+[V1-loop1-fm s2] step 3800/15000 loss 0.6438 181934 tok/s
+[V1-loop1-fm s1] step 3800/15000 loss 0.5823 181887 tok/s
+[V1-loop1-fm s0] step 3900/15000 loss 0.6068 182587 tok/s
+[V1-loop1-fm s2] step 3900/15000 loss 0.6361 181955 tok/s
+[V1-loop1-fm s1] step 3900/15000 loss 0.5605 181894 tok/s
+[V1-loop1-fm s0] step 4000/15000 loss 0.6113 182624 tok/s
+[V1-loop1-fm s2] step 4000/15000 loss 0.6166 181981 tok/s
+[V1-loop1-fm s1] step 4000/15000 loss 0.5559 181889 tok/s
+[V1-loop1-fm s0] step 4100/15000 loss 0.6166 182652 tok/s
+[V1-loop1-fm s2] step 4100/15000 loss 0.6219 181993 tok/s
+[V1-loop1-fm s1] step 4100/15000 loss 0.5514 181906 tok/s
+[V1-loop1-fm s0] step 4200/15000 loss 0.6063 182643 tok/s
+[V1-loop1-fm s2] step 4200/15000 loss 0.6210 182047 tok/s
+[V1-loop1-fm s1] step 4200/15000 loss 0.5551 181902 tok/s
+[V1-loop1-fm s0] step 4300/15000 loss 0.6173 182653 tok/s
+[V1-loop1-fm s2] step 4300/15000 loss 0.6358 182066 tok/s
+[V1-loop1-fm s1] step 4300/15000 loss 0.5426 181894 tok/s
+[V1-loop1-fm s0] step 4400/15000 loss 0.6054 182702 tok/s
+[V1-loop1-fm s2] step 4400/15000 loss 0.6043 182010 tok/s
+[V1-loop1-fm s1] step 4400/15000 loss 0.5524 181927 tok/s
+[V1-loop1-fm s0] step 4500/15000 loss 0.5951 182715 tok/s
+[V1-loop1-fm s2] step 4500/15000 loss 0.6115 182009 tok/s
+[V1-loop1-fm s1] step 4500/15000 loss 0.5434 181922 tok/s
+[V1-loop1-fm s0] step 4600/15000 loss 0.6170 182698 tok/s
+[V1-loop1-fm s2] step 4600/15000 loss 0.6175 182031 tok/s
+[V1-loop1-fm s1] step 4600/15000 loss 0.5327 181937 tok/s
+[V1-loop1-fm s0] step 4700/15000 loss 0.6141 182731 tok/s
+[V1-loop1-fm s2] step 4700/15000 loss 0.6108 182018 tok/s
+[V1-loop1-fm s1] step 4700/15000 loss 0.5190 181952 tok/s
+[V1-loop1-fm s0] step 4800/15000 loss 0.6075 182700 tok/s
+[V1-loop1-fm s2] step 4800/15000 loss 0.6012 182051 tok/s
+[V1-loop1-fm s1] step 4800/15000 loss 0.5383 181956 tok/s
+[V1-loop1-fm s0] step 4900/15000 loss 0.6088 182712 tok/s
+[V1-loop1-fm s2] step 4900/15000 loss 0.5995 182066 tok/s
+[V1-loop1-fm s1] step 4900/15000 loss 0.5306 181973 tok/s
+[V1-loop1-fm s0] step 5000/15000 loss 0.6009 182675 tok/s
+[V1-loop1-fm s2] step 5000/15000 loss 0.6158 182117 tok/s
+[V1-loop1-fm s1] step 5000/15000 loss 0.5347 181967 tok/s
+[V1-loop1-fm s0] step 5100/15000 loss 0.5566 182668 tok/s
+[V1-loop1-fm s2] step 5100/15000 loss 0.5733 182144 tok/s
+[V1-loop1-fm s1] step 5100/15000 loss 0.4825 181975 tok/s
+[V1-loop1-fm s0] step 5200/15000 loss 0.5551 182688 tok/s
+[V1-loop1-fm s2] step 5200/15000 loss 0.5738 182134 tok/s
+[V1-loop1-fm s1] step 5200/15000 loss 0.5029 181978 tok/s
+[V1-loop1-fm s0] step 5300/15000 loss 0.5673 182684 tok/s
+[V1-loop1-fm s2] step 5300/15000 loss 0.5651 182150 tok/s
+[V1-loop1-fm s1] step 5300/15000 loss 0.4734 181994 tok/s
+[V1-loop1-fm s0] step 5400/15000 loss 0.5587 182706 tok/s
+[V1-loop1-fm s2] step 5400/15000 loss 0.5774 182129 tok/s
+[V1-loop1-fm s1] step 5400/15000 loss 0.4759 181997 tok/s
+[V1-loop1-fm s0] step 5500/15000 loss 0.5520 182710 tok/s
+[V1-loop1-fm s2] step 5500/15000 loss 0.5662 182119 tok/s
+[V1-loop1-fm s1] step 5500/15000 loss 0.4758 182044 tok/s
+[V1-loop1-fm s0] step 5600/15000 loss 0.5531 182702 tok/s
+[V1-loop1-fm s2] step 5600/15000 loss 0.5910 182106 tok/s
+[V1-loop1-fm s1] step 5600/15000 loss 0.4975 182071 tok/s
+[V1-loop1-fm s0] step 5700/15000 loss 0.5519 182737 tok/s
+[V1-loop1-fm s2] step 5700/15000 loss 0.5693 182111 tok/s
+[V1-loop1-fm s1] step 5700/15000 loss 0.4844 182052 tok/s
+[V1-loop1-fm s0] step 5800/15000 loss 0.5420 182730 tok/s
+[V1-loop1-fm s2] step 5800/15000 loss 0.5692 182128 tok/s
+[V1-loop1-fm s1] step 5800/15000 loss 0.4695 182056 tok/s
+[V1-loop1-fm s0] step 5900/15000 loss 0.5497 182697 tok/s
+[V1-loop1-fm s2] step 5900/15000 loss 0.5688 182141 tok/s
+[V1-loop1-fm s1] step 5900/15000 loss 0.4767 182060 tok/s
+[V1-loop1-fm s0] step 6000/15000 loss 0.5353 182694 tok/s
+[V1-loop1-fm s2] step 6000/15000 loss 0.5535 182162 tok/s
+[V1-loop1-fm s1] step 6000/15000 loss 0.4743 182063 tok/s
+[V1-loop1-fm s0] step 6100/15000 loss 0.5395 182707 tok/s
+[V1-loop1-fm s2] step 6100/15000 loss 0.5538 182167 tok/s
+[V1-loop1-fm s1] step 6100/15000 loss 0.4769 182053 tok/s
+[V1-loop1-fm s0] step 6200/15000 loss 0.5384 182716 tok/s
+[V1-loop1-fm s2] step 6200/15000 loss 0.5526 182179 tok/s
+[V1-loop1-fm s1] step 6200/15000 loss 0.4791 182071 tok/s
+[V1-loop1-fm s0] step 6300/15000 loss 0.4918 182742 tok/s
+[V1-loop1-fm s2] step 6300/15000 loss 0.5240 182169 tok/s
+[V1-loop1-fm s1] step 6300/15000 loss 0.4446 182095 tok/s
+[V1-loop1-fm s0] step 6400/15000 loss 0.4894 182743 tok/s
+[V1-loop1-fm s2] step 6400/15000 loss 0.5004 182175 tok/s
+[V1-loop1-fm s1] step 6400/15000 loss 0.4321 182101 tok/s
+[V1-loop1-fm s0] step 6500/15000 loss 0.4815 182765 tok/s
+[V1-loop1-fm s2] step 6500/15000 loss 0.5128 182206 tok/s
+[V1-loop1-fm s1] step 6500/15000 loss 0.4319 182089 tok/s
+[V1-loop1-fm s0] step 6600/15000 loss 0.4911 182774 tok/s
+[V1-loop1-fm s2] step 6600/15000 loss 0.5067 182224 tok/s
+[V1-loop1-fm s1] step 6600/15000 loss 0.4182 182105 tok/s
+[V1-loop1-fm s0] step 6700/15000 loss 0.4819 182789 tok/s
+[V1-loop1-fm s2] step 6700/15000 loss 0.5257 182215 tok/s
+[V1-loop1-fm s1] step 6700/15000 loss 0.4327 182091 tok/s
+[V1-loop1-fm s0] step 6800/15000 loss 0.4934 182785 tok/s
+[V1-loop1-fm s2] step 6800/15000 loss 0.4989 182214 tok/s
+[V1-loop1-fm s1] step 6800/15000 loss 0.4383 182108 tok/s
+[V1-loop1-fm s0] step 6900/15000 loss 0.4732 182782 tok/s
+[V1-loop1-fm s2] step 6900/15000 loss 0.5027 182198 tok/s
+[V1-loop1-fm s1] step 6900/15000 loss 0.4341 182112 tok/s
+[V1-loop1-fm s0] step 7000/15000 loss 0.4912 182804 tok/s
+[V1-loop1-fm s2] step 7000/15000 loss 0.5065 182202 tok/s
+[V1-loop1-fm s1] step 7000/15000 loss 0.4369 182112 tok/s
+[V1-loop1-fm s0] step 7100/15000 loss 0.4833 182800 tok/s
+[V1-loop1-fm s2] step 7100/15000 loss 0.4935 182212 tok/s
+[V1-loop1-fm s1] step 7100/15000 loss 0.4332 182125 tok/s
+[V1-loop1-fm s0] step 7200/15000 loss 0.4767 182807 tok/s
+[V1-loop1-fm s2] step 7200/15000 loss 0.5029 182220 tok/s
+[V1-loop1-fm s1] step 7200/15000 loss 0.4312 182137 tok/s
+[V1-loop1-fm s0] step 7300/15000 loss 0.4735 182792 tok/s
+[V1-loop1-fm s2] step 7300/15000 loss 0.5061 182233 tok/s
+[V1-loop1-fm s1] step 7300/15000 loss 0.4487 182142 tok/s
+[V1-loop1-fm s0] step 7400/15000 loss 0.4893 182798 tok/s
+[V1-loop1-fm s2] step 7400/15000 loss 0.4993 182228 tok/s
+[V1-loop1-fm s1] step 7400/15000 loss 0.4252 182149 tok/s
+[V1-loop1-fm s0] step 7500/15000 loss 0.4780 182810 tok/s
+[V1-loop1-fm s2] step 7500/15000 loss 0.4854 182212 tok/s
+[V1-loop1-fm s1] step 7500/15000 loss 0.4271 182154 tok/s
+[V1-loop1-fm s0] step 7600/15000 loss 0.4070 182817 tok/s
+[V1-loop1-fm s2] step 7600/15000 loss 0.4376 182212 tok/s
+[V1-loop1-fm s1] step 7600/15000 loss 0.3916 182144 tok/s
+[V1-loop1-fm s0] step 7700/15000 loss 0.4148 182821 tok/s
+[V1-loop1-fm s2] step 7700/15000 loss 0.4542 182212 tok/s
+[V1-loop1-fm s1] step 7700/15000 loss 0.3883 182152 tok/s
+[V1-loop1-fm s0] step 7800/15000 loss 0.4256 182848 tok/s
+[V1-loop1-fm s2] step 7800/15000 loss 0.4452 182220 tok/s
+[V1-loop1-fm s1] step 7800/15000 loss 0.3677 182162 tok/s
+[V1-loop1-fm s0] step 7900/15000 loss 0.4284 182855 tok/s
+[V1-loop1-fm s2] step 7900/15000 loss 0.4457 182203 tok/s
+[V1-loop1-fm s1] step 7900/15000 loss 0.3904 182175 tok/s
+[V1-loop1-fm s0] step 8000/15000 loss 0.4214 182869 tok/s
+[V1-loop1-fm s2] step 8000/15000 loss 0.4461 182204 tok/s
+[V1-loop1-fm s1] step 8000/15000 loss 0.4034 182184 tok/s
+[V1-loop1-fm s0] step 8100/15000 loss 0.4200 182865 tok/s
+[V1-loop1-fm s2] step 8100/15000 loss 0.4447 182225 tok/s
+[V1-loop1-fm s1] step 8100/15000 loss 0.3842 182191 tok/s
+[V1-loop1-fm s0] step 8200/15000 loss 0.4263 182848 tok/s
+[V1-loop1-fm s2] step 8200/15000 loss 0.4374 182276 tok/s
+[V1-loop1-fm s1] step 8200/15000 loss 0.3929 182171 tok/s
+[V1-loop1-fm s0] step 8300/15000 loss 0.4201 182833 tok/s
+[V1-loop1-fm s2] step 8300/15000 loss 0.4413 182285 tok/s
+[V1-loop1-fm s1] step 8300/15000 loss 0.3845 182189 tok/s
+[V1-loop1-fm s0] step 8400/15000 loss 0.4150 182840 tok/s
+[V1-loop1-fm s2] step 8400/15000 loss 0.4483 182289 tok/s
+[V1-loop1-fm s1] step 8400/15000 loss 0.3881 182188 tok/s
+[V1-loop1-fm s0] step 8500/15000 loss 0.4154 182849 tok/s
+[V1-loop1-fm s2] step 8500/15000 loss 0.4316 182294 tok/s
+[V1-loop1-fm s1] step 8500/15000 loss 0.3906 182179 tok/s
+[V1-loop1-fm s0] step 8600/15000 loss 0.4279 182853 tok/s
+[V1-loop1-fm s2] step 8600/15000 loss 0.4392 182293 tok/s
+[V1-loop1-fm s1] step 8600/15000 loss 0.3845 182176 tok/s
+[V1-loop1-fm s0] step 8700/15000 loss 0.4194 182864 tok/s
+[V1-loop1-fm s2] step 8700/15000 loss 0.4441 182291 tok/s
+[V1-loop1-fm s1] step 8700/15000 loss 0.3816 182158 tok/s
+[V1-loop1-fm s0] step 8800/15000 loss 0.3904 182861 tok/s
+[V1-loop1-fm s2] step 8800/15000 loss 0.4099 182294 tok/s
+[V1-loop1-fm s1] step 8800/15000 loss 0.3602 182168 tok/s
+[V1-loop1-fm s0] step 8900/15000 loss 0.3600 182868 tok/s
+[V1-loop1-fm s2] step 8900/15000 loss 0.3886 182289 tok/s
+[V1-loop1-fm s1] step 8900/15000 loss 0.3426 182164 tok/s
+[V1-loop1-fm s0] step 9000/15000 loss 0.3704 182874 tok/s
+[V1-loop1-fm s2] step 9000/15000 loss 0.4027 182316 tok/s
+[V1-loop1-fm s1] step 9000/15000 loss 0.3373 182158 tok/s
+[V1-loop1-fm s0] step 9100/15000 loss 0.3590 182883 tok/s
+[V1-loop1-fm s2] step 9100/15000 loss 0.3861 182324 tok/s
+[V1-loop1-fm s1] step 9100/15000 loss 0.3453 182157 tok/s
+[V1-loop1-fm s0] step 9200/15000 loss 0.3625 182880 tok/s
+[V1-loop1-fm s2] step 9200/15000 loss 0.3832 182331 tok/s
+[V1-loop1-fm s1] step 9200/15000 loss 0.3450 182148 tok/s
+[V1-loop1-fm s0] step 9300/15000 loss 0.3635 182888 tok/s
+[V1-loop1-fm s2] step 9300/15000 loss 0.4051 182336 tok/s
+[V1-loop1-fm s1] step 9300/15000 loss 0.3477 182149 tok/s
+[V1-loop1-fm s0] step 9400/15000 loss 0.3638 182888 tok/s
+[V1-loop1-fm s2] step 9400/15000 loss 0.3904 182336 tok/s
+[V1-loop1-fm s1] step 9400/15000 loss 0.3503 182162 tok/s
+[V1-loop1-fm s0] step 9500/15000 loss 0.3745 182893 tok/s
+[V1-loop1-fm s2] step 9500/15000 loss 0.3896 182334 tok/s
+[V1-loop1-fm s1] step 9500/15000 loss 0.3295 182166 tok/s
+[V1-loop1-fm s0] step 9600/15000 loss 0.3570 182884 tok/s
+[V1-loop1-fm s2] step 9600/15000 loss 0.3910 182344 tok/s
+[V1-loop1-fm s1] step 9600/15000 loss 0.3371 182179 tok/s
+[V1-loop1-fm s0] step 9700/15000 loss 0.3573 182868 tok/s
+[V1-loop1-fm s2] step 9700/15000 loss 0.4060 182336 tok/s
+[V1-loop1-fm s1] step 9700/15000 loss 0.3512 182183 tok/s
+[V1-loop1-fm s0] step 9800/15000 loss 0.3640 182879 tok/s
+[V1-loop1-fm s2] step 9800/15000 loss 0.3778 182334 tok/s
+[V1-loop1-fm s1] step 9800/15000 loss 0.3366 182195 tok/s
+[V1-loop1-fm s0] step 9900/15000 loss 0.3689 182883 tok/s
+[V1-loop1-fm s2] step 9900/15000 loss 0.3953 182332 tok/s
+[V1-loop1-fm s1] step 9900/15000 loss 0.3382 182184 tok/s
+[V1-loop1-fm s0] step 10000/15000 loss 0.3502 182878 tok/s
+[V1-loop1-fm s2] step 10000/15000 loss 0.3791 182343 tok/s
+[V1-loop1-fm s1] step 10000/15000 loss 0.3422 182181 tok/s
+[V1-loop1-fm s0] step 10100/15000 loss 0.3068 182878 tok/s
+[V1-loop1-fm s2] step 10100/15000 loss 0.3420 182351 tok/s
+[V1-loop1-fm s1] step 10100/15000 loss 0.2961 182187 tok/s
+[V1-loop1-fm s0] step 10200/15000 loss 0.3124 182877 tok/s
+[V1-loop1-fm s2] step 10200/15000 loss 0.3379 182351 tok/s
+[V1-loop1-fm s1] step 10200/15000 loss 0.2952 182190 tok/s
+[V1-loop1-fm s0] step 10300/15000 loss 0.3108 182866 tok/s
+[V1-loop1-fm s2] step 10300/15000 loss 0.3375 182349 tok/s
+[V1-loop1-fm s1] step 10300/15000 loss 0.2978 182197 tok/s
+[V1-loop1-fm s0] step 10400/15000 loss 0.3117 182868 tok/s
+[V1-loop1-fm s2] step 10400/15000 loss 0.3312 182352 tok/s
+[V1-loop1-fm s1] step 10400/15000 loss 0.3007 182199 tok/s
+[V1-loop1-fm s0] step 10500/15000 loss 0.3074 182864 tok/s
+[V1-loop1-fm s2] step 10500/15000 loss 0.3476 182363 tok/s
+[V1-loop1-fm s1] step 10500/15000 loss 0.3014 182200 tok/s
+[V1-loop1-fm s0] step 10600/15000 loss 0.3095 182861 tok/s
+[V1-loop1-fm s2] step 10600/15000 loss 0.3439 182361 tok/s
+[V1-loop1-fm s1] step 10600/15000 loss 0.3078 182206 tok/s
+[V1-loop1-fm s0] step 10700/15000 loss 0.3040 182860 tok/s
+[V1-loop1-fm s2] step 10700/15000 loss 0.3527 182368 tok/s
+[V1-loop1-fm s1] step 10700/15000 loss 0.2784 182213 tok/s
+[V1-loop1-fm s0] step 10800/15000 loss 0.3055 182858 tok/s
+[V1-loop1-fm s2] step 10800/15000 loss 0.3297 182364 tok/s
+[V1-loop1-fm s1] step 10800/15000 loss 0.2821 182227 tok/s
+[V1-loop1-fm s0] step 10900/15000 loss 0.3092 182847 tok/s
+[V1-loop1-fm s2] step 10900/15000 loss 0.3444 182375 tok/s
+[V1-loop1-fm s1] step 10900/15000 loss 0.2916 182233 tok/s
+[V1-loop1-fm s0] step 11000/15000 loss 0.3024 182850 tok/s
+[V1-loop1-fm s2] step 11000/15000 loss 0.3504 182381 tok/s
+[V1-loop1-fm s1] step 11000/15000 loss 0.2917 182241 tok/s
+[V1-loop1-fm s0] step 11100/15000 loss 0.3142 182866 tok/s
+[V1-loop1-fm s2] step 11100/15000 loss 0.3465 182376 tok/s
+[V1-loop1-fm s1] step 11100/15000 loss 0.2990 182244 tok/s
+[V1-loop1-fm s0] step 11200/15000 loss 0.3082 182867 tok/s
+[V1-loop1-fm s2] step 11200/15000 loss 0.3257 182365 tok/s
+[V1-loop1-fm s1] step 11200/15000 loss 0.3141 182239 tok/s
+[V1-loop1-fm s0] step 11300/15000 loss 0.2739 182881 tok/s
+[V1-loop1-fm s2] step 11300/15000 loss 0.3069 182353 tok/s
+[V1-loop1-fm s1] step 11300/15000 loss 0.2679 182235 tok/s
+[V1-loop1-fm s0] step 11400/15000 loss 0.2708 182885 tok/s
+[V1-loop1-fm s2] step 11400/15000 loss 0.2942 182349 tok/s
+[V1-loop1-fm s1] step 11400/15000 loss 0.2535 182239 tok/s
+[V1-loop1-fm s0] step 11500/15000 loss 0.2564 182883 tok/s
+[V1-loop1-fm s2] step 11500/15000 loss 0.2969 182346 tok/s
+[V1-loop1-fm s1] step 11500/15000 loss 0.2530 182242 tok/s
+[V1-loop1-fm s0] step 11600/15000 loss 0.2645 182880 tok/s
+[V1-loop1-fm s2] step 11600/15000 loss 0.2944 182354 tok/s
+[V1-loop1-fm s1] step 11600/15000 loss 0.2621 182234 tok/s
+[V1-loop1-fm s0] step 11700/15000 loss 0.2571 182875 tok/s
+[V1-loop1-fm s2] step 11700/15000 loss 0.2928 182362 tok/s
+[V1-loop1-fm s1] step 11700/15000 loss 0.2608 182235 tok/s
+[V1-loop1-fm s0] step 11800/15000 loss 0.2659 182883 tok/s
+[V1-loop1-fm s2] step 11800/15000 loss 0.2916 182371 tok/s
+[V1-loop1-fm s1] step 11800/15000 loss 0.2577 182227 tok/s
+[V1-loop1-fm s0] step 11900/15000 loss 0.2684 182885 tok/s
+[V1-loop1-fm s2] step 11900/15000 loss 0.2888 182372 tok/s
+[V1-loop1-fm s1] step 11900/15000 loss 0.2430 182224 tok/s
+[V1-loop1-fm s0] step 12000/15000 loss 0.2692 182876 tok/s
+[V1-loop1-fm s2] step 12000/15000 loss 0.2956 182370 tok/s
+[V1-loop1-fm s1] step 12000/15000 loss 0.2601 182238 tok/s
+[V1-loop1-fm s0] step 12100/15000 loss 0.2642 182874 tok/s
+[V1-loop1-fm s2] step 12100/15000 loss 0.2947 182375 tok/s
+[V1-loop1-fm s1] step 12100/15000 loss 0.2542 182243 tok/s
+[V1-loop1-fm s0] step 12200/15000 loss 0.2641 182874 tok/s
+[V1-loop1-fm s2] step 12200/15000 loss 0.2941 182390 tok/s
+[V1-loop1-fm s1] step 12200/15000 loss 0.2652 182246 tok/s
+[V1-loop1-fm s0] step 12300/15000 loss 0.2539 182871 tok/s
+[V1-loop1-fm s2] step 12300/15000 loss 0.2998 182397 tok/s
+[V1-loop1-fm s1] step 12300/15000 loss 0.2606 182244 tok/s
+[V1-loop1-fm s0] step 12400/15000 loss 0.2691 182865 tok/s
+[V1-loop1-fm s2] step 12400/15000 loss 0.3023 182389 tok/s
+[V1-loop1-fm s1] step 12400/15000 loss 0.2514 182260 tok/s
+[V1-loop1-fm s0] step 12500/15000 loss 0.2524 182866 tok/s
+[V1-loop1-fm s2] step 12500/15000 loss 0.2948 182382 tok/s
+[V1-loop1-fm s1] step 12500/15000 loss 0.2638 182266 tok/s
+[V1-loop1-fm s0] step 12600/15000 loss 0.2260 182871 tok/s
+[V1-loop1-fm s2] step 12600/15000 loss 0.2624 182380 tok/s
+[V1-loop1-fm s1] step 12600/15000 loss 0.2332 182263 tok/s
+[V1-loop1-fm s0] step 12700/15000 loss 0.2222 182870 tok/s
+[V1-loop1-fm s2] step 12700/15000 loss 0.2650 182391 tok/s
+[V1-loop1-fm s1] step 12700/15000 loss 0.2304 182262 tok/s
+[V1-loop1-fm s0] step 12800/15000 loss 0.2423 182867 tok/s
+[V1-loop1-fm s2] step 12800/15000 loss 0.2769 182395 tok/s
+[V1-loop1-fm s1] step 12800/15000 loss 0.2405 182271 tok/s
+[V1-loop1-fm s0] step 12900/15000 loss 0.2323 182869 tok/s
+[V1-loop1-fm s2] step 12900/15000 loss 0.2740 182395 tok/s
+[V1-loop1-fm s1] step 12900/15000 loss 0.2339 182265 tok/s
+[V1-loop1-fm s0] step 13000/15000 loss 0.2246 182875 tok/s
+[V1-loop1-fm s2] step 13000/15000 loss 0.2714 182405 tok/s
+[V1-loop1-fm s1] step 13000/15000 loss 0.2227 182273 tok/s
+[V1-loop1-fm s0] step 13100/15000 loss 0.2272 182865 tok/s
+[V1-loop1-fm s2] step 13100/15000 loss 0.2588 182419 tok/s
+[V1-loop1-fm s1] step 13100/15000 loss 0.2348 182264 tok/s
+[V1-loop1-fm s0] step 13200/15000 loss 0.2403 182863 tok/s
+[V1-loop1-fm s2] step 13200/15000 loss 0.2611 182418 tok/s
+[V1-loop1-fm s1] step 13200/15000 loss 0.2341 182262 tok/s
+[V1-loop1-fm s0] step 13300/15000 loss 0.2368 182872 tok/s
+[V1-loop1-fm s2] step 13300/15000 loss 0.2687 182411 tok/s
+[V1-loop1-fm s1] step 13300/15000 loss 0.2234 182259 tok/s
+[V1-loop1-fm s0] step 13400/15000 loss 0.2311 182873 tok/s
+[V1-loop1-fm s2] step 13400/15000 loss 0.2634 182419 tok/s
+[V1-loop1-fm s1] step 13400/15000 loss 0.2289 182240 tok/s
+[V1-loop1-fm s0] step 13500/15000 loss 0.2355 182883 tok/s
+[V1-loop1-fm s2] step 13500/15000 loss 0.2576 182411 tok/s
+[V1-loop1-fm s1] step 13500/15000 loss 0.2381 182245 tok/s
+[V1-loop1-fm s0] step 13600/15000 loss 0.2235 182879 tok/s
+[V1-loop1-fm s2] step 13600/15000 loss 0.2631 182421 tok/s
+[V1-loop1-fm s1] step 13600/15000 loss 0.2366 182240 tok/s
+[V1-loop1-fm s0] step 13700/15000 loss 0.2352 182880 tok/s
+[V1-loop1-fm s2] step 13700/15000 loss 0.2503 182422 tok/s
+[V1-loop1-fm s1] step 13700/15000 loss 0.2192 182246 tok/s
+[V1-loop1-fm s0] step 13800/15000 loss 0.2230 182880 tok/s
+[V1-loop1-fm s2] step 13800/15000 loss 0.2434 182429 tok/s
+[V1-loop1-fm s1] step 13800/15000 loss 0.2084 182222 tok/s
+[V1-loop1-fm s0] step 13900/15000 loss 0.2174 182885 tok/s
+[V1-loop1-fm s2] step 13900/15000 loss 0.2636 182428 tok/s
+[V1-loop1-fm s1] step 13900/15000 loss 0.2165 182220 tok/s
+[V1-loop1-fm s0] step 14000/15000 loss 0.2187 182891 tok/s
+[V1-loop1-fm s2] step 14000/15000 loss 0.2501 182429 tok/s
+[V1-loop1-fm s1] step 14000/15000 loss 0.2145 182216 tok/s
+[V1-loop1-fm s0] step 14100/15000 loss 0.2194 182903 tok/s
+[V1-loop1-fm s2] step 14100/15000 loss 0.2352 182425 tok/s
+[V1-loop1-fm s1] step 14100/15000 loss 0.2204 182217 tok/s
+[V1-loop1-fm s0] step 14200/15000 loss 0.2206 182901 tok/s
+[V1-loop1-fm s2] step 14200/15000 loss 0.2461 182419 tok/s
+[V1-loop1-fm s1] step 14200/15000 loss 0.2262 182208 tok/s
+[V1-loop1-fm s0] step 14300/15000 loss 0.2165 182898 tok/s
+[V1-loop1-fm s2] step 14300/15000 loss 0.2530 182422 tok/s
+[V1-loop1-fm s1] step 14300/15000 loss 0.2185 182217 tok/s
+[V1-loop1-fm s0] step 14400/15000 loss 0.2164 182905 tok/s
+[V1-loop1-fm s2] step 14400/15000 loss 0.2528 182435 tok/s
+[V1-loop1-fm s1] step 14400/15000 loss 0.2178 182209 tok/s
+[V1-loop1-fm s0] step 14500/15000 loss 0.2315 182888 tok/s
+[V1-loop1-fm s2] step 14500/15000 loss 0.2509 182435 tok/s
+[V1-loop1-fm s1] step 14500/15000 loss 0.2282 182221 tok/s
+[V1-loop1-fm s0] step 14600/15000 loss 0.2153 182889 tok/s
+[V1-loop1-fm s2] step 14600/15000 loss 0.2540 182443 tok/s
+[V1-loop1-fm s1] step 14600/15000 loss 0.2250 182224 tok/s
+[V1-loop1-fm s0] step 14700/15000 loss 0.2117 182886 tok/s
+[V1-loop1-fm s2] step 14700/15000 loss 0.2564 182446 tok/s
+[V1-loop1-fm s1] step 14700/15000 loss 0.2154 182231 tok/s
+[V1-loop1-fm s0] step 14800/15000 loss 0.2181 182881 tok/s
+[V1-loop1-fm s2] step 14800/15000 loss 0.2548 182438 tok/s
+[V1-loop1-fm s1] step 14800/15000 loss 0.2048 182243 tok/s
+[V1-loop1-fm s0] step 14900/15000 loss 0.2062 182868 tok/s
+[V1-loop1-fm s2] step 14900/15000 loss 0.2414 182432 tok/s
+[V1-loop1-fm s1] step 14900/15000 loss 0.2145 182256 tok/s
+[V1-loop1-fm s0] step 15000/15000 loss 0.2115 182857 tok/s
+[V1-loop1-fm s2] step 15000/15000 loss 0.2429 182506 tok/s
+[V1-loop1-fm s1] step 15000/15000 loss 0.2149 182402 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1-fm s0] run_id=EXP-001B-FM-V1-loop1-fm-s0-415336
+  rewrite      101/200 = 0.505
+  dsl_learn    42/200 = 0.210
+  flops/correct = 1.8e+10
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1-fm s2] run_id=EXP-001B-FM-V1-loop1-fm-s2-640d54
+  rewrite      104/200 = 0.520
+  dsl_learn    36/200 = 0.180
+  flops/correct = 1.84e+10
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1-loop1-fm s1] run_id=EXP-001B-FM-V1-loop1-fm-s1-db3e08
+  rewrite      125/200 = 0.625
+  dsl_learn    49/200 = 0.245
+  flops/correct = 1.48e+10
+[done rc=0] V1-loop1-fm s0
+[done rc=0] V1-loop1-fm s2
+[done rc=0] V1-loop1-fm s1
+EXP COMPLETE: 3/3 jobs ok
+EXP001B_ALL_DONE

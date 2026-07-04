@@ -1,0 +1,31 @@
+# EXP-002-SG: H2 falsifier on state_guard. See exp002_rule_shift.yaml for protocol.
+exp_id: EXP-002-SG
+
+train:
+  families: [state_guard]
+  steps: 4000
+  lr: 4.9e-4
+seeds: [0, 1, 2]
+
+models:
+  - id: V2-delta
+    arch: delta
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    delta_every: 2
+    window: 128
+    d_k: 384
+    d_v: 384
+    max_seq_len: 1024
+
+  - id: B2-6L
+    arch: tf_pp
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    max_seq_len: 1024

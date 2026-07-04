@@ -1,0 +1,805 @@
+run_id,timestamp,git_sha,config_hash,exp_id,model_id,params,family,difficulty,split,seed,metric,value,train_tokens,train_flops,infer_flops_per_correct,audit_hash,notes
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,1,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,2,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,3,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,4,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,5,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,all,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,1,eval,0,accuracy,0.3,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,2,eval,0,accuracy,0.225,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,3,eval,0,accuracy,0.1,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,4,eval,0,accuracy,0.05,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,5,eval,0,accuracy,0.025,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,all,eval,0,accuracy,0.14,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,1,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,2,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,3,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,4,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,5,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,all,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,1,eval,0,accuracy,0.775,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,2,eval,0,accuracy,0.325,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,3,eval,0,accuracy,0.325,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,4,eval,0,accuracy,0.4,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,5,eval,0,accuracy,0.375,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,all,eval,0,accuracy,0.44,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,1,eval,0,accuracy,0.525,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,2,eval,0,accuracy,0.2,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,3,eval,0,accuracy,0.125,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,4,eval,0,accuracy,0.025,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,5,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,all,eval,0,accuracy,0.175,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,1,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,2,eval,0,accuracy,0.05,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,3,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,4,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,all,eval,0,accuracy,0.0125,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,1,eval,0,accuracy,0.25,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,2,eval,0,accuracy,0.3,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,3,eval,0,accuracy,0.35,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,4,eval,0,accuracy,0.25,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,5,eval,0,accuracy,0.125,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,all,eval,0,accuracy,0.255,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,1,eval,0,accuracy,0.2,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,2,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,3,eval,0,accuracy,0.0,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,4,eval,0,accuracy,0.05,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,5,eval,0,accuracy,0.125,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-e0caaf,2026-07-03T23:05:50,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,all,eval,0,accuracy,0.075,13959055,3.184e+14,1.551e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,1,eval,0,accuracy,0.275,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,2,eval,0,accuracy,0.225,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,3,eval,0,accuracy,0.075,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,4,eval,0,accuracy,0.05,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,5,eval,0,accuracy,0.025,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,all,eval,0,accuracy,0.13,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,1,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,2,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,3,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,4,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,5,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,all,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,1,eval,0,accuracy,0.75,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,2,eval,0,accuracy,0.3,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,3,eval,0,accuracy,0.3,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,4,eval,0,accuracy,0.425,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,5,eval,0,accuracy,0.325,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,all,eval,0,accuracy,0.42,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,1,eval,0,accuracy,0.45,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,2,eval,0,accuracy,0.25,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,3,eval,0,accuracy,0.125,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,4,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,5,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,all,eval,0,accuracy,0.165,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,1,eval,0,accuracy,0.05,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,2,eval,0,accuracy,0.025,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,3,eval,0,accuracy,0.025,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,4,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,all,eval,0,accuracy,0.025,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,1,eval,0,accuracy,0.275,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,2,eval,0,accuracy,0.35,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,3,eval,0,accuracy,0.325,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,4,eval,0,accuracy,0.25,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,5,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,all,eval,0,accuracy,0.24,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,1,eval,0,accuracy,0.275,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,2,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,3,eval,0,accuracy,0.0,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,4,eval,0,accuracy,0.075,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,5,eval,0,accuracy,0.125,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-8L-s0-49df16,2026-07-03T23:08:10,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,all,eval,0,accuracy,0.095,13959055,6.313e+14,3.146e+10,e5afd1aee12133fa,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,1,eval,0,accuracy,0.05,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,2,eval,0,accuracy,0.075,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,3,eval,0,accuracy,0.05,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,4,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,5,eval,0,accuracy,0.05,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,all,eval,0,accuracy,0.045,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,1,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,2,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,3,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,4,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,5,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,all,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,1,eval,0,accuracy,0.475,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,2,eval,0,accuracy,0.15,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,3,eval,0,accuracy,0.175,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,4,eval,0,accuracy,0.2,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,5,eval,0,accuracy,0.175,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,all,eval,0,accuracy,0.235,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,1,eval,0,accuracy,0.325,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,2,eval,0,accuracy,0.175,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,3,eval,0,accuracy,0.1,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,4,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,5,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,all,eval,0,accuracy,0.12,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,1,eval,0,accuracy,0.025,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,2,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,3,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,4,eval,0,accuracy,0.025,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,all,eval,0,accuracy,0.0125,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,1,eval,0,accuracy,0.125,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,2,eval,0,accuracy,0.225,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,3,eval,0,accuracy,0.225,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,4,eval,0,accuracy,0.175,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,5,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,all,eval,0,accuracy,0.15,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,1,eval,0,accuracy,0.075,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,2,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,3,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,4,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,5,eval,0,accuracy,0.0,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-d8e182,2026-07-03T23:13:33,38f4b0f,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,all,eval,0,accuracy,0.015,30060448,6.857e+14,2.968e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,1,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,2,eval,0,accuracy,0.05,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,3,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,4,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,5,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,all,eval,0,accuracy,0.01,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,1,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,2,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,3,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,4,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,5,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,all,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,1,eval,0,accuracy,0.125,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,2,eval,0,accuracy,0.075,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,3,eval,0,accuracy,0.05,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,4,eval,0,accuracy,0.075,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,5,eval,0,accuracy,0.025,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,all,eval,0,accuracy,0.07,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,1,eval,0,accuracy,0.2,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,2,eval,0,accuracy,0.15,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,3,eval,0,accuracy,0.175,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,4,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,5,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,all,eval,0,accuracy,0.105,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,1,eval,0,accuracy,0.025,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,2,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,3,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,4,eval,0,accuracy,0.025,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,all,eval,0,accuracy,0.0125,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,1,eval,0,accuracy,0.15,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,2,eval,0,accuracy,0.2,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,3,eval,0,accuracy,0.25,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,4,eval,0,accuracy,0.15,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,5,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,all,eval,0,accuracy,0.15,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,1,eval,0,accuracy,0.05,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,2,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,3,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,4,eval,0,accuracy,0.0,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,5,eval,0,accuracy,0.025,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-8L-s0-60a7f9,2026-07-03T23:15:49,38f4b0f,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,all,eval,0,accuracy,0.015,30060448,1.359e+15,9.396e+10,1324fe7235c6a74c,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,1,eval,0,accuracy,0.25,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,2,eval,0,accuracy,0.125,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,3,eval,0,accuracy,0.05,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,4,eval,0,accuracy,0.05,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,5,eval,0,accuracy,0.075,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,all,eval,0,accuracy,0.11,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,1,eval,0,accuracy,0.05,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,2,eval,0,accuracy,0.0,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,3,eval,0,accuracy,0.0,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,4,eval,0,accuracy,0.0,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,5,eval,0,accuracy,0.0,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,all,eval,0,accuracy,0.01,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,1,eval,0,accuracy,0.775,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,2,eval,0,accuracy,0.375,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,3,eval,0,accuracy,0.325,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,4,eval,0,accuracy,0.35,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,5,eval,0,accuracy,0.375,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,all,eval,0,accuracy,0.44,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,1,eval,0,accuracy,0.35,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,2,eval,0,accuracy,0.2,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,3,eval,0,accuracy,0.1,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,4,eval,0,accuracy,0.025,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,5,eval,0,accuracy,0.0,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,all,eval,0,accuracy,0.135,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,1,eval,0,accuracy,0.05,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,2,eval,0,accuracy,0.05,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,3,eval,0,accuracy,0.025,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,4,eval,0,accuracy,0.025,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,all,eval,0,accuracy,0.0375,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,1,eval,0,accuracy,0.175,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,2,eval,0,accuracy,0.25,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,3,eval,0,accuracy,0.25,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,4,eval,0,accuracy,0.175,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,5,eval,0,accuracy,0.0,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,all,eval,0,accuracy,0.17,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,1,eval,0,accuracy,0.15,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,2,eval,0,accuracy,0.0,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,3,eval,0,accuracy,0.0,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,4,eval,0,accuracy,0.075,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,5,eval,0,accuracy,0.05,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-b17814,2026-07-03T23:20:18,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,all,eval,0,accuracy,0.055,79738144,1.819e+15,1.796e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,1,eval,0,accuracy,0.175,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,2,eval,0,accuracy,0.075,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,3,eval,0,accuracy,0.05,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,4,eval,0,accuracy,0.05,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,5,eval,0,accuracy,0.025,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,all,eval,0,accuracy,0.075,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,1,eval,0,accuracy,0.275,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,2,eval,0,accuracy,0.0,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,3,eval,0,accuracy,0.0,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,4,eval,0,accuracy,0.025,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,5,eval,0,accuracy,0.0,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,all,eval,0,accuracy,0.06,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,1,eval,0,accuracy,0.825,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,2,eval,0,accuracy,0.35,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,3,eval,0,accuracy,0.375,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,4,eval,0,accuracy,0.4,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,5,eval,0,accuracy,0.4,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,all,eval,0,accuracy,0.47,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,1,eval,0,accuracy,0.4,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,2,eval,0,accuracy,0.1,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,3,eval,0,accuracy,0.15,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,4,eval,0,accuracy,0.05,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,5,eval,0,accuracy,0.0,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,all,eval,0,accuracy,0.14,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,1,eval,0,accuracy,0.05,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,2,eval,0,accuracy,0.05,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,3,eval,0,accuracy,0.0,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,4,eval,0,accuracy,0.0,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,all,eval,0,accuracy,0.025,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,1,eval,0,accuracy,0.15,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,2,eval,0,accuracy,0.225,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,3,eval,0,accuracy,0.25,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,4,eval,0,accuracy,0.2,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,5,eval,0,accuracy,0.075,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,all,eval,0,accuracy,0.18,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,1,eval,0,accuracy,0.15,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,2,eval,0,accuracy,0.0,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,3,eval,0,accuracy,0.0,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,4,eval,0,accuracy,0.05,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,5,eval,0,accuracy,0.1,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-8L-s0-257470,2026-07-03T23:25:43,3f8b167,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,all,eval,0,accuracy,0.06,79738144,3.606e+15,3.368e+10,61da5fe33fd532ae,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,1,eval,0,accuracy,0.125,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,2,eval,0,accuracy,0.075,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,3,eval,0,accuracy,0.075,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,4,eval,0,accuracy,0.025,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,5,eval,0,accuracy,0.075,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,all,eval,0,accuracy,0.075,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,1,eval,0,accuracy,0.55,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,2,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,3,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,4,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,5,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,all,eval,0,accuracy,0.11,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,1,eval,0,accuracy,0.125,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,2,eval,0,accuracy,0.05,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,3,eval,0,accuracy,0.175,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,4,eval,0,accuracy,0.125,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,5,eval,0,accuracy,0.05,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,all,eval,0,accuracy,0.105,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,1,eval,0,accuracy,0.375,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,2,eval,0,accuracy,0.225,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,3,eval,0,accuracy,0.125,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,4,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,5,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,all,eval,0,accuracy,0.145,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,1,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,2,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,3,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,4,eval,0,accuracy,0.025,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,5,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,all,eval,0,accuracy,0.0057,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,1,eval,0,accuracy,0.375,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,2,eval,0,accuracy,0.3,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,3,eval,0,accuracy,0.175,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,4,eval,0,accuracy,0.2,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,5,eval,0,accuracy,0.075,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,all,eval,0,accuracy,0.225,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,1,eval,0,accuracy,0.125,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,2,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,3,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,4,eval,0,accuracy,0.0,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,5,eval,0,accuracy,0.025,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-7429f4,2026-07-03T23:34:00,3f8b167,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,all,eval,0,accuracy,0.03,79735328,1.819e+15,2.327e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,1,eval,0,accuracy,0.1,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,2,eval,0,accuracy,0.15,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,3,eval,0,accuracy,0.075,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,4,eval,0,accuracy,0.025,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,5,eval,0,accuracy,0.1,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,dsl_learn,all,eval,0,accuracy,0.09,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,1,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,2,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,3,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,4,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,5,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rewrite,all,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,1,eval,0,accuracy,0.075,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,2,eval,0,accuracy,0.075,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,3,eval,0,accuracy,0.125,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,4,eval,0,accuracy,0.15,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,5,eval,0,accuracy,0.075,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,algo_exec,all,eval,0,accuracy,0.1,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,1,eval,0,accuracy,0.5,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,2,eval,0,accuracy,0.2,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,3,eval,0,accuracy,0.1,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,4,eval,0,accuracy,0.025,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,5,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,rule_shift,all,eval,0,accuracy,0.165,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,1,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,2,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,3,eval,0,accuracy,0.025,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,4,eval,0,accuracy,0.025,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,5,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,compress,all,eval,0,accuracy,0.0114,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,1,eval,0,accuracy,0.225,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,2,eval,0,accuracy,0.275,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,3,eval,0,accuracy,0.15,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,4,eval,0,accuracy,0.175,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,5,eval,0,accuracy,0.075,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,state_guard,all,eval,0,accuracy,0.18,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,1,eval,0,accuracy,0.2,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,2,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,3,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,4,eval,0,accuracy,0.0,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,5,eval,0,accuracy,0.05,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-s0-01e7be,2026-07-03T23:46:27,e357362,e1373d14ad9c,EXP-000,gate-tfpp-4L,3017728,fresh_dsl,all,eval,0,accuracy,0.05,79735328,1.819e+15,2.718e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,1,eval,0,accuracy,0.125,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,2,eval,0,accuracy,0.075,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,3,eval,0,accuracy,0.075,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,4,eval,0,accuracy,0.05,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,5,eval,0,accuracy,0.1,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,dsl_learn,all,eval,0,accuracy,0.085,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,1,eval,0,accuracy,0.1,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,2,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,3,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,4,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,5,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rewrite,all,eval,0,accuracy,0.02,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,1,eval,0,accuracy,0.05,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,2,eval,0,accuracy,0.075,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,3,eval,0,accuracy,0.225,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,4,eval,0,accuracy,0.15,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,5,eval,0,accuracy,0.125,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,algo_exec,all,eval,0,accuracy,0.125,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,1,eval,0,accuracy,0.325,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,2,eval,0,accuracy,0.2,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,3,eval,0,accuracy,0.125,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,4,eval,0,accuracy,0.025,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,5,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,rule_shift,all,eval,0,accuracy,0.135,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,1,eval,0,accuracy,0.05,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,2,eval,0,accuracy,0.05,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,3,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,4,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,5,eval,0,accuracy,0.0625,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,compress,all,eval,0,accuracy,0.0284,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,1,eval,0,accuracy,0.225,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,2,eval,0,accuracy,0.225,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,3,eval,0,accuracy,0.2,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,4,eval,0,accuracy,0.2,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,5,eval,0,accuracy,0.075,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,state_guard,all,eval,0,accuracy,0.185,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,1,eval,0,accuracy,0.2,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,2,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,3,eval,0,accuracy,0.0,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,4,eval,0,accuracy,0.025,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,5,eval,0,accuracy,0.05,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-8L-s0-39c937,2026-07-03T23:53:51,e357362,2b26dc877893,EXP-000,gate-tfpp-8L,5968896,fresh_dsl,all,eval,0,accuracy,0.055,79735328,3.606e+15,5.091e+10,0d6767e0c2bb74c8,validity gate
+EXP-000-gate-tfpp-4L-dsl_learn-s0-068d53,2026-07-04T00:03:33,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,1,eval,0,accuracy,0.25,33185984,7.57e+14,1.156e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-068d53,2026-07-04T00:03:33,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,2,eval,0,accuracy,0.25,33185984,7.57e+14,1.156e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-068d53,2026-07-04T00:03:33,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,3,eval,0,accuracy,0.125,33185984,7.57e+14,1.156e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-068d53,2026-07-04T00:03:33,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,4,eval,0,accuracy,0.05,33185984,7.57e+14,1.156e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-068d53,2026-07-04T00:03:33,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,5,eval,0,accuracy,0.05,33185984,7.57e+14,1.156e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-068d53,2026-07-04T00:03:33,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,all,eval,0,accuracy,0.145,33185984,7.57e+14,1.156e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-94c836,2026-07-04T00:06:38,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,1,eval,0,accuracy,0.275,33185984,1.501e+15,2.372e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-94c836,2026-07-04T00:06:38,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,2,eval,0,accuracy,0.225,33185984,1.501e+15,2.372e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-94c836,2026-07-04T00:06:38,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,3,eval,0,accuracy,0.075,33185984,1.501e+15,2.372e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-94c836,2026-07-04T00:06:38,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,4,eval,0,accuracy,0.075,33185984,1.501e+15,2.372e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-94c836,2026-07-04T00:06:38,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,5,eval,0,accuracy,0.05,33185984,1.501e+15,2.372e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-94c836,2026-07-04T00:06:38,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,all,eval,0,accuracy,0.14,33185984,1.501e+15,2.372e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-32ee72,2026-07-04T00:08:28,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,1,eval,0,accuracy,0.85,36071040,8.228e+14,1.168e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-32ee72,2026-07-04T00:08:28,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,2,eval,0,accuracy,0.05,36071040,8.228e+14,1.168e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-32ee72,2026-07-04T00:08:28,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,3,eval,0,accuracy,0.0,36071040,8.228e+14,1.168e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-32ee72,2026-07-04T00:08:28,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,4,eval,0,accuracy,0.0,36071040,8.228e+14,1.168e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-32ee72,2026-07-04T00:08:28,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,5,eval,0,accuracy,0.0,36071040,8.228e+14,1.168e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-32ee72,2026-07-04T00:08:28,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,all,eval,0,accuracy,0.18,36071040,8.228e+14,1.168e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-426187,2026-07-04T00:11:48,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,1,eval,0,accuracy,0.875,36071040,1.631e+15,2.194e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-426187,2026-07-04T00:11:48,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,2,eval,0,accuracy,0.05,36071040,1.631e+15,2.194e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-426187,2026-07-04T00:11:48,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,3,eval,0,accuracy,0.0,36071040,1.631e+15,2.194e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-426187,2026-07-04T00:11:48,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,4,eval,0,accuracy,0.025,36071040,1.631e+15,2.194e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-426187,2026-07-04T00:11:48,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,5,eval,0,accuracy,0.0,36071040,1.631e+15,2.194e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-426187,2026-07-04T00:11:48,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,all,eval,0,accuracy,0.19,36071040,1.631e+15,2.194e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-1ee046,2026-07-04T00:16:23,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,1,eval,0,accuracy,0.925,15881184,7.182e+14,5.774e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-1ee046,2026-07-04T00:16:23,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,2,eval,0,accuracy,0.2,15881184,7.182e+14,5.774e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-1ee046,2026-07-04T00:16:23,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,3,eval,0,accuracy,0.225,15881184,7.182e+14,5.774e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-1ee046,2026-07-04T00:16:23,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,4,eval,0,accuracy,0.175,15881184,7.182e+14,5.774e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-1ee046,2026-07-04T00:16:23,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,5,eval,0,accuracy,0.1,15881184,7.182e+14,5.774e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-1ee046,2026-07-04T00:16:23,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,all,eval,0,accuracy,0.325,15881184,7.182e+14,5.774e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-8d69e5,2026-07-04T00:17:59,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,1,eval,0,accuracy,0.95,26614304,6.071e+14,5.43e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-8d69e5,2026-07-04T00:17:59,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,2,eval,0,accuracy,0.35,26614304,6.071e+14,5.43e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-8d69e5,2026-07-04T00:17:59,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,3,eval,0,accuracy,0.25,26614304,6.071e+14,5.43e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-8d69e5,2026-07-04T00:17:59,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,4,eval,0,accuracy,0.025,26614304,6.071e+14,5.43e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-8d69e5,2026-07-04T00:17:59,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,5,eval,0,accuracy,0.025,26614304,6.071e+14,5.43e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-8d69e5,2026-07-04T00:17:59,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,all,eval,0,accuracy,0.32,26614304,6.071e+14,5.43e+09,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-6ef93f,2026-07-04T00:20:45,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,1,eval,0,accuracy,0.95,26614304,1.204e+15,1.11e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-6ef93f,2026-07-04T00:20:45,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,2,eval,0,accuracy,0.375,26614304,1.204e+15,1.11e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-6ef93f,2026-07-04T00:20:45,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,3,eval,0,accuracy,0.175,26614304,1.204e+15,1.11e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-6ef93f,2026-07-04T00:20:45,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,4,eval,0,accuracy,0.05,26614304,1.204e+15,1.11e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-6ef93f,2026-07-04T00:20:45,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,5,eval,0,accuracy,0.0,26614304,1.204e+15,1.11e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-6ef93f,2026-07-04T00:20:45,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,all,eval,0,accuracy,0.31,26614304,1.204e+15,1.11e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-eb0073,2026-07-04T00:23:13,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,1,eval,0,accuracy,0.25,55204352,1.259e+15,2.493e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-eb0073,2026-07-04T00:23:13,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,2,eval,0,accuracy,0.1,55204352,1.259e+15,2.493e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-eb0073,2026-07-04T00:23:13,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,3,eval,0,accuracy,0.2,55204352,1.259e+15,2.493e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-eb0073,2026-07-04T00:23:13,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,4,eval,0,accuracy,0.05,55204352,1.259e+15,2.493e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-eb0073,2026-07-04T00:23:13,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,5,eval,0,accuracy,0.0,55204352,1.259e+15,2.493e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-eb0073,2026-07-04T00:23:13,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,all,eval,0,accuracy,0.1364,55204352,1.259e+15,2.493e+10,0d6767e0c2bb74c8,validity gate per-family
+EXP-000-gate-tfpp-4L-algo_exec-s0-81987d,2026-07-04T00:28:10,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,1,eval,0,accuracy,0.875,15881184,3.623e+14,3.267e+09,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-4L-algo_exec-s0-81987d,2026-07-04T00:28:10,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,2,eval,0,accuracy,0.175,15881184,3.623e+14,3.267e+09,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-4L-algo_exec-s0-81987d,2026-07-04T00:28:10,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,3,eval,0,accuracy,0.2,15881184,3.623e+14,3.267e+09,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-4L-algo_exec-s0-81987d,2026-07-04T00:28:10,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,4,eval,0,accuracy,0.125,15881184,3.623e+14,3.267e+09,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-4L-algo_exec-s0-81987d,2026-07-04T00:28:10,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,5,eval,0,accuracy,0.075,15881184,3.623e+14,3.267e+09,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-4L-algo_exec-s0-81987d,2026-07-04T00:28:10,e850d6c,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,all,eval,0,accuracy,0.29,15881184,3.623e+14,3.267e+09,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-8L-compress-s0-672308,2026-07-04T00:32:49,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,1,eval,0,accuracy,0.325,55204352,2.497e+15,5.652e+10,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-8L-compress-s0-672308,2026-07-04T00:32:49,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,2,eval,0,accuracy,0.05,55204352,2.497e+15,5.652e+10,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-8L-compress-s0-672308,2026-07-04T00:32:49,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,3,eval,0,accuracy,0.1,55204352,2.497e+15,5.652e+10,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-8L-compress-s0-672308,2026-07-04T00:32:49,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,4,eval,0,accuracy,0.05,55204352,2.497e+15,5.652e+10,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-8L-compress-s0-672308,2026-07-04T00:32:49,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,5,eval,0,accuracy,0.0,55204352,2.497e+15,5.652e+10,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-8L-compress-s0-672308,2026-07-04T00:32:49,e850d6c,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,all,eval,0,accuracy,0.1193,55204352,2.497e+15,5.652e+10,0d6767e0c2bb74c8,validity gate per-family (crash rerun)
+EXP-000-gate-tfpp-4L-dsl_learn-s0-211fc4,2026-07-04T00:40:45,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,1,eval,0,accuracy,0.3,53088096,1.211e+15,1.111e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-211fc4,2026-07-04T00:40:45,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,2,eval,0,accuracy,0.375,53088096,1.211e+15,1.111e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-211fc4,2026-07-04T00:40:45,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,3,eval,0,accuracy,0.05,53088096,1.211e+15,1.111e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-211fc4,2026-07-04T00:40:45,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,4,eval,0,accuracy,0.05,53088096,1.211e+15,1.111e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-211fc4,2026-07-04T00:40:45,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,5,eval,0,accuracy,0.025,53088096,1.211e+15,1.111e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-211fc4,2026-07-04T00:40:45,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,all,eval,0,accuracy,0.16,53088096,1.211e+15,1.111e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-09ab0a,2026-07-04T00:45:33,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,1,eval,0,accuracy,0.3,53088096,2.401e+15,1.531e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-09ab0a,2026-07-04T00:45:33,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,2,eval,0,accuracy,0.5,53088096,2.401e+15,1.531e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-09ab0a,2026-07-04T00:45:33,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,3,eval,0,accuracy,0.175,53088096,2.401e+15,1.531e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-09ab0a,2026-07-04T00:45:33,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,4,eval,0,accuracy,0.075,53088096,2.401e+15,1.531e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-09ab0a,2026-07-04T00:45:33,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,5,eval,0,accuracy,0.1,53088096,2.401e+15,1.531e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-09ab0a,2026-07-04T00:45:33,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,all,eval,0,accuracy,0.23,53088096,2.401e+15,1.531e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-f1d248,2026-07-04T00:47:59,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,1,eval,0,accuracy,0.975,43387584,9.897e+14,2.753e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-f1d248,2026-07-04T00:47:59,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,2,eval,0,accuracy,0.775,43387584,9.897e+14,2.753e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-f1d248,2026-07-04T00:47:59,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,3,eval,0,accuracy,0.8,43387584,9.897e+14,2.753e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-f1d248,2026-07-04T00:47:59,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,4,eval,0,accuracy,0.35,43387584,9.897e+14,2.753e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-f1d248,2026-07-04T00:47:59,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,5,eval,0,accuracy,0.25,43387584,9.897e+14,2.753e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-f1d248,2026-07-04T00:47:59,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,all,eval,0,accuracy,0.63,43387584,9.897e+14,2.753e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-cc9844,2026-07-04T00:52:22,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,1,eval,0,accuracy,0.975,43387584,1.962e+15,5.497e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-cc9844,2026-07-04T00:52:22,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,2,eval,0,accuracy,0.825,43387584,1.962e+15,5.497e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-cc9844,2026-07-04T00:52:22,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,3,eval,0,accuracy,0.775,43387584,1.962e+15,5.497e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-cc9844,2026-07-04T00:52:22,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,4,eval,0,accuracy,0.325,43387584,1.962e+15,5.497e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-cc9844,2026-07-04T00:52:22,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,5,eval,0,accuracy,0.225,43387584,1.962e+15,5.497e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rewrite-s0-cc9844,2026-07-04T00:52:22,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rewrite,5968896,rewrite,all,eval,0,accuracy,0.625,43387584,1.962e+15,5.497e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-algo_exec-s0-9e184e,2026-07-04T00:54:53,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,1,eval,0,accuracy,1.0,22614688,5.159e+14,2.045e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-algo_exec-s0-9e184e,2026-07-04T00:54:53,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,2,eval,0,accuracy,0.775,22614688,5.159e+14,2.045e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-algo_exec-s0-9e184e,2026-07-04T00:54:53,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,3,eval,0,accuracy,0.1,22614688,5.159e+14,2.045e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-algo_exec-s0-9e184e,2026-07-04T00:54:53,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,4,eval,0,accuracy,0.175,22614688,5.159e+14,2.045e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-algo_exec-s0-9e184e,2026-07-04T00:54:53,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,5,eval,0,accuracy,0.125,22614688,5.159e+14,2.045e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-algo_exec-s0-9e184e,2026-07-04T00:54:53,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-algo_exec,3017728,algo_exec,all,eval,0,accuracy,0.435,22614688,5.159e+14,2.045e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-f4142f,2026-07-04T00:59:17,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,1,eval,0,accuracy,1.0,22614688,1.023e+15,3.914e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-f4142f,2026-07-04T00:59:17,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,2,eval,0,accuracy,0.775,22614688,1.023e+15,3.914e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-f4142f,2026-07-04T00:59:17,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,3,eval,0,accuracy,0.1,22614688,1.023e+15,3.914e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-f4142f,2026-07-04T00:59:17,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,4,eval,0,accuracy,0.225,22614688,1.023e+15,3.914e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-f4142f,2026-07-04T00:59:17,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,5,eval,0,accuracy,0.15,22614688,1.023e+15,3.914e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-algo_exec-s0-f4142f,2026-07-04T00:59:17,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-algo_exec,5968896,algo_exec,all,eval,0,accuracy,0.45,22614688,1.023e+15,3.914e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-b339db,2026-07-04T01:01:43,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,1,eval,0,accuracy,1.0,42871776,9.78e+14,1.778e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-b339db,2026-07-04T01:01:43,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,2,eval,0,accuracy,1.0,42871776,9.78e+14,1.778e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-b339db,2026-07-04T01:01:43,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,3,eval,0,accuracy,1.0,42871776,9.78e+14,1.778e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-b339db,2026-07-04T01:01:43,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,4,eval,0,accuracy,0.975,42871776,9.78e+14,1.778e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-b339db,2026-07-04T01:01:43,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,5,eval,0,accuracy,1.0,42871776,9.78e+14,1.778e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-rule_shift-s0-b339db,2026-07-04T01:01:43,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-rule_shift,3017728,rule_shift,all,eval,0,accuracy,0.995,42871776,9.78e+14,1.778e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-2aa5a3,2026-07-04T01:06:07,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,1,eval,0,accuracy,1.0,42871776,1.939e+15,9.349e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-2aa5a3,2026-07-04T01:06:07,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,2,eval,0,accuracy,0.425,42871776,1.939e+15,9.349e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-2aa5a3,2026-07-04T01:06:07,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,3,eval,0,accuracy,0.3,42871776,1.939e+15,9.349e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-2aa5a3,2026-07-04T01:06:07,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,4,eval,0,accuracy,0.15,42871776,1.939e+15,9.349e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-2aa5a3,2026-07-04T01:06:07,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,5,eval,0,accuracy,0.0,42871776,1.939e+15,9.349e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-rule_shift-s0-2aa5a3,2026-07-04T01:06:07,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-rule_shift,5968896,rule_shift,all,eval,0,accuracy,0.375,42871776,1.939e+15,9.349e+09,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-700355,2026-07-04T01:09:56,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,1,eval,0,accuracy,0.425,88338336,2.015e+15,1.917e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-700355,2026-07-04T01:09:56,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,2,eval,0,accuracy,0.175,88338336,2.015e+15,1.917e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-700355,2026-07-04T01:09:56,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,3,eval,0,accuracy,0.125,88338336,2.015e+15,1.917e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-700355,2026-07-04T01:09:56,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,4,eval,0,accuracy,0.025,88338336,2.015e+15,1.917e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-700355,2026-07-04T01:09:56,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,5,eval,0,accuracy,0.0625,88338336,2.015e+15,1.917e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-compress-s0-700355,2026-07-04T01:09:56,1210aa0,e1373d14ad9c,EXP-000,gate-tfpp-4L-compress,3017728,compress,all,eval,0,accuracy,0.1761,88338336,2.015e+15,1.917e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-compress-s0-f61808,2026-07-04T01:17:13,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,1,eval,0,accuracy,0.5,88338336,3.995e+15,3.468e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-compress-s0-f61808,2026-07-04T01:17:13,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,2,eval,0,accuracy,0.175,88338336,3.995e+15,3.468e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-compress-s0-f61808,2026-07-04T01:17:13,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,3,eval,0,accuracy,0.15,88338336,3.995e+15,3.468e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-compress-s0-f61808,2026-07-04T01:17:13,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,4,eval,0,accuracy,0.0,88338336,3.995e+15,3.468e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-compress-s0-f61808,2026-07-04T01:17:13,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,5,eval,0,accuracy,0.0625,88338336,3.995e+15,3.468e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-8L-compress-s0-f61808,2026-07-04T01:17:13,1210aa0,2b26dc877893,EXP-000,gate-tfpp-8L-compress,5968896,compress,all,eval,0,accuracy,0.1932,88338336,3.995e+15,3.468e+10,b55f6fd805a91a66,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-294e99,2026-07-04T01:26:29,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,1,eval,0,accuracy,0.275,53088096,1.211e+15,1.185e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-294e99,2026-07-04T01:26:29,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,2,eval,0,accuracy,0.275,53088096,1.211e+15,1.185e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-294e99,2026-07-04T01:26:29,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,3,eval,0,accuracy,0.075,53088096,1.211e+15,1.185e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-294e99,2026-07-04T01:26:29,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,4,eval,0,accuracy,0.075,53088096,1.211e+15,1.185e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-294e99,2026-07-04T01:26:29,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,5,eval,0,accuracy,0.05,53088096,1.211e+15,1.185e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-dsl_learn-s0-294e99,2026-07-04T01:26:29,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-dsl_learn,3017728,dsl_learn,all,eval,0,accuracy,0.15,53088096,1.211e+15,1.185e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-285514,2026-07-04T01:31:25,9f1563e,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,1,eval,0,accuracy,0.25,53088096,2.401e+15,2.012e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-285514,2026-07-04T01:31:25,9f1563e,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,2,eval,0,accuracy,0.475,53088096,2.401e+15,2.012e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-285514,2026-07-04T01:31:25,9f1563e,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,3,eval,0,accuracy,0.025,53088096,2.401e+15,2.012e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-285514,2026-07-04T01:31:25,9f1563e,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,4,eval,0,accuracy,0.05,53088096,2.401e+15,2.012e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-285514,2026-07-04T01:31:25,9f1563e,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,5,eval,0,accuracy,0.075,53088096,2.401e+15,2.012e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-8L-dsl_learn-s0-285514,2026-07-04T01:31:25,9f1563e,2b26dc877893,EXP-000,gate-tfpp-8L-dsl_learn,5968896,dsl_learn,all,eval,0,accuracy,0.175,53088096,2.401e+15,2.012e+10,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-109f74,2026-07-04T01:34:04,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,1,eval,0,accuracy,0.95,43387584,9.897e+14,2.668e+09,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-109f74,2026-07-04T01:34:04,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,2,eval,0,accuracy,0.8,43387584,9.897e+14,2.668e+09,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-109f74,2026-07-04T01:34:04,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,3,eval,0,accuracy,0.875,43387584,9.897e+14,2.668e+09,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-109f74,2026-07-04T01:34:04,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,4,eval,0,accuracy,0.375,43387584,9.897e+14,2.668e+09,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-109f74,2026-07-04T01:34:04,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,5,eval,0,accuracy,0.25,43387584,9.897e+14,2.668e+09,d602a717b5c339f5,validity gate per-family
+EXP-000-gate-tfpp-4L-rewrite-s0-109f74,2026-07-04T01:34:04,9f1563e,e1373d14ad9c,EXP-000,gate-tfpp-4L-rewrite,3017728,rewrite,all,eval,0,accuracy,0.65,43387584,9.897e+14,2.668e+09,d602a717b5c339f5,validity gate per-family
+EXP-000C-g6-2L-algo_exec-s0-4b6307,2026-07-04T08:33:44,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,1,eval,0,accuracy,0.775,33307680,3.865e+14,1.084e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s0-4b6307,2026-07-04T08:33:44,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,2,eval,0,accuracy,0.575,33307680,3.865e+14,1.084e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s0-4b6307,2026-07-04T08:33:44,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,3,eval,0,accuracy,0.775,33307680,3.865e+14,1.084e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s0-4b6307,2026-07-04T08:33:44,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,4,eval,0,accuracy,0.675,33307680,3.865e+14,1.084e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s0-4b6307,2026-07-04T08:33:44,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,5,eval,0,accuracy,0.6,33307680,3.865e+14,1.084e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s0-4b6307,2026-07-04T08:33:44,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,all,eval,0,accuracy,0.68,33307680,3.865e+14,1.084e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s1-4a44c9,2026-07-04T08:35:04,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,1,eval,1,accuracy,0.975,33307968,3.865e+14,9.155e+08,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s1-4a44c9,2026-07-04T08:35:04,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,2,eval,1,accuracy,0.8,33307968,3.865e+14,9.155e+08,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s1-4a44c9,2026-07-04T08:35:04,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,3,eval,1,accuracy,0.8,33307968,3.865e+14,9.155e+08,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s1-4a44c9,2026-07-04T08:35:04,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,4,eval,1,accuracy,0.775,33307968,3.865e+14,9.155e+08,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s1-4a44c9,2026-07-04T08:35:04,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,5,eval,1,accuracy,0.675,33307968,3.865e+14,9.155e+08,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s1-4a44c9,2026-07-04T08:35:04,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,all,eval,1,accuracy,0.805,33307968,3.865e+14,9.155e+08,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s2-24f045,2026-07-04T08:36:24,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,1,eval,2,accuracy,0.575,33305344,3.865e+14,1.352e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s2-24f045,2026-07-04T08:36:24,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,2,eval,2,accuracy,0.55,33305344,3.865e+14,1.352e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s2-24f045,2026-07-04T08:36:24,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,3,eval,2,accuracy,0.575,33305344,3.865e+14,1.352e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s2-24f045,2026-07-04T08:36:24,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,4,eval,2,accuracy,0.5,33305344,3.865e+14,1.352e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s2-24f045,2026-07-04T08:36:24,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,5,eval,2,accuracy,0.525,33305344,3.865e+14,1.352e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-2L-algo_exec-s2-24f045,2026-07-04T08:36:24,nogit,9c850b0ede2c,EXP-000C,g6-2L-algo_exec,1542144,algo_exec,all,eval,2,accuracy,0.545,33305344,3.865e+14,1.352e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s0-d93f53,2026-07-04T08:40:40,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,1,eval,0,accuracy,0.35,33307680,2.999e+15,1.296e+10,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s0-d93f53,2026-07-04T08:40:40,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,2,eval,0,accuracy,0.425,33307680,2.999e+15,1.296e+10,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s0-d93f53,2026-07-04T08:40:40,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,3,eval,0,accuracy,0.6,33307680,2.999e+15,1.296e+10,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s0-d93f53,2026-07-04T08:40:40,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,4,eval,0,accuracy,0.5,33307680,2.999e+15,1.296e+10,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s0-d93f53,2026-07-04T08:40:40,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,5,eval,0,accuracy,0.325,33307680,2.999e+15,1.296e+10,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s0-d93f53,2026-07-04T08:40:40,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,all,eval,0,accuracy,0.44,33307680,2.999e+15,1.296e+10,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s1-a72c30,2026-07-04T08:44:57,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,1,eval,1,accuracy,1.0,33307968,2.999e+15,7.171e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s1-a72c30,2026-07-04T08:44:57,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,2,eval,1,accuracy,0.775,33307968,2.999e+15,7.171e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s1-a72c30,2026-07-04T08:44:57,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,3,eval,1,accuracy,0.8,33307968,2.999e+15,7.171e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s1-a72c30,2026-07-04T08:44:57,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,4,eval,1,accuracy,0.75,33307968,2.999e+15,7.171e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s1-a72c30,2026-07-04T08:44:57,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,5,eval,1,accuracy,0.65,33307968,2.999e+15,7.171e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s1-a72c30,2026-07-04T08:44:57,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,all,eval,1,accuracy,0.795,33307968,2.999e+15,7.171e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s2-1a3b55,2026-07-04T08:49:09,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,1,eval,2,accuracy,1.0,33305344,2.999e+15,6.869e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s2-1a3b55,2026-07-04T08:49:09,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,2,eval,2,accuracy,0.825,33305344,2.999e+15,6.869e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s2-1a3b55,2026-07-04T08:49:09,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,3,eval,2,accuracy,0.875,33305344,2.999e+15,6.869e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s2-1a3b55,2026-07-04T08:49:09,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,4,eval,2,accuracy,0.775,33305344,2.999e+15,6.869e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s2-1a3b55,2026-07-04T08:49:09,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,5,eval,2,accuracy,0.675,33305344,2.999e+15,6.869e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-000C-g6-16L-algo_exec-s2-1a3b55,2026-07-04T08:49:09,nogit,ec970a51f7e0,EXP-000C,g6-16L-algo_exec,11871232,algo_exec,all,eval,2,accuracy,0.83,33305344,2.999e+15,6.869e+09,8a80f9fcc02d3c85,gate6 depth check
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,1,eval,0,accuracy,0.85,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,2,eval,0,accuracy,0.425,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,3,eval,0,accuracy,0.45,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,4,eval,0,accuracy,0.075,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,5,eval,0,accuracy,0.0,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,all,eval,0,accuracy,0.36,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,1,eval,0,accuracy,0.2,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,2,eval,0,accuracy,0.4,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,3,eval,0,accuracy,0.1,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,4,eval,0,accuracy,0.0,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,5,eval,0,accuracy,0.0,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s0-1f6685,2026-07-04T08:36:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,all,eval,0,accuracy,0.14,75413088,6.109e+15,2.575e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,1,eval,0,accuracy,0.975,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,2,eval,0,accuracy,0.725,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,3,eval,0,accuracy,0.675,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,4,eval,0,accuracy,0.1,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,5,eval,0,accuracy,0.075,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,all,eval,0,accuracy,0.51,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,1,eval,0,accuracy,0.275,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,2,eval,0,accuracy,0.275,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,3,eval,0,accuracy,0.175,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,4,eval,0,accuracy,0.05,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,5,eval,0,accuracy,0.0,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s0-a5aaf9,2026-07-04T08:40:28,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,all,eval,0,accuracy,0.155,75413088,1.518e+16,4.81e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,1,eval,0,accuracy,0.9,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,2,eval,0,accuracy,0.7,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,3,eval,0,accuracy,0.775,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,4,eval,0,accuracy,0.2,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,5,eval,0,accuracy,0.125,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,all,eval,0,accuracy,0.54,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,1,eval,0,accuracy,0.225,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,2,eval,0,accuracy,0.4,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,3,eval,0,accuracy,0.175,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,4,eval,0,accuracy,0.15,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,5,eval,0,accuracy,0.025,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s0-091d80,2026-07-04T08:46:54,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,all,eval,0,accuracy,0.195,75413088,1.518e+16,4.351e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,1,eval,1,accuracy,0.925,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,2,eval,1,accuracy,0.525,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,3,eval,1,accuracy,0.65,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,4,eval,1,accuracy,0.15,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,5,eval,1,accuracy,0.0,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,all,eval,1,accuracy,0.45,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,1,eval,1,accuracy,0.225,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,2,eval,1,accuracy,0.15,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,3,eval,1,accuracy,0.1,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,4,eval,1,accuracy,0.05,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,5,eval,1,accuracy,0.05,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s1-7cf235,2026-07-04T08:45:39,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,all,eval,1,accuracy,0.115,75443040,6.112e+15,2.278e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,1,eval,1,accuracy,0.925,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,2,eval,1,accuracy,0.675,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,3,eval,1,accuracy,0.75,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,4,eval,1,accuracy,0.15,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,5,eval,1,accuracy,0.125,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,all,eval,1,accuracy,0.525,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,1,eval,1,accuracy,0.225,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,2,eval,1,accuracy,0.35,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,3,eval,1,accuracy,0.1,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,4,eval,1,accuracy,0.025,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,5,eval,1,accuracy,0.05,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s1-548140,2026-07-04T08:53:06,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,all,eval,1,accuracy,0.15,75443040,1.519e+16,4.739e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,1,eval,1,accuracy,0.925,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,2,eval,1,accuracy,0.625,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,3,eval,1,accuracy,0.55,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,4,eval,1,accuracy,0.1,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,5,eval,1,accuracy,0.075,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,all,eval,1,accuracy,0.455,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,1,eval,1,accuracy,0.125,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,2,eval,1,accuracy,0.1,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,3,eval,1,accuracy,0.075,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,4,eval,1,accuracy,0.05,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,5,eval,1,accuracy,0.075,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s1-3703eb,2026-07-04T08:54:52,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,all,eval,1,accuracy,0.085,75443040,1.519e+16,5.924e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,1,eval,2,accuracy,0.95,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,2,eval,2,accuracy,0.7,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,3,eval,2,accuracy,0.825,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,4,eval,2,accuracy,0.1,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,5,eval,2,accuracy,0.025,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,rewrite,all,eval,2,accuracy,0.52,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,1,eval,2,accuracy,0.175,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,2,eval,2,accuracy,0.175,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,3,eval,2,accuracy,0.15,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,4,eval,2,accuracy,0.075,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,5,eval,2,accuracy,0.0,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop1-s2-84b8c4,2026-07-04T08:56:33,nogit,20bd7bbd06df,EXP-001,V1-loop1,11933696,dsl_learn,all,eval,2,accuracy,0.115,75396192,6.108e+15,2.027e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,1,eval,2,accuracy,0.9,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,2,eval,2,accuracy,0.55,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,3,eval,2,accuracy,0.65,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,4,eval,2,accuracy,0.2,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,5,eval,2,accuracy,0.05,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,rewrite,all,eval,2,accuracy,0.47,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,1,eval,2,accuracy,0.275,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,2,eval,2,accuracy,0.375,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,3,eval,2,accuracy,0.05,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,4,eval,2,accuracy,0.05,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,5,eval,2,accuracy,0.075,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-V1-loop4-s2-8426f1,2026-07-04T09:01:10,nogit,e9fd4e78ecd9,EXP-001,V1-loop4,11933696,dsl_learn,all,eval,2,accuracy,0.165,75396192,1.518e+16,5.037e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,1,eval,2,accuracy,0.9,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,2,eval,2,accuracy,0.55,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,3,eval,2,accuracy,0.7,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,4,eval,2,accuracy,0.0,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,5,eval,2,accuracy,0.0,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,rewrite,all,eval,2,accuracy,0.43,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,1,eval,2,accuracy,0.25,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,2,eval,2,accuracy,0.25,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,3,eval,2,accuracy,0.075,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,4,eval,2,accuracy,0.05,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,5,eval,2,accuracy,0.075,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001-B2-10L-s2-d433cb,2026-07-04T09:02:39,nogit,0783fb7b203d,EXP-001,B2-10L,29634560,dsl_learn,all,eval,2,accuracy,0.14,75396192,1.518e+16,5.612e+10,8a80f9fcc02d3c85,
+EXP-001B-ALGO-V1-loop1-s0-6f52bd,2026-07-04T09:20:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,1,eval,0,accuracy,1.0,49961312,4.047e+15,6.313e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s0-6f52bd,2026-07-04T09:20:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,2,eval,0,accuracy,0.95,49961312,4.047e+15,6.313e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s0-6f52bd,2026-07-04T09:20:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,3,eval,0,accuracy,0.925,49961312,4.047e+15,6.313e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s0-6f52bd,2026-07-04T09:20:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,4,eval,0,accuracy,0.7,49961312,4.047e+15,6.313e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s0-6f52bd,2026-07-04T09:20:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,5,eval,0,accuracy,0.675,49961312,4.047e+15,6.313e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s0-6f52bd,2026-07-04T09:20:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,all,eval,0,accuracy,0.85,49961312,4.047e+15,6.313e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s0-5a6467,2026-07-04T09:23:00,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,1,eval,0,accuracy,0.95,49961312,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s0-5a6467,2026-07-04T09:23:00,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,2,eval,0,accuracy,0.75,49961312,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s0-5a6467,2026-07-04T09:23:00,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,3,eval,0,accuracy,0.85,49961312,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s0-5a6467,2026-07-04T09:23:00,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,4,eval,0,accuracy,0.7,49961312,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s0-5a6467,2026-07-04T09:23:00,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,5,eval,0,accuracy,0.625,49961312,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s0-5a6467,2026-07-04T09:23:00,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,all,eval,0,accuracy,0.775,49961312,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s1-5e81ac,2026-07-04T09:20:05,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,1,eval,1,accuracy,0.975,49961056,4.047e+15,7.06e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s1-5e81ac,2026-07-04T09:20:05,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,2,eval,1,accuracy,0.7,49961056,4.047e+15,7.06e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s1-5e81ac,2026-07-04T09:20:05,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,3,eval,1,accuracy,0.85,49961056,4.047e+15,7.06e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s1-5e81ac,2026-07-04T09:20:05,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,4,eval,1,accuracy,0.55,49961056,4.047e+15,7.06e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s1-5e81ac,2026-07-04T09:20:05,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,5,eval,1,accuracy,0.725,49961056,4.047e+15,7.06e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s1-5e81ac,2026-07-04T09:20:05,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,all,eval,1,accuracy,0.76,49961056,4.047e+15,7.06e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s1-a7096e,2026-07-04T09:27:21,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,1,eval,1,accuracy,1.0,49961056,1.006e+16,1.677e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s1-a7096e,2026-07-04T09:27:21,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,2,eval,1,accuracy,0.75,49961056,1.006e+16,1.677e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s1-a7096e,2026-07-04T09:27:21,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,3,eval,1,accuracy,0.825,49961056,1.006e+16,1.677e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s1-a7096e,2026-07-04T09:27:21,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,4,eval,1,accuracy,0.725,49961056,1.006e+16,1.677e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s1-a7096e,2026-07-04T09:27:21,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,5,eval,1,accuracy,0.675,49961056,1.006e+16,1.677e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s1-a7096e,2026-07-04T09:27:21,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,all,eval,1,accuracy,0.795,49961056,1.006e+16,1.677e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s2-425541,2026-07-04T09:25:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,1,eval,2,accuracy,1.0,49956384,4.047e+15,6.707e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s2-425541,2026-07-04T09:25:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,2,eval,2,accuracy,0.775,49956384,4.047e+15,6.707e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s2-425541,2026-07-04T09:25:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,3,eval,2,accuracy,0.75,49956384,4.047e+15,6.707e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s2-425541,2026-07-04T09:25:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,4,eval,2,accuracy,0.8,49956384,4.047e+15,6.707e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s2-425541,2026-07-04T09:25:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,5,eval,2,accuracy,0.675,49956384,4.047e+15,6.707e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop1-s2-425541,2026-07-04T09:25:06,nogit,20bd7bbd06df,EXP-001B-ALGO,V1-loop1,11933696,algo_exec,all,eval,2,accuracy,0.8,49956384,4.047e+15,6.707e+09,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s2-709912,2026-07-04T09:29:08,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,1,eval,2,accuracy,0.975,49956384,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s2-709912,2026-07-04T09:29:08,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,2,eval,2,accuracy,0.775,49956384,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s2-709912,2026-07-04T09:29:08,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,3,eval,2,accuracy,0.825,49956384,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s2-709912,2026-07-04T09:29:08,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,4,eval,2,accuracy,0.65,49956384,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s2-709912,2026-07-04T09:29:08,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,5,eval,2,accuracy,0.65,49956384,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-ALGO-V1-loop4-s2-709912,2026-07-04T09:29:08,nogit,e9fd4e78ecd9,EXP-001B-ALGO,V1-loop4,11933696,algo_exec,all,eval,2,accuracy,0.775,49956384,1.006e+16,1.72e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,1,eval,3,accuracy,0.925,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,2,eval,3,accuracy,0.225,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,3,eval,3,accuracy,0.425,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,4,eval,3,accuracy,0.025,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,5,eval,3,accuracy,0.025,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,all,eval,3,accuracy,0.325,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,1,eval,3,accuracy,0.225,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,2,eval,3,accuracy,0.35,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,3,eval,3,accuracy,0.075,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,4,eval,3,accuracy,0.025,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,5,eval,3,accuracy,0.05,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s3-d9664e,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,all,eval,3,accuracy,0.145,75468416,6.114e+15,2.739e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,1,eval,3,accuracy,0.925,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,2,eval,3,accuracy,0.55,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,3,eval,3,accuracy,0.575,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,4,eval,3,accuracy,0.075,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,5,eval,3,accuracy,0.025,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,all,eval,3,accuracy,0.43,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,1,eval,3,accuracy,0.3,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,2,eval,3,accuracy,0.3,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,3,eval,3,accuracy,0.0,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,4,eval,3,accuracy,0.025,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,5,eval,3,accuracy,0.025,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s3-d43374,2026-07-04T09:42:27,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,all,eval,3,accuracy,0.13,75468416,1.519e+16,5.712e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,1,eval,4,accuracy,0.875,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,2,eval,4,accuracy,0.35,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,3,eval,4,accuracy,0.5,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,4,eval,4,accuracy,0.1,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,5,eval,4,accuracy,0.0,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,all,eval,4,accuracy,0.365,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,1,eval,4,accuracy,0.25,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,2,eval,4,accuracy,0.325,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,3,eval,4,accuracy,0.1,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,4,eval,4,accuracy,0.05,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,5,eval,4,accuracy,0.05,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s4-cad619,2026-07-04T09:36:34,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,all,eval,4,accuracy,0.155,75339392,6.103e+15,2.476e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,1,eval,4,accuracy,0.95,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,2,eval,4,accuracy,0.575,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,3,eval,4,accuracy,0.65,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,4,eval,4,accuracy,0.05,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,5,eval,4,accuracy,0.025,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,all,eval,4,accuracy,0.45,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,1,eval,4,accuracy,0.2,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,2,eval,4,accuracy,0.15,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,3,eval,4,accuracy,0.05,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,4,eval,4,accuracy,0.0,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,5,eval,4,accuracy,0.025,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s4-9a9560,2026-07-04T09:48:22,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,all,eval,4,accuracy,0.085,75339392,1.517e+16,5.98e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,1,eval,5,accuracy,0.9,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,2,eval,5,accuracy,0.3,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,3,eval,5,accuracy,0.5,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,4,eval,5,accuracy,0.1,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,5,eval,5,accuracy,0.05,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,rewrite,all,eval,5,accuracy,0.37,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,1,eval,5,accuracy,0.2,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,2,eval,5,accuracy,0.25,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,3,eval,5,accuracy,0.1,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,4,eval,5,accuracy,0.025,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,5,eval,5,accuracy,0.025,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop1-s5-1ad2a7,2026-07-04T09:44:18,nogit,20bd7bbd06df,EXP-001B-SEEDS,V1-loop1,11933696,dsl_learn,all,eval,5,accuracy,0.12,75373792,6.106e+15,2.628e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,1,eval,5,accuracy,0.975,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,2,eval,5,accuracy,0.775,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,3,eval,5,accuracy,0.8,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,4,eval,5,accuracy,0.325,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,5,eval,5,accuracy,0.1,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,rewrite,all,eval,5,accuracy,0.595,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,1,eval,5,accuracy,0.175,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,2,eval,5,accuracy,0.2,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,3,eval,5,accuracy,0.05,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,4,eval,5,accuracy,0.025,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,5,eval,5,accuracy,0.05,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-SEEDS-V1-loop4-s5-908c32,2026-07-04T09:50:38,nogit,e9fd4e78ecd9,EXP-001B-SEEDS,V1-loop4,11933696,dsl_learn,all,eval,5,accuracy,0.1,75373792,1.518e+16,4.603e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,1,eval,0,accuracy,0.925,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,2,eval,0,accuracy,0.5,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,3,eval,0,accuracy,0.725,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,4,eval,0,accuracy,0.275,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,5,eval,0,accuracy,0.1,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,all,eval,0,accuracy,0.505,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,1,eval,0,accuracy,0.375,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,2,eval,0,accuracy,0.425,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,3,eval,0,accuracy,0.15,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,4,eval,0,accuracy,0.0,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,5,eval,0,accuracy,0.1,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s0-415336,2026-07-04T10:08:02,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,all,eval,0,accuracy,0.21,188514272,1.527e+16,1.8e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,1,eval,1,accuracy,0.95,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,2,eval,1,accuracy,0.875,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,3,eval,1,accuracy,0.875,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,4,eval,1,accuracy,0.275,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,5,eval,1,accuracy,0.15,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,all,eval,1,accuracy,0.625,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,1,eval,1,accuracy,0.425,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,2,eval,1,accuracy,0.475,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,3,eval,1,accuracy,0.125,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,4,eval,1,accuracy,0.125,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,5,eval,1,accuracy,0.075,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s1-db3e08,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,all,eval,1,accuracy,0.245,188451136,1.527e+16,1.479e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,1,eval,2,accuracy,0.9,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,2,eval,2,accuracy,0.65,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,3,eval,2,accuracy,0.7,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,4,eval,2,accuracy,0.275,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,5,eval,2,accuracy,0.075,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,rewrite,all,eval,2,accuracy,0.52,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,1,eval,2,accuracy,0.325,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,2,eval,2,accuracy,0.375,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,3,eval,2,accuracy,0.075,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,4,eval,2,accuracy,0.075,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,5,eval,2,accuracy,0.05,188391072,1.526e+16,1.839e+10,67486c621f8b922d,
+EXP-001B-FM-V1-loop1-fm-s2-640d54,2026-07-04T10:08:03,nogit,20bd7bbd06df,EXP-001B-FM,V1-loop1-fm,11933696,dsl_learn,all,eval,2,accuracy,0.18,188391072,1.526e+16,1.839e+10,67486c621f8b922d,

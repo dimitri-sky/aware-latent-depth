@@ -39,3 +39,13 @@ these; check before designing any new experiment.
   run 3+ training workers per GPU with per-worker results-CSV shards
   (AWARE_RESULTS_CSV) merged after; parallelism-across-experiments beats
   speed-per-experiment at this scale.
+- (EXP-001B, H1 kill) Equal-params comparisons flatter recurrence: extra loops are
+  extra training AND inference compute. loop1 trained at matched training FLOPs
+  (2.5x steps) tied or beat loop4; the "loop gain" was a training-compute artifact.
+  Any compute-adding mechanism must ship its matched-FLOP control in the SAME batch.
+- (EXP-001B) A 3-seed positive that matters must replicate before adjudication:
+  dsl_learn's +4.0 (seeds 0-2) became -0.1 pooled over 6 seeds. Family-level deltas
+  under ~5 pts at this budget are noise until >= 6 seeds agree.
+- (infra) /sbin/shutdown works in some RunPod containers and not others (systemd
+  shim, "Host is down"); pod self-stop must use the RunPod API (runpodctl or MCP
+  stop-pod) with shutdown only as a fallback. Cost of the failure: ~9h idle 4090.
