@@ -11,8 +11,8 @@ from __future__ import annotations
 from .base import Instance, rng_for
 
 FAMILY = "state_guard"
-_N_FACTS = {1: 3, 2: 4, 3: 6, 4: 8, 5: 10}
-_INTERFERENCE = {1: 3, 2: 6, 3: 12, 4: 20, 5: 32}
+_N_FACTS = {1: 2, 2: 3, 3: 5, 4: 7, 5: 10}
+_INTERFERENCE = {1: 2, 2: 5, 3: 10, 4: 18, 5: 28}
 
 _KEYS = ["door", "vent", "gate", "dial", "lamp", "fuse", "belt", "pump", "tank", "coil",
          "fan", "lock"]

@@ -7,9 +7,9 @@ from __future__ import annotations
 from .base import Instance, rng_for
 
 FAMILY = "compress"
-_N_VARS = {1: 3, 2: 5, 3: 8, 4: 12, 5: 16}
-_N_EVENTS = {1: 6, 2: 12, 3: 22, 4: 36, 5: 56}
-_DISTRACTOR_RATE = {1: 0.2, 2: 0.3, 3: 0.4, 4: 0.45, 5: 0.5}
+_N_VARS = {1: 2, 2: 3, 3: 5, 4: 8, 5: 12}
+_N_EVENTS = {1: 4, 2: 8, 3: 16, 4: 28, 5: 44}
+_DISTRACTOR_RATE = {1: 0.15, 2: 0.25, 3: 0.35, 4: 0.45, 5: 0.5}
 
 _NAMES = ["kap", "rud", "mel", "tov", "sil", "nar", "bex", "fum", "gid", "hol",
           "jyn", "wex", "pia", "quz", "vor", "yem"]

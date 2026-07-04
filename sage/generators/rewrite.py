@@ -9,15 +9,17 @@ from .base import Instance, rng_for
 
 FAMILY = "rewrite"
 _ALPHABET = list("ABCDEFGHJKLMNPQRSTUVWXYZ")
-_N_RULES = {1: 1, 2: 2, 3: 3, 4: 4, 5: 6}
-_STR_LEN = {1: 4, 2: 6, 3: 8, 4: 11, 5: 14}
-_N_EXAMPLES = {1: 3, 2: 3, 3: 4, 4: 5, 5: 6}
-_MAX_STEPS = 24
+_N_RULES = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5}
+_STR_LEN = {1: 3, 2: 5, 3: 7, 4: 9, 5: 12}
+_N_EXAMPLES = {1: 4, 2: 4, 3: 5, 4: 5, 5: 6}
+# serial depth ramp: max rewrite applications per tier (fixpoint if reached earlier)
+_MAX_STEPS = {1: 1, 2: 2, 3: 4, 4: 8, 5: 16}
 
 
-def _apply_fixpoint(rules: dict[tuple[str, str], str], s: list[str]) -> tuple[list[str], list[str]]:
+def _apply_fixpoint(rules: dict[tuple[str, str], str], s: list[str],
+                    max_steps: int) -> tuple[list[str], list[str]]:
     trace = []
-    for _ in range(_MAX_STEPS):
+    for _ in range(max_steps):
         for i in range(len(s) - 1):
             key = (s[i], s[i + 1])
             if key in rules:
@@ -57,14 +59,15 @@ def generate(seed: int, difficulty: int) -> Instance:
     rng = rng_for(FAMILY, difficulty, seed)
     rules = _make_rules(rng, _N_RULES[difficulty])
 
+    max_steps = _MAX_STEPS[difficulty]
     examples = []
     for _ in range(_N_EXAMPLES[difficulty]):
         s = _random_string(rng, rules, _STR_LEN[difficulty])
-        out, _ = _apply_fixpoint(rules, list(s))
+        out, _ = _apply_fixpoint(rules, list(s), max_steps)
         examples.append((" ".join(s), " ".join(out)))
 
     query = _random_string(rng, rules, _STR_LEN[difficulty])
-    answer, trace = _apply_fixpoint(rules, list(query))
+    answer, trace = _apply_fixpoint(rules, list(query), max_steps)
 
     ex_text = "\n".join(f"{a} => {b}" for a, b in examples)
     prompt = (

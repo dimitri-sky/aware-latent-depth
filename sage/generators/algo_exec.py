@@ -17,7 +17,7 @@ _OPS_BY_TIER = {
     4: ["PUSH", "ADD", "SUB", "MUL", "DUP", "SWAP", "POP"],
     5: ["PUSH", "ADD", "SUB", "MUL", "DUP", "SWAP", "POP"],
 }
-_LEN_BY_TIER = {1: 4, 2: 7, 3: 11, 4: 16, 5: 24}
+_LEN_BY_TIER = {1: 3, 2: 5, 3: 8, 4: 12, 5: 18}
 
 
 def _step(op: str, arg: int | None, stack: list[int]) -> None:
@@ -54,20 +54,28 @@ def generate(seed: int, difficulty: int) -> Instance:
     program: list[tuple[str, int | None]] = []
     stack: list[int] = []
     trace_lines: list[str] = []
-    while len(program) < n_ops:
-        # POP that would empty the stack right at the end is pointless; keep >=1 at end
-        candidates = [o for o in ops_pool if _arity(o) <= len(stack)]
-        # bias toward PUSH early so the stack grows
-        if len(stack) < 2:
-            candidates = ["PUSH"]
-        op = rng.choice(candidates)
-        if op == "POP" and len(stack) == 1:
-            op = "PUSH"
+
+    def emit(op: str) -> None:
         arg = rng.randint(0, 20) if op == "PUSH" else None
         _step(op, arg, stack)
         program.append((op, arg))
         shown = f"{op} {arg}" if arg is not None else op
         trace_lines.append(f"{shown} -> stack {stack}")
+
+    while len(program) < n_ops - 1:
+        candidates = [o for o in ops_pool if _arity(o) <= len(stack)]
+        if len(stack) < 2:
+            candidates = ["PUSH"]
+        op = rng.choice(candidates)
+        if op == "POP" and len(stack) == 1:
+            op = "PUSH"
+        emit(op)
+    # final op must CONSUME the stack so the answer depends on the computation chain,
+    # never on a trailing PUSH literal (difficulty must bind)
+    combiners = [o for o in ops_pool if _arity(o) == 2 and o != "SWAP"]
+    while len(stack) < 2:
+        emit("PUSH")
+    emit(rng.choice(combiners) if combiners else "DUP")
     answer = stack[-1]
 
     prog_text = "\n".join(f"{op} {arg}" if arg is not None else op for op, arg in program)
