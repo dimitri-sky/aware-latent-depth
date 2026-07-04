@@ -7,7 +7,9 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 ---
 
 ### H1: Shared-weight recurrent latent depth improves reasoning-per-FLOP
-- Status: testing (EXP-001)
+- Status: testing (EXP-001, running on pod; families rewrite + dsl_learn per EXP-000C)
+- Kill discipline: per owner directive, a near-miss with promising signal gets
+  EXTEND (seeds/steps/regime) before any kill decision — see decision_policy.md.
 - Expected advantage: V1-loop4 beats V1-loop1 by >= 3.0 accuracy points (family mean)
   on algo_exec + rewrite at equal params, 3 seeds, mean diff > 2x pooled seed SD.
   Secondary: loop4 closes >= 50% of the gap toward depth-matched B2-10L.
