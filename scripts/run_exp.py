@@ -48,9 +48,16 @@ def main() -> None:
     ap.add_argument("--config", required=True, type=Path)
     ap.add_argument("--workers", type=int, default=3)
     ap.add_argument("--seeds", default=None)
+    ap.add_argument("--models", default=None,
+                    help="comma-separated model ids; run only these (scheduling aid)")
     args = ap.parse_args()
 
     spec = yaml.safe_load(args.config.read_text())
+    if args.models:
+        keep = set(args.models.split(","))
+        spec["models"] = [m for m in spec["models"] if m["id"] in keep]
+        if not spec["models"]:
+            raise SystemExit(f"no models match --models {args.models}")
     exp_id = spec["exp_id"]
     seeds = [int(s) for s in args.seeds.split(",")] if args.seeds else spec.get("seeds", [0])
     train = spec["train"]
