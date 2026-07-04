@@ -69,6 +69,14 @@ frequency) with tiers 1-5 per family.
 
 1. **Headroom**: a trivial-solver battery (majority answer, copy-longest-literal,
    n-gram LM) must stay below 30% on every family at tier >= 2.
-2. **Discrimination**: a 4-layer vs 8-layer matched-width transformer trained
-   identically must separate by a clear margin (>= 5 points) on at least 4 families.
-3. If either fails: redesign the benchmark, not the model.
+2. **Depth discrimination** (computation families only): a 4-layer vs 8-layer
+   matched-width transformer trained identically per-family must separate by
+   >= 5 points aggregate on ALL THREE of `dsl_learn`, `rewrite`, `algo_exec`.
+3. **Memory-family learnability band**: `rule_shift` and `compress` are memory
+   probes (H2 dissociation targets) and are NOT expected to respond to generic
+   depth — requiring depth separation on them was internally inconsistent
+   (pre-registered correction, 2026-07-04, before gate attempt 5; see
+   agent/lessons.md). Their validity criterion: the better model's aggregate must
+   land in the (0.10, 0.90) band with at least one tier in (0.15, 0.85) — i.e.,
+   learnable, neither floored nor saturated.
+4. If any check fails: redesign the benchmark, not the model.

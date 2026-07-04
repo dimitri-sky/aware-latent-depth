@@ -57,6 +57,13 @@ def generate(seed: int, difficulty: int) -> Instance:
     stack: list[int] = []
     trace_lines: list[str] = []
 
+    def would_wrap(op: str) -> bool:
+        if op == "SUB" and len(stack) >= 2:
+            return stack[-2] < stack[-1]
+        if op == "MUL" and len(stack) >= 2:
+            return stack[-2] * stack[-1] >= MOD
+        return False
+
     def emit(op: str) -> None:
         arg = rng.randint(0, 20) if op == "PUSH" else None
         _step(op, arg, stack)
@@ -71,10 +78,15 @@ def generate(seed: int, difficulty: int) -> Instance:
         op = rng.choice(candidates)
         if op == "POP" and len(stack) == 1:
             op = "PUSH"
+        # mod-wrap arithmetic is its own skill; it enters only at tier 5
+        # (gate attempt 4: wrap-SUB at tier 3 floored both depths to 0.10)
+        if difficulty < 5 and would_wrap(op):
+            op = "PUSH" if len(stack) < 2 else "DUP"
         emit(op)
     # final op must CONSUME the stack so the answer depends on the computation chain,
     # never on a trailing PUSH literal (difficulty must bind)
-    combiners = [o for o in ops_pool if _arity(o) == 2 and o != "SWAP"]
+    combiners = [o for o in ops_pool if _arity(o) == 2 and o != "SWAP"
+                 and not (difficulty < 5 and would_wrap(o))]
     while len(stack) < 2:
         emit("PUSH")
     emit(rng.choice(combiners) if combiners else "DUP")

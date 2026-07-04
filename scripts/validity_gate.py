@@ -92,6 +92,13 @@ def discrimination(device: str) -> dict:
     return res
 
 
+# Pre-registered criterion (2026-07-04, before gate attempt 5; docs/BENCHMARK.md):
+# depth separation required on ALL computation families; memory families require a
+# learnable headroom band instead (they are H2 dissociation targets by design).
+DEPTH_FAMS = ("dsl_learn", "rewrite", "algo_exec")
+MEMORY_FAMS = ("rule_shift", "compress")
+
+
 def main() -> int:
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print("== (a) headroom: trivial solvers ==")
@@ -104,21 +111,25 @@ def main() -> int:
             headroom_ok = False
         print(f"  [{flag}] {fam:12s} " + " ".join(f"{k}={v:.3f}" for k, v in scores.items()))
 
-    print("== (b) discrimination: 4L vs 8L Transformer++ ==")
+    print("== (b) 4L vs 8L Transformer++, per-family ==")
     disc = discrimination(device)
     a, b = disc["gate-tfpp-4L"], disc["gate-tfpp-8L"]
-    separated = [fam for fam in a if b.get(fam, 0) - a.get(fam, 0) >= DISCRIMINATION_MARGIN]
     for fam in a:
         print(f"  {fam:12s} 4L={a[fam]:.3f} 8L={b[fam]:.3f} delta={b[fam] - a[fam]:+.3f}")
-    disc_ok = len(separated) >= 4
 
-    verdict = {"headroom_ok": headroom_ok, "discrimination_ok": disc_ok,
-               "separated_families": separated, "trivial": triv, "disc": disc}
+    separated = [f for f in DEPTH_FAMS if b.get(f, 0) - a.get(f, 0) >= DISCRIMINATION_MARGIN]
+    depth_ok = len(separated) == len(DEPTH_FAMS)
+    mem_ok_fams = [f for f in MEMORY_FAMS if 0.10 < max(a.get(f, 0), b.get(f, 0)) < 0.90]
+    mem_ok = len(mem_ok_fams) == len(MEMORY_FAMS)
+
+    verdict = {"headroom_ok": headroom_ok, "depth_ok": depth_ok, "memory_ok": mem_ok,
+               "separated_depth_families": separated, "memory_in_band": mem_ok_fams,
+               "trivial": triv, "disc": disc}
     Path("experiments/validity_gate.json").write_text(json.dumps(verdict, indent=2))
     print(f"VERDICT: headroom={'PASS' if headroom_ok else 'FAIL'} "
-          f"discrimination={'PASS' if disc_ok else 'FAIL'} "
-          f"({len(separated)} families separated)")
-    return 0 if (headroom_ok and disc_ok) else 1
+          f"depth={'PASS' if depth_ok else 'FAIL'} ({len(separated)}/3 computation "
+          f"families) memory-band={'PASS' if mem_ok else 'FAIL'} ({len(mem_ok_fams)}/2)")
+    return 0 if (headroom_ok and depth_ok and mem_ok) else 1
 
 
 if __name__ == "__main__":

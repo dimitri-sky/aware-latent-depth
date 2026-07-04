@@ -19,3 +19,14 @@ these; check before designing any new experiment.
 - (hardware) Sustained 100% GPU duty cycle hard-crashed the local box (PSU transient
   trip). All local runs now use the 25% duty-cycle throttle + 250W power cap
   (nvidia-smi -pl 250, needs admin, resets on reboot).
+- (EXP-000 attempt 4) Mod-wrap arithmetic (3-7=96) is a distinct skill that floors
+  3-6M models at ~10%; it gated algo_exec tier 3+ for BOTH depths. Difficulty knobs
+  must never smuggle in an unrelated hard skill. Wrap ops now enter only at tier 5.
+- (EXP-000 attempt 4) Gate criterion corrected BEFORE attempt 5 (pre-registered):
+  depth separation required on all 3 computation families; memory families
+  (rule_shift, compress) instead require a learnable headroom band — they are H2
+  dissociation targets and expecting depth gains there contradicted our own H2
+  design. Recorded here to make the criterion change auditable and non-cherry-picked.
+- (EXP-000 attempt 4) An 8L model collapsed to degenerate repeats on rule_shift
+  (train loss smooth, eval 0%) while 4L scored 100% — optimization instability at
+  depth on easy saturated tasks. If it recurs: lower gate lr 6e-4 -> 4e-4.

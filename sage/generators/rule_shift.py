@@ -11,9 +11,12 @@ from .base import Instance, rng_for
 
 FAMILY = "rule_shift"
 _SYMBOLS = list("abcdefghij")
-_TABLE_SIZE = {1: 3, 2: 4, 3: 5, 4: 6, 5: 8}
-_PRE_EXAMPLES = {1: 5, 2: 5, 3: 6, 4: 8, 5: 10}
-_WORD_LEN = {1: 2, 2: 2, 3: 2, 4: 3, 5: 4}
+# Harder ramp (gate attempt 4: a 3M-param 4L transformer saturated the old ramp at
+# 99.5%): longer words and larger tables create headroom; this family probes MEMORY
+# (latest-rule retrieval across a long session), not depth.
+_TABLE_SIZE = {1: 4, 2: 5, 3: 6, 4: 8, 5: 10}
+_PRE_EXAMPLES = {1: 6, 2: 7, 3: 8, 4: 10, 5: 12}
+_WORD_LEN = {1: 2, 2: 3, 3: 3, 4: 4, 5: 5}
 
 
 def _make_table(rng, symbols: list[str]) -> dict[str, str]:

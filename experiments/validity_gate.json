@@ -1,12 +1,14 @@
 {
   "headroom_ok": true,
   "discrimination_ok": false,
-  "separated_families": [],
+  "separated_families": [
+    "dsl_learn"
+  ],
   "trivial": {
     "dsl_learn": {
-      "majority": 0.034375,
-      "nn_overlap": 0.0375,
-      "copy_last": 0.103125
+      "majority": 0.046875,
+      "nn_overlap": 0.025,
+      "copy_last": 0.128125
     },
     "rewrite": {
       "majority": 0.0,
@@ -14,18 +16,18 @@
       "copy_last": 0.0
     },
     "algo_exec": {
-      "majority": 0.159375,
-      "nn_overlap": 0.065625,
+      "majority": 0.125,
+      "nn_overlap": 0.06875,
       "copy_last": 0.0
     },
     "rule_shift": {
-      "majority": 0.0375,
-      "nn_overlap": 0.03125,
+      "majority": 0.059375,
+      "nn_overlap": 0.028125,
       "copy_last": 0.0
     },
     "compress": {
-      "majority": 0.00625,
-      "nn_overlap": 0.01875,
+      "majority": 0.0125,
+      "nn_overlap": 0.028125,
       "copy_last": 0.0
     },
     "state_guard": {
@@ -41,22 +43,18 @@
   },
   "disc": {
     "gate-tfpp-4L": {
-      "dsl_learn": 0.09,
-      "rewrite": 0.0,
-      "algo_exec": 0.1,
-      "rule_shift": 0.165,
-      "compress": 0.011363636363636364,
-      "state_guard": 0.18,
-      "fresh_dsl": 0.05
+      "dsl_learn": 0.16,
+      "rewrite": 0.63,
+      "algo_exec": 0.435,
+      "rule_shift": 0.995,
+      "compress": 0.17613636363636365
     },
     "gate-tfpp-8L": {
-      "dsl_learn": 0.085,
-      "rewrite": 0.02,
-      "algo_exec": 0.125,
-      "rule_shift": 0.135,
-      "compress": 0.028409090909090908,
-      "state_guard": 0.185,
-      "fresh_dsl": 0.055
+      "dsl_learn": 0.23,
+      "rewrite": 0.625,
+      "algo_exec": 0.45,
+      "rule_shift": 0.375,
+      "compress": 0.19318181818181818
     }
   }
 }
