@@ -1,0 +1,24 @@
+{
+  "collapsed_excluded": [],
+  "families": {
+    "rewrite": {
+      "median_2L": 0.37,
+      "median_16L": 0.66,
+      "delta": 0.29,
+      "pass": true
+    },
+    "dsl_learn": {
+      "median_2L": 0.175,
+      "median_16L": 0.225,
+      "delta": 0.05,
+      "pass": true
+    },
+    "algo_exec": {
+      "median_2L": 0.5,
+      "median_16L": 0.475,
+      "delta": -0.025,
+      "pass": false
+    }
+  },
+  "pass": false
+}
