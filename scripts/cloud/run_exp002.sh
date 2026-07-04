@@ -20,8 +20,16 @@ python scripts/make_data.py --split eval --per-family 400 --families $FAMS
 python -m pytest tests/ -q
 python -m sage.contamination.audit --train-dir data/sage/train --eval-dir data/sage/eval
 
-python scripts/run_exp.py --config experiments/configs/exp002_rule_shift.yaml --workers 3
-python scripts/run_exp.py --config experiments/configs/exp002_compress.yaml --workers 3
-python scripts/run_exp.py --config experiments/configs/exp002_state_guard.yaml --workers 3
+# All three groups concurrently, 6 workers each (18 jobs in flight): the V2-delta
+# sequential scan is kernel-launch bound and uses ~5% of the GPU per job, so
+# parallelism-across-jobs is the throughput lever (see agent/lessons.md). Shard
+# CSVs (results_EXP-002*.csv) are authoritative at pickup; results.csv merge races
+# between the three runners are tolerated.
+python scripts/run_exp.py --config experiments/configs/exp002_rule_shift.yaml --workers 6 &
+sleep 20
+python scripts/run_exp.py --config experiments/configs/exp002_compress.yaml --workers 6 &
+sleep 20
+python scripts/run_exp.py --config experiments/configs/exp002_state_guard.yaml --workers 6 &
+wait
 
 echo EXP002_ALL_DONE
