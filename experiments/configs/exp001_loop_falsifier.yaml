@@ -3,17 +3,22 @@
 # anchor (10 layers ~= prelude + 4*core + coda effective depth), identical data/tokens.
 #
 # Pre-registered prediction (agent/backlog.md H1): loop-4 beats loop-1 by >= 3.0
-# accuracy points (family mean) on algo_exec + rewrite at equal params; if loop count
-# changes nothing at equal params, H1 is in serious trouble.
+# accuracy points (family mean) at equal params, 3 seeds, diff > 2x pooled seed SD;
+# if loop count changes nothing at equal params, H1 is in serious trouble.
+#
+# Families: rewrite + dsl_learn — the two families where the validity gate proved
+# depth is detectable (rewrite decisively: +20 to +29 across gates 6-7, 6 seeds;
+# dsl_learn marginally: +4 to +5). algo_exec parked pending v3 gate result
+# (agent/log/EXP-000C.md); checkpoints allow later re-eval on any family.
 exp_id: EXP-001
 
 train:
-  families: [algo_exec, rewrite]
+  families: [rewrite, dsl_learn]
   steps: 6000
   batch_size: 32
   seq_len: 768
-  lr: 3.0e-4
-  warmup: 200
+  lr: 4.0e-4          # depth-scaled for the 10-layer-effective models (stability)
+  warmup: 300
   eval_limit: 300
 seeds: [0, 1, 2]
 

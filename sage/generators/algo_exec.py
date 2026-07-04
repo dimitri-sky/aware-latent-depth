@@ -15,7 +15,12 @@ from __future__ import annotations
 from .base import Instance, rng_for
 
 FAMILY = "algo_exec"
-LO, HI = 0, 99
+# v3 (final revision before park, per timebox): SINGLE-DIGIT register, values clamp
+# to 0..9. v2's two-digit arithmetic made per-step accuracy (~55%) the bottleneck —
+# the task measured arithmetic skill, not chain-following. Single-digit steps are
+# trivially learnable, so accuracy isolates serial composition; frequent clamping at
+# the 0/9 rails keeps the chain order-dependent (not a commutative sum).
+LO, HI = 0, 9
 _OPS_BY_TIER = {
     1: ["ADD", "SUB"],
     2: ["ADD", "SUB", "DBL"],
@@ -49,29 +54,25 @@ def generate(seed: int, difficulty: int) -> Instance:
     ops_pool = _OPS_BY_TIER[difficulty]
     n_ops = _LEN_BY_TIER[difficulty]
 
-    acc = rng.randint(5, 60)
+    acc = rng.randint(2, 7)
     program: list[str] = [f"SET {acc}"]
     trace_lines: list[str] = [f"SET {acc} -> {acc}"]
     for _ in range(n_ops):
         op = rng.choice(ops_pool)
         if op in ("ADD", "SUB"):
-            # bias arguments to keep the value off the 0/99 saturation rails,
-            # so answers stay high-entropy and priors stay unlearnable
-            if op == "ADD":
-                hi_room = max(1, (HI - 10) - acc)
-                arg = rng.randint(1, min(20, hi_room)) if hi_room > 1 else rng.randint(1, 9)
-            else:
-                lo_room = max(1, acc - (LO + 5))
-                arg = rng.randint(1, min(20, lo_room)) if lo_room > 1 else rng.randint(1, 9)
+            arg = rng.randint(1, 4)  # small operands: clamps stay occasional, not dominant
+            # steer away from pinning: don't saturate twice in a row
+            if op == "ADD" and acc >= HI:
+                op = "SUB"
+            elif op == "SUB" and acc <= LO:
+                op = "ADD"
             acc = _apply(op, arg, acc)
             program.append(f"{op} {arg}")
             trace_lines.append(f"{op} {arg} -> {acc}")
         else:
-            # keep the value off the rails: DBL would saturate high, repeated HALF
-            # pins to 0 (tier-5 answer prior concentrated at 11% on '0')
-            if op == "DBL" and acc > 49:
+            if op == "DBL" and acc >= HI:
                 op = "HALF"
-            if op == "HALF" and acc < 8:
+            if op == "HALF" and acc <= 1:
                 op = "DBL"
             acc = _apply(op, None, acc)
             program.append(op)
@@ -81,7 +82,8 @@ def generate(seed: int, difficulty: int) -> Instance:
     prog_text = "\n".join(program)
     prompt = (
         "Execute this register program. The register starts with SET. "
-        "Results clamp to 0..99; HALF rounds down. Report the final register value.\n"
+        "Results clamp to the range 0..9; HALF rounds down. "
+        "Report the final register value.\n"
         f"{prog_text}\nANSWER:"
     )
     return Instance(

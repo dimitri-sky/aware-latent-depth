@@ -32,7 +32,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 RESULTS = Path("experiments/results.csv")
 EXP_ID = "EXP-000C"
-FAMS = ("rewrite", "dsl_learn", "algo_exec")
+FAMS = ("rewrite", "dsl_learn", "algo_exec")  # overridable via --families
 DEPTHS = (2, 16)
 SEEDS = (0, 1, 2)
 MARGIN = 0.05
@@ -94,9 +94,14 @@ def merge_into_results(shards: list[Path]) -> None:
 
 
 def main() -> None:
+    global FAMS
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=3)
+    ap.add_argument("--families", default=None,
+                    help="comma-separated subset (default: all three)")
     args = ap.parse_args()
+    if args.families:
+        FAMS = tuple(args.families.split(","))
 
     header = RESULTS.open(encoding="utf-8").readline()
     jobs = [(fam, nl, seed) for fam in FAMS for nl in DEPTHS for seed in SEEDS]

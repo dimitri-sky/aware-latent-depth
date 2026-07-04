@@ -27,6 +27,8 @@ def main() -> None:
     ap.add_argument("--n-heads", type=int, default=4)
     ap.add_argument("--n-kv-heads", type=int, default=2)
     ap.add_argument("--d-ff", type=int, default=704)
+    ap.add_argument("--model-json", default=None,
+                    help="full ModelConfig as JSON; overrides the flags above")
     ap.add_argument("--families", required=True)
     ap.add_argument("--steps", type=int, default=4000)
     ap.add_argument("--seed", type=int, default=0)
@@ -35,9 +37,13 @@ def main() -> None:
     ap.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     args = ap.parse_args()
 
-    mcfg = ModelConfig(arch=args.arch, n_layers=args.n_layers, d_model=args.d_model,
-                       n_heads=args.n_heads, n_kv_heads=args.n_kv_heads,
-                       d_ff=args.d_ff, max_seq_len=1024)
+    if args.model_json:
+        import json
+        mcfg = ModelConfig(**json.loads(args.model_json))
+    else:
+        mcfg = ModelConfig(arch=args.arch, n_layers=args.n_layers, d_model=args.d_model,
+                           n_heads=args.n_heads, n_kv_heads=args.n_kv_heads,
+                           d_ff=args.d_ff, max_seq_len=1024)
     tc = TrainConfig(families=args.families.split(","), steps=args.steps,
                      batch_size=32, seq_len=768, seed=args.seed, lr=args.lr,
                      warmup=300, eval_limit=200)
