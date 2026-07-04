@@ -81,7 +81,7 @@ def discrimination(device: str) -> dict:
     res: dict = {"gate-tfpp-4L": {}, "gate-tfpp-8L": {}}
     for fam in CORE_FAMILIES:
         tc = TrainConfig(families=[fam], steps=4000, batch_size=32, seq_len=768,
-                         seed=0, lr=6e-4, warmup=300, eval_limit=200, throttle=0)
+                         seed=0, lr=6e-4, warmup=300, eval_limit=200)
         for n_layers, mid in [(4, "gate-tfpp-4L"), (8, "gate-tfpp-8L")]:
             mcfg = ModelConfig(arch="tf_pp", n_layers=n_layers, **common)
             r = train_one(mcfg, tc, exp_id="EXP-000", model_id=f"{mid}-{fam}",

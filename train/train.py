@@ -5,6 +5,7 @@ evaluates and appends to results.csv.
 from __future__ import annotations
 
 import math
+import os
 import sys
 import time
 from dataclasses import dataclass
@@ -40,9 +41,9 @@ class TrainConfig:
     eval_limit: int | None = 300
     log_every: int = 100
     # GPU duty-cycle throttle: sleep this fraction of each step's duration.
-    # 0.25 keeps sustained load ~80% — protects consumer PSUs from the transient-spike
-    # shutdowns observed on this box (local hardware crashed at full duty cycle).
-    throttle: float = 0.25
+    # Default 0.25 locally — protects consumer PSUs from the transient-spike shutdowns
+    # observed on this box. Cloud pods set AWARE_THROTTLE=0 for full speed.
+    throttle: float = float(os.environ.get("AWARE_THROTTLE", "0.25"))
 
 
 def lr_at(step: int, tc: TrainConfig) -> float:
