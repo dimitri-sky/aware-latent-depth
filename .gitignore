@@ -9,3 +9,7 @@ runs/
 *.bin
 .pytest_cache/
 wandb/
+
+aware_src.zip
+papers_2026/pdfs/
+*.tar.gz
