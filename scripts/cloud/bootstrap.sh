@@ -8,7 +8,8 @@ cd /workspace
 rm -rf aware && mkdir aware && cd aware
 unzip -q /workspace/aware_src.zip
 
-pip install -q numpy pyyaml pytest tqdm matplotlib
+# RunPod pytorch 2.8 image ships a PEP-668 "externally managed" Python
+pip install -q --break-system-packages numpy pyyaml pytest tqdm matplotlib
 
 export AWARE_THROTTLE=0
 nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
