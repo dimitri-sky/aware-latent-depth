@@ -9,15 +9,17 @@ from .base import Instance, rng_for
 
 FAMILY = "algo_exec"
 MOD = 100
-# ops available per difficulty tier
+# Single-knob ramp (gate attempt 3 postmortem): tiers 1-2 ramp only program length
+# with ADD-only arithmetic; harder ops enter one at a time from tier 3. Mod-wrap SUB
+# and MUL are disproportionately hard for byte-level models and used to gate tier 2.
 _OPS_BY_TIER = {
     1: ["PUSH", "ADD"],
-    2: ["PUSH", "ADD", "SUB", "DUP"],
-    3: ["PUSH", "ADD", "SUB", "MUL", "DUP", "SWAP"],
-    4: ["PUSH", "ADD", "SUB", "MUL", "DUP", "SWAP", "POP"],
+    2: ["PUSH", "ADD"],
+    3: ["PUSH", "ADD", "SUB", "DUP"],
+    4: ["PUSH", "ADD", "SUB", "DUP", "SWAP"],
     5: ["PUSH", "ADD", "SUB", "MUL", "DUP", "SWAP", "POP"],
 }
-_LEN_BY_TIER = {1: 3, 2: 5, 3: 8, 4: 12, 5: 18}
+_LEN_BY_TIER = {1: 3, 2: 5, 3: 7, 4: 10, 5: 14}
 
 
 def _step(op: str, arg: int | None, stack: list[int]) -> None:

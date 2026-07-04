@@ -10,6 +10,10 @@ FAMILY = "compress"
 _N_VARS = {1: 2, 2: 3, 3: 5, 4: 8, 5: 12}
 _N_EVENTS = {1: 4, 2: 8, 3: 16, 4: 28, 5: 44}
 _DISTRACTOR_RATE = {1: 0.15, 2: 0.25, 3: 0.35, 4: 0.45, 5: 0.5}
+# Single-knob ramp (gate attempt 3 postmortem): tiers 1-2 are pure set/overwrite
+# tracking (the actual compression skill); mod-100 increment/decrement arithmetic
+# enters at tier 3; two-variable aggregates only at tier 4+.
+_ARITH_TIER = 3
 
 _NAMES = ["kap", "rud", "mel", "tov", "sil", "nar", "bex", "fum", "gid", "hol",
           "jyn", "wex", "pia", "quz", "vor", "yem"]
@@ -33,7 +37,7 @@ def generate(seed: int, difficulty: int) -> Instance:
             lines.append(rng.choice(_DISTRACTORS) + ".")
             continue
         v = rng.choice(var_names)
-        kind = rng.random()
+        kind = rng.random() if difficulty >= _ARITH_TIER else 0.0
         if v not in state or kind < 0.5:
             val = rng.randint(0, 99)
             state[v] = val

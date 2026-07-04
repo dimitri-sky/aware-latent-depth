@@ -75,3 +75,23 @@ def test_traced_form_contains_trace():
     inst = FAMILIES["algo_exec"](11, 2)
     assert "THINK:" in inst.traced_text()
     assert inst.trace.splitlines()[0] in inst.traced_text()
+
+
+@pytest.mark.parametrize("difficulty", DIFFICULTIES)
+def test_rule_shift_answer_is_inferable(difficulty):
+    """Every changed symbol in the query must be observable in a post-shift example
+    (gate attempt 3 postmortem: uninferable instances inject irreducible noise)."""
+    for seed in range(200):
+        inst = FAMILIES["rule_shift"](seed, difficulty)
+        lines = inst.prompt.splitlines()
+        query = [ln for ln in lines if ln.strip().endswith("->")][-1].replace("->", "").strip()
+        example_pairs = [ln.split(" -> ") for ln in lines if " -> " in ln and not ln.strip().endswith("->")]
+        # reconstruct latest observed mapping per symbol position
+        latest: dict[str, str] = {}
+        for w, out in example_pairs:
+            for c_in, c_out in zip(w.strip(), out.strip()):
+                latest[c_in] = c_out
+        derived = "".join(latest[c] for c in query)
+        assert derived == inst.answer, (
+            f"seed={seed} d={difficulty}: latest observed mapping gives {derived!r} "
+            f"but answer is {inst.answer!r} — uninferable instance")

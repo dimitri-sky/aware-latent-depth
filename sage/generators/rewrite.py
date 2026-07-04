@@ -9,11 +9,13 @@ from .base import Instance, rng_for
 
 FAMILY = "rewrite"
 _ALPHABET = list("ABCDEFGHJKLMNPQRSTUVWXYZ")
-_N_RULES = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5}
-_STR_LEN = {1: 3, 2: 5, 3: 7, 4: 9, 5: 12}
-_N_EXAMPLES = {1: 4, 2: 4, 3: 5, 4: 5, 5: 6}
+# Single-knob difficulty ramp (gate attempt 3 postmortem): serial rewrite depth is THE
+# knob; string length and rule count move late and gently, never together with depth.
+_N_RULES = {1: 1, 2: 2, 3: 2, 4: 3, 5: 4}
+_STR_LEN = {1: 4, 2: 4, 3: 4, 4: 6, 5: 8}
+_N_EXAMPLES = {1: 4, 2: 5, 3: 5, 4: 6, 5: 6}
 # serial depth ramp: max rewrite applications per tier (fixpoint if reached earlier)
-_MAX_STEPS = {1: 1, 2: 2, 3: 4, 4: 8, 5: 16}
+_MAX_STEPS = {1: 1, 2: 2, 3: 4, 4: 6, 5: 10}
 
 
 def _apply_fixpoint(rules: dict[tuple[str, str], str], s: list[str],

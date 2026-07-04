@@ -12,8 +12,8 @@ from .base import Instance, rng_for
 FAMILY = "rule_shift"
 _SYMBOLS = list("abcdefghij")
 _TABLE_SIZE = {1: 3, 2: 4, 3: 5, 4: 6, 5: 8}
-_PRE_EXAMPLES = {1: 4, 2: 5, 3: 6, 4: 8, 5: 10}
-_WORD_LEN = {1: 2, 2: 2, 3: 3, 4: 3, 5: 4}
+_PRE_EXAMPLES = {1: 5, 2: 5, 3: 6, 4: 8, 5: 10}
+_WORD_LEN = {1: 2, 2: 2, 3: 2, 4: 3, 5: 4}
 
 
 def _make_table(rng, symbols: list[str]) -> dict[str, str]:
@@ -51,23 +51,47 @@ def generate(seed: int, difficulty: int) -> Instance:
         return "".join(rng.choice(symbols) for _ in range(wlen))
 
     lines = []
+    seen_pre: set[str] = set()
     for _ in range(_PRE_EXAMPLES[difficulty]):
         w = word()
+        seen_pre.update(w)
         lines.append(f"{w} -> {_apply(table1, w)}")
-    # 0..4 post-shift examples; adaptation speed = accuracy vs this count
-    n_post = rng.randint(0, 4)
-    post_words = []
+    # every symbol must be demonstrated at least once pre-shift
+    for s in symbols:
+        if s not in seen_pre:
+            w = s + "".join(rng.choice(symbols) for _ in range(wlen - 1))
+            seen_pre.update(w)
+            lines.append(f"{w} -> {_apply(table1, w)}")
+    # 1..4 post-shift examples; adaptation speed = accuracy vs this count
+    n_post = rng.randint(1, 4)
+    covered: set[str] = set()
     for _ in range(n_post):
         w = word()
-        post_words.append(w)
+        covered.update(w)
         lines.append(f"{w} -> {_apply(table2, w)}")
 
-    # Query must involve at least one changed symbol, else the shift is unobservable
+    # INFERABILITY GUARANTEE (gate attempt 3 postmortem): the answer must be
+    # derivable from the prompt. Every changed symbol in the query must appear in a
+    # post-shift example; unchanged symbols are known from pre-shift examples.
     changed_syms = [k for k in table1 if table1[k] != table2[k]]
-    while True:
+    observable = [c for c in changed_syms if c in covered]
+    if not observable:
+        # force coverage: add one post-shift example containing a changed symbol
+        c = rng.choice(changed_syms)
+        w = c + "".join(rng.choice(symbols) for _ in range(wlen - 1))
+        covered.update(w)
+        lines.append(f"{w} -> {_apply(table2, w)}")
+        n_post += 1
+        observable = [c for c in changed_syms if c in covered]
+    # query pool: unchanged symbols (known from pre-shift) + post-covered changed ones
+    pool = [s for s in symbols if s not in changed_syms or s in covered]
+    for _ in range(400):
         q = word()
-        if any(c in changed_syms for c in q):
+        q_changed = [c for c in q if c in changed_syms]
+        if q_changed and all(c in pool for c in q):
             break
+    else:
+        q = rng.choice(observable) + "".join(rng.choice(pool) for _ in range(wlen - 1))
     answer = _apply(table2, q)
     trace = "\n".join(f"{c} -> {table2[c]}" for c in q)
 

@@ -20,13 +20,15 @@ def generate(seed: int, difficulty: int) -> Instance:
     op_to_name = dc.fresh_names(rng, tuple(ops))
     name_to_op = {v: k for k, v in op_to_name.items()}
 
-    # Examples: at least one flat example per op so the language is learnable,
-    # then random (possibly nested) fillers.
+    # Examples: every op appears flat at least twice at low tiers (a single
+    # observation of an arbitrary name->op mapping is not enough evidence for
+    # induction; gate attempt 3 postmortem), then random fillers.
+    min_occurrences = 2 if difficulty <= 3 else 1
     examples = []
     for op in ops:
         n_args = 1 if op in ("inc", "dbl") else 2
-        expr = [op] + [rng.randint(0, 20) for _ in range(n_args)]
-        examples.append(expr)
+        for _ in range(min_occurrences):
+            examples.append([op] + [rng.randint(0, 20) for _ in range(n_args)])
     while len(examples) < _N_EXAMPLES[difficulty]:
         examples.append(dc.random_int_expr(rng, ops, _DEPTH[difficulty]))
     rng.shuffle(examples)
