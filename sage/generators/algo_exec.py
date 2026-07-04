@@ -1,39 +1,43 @@
 """Algo-Exec: execute a small stack-VM program. Deterministic, serial-depth bound.
 
-Difficulty scales program length. Values are kept in [0, 99] (mod 100) so answers are
-short and tokenization is not a confound.
+Difficulty scales program length; ops enter gradually. Arithmetic SATURATES at
+[0, 99] (no mod wrap-around): wrap is a separate hard skill that floored tiny models
+(attempt 4), while ADD-only tiers were order-independent and needed no depth at all
+(EXP-000B). Saturating SUB/SWAP restore genuine serial order-dependence from tier 2
+without smuggling in modular arithmetic.
 """
 from __future__ import annotations
 
 from .base import Instance, rng_for
 
 FAMILY = "algo_exec"
-MOD = 100
-# Single-knob ramp (gate attempt 3 postmortem): tiers 1-2 ramp only program length
-# with ADD-only arithmetic; harder ops enter one at a time from tier 3. Mod-wrap SUB
-# and MUL are disproportionately hard for byte-level models and used to gate tier 2.
+LO, HI = 0, 99
 _OPS_BY_TIER = {
     1: ["PUSH", "ADD"],
-    2: ["PUSH", "ADD"],
-    3: ["PUSH", "ADD", "SUB", "DUP"],
-    4: ["PUSH", "ADD", "SUB", "DUP", "SWAP"],
-    5: ["PUSH", "ADD", "SUB", "MUL", "DUP", "SWAP", "POP"],
+    2: ["PUSH", "ADD", "SUB", "SWAP"],
+    3: ["PUSH", "ADD", "SUB", "SWAP", "DUP"],
+    4: ["PUSH", "ADD", "SUB", "SWAP", "DUP"],
+    5: ["PUSH", "ADD", "SUB", "SWAP", "DUP", "MUL", "POP"],
 }
 _LEN_BY_TIER = {1: 3, 2: 5, 3: 7, 4: 10, 5: 14}
 
 
+def _sat(v: int) -> int:
+    return max(LO, min(HI, v))
+
+
 def _step(op: str, arg: int | None, stack: list[int]) -> None:
     if op == "PUSH":
-        stack.append(arg % MOD)
+        stack.append(_sat(arg))
     elif op == "ADD":
         b, a = stack.pop(), stack.pop()
-        stack.append((a + b) % MOD)
+        stack.append(_sat(a + b))
     elif op == "SUB":
         b, a = stack.pop(), stack.pop()
-        stack.append((a - b) % MOD)
+        stack.append(_sat(a - b))
     elif op == "MUL":
         b, a = stack.pop(), stack.pop()
-        stack.append((a * b) % MOD)
+        stack.append(_sat(a * b))
     elif op == "DUP":
         stack.append(stack[-1])
     elif op == "SWAP":
@@ -57,13 +61,6 @@ def generate(seed: int, difficulty: int) -> Instance:
     stack: list[int] = []
     trace_lines: list[str] = []
 
-    def would_wrap(op: str) -> bool:
-        if op == "SUB" and len(stack) >= 2:
-            return stack[-2] < stack[-1]
-        if op == "MUL" and len(stack) >= 2:
-            return stack[-2] * stack[-1] >= MOD
-        return False
-
     def emit(op: str) -> None:
         arg = rng.randint(0, 20) if op == "PUSH" else None
         _step(op, arg, stack)
@@ -78,15 +75,10 @@ def generate(seed: int, difficulty: int) -> Instance:
         op = rng.choice(candidates)
         if op == "POP" and len(stack) == 1:
             op = "PUSH"
-        # mod-wrap arithmetic is its own skill; it enters only at tier 5
-        # (gate attempt 4: wrap-SUB at tier 3 floored both depths to 0.10)
-        if difficulty < 5 and would_wrap(op):
-            op = "PUSH" if len(stack) < 2 else "DUP"
         emit(op)
     # final op must CONSUME the stack so the answer depends on the computation chain,
     # never on a trailing PUSH literal (difficulty must bind)
-    combiners = [o for o in ops_pool if _arity(o) == 2 and o != "SWAP"
-                 and not (difficulty < 5 and would_wrap(o))]
+    combiners = [o for o in ops_pool if _arity(o) == 2 and o != "SWAP"]
     while len(stack) < 2:
         emit("PUSH")
     emit(rng.choice(combiners) if combiners else "DUP")
@@ -94,7 +86,7 @@ def generate(seed: int, difficulty: int) -> Instance:
 
     prog_text = "\n".join(f"{op} {arg}" if arg is not None else op for op, arg in program)
     prompt = (
-        "Execute this stack program. Values are mod 100. "
+        "Execute this stack program. Results clamp to the range 0..99. "
         "Report the final top of stack.\n"
         f"{prog_text}\nANSWER:"
     )

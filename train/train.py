@@ -88,7 +88,13 @@ def train_one(mcfg: ModelConfig, tc: TrainConfig, exp_id: str, model_id: str,
             for g in opt.param_groups:
                 g["lr"] = lr_at(step, tc)
             with amp:
-                _, loss = model(x, targets=y)
+                logits, loss = model(x, targets=y)
+                # z-loss: standard small-LM logit stabilizer; EXP-000B showed
+                # seed-dependent degenerate collapse (train loss fine, eval ~0)
+                mask = y != -100
+                if mask.any():
+                    z = logits.float().logsumexp(-1)[mask]
+                    loss = loss + 1e-4 * (z ** 2).mean()
             opt.zero_grad(set_to_none=True)
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), tc.grad_clip)
