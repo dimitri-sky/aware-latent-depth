@@ -1,0 +1,9 @@
+# Core (torch installed separately with CUDA index on the local box:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu126 )
+torch>=2.4
+numpy>=1.26
+pyyaml>=6.0
+tqdm>=4.66
+pytest>=8.0
+matplotlib>=3.8
+datasets>=2.19   # TinyStories download only
