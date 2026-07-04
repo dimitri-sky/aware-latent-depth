@@ -30,3 +30,12 @@ these; check before designing any new experiment.
 - (EXP-000 attempt 4) An 8L model collapsed to degenerate repeats on rule_shift
   (train loss smooth, eval 0%) while 4L scored 100% — optimization instability at
   depth on easy saturated tasks. If it recurs: lower gate lr 6e-4 -> 4e-4.
+- (EXP-000 attempt 5, cloud) dsl_learn separation flipped sign vs attempt 4
+  (+0.070 -> -0.025) across minor generator changes; rewrite separated (+0.060) but
+  single-seed deltas near the margin are suspect. STOP tweaking ramps against a
+  possibly-noisy instrument: EXP-000B measures the A/A seed-noise floor and runs a
+  max-contrast 2L-vs-16L depth probe (2 seeds) before any further gate attempt.
+- (infra) Tiny models use ~10% of a 5090 (kernel-launch bound, 79% util, 3GB VRAM):
+  run 3+ training workers per GPU with per-worker results-CSV shards
+  (AWARE_RESULTS_CSV) merged after; parallelism-across-experiments beats
+  speed-per-experiment at this scale.

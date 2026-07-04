@@ -8,6 +8,7 @@ from __future__ import annotations
 import csv
 import datetime
 import json
+import os
 import subprocess
 import uuid
 from pathlib import Path
@@ -19,7 +20,9 @@ from sage.scoring import score_output
 from train.data import load_sage_records
 from train.tokenizer import BOS, EOS, PAD, decode, encode
 
-RESULTS_CSV = Path("experiments/results.csv")
+# Overridable so parallel shard workers write separate files (merged afterward);
+# avoids concurrent-append interleaving on one CSV.
+RESULTS_CSV = Path(os.environ.get("AWARE_RESULTS_CSV", "experiments/results.csv"))
 MAX_NEW_TOKENS = 48
 
 
