@@ -20,15 +20,15 @@ class TransformerPP(nn.Module):
         self.head.weight = self.tok.weight
         self._rope = None
 
-    def _rope_cs(self, device):
-        if self._rope is None or self._rope[0].device != device:
+    def _rope_cs(self, device, t: int):
+        if self._rope is None or self._rope[0].device != device or self._rope[0].shape[0] < t:
             self._rope = rope_cache(self.cfg.d_model // self.cfg.n_heads,
-                                    self.cfg.max_seq_len, device)
+                                    max(self.cfg.max_seq_len, t), device)
         return self._rope
 
     def forward(self, idx, targets=None):
         x = self.tok(idx)
-        rope_cs = self._rope_cs(idx.device)
+        rope_cs = self._rope_cs(idx.device, idx.shape[1])
         for blk in self.blocks:
             x = blk(x, rope_cs)
         logits = self.head(self.norm(x))

@@ -71,8 +71,8 @@ def trivial_solvers() -> dict:
 def discrimination(device: str) -> dict:
     common = dict(vocab_size=259, d_model=256, n_heads=4, n_kv_heads=2, d_ff=704,
                   max_seq_len=1024)
-    tc = TrainConfig(families=FAMS, steps=1500, batch_size=32, seq_len=768, seed=0,
-                     eval_limit=200)
+    tc = TrainConfig(families=FAMS, steps=4000, batch_size=32, seq_len=768, seed=0,
+                     lr=6e-4, warmup=400, eval_limit=200)
     res = {}
     for n_layers, mid in [(4, "gate-tfpp-4L"), (8, "gate-tfpp-8L")]:
         mcfg = ModelConfig(arch="tf_pp", n_layers=n_layers, **common)

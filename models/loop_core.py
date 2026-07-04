@@ -34,16 +34,16 @@ class LoopLM(nn.Module):
         self.head.weight = self.tok.weight
         self._rope = None
 
-    def _rope_cs(self, device):
-        if self._rope is None or self._rope[0].device != device:
+    def _rope_cs(self, device, t: int):
+        if self._rope is None or self._rope[0].device != device or self._rope[0].shape[0] < t:
             self._rope = rope_cache(self.cfg.d_model // self.cfg.n_heads,
-                                    self.cfg.max_seq_len, device)
+                                    max(self.cfg.max_seq_len, t), device)
         return self._rope
 
     def forward(self, idx, targets=None, loop_count: int | None = None):
         cfg = self.cfg
         loops = loop_count if loop_count is not None else cfg.loop_count
-        rope_cs = self._rope_cs(idx.device)
+        rope_cs = self._rope_cs(idx.device, idx.shape[1])
 
         x = self.tok(idx)
         for blk in self.prelude:

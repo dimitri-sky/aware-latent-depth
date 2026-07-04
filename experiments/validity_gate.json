@@ -1,0 +1,62 @@
+{
+  "headroom_ok": true,
+  "discrimination_ok": false,
+  "separated_families": [],
+  "trivial": {
+    "dsl_learn": {
+      "majority": 0.034375,
+      "nn_overlap": 0.0375,
+      "copy_last": 0.103125
+    },
+    "rewrite": {
+      "majority": 0.0,
+      "nn_overlap": 0.0,
+      "copy_last": 0.0
+    },
+    "algo_exec": {
+      "majority": 0.115625,
+      "nn_overlap": 0.075,
+      "copy_last": 0.234375
+    },
+    "rule_shift": {
+      "majority": 0.025,
+      "nn_overlap": 0.03125,
+      "copy_last": 0.0
+    },
+    "compress": {
+      "majority": 0.009375,
+      "nn_overlap": 0.009375,
+      "copy_last": 0.0
+    },
+    "state_guard": {
+      "majority": 0.153125,
+      "nn_overlap": 0.190625,
+      "copy_last": 0.0
+    },
+    "fresh_dsl": {
+      "majority": 0.0375,
+      "nn_overlap": 0.00625,
+      "copy_last": 0.059375
+    }
+  },
+  "disc": {
+    "gate-tfpp-4L": {
+      "dsl_learn": 0.045,
+      "rewrite": 0.0,
+      "algo_exec": 0.235,
+      "rule_shift": 0.12,
+      "compress": 0.0125,
+      "state_guard": 0.15,
+      "fresh_dsl": 0.015
+    },
+    "gate-tfpp-8L": {
+      "dsl_learn": 0.01,
+      "rewrite": 0.0,
+      "algo_exec": 0.07,
+      "rule_shift": 0.105,
+      "compress": 0.0125,
+      "state_guard": 0.15,
+      "fresh_dsl": 0.015
+    }
+  }
+}

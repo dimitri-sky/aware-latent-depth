@@ -16,7 +16,10 @@ _INTERFERENCE = {1: 3, 2: 6, 3: 12, 4: 20, 5: 32}
 
 _KEYS = ["door", "vent", "gate", "dial", "lamp", "fuse", "belt", "pump", "tank", "coil",
          "fan", "lock"]
-_VALUES = ["red", "blue", "green", "gold", "gray", "pink", "teal", "ivory"]
+# Large value vocabulary keeps trivial-prior solvers under the headroom threshold.
+_VALUES = ["red", "blue", "green", "gold", "gray", "pink", "teal", "ivory", "amber",
+           "plum", "rust", "jade", "coral", "navy", "olive", "white", "black", "cyan",
+           "beige", "maroon"]
 
 
 def generate(seed: int, difficulty: int) -> Instance:
@@ -32,7 +35,9 @@ def generate(seed: int, difficulty: int) -> Instance:
         state[k] = v
         lines.append(f"the {k} is {v}.")
 
-    probe_kind = rng.choice(["retention", "retention", "overwrite", "retract"])
+    # retract kept rare: its fixed answer 'unknown' is what trivial priors exploit
+    probe_kind = rng.choice(["retention", "retention", "retention",
+                             "overwrite", "overwrite", "retract"])
     target = rng.choice(early_keys)
 
     if probe_kind == "retract":

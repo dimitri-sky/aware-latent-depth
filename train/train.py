@@ -88,7 +88,8 @@ def train_one(mcfg: ModelConfig, tc: TrainConfig, exp_id: str, model_id: str,
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), tc.grad_clip)
             opt.step()
-            tokens_seen += int((y != -100).sum())
+            # FLOPs are paid on every processed token, not just supervised ones
+            tokens_seen += int(x.numel())
             losses.append(loss.item())
             step += 1
             if step % tc.log_every == 0:
