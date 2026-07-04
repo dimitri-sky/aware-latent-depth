@@ -7,7 +7,8 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 ---
 
 ### H1: Shared-weight recurrent latent depth improves reasoning-per-FLOP
-- Status: testing (EXP-001, running on pod; families rewrite + dsl_learn per EXP-000C)
+- Status: testing — EXTEND round EXP-001B running (algo_exec + seeds 3-5 + matched-FLOP
+  control; pre-registration in agent/log/EXP-001B.md)
 - Kill discipline: per owner directive, a near-miss with promising signal gets
   EXTEND (seeds/steps/regime) before any kill decision — see decision_policy.md.
 - Expected advantage: V1-loop4 beats V1-loop1 by >= 3.0 accuracy points (family mean)
@@ -22,7 +23,7 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 - Hardware-compat note: KV-cache sharing / last-step reuse exists at scale (Ouro);
   truncated BPTT (bptt_loops=2) avoids full unroll; core is plain TF blocks (no
   kernel risk).
-- Est. cost: ~6 GPU-h local (9 runs) | Actual: TBD
+- Est. cost: ~6 GPU-h local (9 runs) | Actual: ~2.2 GPU-h (RunPod, 9/9 ok)
 - Timebox: 2 revisions max, then kill-or-park.
 
 ### H2: Gated delta-rule fast-weight memory + SWA improves in-session rule learning

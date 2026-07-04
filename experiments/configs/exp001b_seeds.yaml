@@ -1,0 +1,42 @@
+# EXP-001B-SEEDS: seeds 3-5 for the EXP-001 loop pair on rewrite + dsl_learn.
+# Purpose: EXP-001 rewrite delta (+6.0 median) failed the 2x pooled-SD gate on a
+# seed-2 reversal; pooled across 6 total seeds (EXP-001 s0-2 + these s3-5) the SD
+# gate is re-adjudicated. Same training protocol as EXP-001 exactly.
+exp_id: EXP-001B-SEEDS
+
+train:
+  families: [rewrite, dsl_learn]
+  steps: 6000
+  batch_size: 32
+  seq_len: 768
+  lr: 4.0e-4
+  warmup: 300
+  eval_limit: 300
+seeds: [3, 4, 5]
+
+models:
+  - id: V1-loop1
+    arch: loop
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_prelude: 1
+    n_core: 2
+    n_coda: 1
+    loop_count: 1
+    bptt_loops: 1
+    max_seq_len: 1024
+
+  - id: V1-loop4
+    arch: loop
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_prelude: 1
+    n_core: 2
+    n_coda: 1
+    loop_count: 4
+    bptt_loops: 2
+    max_seq_len: 1024

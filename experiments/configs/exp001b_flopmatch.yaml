@@ -1,0 +1,31 @@
+# EXP-001B-FM: matched-training-FLOP control for H1 (the named confound most likely
+# to kill the per-FLOP claim). loop4 does ~2.5x the per-token compute of loop1
+# (effective layers 10 vs 4: prelude 1 + core 2*loops + coda 1), so loop1 trained
+# for 2.5x steps (15000 vs 6000) matches loop4's total training FLOPs.
+# If loop4@6000 still beats loop1@15000, the gain is architectural, not just
+# training compute. Compared against EXP-001 loop4 s0-2 results (identical protocol).
+exp_id: EXP-001B-FM
+
+train:
+  families: [rewrite, dsl_learn]
+  steps: 15000
+  batch_size: 32
+  seq_len: 768
+  lr: 4.0e-4
+  warmup: 300
+  eval_limit: 300
+seeds: [0, 1, 2]
+
+models:
+  - id: V1-loop1-fm
+    arch: loop
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_prelude: 1
+    n_core: 2
+    n_coda: 1
+    loop_count: 1
+    bptt_loops: 1
+    max_seq_len: 1024

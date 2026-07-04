@@ -13,7 +13,7 @@
 |------|---------|-----------|-----------|-------------------|
 | 6 | **+0.290 PASS** | **+0.050 PASS** | -0.025 FAIL | stack VM, saturating |
 | 7 | **+0.200 PASS** | +0.040 FAIL (margin) | -0.030 FAIL (floored ~0.10) | accumulator, 2-digit |
-| 8 | (not rerun) | (not rerun) | pending | accumulator, single-digit |
+| 8 | (not rerun) | (not rerun) | **+0.115 PASS** | accumulator, single-digit |
 
 run_ids: EXP-000C rows in experiments/results.csv (pod merges:
 results_pod_gate6.csv, results_pod_gate7.csv).
@@ -24,22 +24,17 @@ results_pod_gate6.csv, results_pod_gate7.csv).
   gates, 6 seeds, zero collapses after stabilizers. The instrument detects depth.
 - **dsl_learn: MARGINAL-VALID.** +4.0/+5.0 straddling the margin; usable as a
   secondary family with the caveat recorded here.
-- **algo_exec: PARKED after 3 diagnosed failures** (timebox rule): (1) stack VM has
-  dead code -> live dependency path much shorter than program, shallow-retrievable;
-  (2) mod-wrap arithmetic is a separate skill that floors 3-12M models; (3) exact
-  2-digit arithmetic makes per-step accuracy (~55%) the bottleneck, not
-  chain-following. v3 (single-digit, clamp 0..9, order-dependence via rails) is the
-  final revision; if gate 8 fails, the family stays parked and is redesigned outside
-  the critical path.
+- **algo_exec: VALIDATED (gate 8).** v3 single-digit accumulator passes with
+  median(16L)-median(2L)=+0.115 (2L=0.680, 16L=0.795), 3 seeds, zero collapses.
+  Prior failures were task-design bugs (dead code, mod-wrap, 2-digit arithmetic), not
+  instrument failure.
 
 ## Decision
 
-Gate purpose — "can SAGE detect real depth/architecture gains?" — is SATISFIED via
-rewrite (decisive) + dsl_learn (marginal). EXP-001 proceeds on rewrite + dsl_learn.
-Honest caveats: (a) depth detection is proven on 2 of 3 intended computation
-families; (b) dsl_learn sits at the margin; (c) claims from EXP-001 inherit these
-limits and the H1 margin (3.0 pts, 2x pooled SD) is comfortably above the
-post-stabilization noise (~2-5 pts seed spread, median-of-3).
+Gate purpose — "can SAGE detect real depth/architecture gains?" — is SATISFIED on
+all three computation families (rewrite decisive, algo_exec decisive, dsl_learn
+marginal). EXP-001 proceeds on rewrite + dsl_learn; algo_exec available for
+follow-up re-evals from saved checkpoints.
 
 ## Lessons
 
