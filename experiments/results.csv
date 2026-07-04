@@ -1,1 +1,7 @@
 run_id,timestamp,git_sha,config_hash,exp_id,model_id,params,family,difficulty,split,seed,metric,value,train_tokens,train_flops,infer_flops_per_correct,audit_hash,notes
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,1,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,2,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,3,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,4,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,5,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test
+EXP-SMOKE-smoke-loop-s0-7c17d6,2026-07-03T23:01:55,87a494a,24aba087328d,EXP-SMOKE,smoke-loop,127616,algo_exec,all,eval,0,accuracy,0.0,5232,9.264e+09,7.524e+08,e5afd1aee12133fa,pipeline smoke test

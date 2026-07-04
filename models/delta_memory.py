@@ -18,7 +18,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from .blocks import RMSNorm, SwiGLU, TFBlock, rope_cache
+from .blocks import RMSNorm, SwiGLU, TFBlock, init_weights, rope_cache
 
 
 class GatedDeltaLayer(nn.Module):
@@ -34,6 +34,9 @@ class GatedDeltaLayer(nn.Module):
         self.w_alpha = nn.Linear(d, cfg.n_heads, bias=True)
         self.w_beta = nn.Linear(d, cfg.n_heads, bias=True)
         self.wo = nn.Linear(cfg.d_v, d, bias=False)
+        self.reset_gate_biases()
+
+    def reset_gate_biases(self):
         nn.init.constant_(self.w_alpha.bias, 4.0)   # start with long retention
         nn.init.constant_(self.w_beta.bias, -1.0)   # start with gentle writes
 
@@ -93,6 +96,10 @@ class DeltaLM(nn.Module):
         self.blocks = nn.ModuleList(blocks)
         self.norm = RMSNorm(cfg.d_model)
         self.head = nn.Linear(cfg.d_model, cfg.vocab_size, bias=False)
+        init_weights(self)
+        for m in self.modules():
+            if isinstance(m, GatedDeltaLayer):
+                m.reset_gate_biases()  # init_weights zeroed them
         self.head.weight = self.tok.weight
         self._rope = None
 

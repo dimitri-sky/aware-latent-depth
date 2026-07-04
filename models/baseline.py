@@ -9,7 +9,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from .blocks import Attention
+from .blocks import Attention, init_weights
 
 
 class Gpt2Block(nn.Module):
@@ -36,6 +36,7 @@ class Gpt2LM(nn.Module):
         self.blocks = nn.ModuleList(Gpt2Block(cfg) for _ in range(cfg.n_layers))
         self.norm = nn.LayerNorm(cfg.d_model)
         self.head = nn.Linear(cfg.d_model, cfg.vocab_size, bias=False)
+        init_weights(self)
         self.head.weight = self.tok.weight  # tied
 
     def forward(self, idx, targets=None):

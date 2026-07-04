@@ -1,0 +1,58 @@
+# EXP-001: fastest falsifiable experiment (H1, recurrent latent depth).
+# ~15M-param loop model at loop counts 1 vs 4, plus a depth-matched Transformer++
+# anchor (10 layers ~= prelude + 4*core + coda effective depth), identical data/tokens.
+#
+# Pre-registered prediction (agent/backlog.md H1): loop-4 beats loop-1 by >= 3.0
+# accuracy points (family mean) on algo_exec + rewrite at equal params; if loop count
+# changes nothing at equal params, H1 is in serious trouble.
+exp_id: EXP-001
+
+train:
+  families: [algo_exec, rewrite]
+  steps: 6000
+  batch_size: 32
+  seq_len: 768
+  lr: 3.0e-4
+  warmup: 200
+  eval_limit: 300
+seeds: [0, 1, 2]
+
+models:
+  # V1 at loop 1: param-matched, FLOP-light control
+  - id: V1-loop1
+    arch: loop
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_prelude: 1
+    n_core: 2
+    n_coda: 1
+    loop_count: 1
+    bptt_loops: 1
+    max_seq_len: 1024
+
+  # V1 at loop 4: the hypothesis (same params as loop1, 4x core compute)
+  - id: V1-loop4
+    arch: loop
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_prelude: 1
+    n_core: 2
+    n_coda: 1
+    loop_count: 4
+    bptt_loops: 2
+    max_seq_len: 1024
+
+  # B2 depth-matched anchor: 10 unique layers ~ loop4's effective depth,
+  # ~2.4x the parameters. Upper reference, not the fairness comparison.
+  - id: B2-10L
+    arch: tf_pp
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 10
+    max_seq_len: 1024

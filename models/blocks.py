@@ -7,6 +7,18 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
+def init_weights(module: nn.Module) -> None:
+    """GPT-style init: N(0, 0.02) for Linear/Embedding. Essential with tied
+    embeddings, whose default N(0,1) init produces ~10x inflated initial loss."""
+    for m in module.modules():
+        if isinstance(m, nn.Linear):
+            nn.init.normal_(m.weight, std=0.02)
+            if m.bias is not None:
+                nn.init.zeros_(m.bias)
+        elif isinstance(m, nn.Embedding):
+            nn.init.normal_(m.weight, std=0.02)
+
+
 class RMSNorm(nn.Module):
     def __init__(self, d: int, eps: float = 1e-6):
         super().__init__()

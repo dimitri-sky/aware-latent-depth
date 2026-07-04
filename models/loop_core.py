@@ -17,7 +17,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from .blocks import RMSNorm, TFBlock, rope_cache
+from .blocks import RMSNorm, TFBlock, init_weights, rope_cache
 
 
 class LoopLM(nn.Module):
@@ -30,6 +30,7 @@ class LoopLM(nn.Module):
         self.coda = nn.ModuleList(TFBlock(cfg) for _ in range(cfg.n_coda))
         self.norm = RMSNorm(cfg.d_model)
         self.head = nn.Linear(cfg.d_model, cfg.vocab_size, bias=False)
+        init_weights(self)
         self.head.weight = self.tok.weight
         self._rope = None
 
