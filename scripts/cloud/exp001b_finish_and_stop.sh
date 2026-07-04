@@ -19,13 +19,13 @@ while true; do
     echo "6h deadline reached — shutting down anyway"
     break
   fi
-  # If nothing is training and the sentinel never appeared, something crashed;
-  # give it one grace period then shut down to stop billing.
-  if ! pgrep -f 'train_single.py' >/dev/null && ! pgrep -f 'run_exp.py' >/dev/null; then
+  # The runner script is the single process to track; if it is gone and the
+  # sentinel never appeared, it crashed — grace period, then shut down.
+  if ! pgrep -f 'run_exp001b.sh' >/dev/null; then
     sleep 120
-    if ! pgrep -f 'train_single.py' >/dev/null && ! pgrep -f 'run_exp.py' >/dev/null \
+    if ! pgrep -f 'run_exp001b.sh' >/dev/null \
        && ! grep -q 'EXP001B_ALL_DONE' /workspace/exp001b.log 2>/dev/null; then
-      echo "no training processes and no completion sentinel — assuming crash, shutting down"
+      echo "runner process gone and no completion sentinel — assuming crash, shutting down"
       break
     fi
   fi
