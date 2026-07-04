@@ -55,12 +55,17 @@ def run_job(job: dict, shard: Path) -> int:
 
 
 def merge_shards(shards: list[Path]) -> None:
+    # Dedup key must be row-level, NOT run_id: every row of a run shares run_id
+    # (bug caught 2026-07-04: run_id-dedup silently dropped all tiers but the first).
+    def key(row: list[str]) -> tuple:
+        return (row[0], row[7], row[8], row[11])  # run_id, family, difficulty, metric
+
     existing = set()
     with RESULTS.open(encoding="utf-8") as fh:
-        header = fh.readline()
+        fh.readline()
         for row in csv.reader(fh):
             if row:
-                existing.add(row[0])
+                existing.add(key(row))
     with RESULTS.open("a", newline="", encoding="utf-8") as out:
         w = csv.writer(out)
         for shard in shards:
@@ -69,10 +74,10 @@ def merge_shards(shards: list[Path]) -> None:
             with shard.open(encoding="utf-8") as fh:
                 fh.readline()  # skip shard header
                 for row in csv.reader(fh):
-                    if row and row[0] not in existing:
+                    if row and key(row) not in existing:
                         w.writerow(row)
-                        existing.add(row[0])
-            shard.unlink()
+                        existing.add(key(row))
+            # keep shard files as raw evidence; they are gitignored on pods
 
 
 def main() -> None:
