@@ -131,5 +131,25 @@ def train_one(mcfg: ModelConfig, tc: TrainConfig, exp_id: str, model_id: str,
                          train_tokens=tokens_seen, train_flops=tf,
                          audit_hash=audit_hash, notes=notes)
     print(f"[{model_id} s{tc.seed}] run_id={run_id}\n{summarize(results)}", flush=True)
+
+    # K-gap diagnostic (readout blind spot, arXiv:2606.24898): a loop model whose
+    # accuracy is identical at K=1 and K=trained is not using its iterations, no
+    # matter how healthy the loss looks. Logged as a separate run with K1diag notes.
+    if mcfg.arch == "loop" and mcfg.loop_count > 1 and eval_loop_count is None:
+        k1 = evaluate_model(model, mcfg, Path(tc.eval_dir), tc.families, device,
+                            max_seq=mcfg.max_seq_len, loop_count=1,
+                            limit=tc.eval_limit)
+        k1_id = log_results(k1, exp_id=exp_id, model_id=model_id, params=params,
+                            config_hash=mcfg.config_hash(), seed=tc.seed,
+                            train_tokens=tokens_seen, train_flops=tf,
+                            audit_hash=audit_hash,
+                            notes=(notes + "|" if notes else "") + "K1diag")
+        def _acc(res):
+            n = sum(v[0] for f, s in res.items() if not f.startswith("_") for v in s.values())
+            c = sum(v[1] for f, s in res.items() if not f.startswith("_") for v in s.values())
+            return c / max(1, n)
+        print(f"[{model_id} s{tc.seed}] K-gap: K={mcfg.loop_count} acc={_acc(results):.3f} "
+              f"vs K=1 acc={_acc(k1):.3f} (diag run {k1_id})", flush=True)
+
     return {"run_id": run_id, "results": results, "params": params,
             "train_tokens": tokens_seen, "model": model}

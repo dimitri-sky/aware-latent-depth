@@ -61,6 +61,29 @@ def test_deep_supervision_loss_differs():
     assert torch.isfinite(l_deep) and not torch.isclose(l_last, l_deep)
 
 
+def test_loop_randomize_samples_depths():
+    torch.manual_seed(0)
+    model = build_model(_cfg(arch="loop", loop_count=4, loop_randomize=True,
+                             deep_supervision=True))
+    idx = torch.randint(0, 259, (2, 17))
+    inputs, targets = idx[:, :-1], idx[:, 1:]
+
+    model.train()
+    losses = []
+    for _ in range(8):
+        _, loss = model(inputs, targets=targets)
+        assert torch.isfinite(loss)
+        losses.append(loss)
+    losses[-1].backward()  # gradients flow through sampled-depth unroll
+
+    # eval must be deterministic at the configured depth (no sampling)
+    model.eval()
+    with torch.no_grad():
+        a, _ = model(inputs)
+        b, _ = model(inputs)
+    assert torch.allclose(a, b), "eval forward must not sample loop counts"
+
+
 def test_delta_state_carries_information():
     torch.manual_seed(0)
     from models.delta_memory import GatedDeltaLayer

@@ -26,6 +26,9 @@ class ModelConfig:
     bptt_loops: int = 2          # backprop through only the last k loops
     input_injection: bool = True
     deep_supervision: bool = False
+    # H3 recipe (2026 lit scan): sample training loop count from a clipped Poisson
+    # with mean loop_count (min 1, max 2*loop_count). Expected FLOPs unchanged.
+    loop_randomize: bool = False
 
     # delta arch
     delta_every: int = 2         # every k-th layer is a gated-delta layer

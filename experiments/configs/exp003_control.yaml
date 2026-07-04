@@ -1,0 +1,26 @@
+# EXP-003-FM: matched-TOTAL-training-FLOP control for the H3 recipe model.
+# Recipe V1R-loop4 training cost per token ~ prelude(1) + 4x core(2) + coda(1)
+# + 3 extra coda decodes from deep supervision ~ 13 layer-passes (head cost
+# negligible at d512/vocab259). loop1 = 4 layer-passes -> 13/4 = 3.25x steps:
+# 6000 * 3.25 = 19500. Extra data epochs favor the control (conservative).
+exp_id: EXP-003-FM
+
+train:
+  families: [rewrite, algo_exec]
+  steps: 19500
+  lr: 4.0e-4
+seeds: [0, 1, 2]
+
+models:
+  - id: V1-loop1-fm3
+    arch: loop
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_prelude: 1
+    n_core: 2
+    n_coda: 1
+    loop_count: 1
+    bptt_loops: 1
+    max_seq_len: 1024

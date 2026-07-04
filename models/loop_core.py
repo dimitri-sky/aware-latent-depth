@@ -42,7 +42,15 @@ class LoopLM(nn.Module):
 
     def forward(self, idx, targets=None, loop_count: int | None = None):
         cfg = self.cfg
-        loops = loop_count if loop_count is not None else cfg.loop_count
+        if loop_count is not None:
+            loops = loop_count
+        elif self.training and cfg.loop_randomize:
+            # clipped Poisson, mean = loop_count (RD-VLA-style depth randomization;
+            # expected training FLOPs equal the fixed-depth model's)
+            k = int(torch.poisson(torch.tensor(float(cfg.loop_count))).item())
+            loops = max(1, min(2 * cfg.loop_count, k))
+        else:
+            loops = cfg.loop_count
         rope_cs = self._rope_cs(idx.device, idx.shape[1])
 
         x = self.tok(idx)
