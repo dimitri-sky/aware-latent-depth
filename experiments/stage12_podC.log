@@ -1,0 +1,995 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+generating missing families: rewrite,algo_exec,rule_shift,compress,state_guard
+rewrite: wrote 20000 -> data/sage/train/rewrite.jsonl
+algo_exec: wrote 20000 -> data/sage/train/algo_exec.jsonl
+rule_shift: wrote 20000 -> data/sage/train/rule_shift.jsonl
+compress: wrote 20000 -> data/sage/train/compress.jsonl
+state_guard: wrote 20000 -> data/sage/train/state_guard.jsonl
+rewrite: wrote 400 -> data/sage/eval/rewrite.jsonl
+algo_exec: wrote 400 -> data/sage/eval/algo_exec.jsonl
+rule_shift: wrote 400 -> data/sage/eval/rule_shift.jsonl
+compress: wrote 400 -> data/sage/eval/compress.jsonl
+state_guard: wrote 400 -> data/sage/eval/state_guard.jsonl
+{
+  "pass": true,
+  "audit_hash": "779525710a75859a",
+  "report": {
+    "canary": "ok",
+    "overlap": {
+      "ngram": 13,
+      "near_duplicates": 0,
+      "worst_coverage": 0.529,
+      "threshold": 0.8
+    }
+  }
+}
+........................................................................ [ 82%]
+...............                                                          [100%]
+87 passed in 4.82s
+NVIDIA GeForce RTX 5090, 32607 MiB, 2 MiB
+=== BG: EXP-006-AX V2-full (CPU-bound, 2 workers) ===
+=== FG GPU chain (1 worker while V2-full active) ===
+[launch] B2-SWA s0
+[B2-SWA s0] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s0] step 100/4000 loss 1.5417 146287 tok/s
+[B2-SWA s0] step 200/4000 loss 0.6848 152732 tok/s
+[B2-SWA s0] step 300/4000 loss 0.6166 154176 tok/s
+[B2-SWA s0] step 400/4000 loss 0.5667 152840 tok/s
+[B2-SWA s0] step 500/4000 loss 0.5465 153215 tok/s
+[B2-SWA s0] step 600/4000 loss 0.5018 152240 tok/s
+[B2-SWA s0] step 700/4000 loss 0.4490 151627 tok/s
+[B2-SWA s0] step 800/4000 loss 0.4406 151465 tok/s
+[B2-SWA s0] step 900/4000 loss 0.4204 151667 tok/s
+[B2-SWA s0] step 1000/4000 loss 0.3869 151335 tok/s
+[B2-SWA s0] step 1100/4000 loss 0.3617 151129 tok/s
+[B2-SWA s0] step 1200/4000 loss 0.3625 150970 tok/s
+[B2-SWA s0] step 1300/4000 loss 0.3576 150795 tok/s
+[B2-SWA s0] step 1400/4000 loss 0.3392 150636 tok/s
+[B2-SWA s0] step 1500/4000 loss 0.3336 150629 tok/s
+[B2-SWA s0] step 1600/4000 loss 0.3242 150507 tok/s
+[B2-SWA s0] step 1700/4000 loss 0.2888 150448 tok/s
+[B2-SWA s0] step 1800/4000 loss 0.3022 150351 tok/s
+[B2-SWA s0] step 1900/4000 loss 0.2768 150414 tok/s
+[B2-SWA s0] step 2000/4000 loss 0.2742 150342 tok/s
+[B2-SWA s0] step 2100/4000 loss 0.2546 150623 tok/s
+[B2-SWA s0] step 2200/4000 loss 0.2449 150941 tok/s
+[B2-SWA s0] step 2300/4000 loss 0.2452 151094 tok/s
+[B2-SWA s0] step 2400/4000 loss 0.2365 151048 tok/s
+[B2-SWA s0] step 2500/4000 loss 0.2342 150964 tok/s
+[B2-SWA s0] step 2600/4000 loss 0.2069 150943 tok/s
+[B2-SWA s0] step 2700/4000 loss 0.1994 150899 tok/s
+[B2-SWA s0] step 2800/4000 loss 0.2017 150834 tok/s
+[B2-SWA s0] step 2900/4000 loss 0.1890 150771 tok/s
+[B2-SWA s0] step 3000/4000 loss 0.1803 150697 tok/s
+[B2-SWA s0] step 3100/4000 loss 0.1623 150616 tok/s
+[B2-SWA s0] step 3200/4000 loss 0.1506 150628 tok/s
+[B2-SWA s0] step 3300/4000 loss 0.1389 150526 tok/s
+[B2-SWA s0] step 3400/4000 loss 0.1404 150482 tok/s
+[B2-SWA s0] step 3500/4000 loss 0.1295 150399 tok/s
+[B2-SWA s0] step 3600/4000 loss 0.1365 150366 tok/s
+[B2-SWA s0] step 3700/4000 loss 0.1287 150370 tok/s
+[B2-SWA s0] step 3800/4000 loss 0.1167 150303 tok/s
+[B2-SWA s0] step 3900/4000 loss 0.1112 150210 tok/s
+[B2-SWA s0] step 4000/4000 loss 0.1129 150128 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s0] run_id=EXP-006-AX-B2-SWA-s0-b71b83
+  algo_exec    159/200 = 0.795
+  flops/correct = 9.82e+09
+[done rc=0] B2-SWA s0
+[launch] B2-SWA s1
+[B2-SWA s1] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s1] step 100/4000 loss 1.5594 136463 tok/s
+[B2-SWA s1] step 200/4000 loss 0.6779 141287 tok/s
+[B2-SWA s1] step 300/4000 loss 0.6205 142761 tok/s
+[B2-SWA s1] step 400/4000 loss 0.5610 143814 tok/s
+[B2-SWA s1] step 500/4000 loss 0.5101 144689 tok/s
+[B2-SWA s1] step 600/4000 loss 0.4859 145188 tok/s
+[B2-SWA s1] step 700/4000 loss 0.4474 145580 tok/s
+[B2-SWA s1] step 800/4000 loss 0.4420 146291 tok/s
+[B2-SWA s1] step 900/4000 loss 0.4353 146568 tok/s
+[B2-SWA s1] step 1000/4000 loss 0.4050 146790 tok/s
+[B2-SWA s1] step 1100/4000 loss 0.4131 146914 tok/s
+[B2-SWA s1] step 1200/4000 loss 0.3896 146917 tok/s
+[B2-SWA s1] step 1300/4000 loss 0.3775 147019 tok/s
+[B2-SWA s1] step 1400/4000 loss 0.3458 147459 tok/s
+[B2-SWA s1] step 1500/4000 loss 0.3686 147564 tok/s
+[B2-SWA s1] step 1600/4000 loss 0.3596 147690 tok/s
+[B2-SWA s1] step 1700/4000 loss 0.3372 147871 tok/s
+[B2-SWA s1] step 1800/4000 loss 0.3449 147944 tok/s
+[B2-SWA s1] step 1900/4000 loss 0.3282 148299 tok/s
+[B2-SWA s1] step 2000/4000 loss 0.2966 148307 tok/s
+[B2-SWA s1] step 2100/4000 loss 0.3006 148381 tok/s
+[B2-SWA s1] step 2200/4000 loss 0.2991 148395 tok/s
+[B2-SWA s1] step 2300/4000 loss 0.2913 148664 tok/s
+[B2-SWA s1] step 2400/4000 loss 0.2718 148658 tok/s
+[B2-SWA s1] step 2500/4000 loss 0.2706 148606 tok/s
+[B2-SWA s1] step 2600/4000 loss 0.2491 148645 tok/s
+[B2-SWA s1] step 2700/4000 loss 0.2447 148728 tok/s
+[B2-SWA s1] step 2800/4000 loss 0.2390 148733 tok/s
+[B2-SWA s1] step 2900/4000 loss 0.2441 148811 tok/s
+[B2-SWA s1] step 3000/4000 loss 0.2172 148889 tok/s
+[B2-SWA s1] step 3100/4000 loss 0.2249 148924 tok/s
+[B2-SWA s1] step 3200/4000 loss 0.1978 148943 tok/s
+[B2-SWA s1] step 3300/4000 loss 0.1966 148858 tok/s
+[B2-SWA s1] step 3400/4000 loss 0.1908 148809 tok/s
+[B2-SWA s1] step 3500/4000 loss 0.1993 148739 tok/s
+[B2-SWA s1] step 3600/4000 loss 0.1892 148722 tok/s
+[B2-SWA s1] step 3700/4000 loss 0.1817 148720 tok/s
+[B2-SWA s1] step 3800/4000 loss 0.1838 148717 tok/s
+[B2-SWA s1] step 3900/4000 loss 0.1796 148741 tok/s
+[B2-SWA s1] step 4000/4000 loss 0.1710 148781 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s1] run_id=EXP-006-AX-B2-SWA-s1-ccc144
+  algo_exec    147/200 = 0.735
+  flops/correct = 1.06e+10
+[done rc=0] B2-SWA s1
+[launch] B2-SWA s2
+[B2-SWA s2] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s2] step 100/4000 loss 1.5806 133801 tok/s
+[B2-SWA s2] step 200/4000 loss 0.7035 139831 tok/s
+[B2-SWA s2] step 300/4000 loss 0.6127 143454 tok/s
+[B2-SWA s2] step 400/4000 loss 0.5663 144030 tok/s
+[B2-SWA s2] step 500/4000 loss 0.5366 144735 tok/s
+[B2-SWA s2] step 600/4000 loss 0.4903 145546 tok/s
+[B2-SWA s2] step 700/4000 loss 0.4643 146256 tok/s
+[B2-SWA s2] step 800/4000 loss 0.4484 146609 tok/s
+[B2-SWA s2] step 900/4000 loss 0.4321 147011 tok/s
+[B2-SWA s2] step 1000/4000 loss 0.4284 147309 tok/s
+[B2-SWA s2] step 1100/4000 loss 0.4057 147431 tok/s
+[B2-SWA s2] step 1200/4000 loss 0.4142 147576 tok/s
+[B2-SWA s2] step 1300/4000 loss 0.3889 147684 tok/s
+[B2-SWA s2] step 1400/4000 loss 0.3788 147941 tok/s
+[B2-SWA s2] step 1500/4000 loss 0.3636 147867 tok/s
+[B2-SWA s2] step 1600/4000 loss 0.3416 147869 tok/s
+[B2-SWA s2] step 1700/4000 loss 0.3235 147810 tok/s
+[B2-SWA s2] step 1800/4000 loss 0.3092 147782 tok/s
+[B2-SWA s2] step 1900/4000 loss 0.3120 147765 tok/s
+[B2-SWA s2] step 2000/4000 loss 0.3075 147841 tok/s
+[B2-SWA s2] step 2100/4000 loss 0.2724 147994 tok/s
+[B2-SWA s2] step 2200/4000 loss 0.2771 148203 tok/s
+[B2-SWA s2] step 2300/4000 loss 0.2620 148288 tok/s
+[B2-SWA s2] step 2400/4000 loss 0.2645 148302 tok/s
+[B2-SWA s2] step 2500/4000 loss 0.2373 148298 tok/s
+[B2-SWA s2] step 2600/4000 loss 0.2245 148316 tok/s
+[B2-SWA s2] step 2700/4000 loss 0.2147 148386 tok/s
+[B2-SWA s2] step 2800/4000 loss 0.1982 148477 tok/s
+[B2-SWA s2] step 2900/4000 loss 0.1949 148549 tok/s
+[B2-SWA s2] step 3000/4000 loss 0.1937 148593 tok/s
+[B2-SWA s2] step 3100/4000 loss 0.1827 148588 tok/s
+[B2-SWA s2] step 3200/4000 loss 0.1715 148693 tok/s
+[B2-SWA s2] step 3300/4000 loss 0.1544 148696 tok/s
+[B2-SWA s2] step 3400/4000 loss 0.1456 148728 tok/s
+[B2-SWA s2] step 3500/4000 loss 0.1473 148735 tok/s
+[B2-SWA s2] step 3600/4000 loss 0.1484 148843 tok/s
+[B2-SWA s2] step 3700/4000 loss 0.1448 148823 tok/s
+[B2-SWA s2] step 3800/4000 loss 0.1344 148823 tok/s
+[B2-SWA s2] step 3900/4000 loss 0.1248 148844 tok/s
+[B2-SWA s2] step 4000/4000 loss 0.1219 148903 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s2] run_id=EXP-006-AX-B2-SWA-s2-0b5b61
+  algo_exec    163/200 = 0.815
+  flops/correct = 9.58e+09
+[done rc=0] B2-SWA s2
+EXP COMPLETE: 3/3 jobs ok
+[launch] B2-SWA s0
+[B2-SWA s0] 16000 train sequences (4000 skipped), ~5,608,188 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s0] step 100/4000 loss 2.2052 162070 tok/s
+[B2-SWA s0] step 200/4000 loss 1.2291 166011 tok/s
+[B2-SWA s0] step 300/4000 loss 1.2104 167237 tok/s
+[B2-SWA s0] step 400/4000 loss 1.1277 167681 tok/s
+[B2-SWA s0] step 500/4000 loss 1.0825 168100 tok/s
+[B2-SWA s0] step 600/4000 loss 1.0534 168113 tok/s
+[B2-SWA s0] step 700/4000 loss 1.0375 168346 tok/s
+[B2-SWA s0] step 800/4000 loss 1.0281 168513 tok/s
+[B2-SWA s0] step 900/4000 loss 1.0186 168706 tok/s
+[B2-SWA s0] step 1000/4000 loss 1.0105 168815 tok/s
+[B2-SWA s0] step 1100/4000 loss 0.9874 168839 tok/s
+[B2-SWA s0] step 1200/4000 loss 1.0005 168898 tok/s
+[B2-SWA s0] step 1300/4000 loss 0.9829 169080 tok/s
+[B2-SWA s0] step 1400/4000 loss 0.9802 169116 tok/s
+[B2-SWA s0] step 1500/4000 loss 0.9716 169091 tok/s
+[B2-SWA s0] step 1600/4000 loss 0.9580 169175 tok/s
+[B2-SWA s0] step 1700/4000 loss 0.9674 169230 tok/s
+[B2-SWA s0] step 1800/4000 loss 0.9671 169230 tok/s
+[B2-SWA s0] step 1900/4000 loss 0.9380 169311 tok/s
+[B2-SWA s0] step 2000/4000 loss 0.9367 169276 tok/s
+[B2-SWA s0] step 2100/4000 loss 0.9295 169318 tok/s
+[B2-SWA s0] step 2200/4000 loss 0.9312 169294 tok/s
+[B2-SWA s0] step 2300/4000 loss 0.9117 169311 tok/s
+[B2-SWA s0] step 2400/4000 loss 0.9177 169300 tok/s
+[B2-SWA s0] step 2500/4000 loss 0.9238 169312 tok/s
+[B2-SWA s0] step 2600/4000 loss 0.9014 169300 tok/s
+[B2-SWA s0] step 2700/4000 loss 0.8882 169312 tok/s
+[B2-SWA s0] step 2800/4000 loss 0.8926 169333 tok/s
+[B2-SWA s0] step 2900/4000 loss 0.8911 169326 tok/s
+[B2-SWA s0] step 3000/4000 loss 0.8818 169310 tok/s
+[B2-SWA s0] step 3100/4000 loss 0.8631 169266 tok/s
+[B2-SWA s0] step 3200/4000 loss 0.8581 169232 tok/s
+[B2-SWA s0] step 3300/4000 loss 0.8596 169266 tok/s
+[B2-SWA s0] step 3400/4000 loss 0.8516 169281 tok/s
+[B2-SWA s0] step 3500/4000 loss 0.8533 169361 tok/s
+[B2-SWA s0] step 3600/4000 loss 0.8349 169390 tok/s
+[B2-SWA s0] step 3700/4000 loss 0.8290 169396 tok/s
+[B2-SWA s0] step 3800/4000 loss 0.8301 169450 tok/s
+[B2-SWA s0] step 3900/4000 loss 0.8334 169459 tok/s
+[B2-SWA s0] step 4000/4000 loss 0.8319 169463 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s0] run_id=EXP-006-CP-B2-SWA-s0-5876d8
+  compress     30/176 = 0.170
+  flops/correct = 8.85e+10
+[done rc=0] B2-SWA s0
+[launch] B2-SWA s1
+[B2-SWA s1] 16000 train sequences (4000 skipped), ~5,608,188 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s1] step 100/4000 loss 2.1750 171786 tok/s
+[B2-SWA s1] step 200/4000 loss 1.2276 172805 tok/s
+[B2-SWA s1] step 300/4000 loss 1.1522 172091 tok/s
+[B2-SWA s1] step 400/4000 loss 1.1092 171399 tok/s
+[B2-SWA s1] step 500/4000 loss 1.0678 171300 tok/s
+[B2-SWA s1] step 600/4000 loss 1.0399 171405 tok/s
+[B2-SWA s1] step 700/4000 loss 1.0292 171398 tok/s
+[B2-SWA s1] step 800/4000 loss 1.0147 171218 tok/s
+[B2-SWA s1] step 900/4000 loss 1.0169 171051 tok/s
+[B2-SWA s1] step 1000/4000 loss 1.0011 170936 tok/s
+[B2-SWA s1] step 1100/4000 loss 0.9909 170842 tok/s
+[B2-SWA s1] step 1200/4000 loss 0.9700 170792 tok/s
+[B2-SWA s1] step 1300/4000 loss 0.9757 170686 tok/s
+[B2-SWA s1] step 1400/4000 loss 0.9785 170625 tok/s
+[B2-SWA s1] step 1500/4000 loss 0.9700 170570 tok/s
+[B2-SWA s1] step 1600/4000 loss 0.9452 170494 tok/s
+[B2-SWA s1] step 1700/4000 loss 0.9471 170594 tok/s
+[B2-SWA s1] step 1800/4000 loss 0.9475 170587 tok/s
+[B2-SWA s1] step 1900/4000 loss 0.9322 170551 tok/s
+[B2-SWA s1] step 2000/4000 loss 0.9345 170518 tok/s
+[B2-SWA s1] step 2100/4000 loss 0.9116 170417 tok/s
+[B2-SWA s1] step 2200/4000 loss 0.9044 170447 tok/s
+[B2-SWA s1] step 2300/4000 loss 0.9138 170423 tok/s
+[B2-SWA s1] step 2400/4000 loss 0.9003 170425 tok/s
+[B2-SWA s1] step 2500/4000 loss 0.8824 170428 tok/s
+[B2-SWA s1] step 2600/4000 loss 0.8670 170421 tok/s
+[B2-SWA s1] step 2700/4000 loss 0.8694 170436 tok/s
+[B2-SWA s1] step 2800/4000 loss 0.8690 170436 tok/s
+[B2-SWA s1] step 2900/4000 loss 0.8739 170374 tok/s
+[B2-SWA s1] step 3000/4000 loss 0.8493 170444 tok/s
+[B2-SWA s1] step 3100/4000 loss 0.8311 170434 tok/s
+[B2-SWA s1] step 3200/4000 loss 0.8198 170462 tok/s
+[B2-SWA s1] step 3300/4000 loss 0.8389 170431 tok/s
+[B2-SWA s1] step 3400/4000 loss 0.8237 170352 tok/s
+[B2-SWA s1] step 3500/4000 loss 0.8357 170323 tok/s
+[B2-SWA s1] step 3600/4000 loss 0.8052 170331 tok/s
+[B2-SWA s1] step 3700/4000 loss 0.7999 170303 tok/s
+[B2-SWA s1] step 3800/4000 loss 0.7999 170259 tok/s
+[B2-SWA s1] step 3900/4000 loss 0.8051 170198 tok/s
+[B2-SWA s1] step 4000/4000 loss 0.7995 170171 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s1] run_id=EXP-006-CP-B2-SWA-s1-406763
+  compress     38/176 = 0.216
+  flops/correct = 6.98e+10
+[done rc=0] B2-SWA s1
+[launch] B2-SWA s2
+[B2-SWA s2] 16000 train sequences (4000 skipped), ~5,608,188 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s2] step 100/4000 loss 2.1936 162391 tok/s
+[B2-SWA s2] step 200/4000 loss 1.2254 165431 tok/s
+[B2-SWA s2] step 300/4000 loss 1.1941 166745 tok/s
+[B2-SWA s2] step 400/4000 loss 1.1521 167605 tok/s
+[B2-SWA s2] step 500/4000 loss 1.1089 168001 tok/s
+[B2-SWA s2] step 600/4000 loss 1.0500 168531 tok/s
+[B2-SWA s2] step 700/4000 loss 1.0403 168652 tok/s
+[B2-SWA s2] step 800/4000 loss 1.0206 168651 tok/s
+[B2-SWA s2] step 900/4000 loss 1.0190 168962 tok/s
+[B2-SWA s2] step 1000/4000 loss 1.0036 168967 tok/s
+[B2-SWA s2] step 1100/4000 loss 0.9797 169123 tok/s
+[B2-SWA s2] step 1200/4000 loss 0.9818 169235 tok/s
+[B2-SWA s2] step 1300/4000 loss 0.9640 169223 tok/s
+[B2-SWA s2] step 1400/4000 loss 0.9689 169300 tok/s
+[B2-SWA s2] step 1500/4000 loss 0.9726 169297 tok/s
+[B2-SWA s2] step 1600/4000 loss 0.9436 169325 tok/s
+[B2-SWA s2] step 1700/4000 loss 0.9425 169318 tok/s
+[B2-SWA s2] step 1800/4000 loss 0.9463 169266 tok/s
+[B2-SWA s2] step 1900/4000 loss 0.9343 169258 tok/s
+[B2-SWA s2] step 2000/4000 loss 0.9431 169323 tok/s
+[B2-SWA s2] step 2100/4000 loss 0.9123 169388 tok/s
+[B2-SWA s2] step 2200/4000 loss 0.9131 169380 tok/s
+[B2-SWA s2] step 2300/4000 loss 0.9116 169370 tok/s
+[B2-SWA s2] step 2400/4000 loss 0.9072 169355 tok/s
+[B2-SWA s2] step 2500/4000 loss 0.8960 169424 tok/s
+[B2-SWA s2] step 2600/4000 loss 0.8721 169510 tok/s
+[B2-SWA s2] step 2700/4000 loss 0.8830 169505 tok/s
+[B2-SWA s2] step 2800/4000 loss 0.8753 169479 tok/s
+[B2-SWA s2] step 2900/4000 loss 0.8722 169467 tok/s
+[B2-SWA s2] step 3000/4000 loss 0.8756 169464 tok/s
+[B2-SWA s2] step 3100/4000 loss 0.8423 169484 tok/s
+[B2-SWA s2] step 3200/4000 loss 0.8431 169461 tok/s
+[B2-SWA s2] step 3300/4000 loss 0.8406 169435 tok/s
+[B2-SWA s2] step 3400/4000 loss 0.8269 169473 tok/s
+[B2-SWA s2] step 3500/4000 loss 0.8456 169487 tok/s
+[B2-SWA s2] step 3600/4000 loss 0.8168 169494 tok/s
+[B2-SWA s2] step 3700/4000 loss 0.8123 169508 tok/s
+[B2-SWA s2] step 3800/4000 loss 0.7967 169514 tok/s
+[B2-SWA s2] step 3900/4000 loss 0.8145 169585 tok/s
+[B2-SWA s2] step 4000/4000 loss 0.8146 169568 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s2] run_id=EXP-006-CP-B2-SWA-s2-eefa79
+  compress     34/176 = 0.193
+  flops/correct = 7.81e+10
+[done rc=0] B2-SWA s2
+EXP COMPLETE: 3/3 jobs ok
+[launch] B2-SWA s0
+[B2-SWA s0] 16000 train sequences (4000 skipped), ~5,960,982 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s0] step 100/4000 loss 2.4304 166205 tok/s
+[B2-SWA s0] step 200/4000 loss 0.5908 170707 tok/s
+[B2-SWA s0] step 300/4000 loss 0.4656 172342 tok/s
+[B2-SWA s0] step 400/4000 loss 0.4366 173179 tok/s
+[B2-SWA s0] step 500/4000 loss 0.3778 173886 tok/s
+[B2-SWA s0] step 600/4000 loss 0.3462 174227 tok/s
+[B2-SWA s0] step 700/4000 loss 0.3380 174355 tok/s
+[B2-SWA s0] step 800/4000 loss 0.3144 174446 tok/s
+[B2-SWA s0] step 900/4000 loss 0.3006 174530 tok/s
+[B2-SWA s0] step 1000/4000 loss 0.2962 174671 tok/s
+[B2-SWA s0] step 1100/4000 loss 0.2851 174969 tok/s
+[B2-SWA s0] step 1200/4000 loss 0.2765 174989 tok/s
+[B2-SWA s0] step 1300/4000 loss 0.2804 174985 tok/s
+[B2-SWA s0] step 1400/4000 loss 0.2705 175013 tok/s
+[B2-SWA s0] step 1500/4000 loss 0.2471 175020 tok/s
+[B2-SWA s0] step 1600/4000 loss 0.2277 175014 tok/s
+[B2-SWA s0] step 1700/4000 loss 0.2036 175176 tok/s
+[B2-SWA s0] step 1800/4000 loss 0.1846 175178 tok/s
+[B2-SWA s0] step 1900/4000 loss 0.1783 175171 tok/s
+[B2-SWA s0] step 2000/4000 loss 0.1698 175158 tok/s
+[B2-SWA s0] step 2100/4000 loss 0.1574 175210 tok/s
+[B2-SWA s0] step 2200/4000 loss 0.1594 175203 tok/s
+[B2-SWA s0] step 2300/4000 loss 0.1553 175206 tok/s
+[B2-SWA s0] step 2400/4000 loss 0.1514 175278 tok/s
+[B2-SWA s0] step 2500/4000 loss 0.1595 175260 tok/s
+[B2-SWA s0] step 2600/4000 loss 0.1370 175274 tok/s
+[B2-SWA s0] step 2700/4000 loss 0.1329 175350 tok/s
+[B2-SWA s0] step 2800/4000 loss 0.1345 175364 tok/s
+[B2-SWA s0] step 2900/4000 loss 0.1380 175405 tok/s
+[B2-SWA s0] step 3000/4000 loss 0.1321 175388 tok/s
+[B2-SWA s0] step 3100/4000 loss 0.1173 175363 tok/s
+[B2-SWA s0] step 3200/4000 loss 0.1160 176056 tok/s
+[B2-SWA s0] step 3300/4000 loss 0.1109 179171 tok/s
+[B2-SWA s0] step 3400/4000 loss 0.1158 182638 tok/s
+[B2-SWA s0] step 3500/4000 loss 0.1119 185077 tok/s
+[B2-SWA s0] step 3600/4000 loss 0.0984 187175 tok/s
+[B2-SWA s0] step 3700/4000 loss 0.1026 189207 tok/s
+[B2-SWA s0] step 3800/4000 loss 0.0939 191189 tok/s
+[B2-SWA s0] step 3900/4000 loss 0.0974 193089 tok/s
+[B2-SWA s0] step 4000/4000 loss 0.0982 194925 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s0] run_id=EXP-006-SG-B2-SWA-s0-b443ef
+  state_guard  98/200 = 0.490
+  flops/correct = 3.51e+10
+[done rc=0] B2-SWA s0
+[launch] B2-SWA s1
+[B2-SWA s1] 16000 train sequences (4000 skipped), ~5,960,982 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s1] step 100/4000 loss 2.4413 279733 tok/s
+[B2-SWA s1] step 200/4000 loss 0.5966 293497 tok/s
+[B2-SWA s1] step 300/4000 loss 0.4649 298595 tok/s
+[B2-SWA s1] step 400/4000 loss 0.4265 300683 tok/s
+[B2-SWA s1] step 500/4000 loss 0.3763 301825 tok/s
+[B2-SWA s1] step 600/4000 loss 0.3318 302323 tok/s
+[B2-SWA s1] step 700/4000 loss 0.3093 302644 tok/s
+[B2-SWA s1] step 800/4000 loss 0.3076 302981 tok/s
+[B2-SWA s1] step 900/4000 loss 0.2634 303259 tok/s
+[B2-SWA s1] step 1000/4000 loss 0.2308 303628 tok/s
+[B2-SWA s1] step 1100/4000 loss 0.2136 303879 tok/s
+[B2-SWA s1] step 1200/4000 loss 0.2004 304174 tok/s
+[B2-SWA s1] step 1300/4000 loss 0.2007 304275 tok/s
+[B2-SWA s1] step 1400/4000 loss 0.1956 304405 tok/s
+[B2-SWA s1] step 1500/4000 loss 0.1835 304477 tok/s
+[B2-SWA s1] step 1600/4000 loss 0.1762 304532 tok/s
+[B2-SWA s1] step 1700/4000 loss 0.1811 304891 tok/s
+[B2-SWA s1] step 1800/4000 loss 0.1723 304990 tok/s
+[B2-SWA s1] step 1900/4000 loss 0.1629 305035 tok/s
+[B2-SWA s1] step 2000/4000 loss 0.1642 305048 tok/s
+[B2-SWA s1] step 2100/4000 loss 0.1553 305076 tok/s
+[B2-SWA s1] step 2200/4000 loss 0.1484 305114 tok/s
+[B2-SWA s1] step 2300/4000 loss 0.1548 305171 tok/s
+[B2-SWA s1] step 2400/4000 loss 0.1516 305186 tok/s
+[B2-SWA s1] step 2500/4000 loss 0.1468 305176 tok/s
+[B2-SWA s1] step 2600/4000 loss 0.1335 305226 tok/s
+[B2-SWA s1] step 2700/4000 loss 0.1338 305216 tok/s
+[B2-SWA s1] step 2800/4000 loss 0.1323 305230 tok/s
+[B2-SWA s1] step 2900/4000 loss 0.1304 305227 tok/s
+[B2-SWA s1] step 3000/4000 loss 0.1269 305281 tok/s
+[B2-SWA s1] step 3100/4000 loss 0.1187 305346 tok/s
+[B2-SWA s1] step 3200/4000 loss 0.1145 305399 tok/s
+[B2-SWA s1] step 3300/4000 loss 0.1142 305534 tok/s
+[B2-SWA s1] step 3400/4000 loss 0.1115 305578 tok/s
+[B2-SWA s1] step 3500/4000 loss 0.1079 305613 tok/s
+[B2-SWA s1] step 3600/4000 loss 0.0995 305644 tok/s
+[B2-SWA s1] step 3700/4000 loss 0.0973 305825 tok/s
+[B2-SWA s1] step 3800/4000 loss 0.0999 305870 tok/s
+[B2-SWA s1] step 3900/4000 loss 0.0953 305885 tok/s
+[B2-SWA s1] step 4000/4000 loss 0.0994 305900 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s1] run_id=EXP-006-SG-B2-SWA-s1-c0e17a
+  state_guard  107/200 = 0.535
+  flops/correct = 3.21e+10
+[done rc=0] B2-SWA s1
+[launch] B2-SWA s2
+[B2-SWA s2] 16000 train sequences (4000 skipped), ~5,960,982 tokens/epoch
+[B2-SWA] params=17.83M hash=5557fb915b7e
+[B2-SWA s2] step 100/4000 loss 2.4564 277743 tok/s
+[B2-SWA s2] step 200/4000 loss 0.5941 293270 tok/s
+[B2-SWA s2] step 300/4000 loss 0.4539 297700 tok/s
+[B2-SWA s2] step 400/4000 loss 0.4380 300025 tok/s
+[B2-SWA s2] step 500/4000 loss 0.3856 301316 tok/s
+[B2-SWA s2] step 600/4000 loss 0.3419 302045 tok/s
+[B2-SWA s2] step 700/4000 loss 0.3160 302693 tok/s
+[B2-SWA s2] step 800/4000 loss 0.3095 303184 tok/s
+[B2-SWA s2] step 900/4000 loss 0.3039 303469 tok/s
+[B2-SWA s2] step 1000/4000 loss 0.2951 303762 tok/s
+[B2-SWA s2] step 1100/4000 loss 0.2865 304072 tok/s
+[B2-SWA s2] step 1200/4000 loss 0.2724 304245 tok/s
+[B2-SWA s2] step 1300/4000 loss 0.2516 304413 tok/s
+[B2-SWA s2] step 1400/4000 loss 0.2283 304556 tok/s
+[B2-SWA s2] step 1500/4000 loss 0.2060 304564 tok/s
+[B2-SWA s2] step 1600/4000 loss 0.1958 304645 tok/s
+[B2-SWA s2] step 1700/4000 loss 0.1883 304587 tok/s
+[B2-SWA s2] step 1800/4000 loss 0.1848 304648 tok/s
+[B2-SWA s2] step 1900/4000 loss 0.1687 304874 tok/s
+[B2-SWA s2] step 2000/4000 loss 0.1761 305151 tok/s
+[B2-SWA s2] step 2100/4000 loss 0.1499 305285 tok/s
+[B2-SWA s2] step 2200/4000 loss 0.1660 305572 tok/s
+[B2-SWA s2] step 2300/4000 loss 0.1607 305687 tok/s
+[B2-SWA s2] step 2400/4000 loss 0.1584 305768 tok/s
+[B2-SWA s2] step 2500/4000 loss 0.1471 305904 tok/s
+[B2-SWA s2] step 2600/4000 loss 0.1418 306022 tok/s
+[B2-SWA s2] step 2700/4000 loss 0.1394 306094 tok/s
+[B2-SWA s2] step 2800/4000 loss 0.1434 306109 tok/s
+[B2-SWA s2] step 2900/4000 loss 0.1389 306228 tok/s
+[B2-SWA s2] step 3000/4000 loss 0.1324 306305 tok/s
+[B2-SWA s2] step 3100/4000 loss 0.1232 306398 tok/s
+[B2-SWA s2] step 3200/4000 loss 0.1235 306446 tok/s
+[B2-SWA s2] step 3300/4000 loss 0.1233 306455 tok/s
+[B2-SWA s2] step 3400/4000 loss 0.1202 306446 tok/s
+[B2-SWA s2] step 3500/4000 loss 0.1243 306484 tok/s
+[B2-SWA s2] step 3600/4000 loss 0.1114 306476 tok/s
+[B2-SWA s2] step 3700/4000 loss 0.1079 306514 tok/s
+[B2-SWA s2] step 3800/4000 loss 0.1046 306601 tok/s
+[B2-SWA s2] step 3900/4000 loss 0.1092 306687 tok/s
+[B2-SWA s2] step 4000/4000 loss 0.1051 306837 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-SWA s2] run_id=EXP-006-SG-B2-SWA-s2-1da915
+  state_guard  108/200 = 0.540
+  flops/correct = 3.18e+10
+[done rc=0] B2-SWA s2
+EXP COMPLETE: 3/3 jobs ok
+=== waiting for V2-full before widening GPU concurrency ===
+=== EXP-003B recipe (2 workers) + B2 rule_shift EXTEND (2 workers) ===
+[launch] V1R2-loop4 s0
+[launch] V1R2-loop4 s1
+[V1R2-loop4 s0] 40000 train sequences (0 skipped), ~9,149,534 tokens/epoch
+[V1R2-loop4] params=11.94M hash=0d54298984bf
+[V1R2-loop4 s0] step 100/6000 loss 2.3658 137390 tok/s
+[V1R2-loop4 s1] 40000 train sequences (0 skipped), ~9,149,534 tokens/epoch
+[V1R2-loop4] params=11.94M hash=0d54298984bf
+[V1R2-loop4 s1] step 100/6000 loss 2.4219 129043 tok/s
+[V1R2-loop4 s0] step 200/6000 loss 1.3070 138400 tok/s
+[V1R2-loop4 s1] step 200/6000 loss 1.3038 136119 tok/s
+[V1R2-loop4 s0] step 300/6000 loss 1.0642 142317 tok/s
+[V1R2-loop4 s1] step 300/6000 loss 1.0643 136448 tok/s
+[V1R2-loop4 s0] step 400/6000 loss 0.9728 139848 tok/s
+[V1R2-loop4 s1] step 400/6000 loss 1.0074 135025 tok/s
+[V1R2-loop4 s0] step 500/6000 loss 0.9255 139745 tok/s
+[V1R2-loop4 s1] step 500/6000 loss 0.9456 135943 tok/s
+[V1R2-loop4 s0] step 600/6000 loss 0.8867 139748 tok/s
+[V1R2-loop4 s1] step 600/6000 loss 0.9251 136702 tok/s
+[V1R2-loop4 s0] step 700/6000 loss 0.8448 139834 tok/s
+[V1R2-loop4 s1] step 700/6000 loss 0.9068 136762 tok/s
+[V1R2-loop4 s0] step 800/6000 loss 0.8049 140187 tok/s
+[V1R2-loop4 s1] step 800/6000 loss 0.8550 136105 tok/s
+[V1R2-loop4 s0] step 900/6000 loss 0.7798 139953 tok/s
+[V1R2-loop4 s1] step 900/6000 loss 0.8322 136885 tok/s
+[V1R2-loop4 s0] step 1000/6000 loss 0.7621 139716 tok/s
+[V1R2-loop4 s1] step 1000/6000 loss 0.7958 137923 tok/s
+[V1R2-loop4 s0] step 1100/6000 loss 0.7450 139816 tok/s
+[V1R2-loop4 s1] step 1100/6000 loss 0.7637 138646 tok/s
+[V1R2-loop4 s0] step 1200/6000 loss 0.7408 139638 tok/s
+[V1R2-loop4 s1] step 1200/6000 loss 0.7433 138782 tok/s
+[V1R2-loop4 s0] step 1300/6000 loss 0.7028 139797 tok/s
+[V1R2-loop4 s1] step 1300/6000 loss 0.7081 138751 tok/s
+[V1R2-loop4 s0] step 1400/6000 loss 0.6902 139835 tok/s
+[V1R2-loop4 s1] step 1400/6000 loss 0.6892 138454 tok/s
+[V1R2-loop4 s0] step 1500/6000 loss 0.6817 139683 tok/s
+[V1R2-loop4 s1] step 1500/6000 loss 0.6734 138222 tok/s
+[V1R2-loop4 s0] step 1600/6000 loss 0.6669 139445 tok/s
+[V1R2-loop4 s1] step 1600/6000 loss 0.6662 138737 tok/s
+[V1R2-loop4 s0] step 1700/6000 loss 0.6476 139504 tok/s
+[V1R2-loop4 s1] step 1700/6000 loss 0.6530 138465 tok/s
+[V1R2-loop4 s0] step 1800/6000 loss 0.6446 139467 tok/s
+[V1R2-loop4 s1] step 1800/6000 loss 0.6503 138383 tok/s
+[V1R2-loop4 s0] step 1900/6000 loss 0.6447 139328 tok/s
+[V1R2-loop4 s1] step 1900/6000 loss 0.6330 138789 tok/s
+[V1R2-loop4 s0] step 2000/6000 loss 0.6297 139246 tok/s
+[V1R2-loop4 s1] step 2000/6000 loss 0.6238 138924 tok/s
+[V1R2-loop4 s0] step 2100/6000 loss 0.6255 139422 tok/s
+[V1R2-loop4 s1] step 2100/6000 loss 0.6131 139195 tok/s
+[V1R2-loop4 s0] step 2200/6000 loss 0.6276 139577 tok/s
+[V1R2-loop4 s1] step 2200/6000 loss 0.5969 139416 tok/s
+[V1R2-loop4 s0] step 2300/6000 loss 0.6147 139716 tok/s
+[V1R2-loop4 s1] step 2300/6000 loss 0.5818 139617 tok/s
+[V1R2-loop4 s0] step 2400/6000 loss 0.6112 139807 tok/s
+[V1R2-loop4 s1] step 2400/6000 loss 0.5895 139513 tok/s
+[V1R2-loop4 s1] step 2500/6000 loss 0.5763 139836 tok/s
+[V1R2-loop4 s0] step 2500/6000 loss 0.5993 139803 tok/s
+[V1R2-loop4 s1] step 2600/6000 loss 0.5482 140206 tok/s
+[V1R2-loop4 s0] step 2600/6000 loss 0.5631 140068 tok/s
+[V1R2-loop4 s1] step 2700/6000 loss 0.5537 140297 tok/s
+[V1R2-loop4 s0] step 2700/6000 loss 0.5609 140131 tok/s
+[V1R2-loop4 s1] step 2800/6000 loss 0.5409 140232 tok/s
+[V1R2-loop4 s0] step 2800/6000 loss 0.5680 140119 tok/s
+[V1R2-loop4 s1] step 2900/6000 loss 0.5336 140016 tok/s
+[V1R2-loop4 s0] step 2900/6000 loss 0.5672 139780 tok/s
+[V1R2-loop4 s1] step 3000/6000 loss 0.5199 140107 tok/s
+[V1R2-loop4 s0] step 3000/6000 loss 0.5507 139835 tok/s
+[V1R2-loop4 s1] step 3100/6000 loss 0.5326 140086 tok/s
+[V1R2-loop4 s0] step 3100/6000 loss 0.5444 139864 tok/s
+[V1R2-loop4 s1] step 3200/6000 loss 0.5208 140116 tok/s
+[V1R2-loop4 s0] step 3200/6000 loss 0.5532 139337 tok/s
+[V1R2-loop4 s1] step 3300/6000 loss 0.5238 140145 tok/s
+[V1R2-loop4 s0] step 3300/6000 loss 0.5288 139500 tok/s
+[V1R2-loop4 s1] step 3400/6000 loss 0.5079 140348 tok/s
+[V1R2-loop4 s0] step 3400/6000 loss 0.5298 139590 tok/s
+[V1R2-loop4 s1] step 3500/6000 loss 0.5058 140065 tok/s
+[V1R2-loop4 s0] step 3500/6000 loss 0.5230 139524 tok/s
+[V1R2-loop4 s1] step 3600/6000 loss 0.5094 140071 tok/s
+[V1R2-loop4 s0] step 3600/6000 loss 0.5187 139626 tok/s
+[V1R2-loop4 s1] step 3700/6000 loss 0.4929 140145 tok/s
+[V1R2-loop4 s0] step 3700/6000 loss 0.5188 139505 tok/s
+[V1R2-loop4 s1] step 3800/6000 loss 0.4753 140097 tok/s
+[V1R2-loop4 s0] step 3800/6000 loss 0.4846 139490 tok/s
+[V1R2-loop4 s1] step 3900/6000 loss 0.4564 140037 tok/s
+[V1R2-loop4 s0] step 3900/6000 loss 0.4634 139473 tok/s
+[V1R2-loop4 s1] step 4000/6000 loss 0.4580 139940 tok/s
+[V1R2-loop4 s0] step 4000/6000 loss 0.4602 139384 tok/s
+[V1R2-loop4 s1] step 4100/6000 loss 0.4543 140170 tok/s
+[V1R2-loop4 s0] step 4100/6000 loss 0.4641 139372 tok/s
+[V1R2-loop4 s1] step 4200/6000 loss 0.4501 140312 tok/s
+[V1R2-loop4 s0] step 4200/6000 loss 0.4589 139541 tok/s
+[V1R2-loop4 s1] step 4300/6000 loss 0.4442 140429 tok/s
+[V1R2-loop4 s0] step 4300/6000 loss 0.4550 139375 tok/s
+[V1R2-loop4 s1] step 4400/6000 loss 0.4455 140516 tok/s
+[V1R2-loop4 s0] step 4400/6000 loss 0.4473 139255 tok/s
+[V1R2-loop4 s1] step 4500/6000 loss 0.4364 140642 tok/s
+[V1R2-loop4 s0] step 4500/6000 loss 0.4459 139261 tok/s
+[V1R2-loop4 s1] step 4600/6000 loss 0.4281 140757 tok/s
+[V1R2-loop4 s0] step 4600/6000 loss 0.4510 139167 tok/s
+[V1R2-loop4 s1] step 4700/6000 loss 0.4270 140631 tok/s
+[V1R2-loop4 s0] step 4700/6000 loss 0.4503 139251 tok/s
+[V1R2-loop4 s1] step 4800/6000 loss 0.4344 140696 tok/s
+[V1R2-loop4 s0] step 4800/6000 loss 0.4489 139276 tok/s
+[V1R2-loop4 s1] step 4900/6000 loss 0.4312 140581 tok/s
+[V1R2-loop4 s0] step 4900/6000 loss 0.4450 139320 tok/s
+[V1R2-loop4 s1] step 5000/6000 loss 0.4269 140601 tok/s
+[V1R2-loop4 s0] step 5000/6000 loss 0.4446 139318 tok/s
+[V1R2-loop4 s1] step 5100/6000 loss 0.3867 140524 tok/s
+[V1R2-loop4 s0] step 5100/6000 loss 0.4006 139414 tok/s
+[V1R2-loop4 s1] step 5200/6000 loss 0.3970 140636 tok/s
+[V1R2-loop4 s0] step 5200/6000 loss 0.4024 139487 tok/s
+[V1R2-loop4 s1] step 5300/6000 loss 0.3923 140706 tok/s
+[V1R2-loop4 s0] step 5300/6000 loss 0.4032 139540 tok/s
+[V1R2-loop4 s1] step 5400/6000 loss 0.3901 140754 tok/s
+[V1R2-loop4 s0] step 5400/6000 loss 0.3998 139491 tok/s
+[V1R2-loop4 s1] step 5500/6000 loss 0.3844 140851 tok/s
+[V1R2-loop4 s0] step 5500/6000 loss 0.3886 139471 tok/s
+[V1R2-loop4 s1] step 5600/6000 loss 0.3899 140841 tok/s
+[V1R2-loop4 s0] step 5600/6000 loss 0.4088 139342 tok/s
+[V1R2-loop4 s1] step 5700/6000 loss 0.3792 140845 tok/s
+[V1R2-loop4 s0] step 5700/6000 loss 0.3938 139157 tok/s
+[V1R2-loop4 s1] step 5800/6000 loss 0.3805 140859 tok/s
+[V1R2-loop4 s0] step 5800/6000 loss 0.3933 139088 tok/s
+[V1R2-loop4 s1] step 5900/6000 loss 0.3950 140795 tok/s
+[V1R2-loop4 s0] step 5900/6000 loss 0.4016 139188 tok/s
+[V1R2-loop4 s1] step 6000/6000 loss 0.3884 140711 tok/s
+[V1R2-loop4 s0] step 6000/6000 loss 0.3986 139351 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1R2-loop4 s1] run_id=EXP-003B-V1R2-loop4-s1-315aaa
+  rewrite      79/200 = 0.395
+  algo_exec    84/200 = 0.420
+  flops/correct = 3.58e+10
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1R2-loop4 s1] K-gap: K=4 acc=0.407 vs K=1 acc=0.400 (diag run EXP-003B-V1R2-loop4-s1-e673e4)
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1R2-loop4 s0] run_id=EXP-003B-V1R2-loop4-s0-eab9b4
+  rewrite      66/200 = 0.330
+  algo_exec    80/200 = 0.400
+  flops/correct = 3.99e+10
+[done rc=0] V1R2-loop4 s1
+[launch] V1R2-loop4 s2
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1R2-loop4 s0] K-gap: K=4 acc=0.365 vs K=1 acc=0.347 (diag run EXP-003B-V1R2-loop4-s0-b3ccb9)
+[done rc=0] V1R2-loop4 s0
+[V1R2-loop4 s2] 40000 train sequences (0 skipped), ~9,149,534 tokens/epoch
+[V1R2-loop4] params=11.94M hash=0d54298984bf
+[V1R2-loop4 s2] step 100/6000 loss 2.3614 167639 tok/s
+[V1R2-loop4 s2] step 200/6000 loss 1.2904 171521 tok/s
+[V1R2-loop4 s2] step 300/6000 loss 1.0339 171685 tok/s
+[V1R2-loop4 s2] step 400/6000 loss 0.9746 173060 tok/s
+[V1R2-loop4 s2] step 500/6000 loss 0.8904 172973 tok/s
+[V1R2-loop4 s2] step 600/6000 loss 0.8443 173450 tok/s
+[V1R2-loop4 s2] step 700/6000 loss 0.8039 174293 tok/s
+[V1R2-loop4 s2] step 800/6000 loss 0.7752 175575 tok/s
+[V1R2-loop4 s2] step 900/6000 loss 0.7425 176167 tok/s
+[V1R2-loop4 s2] step 1000/6000 loss 0.7484 176224 tok/s
+[V1R2-loop4 s2] step 1100/6000 loss 0.7312 176188 tok/s
+[V1R2-loop4 s2] step 1200/6000 loss 0.7039 176706 tok/s
+[V1R2-loop4 s2] step 1300/6000 loss 0.6978 177687 tok/s
+[V1R2-loop4 s2] step 1400/6000 loss 0.6787 178463 tok/s
+[V1R2-loop4 s2] step 1500/6000 loss 0.6761 178641 tok/s
+[V1R2-loop4 s2] step 1600/6000 loss 0.6674 177981 tok/s
+[V1R2-loop4 s2] step 1700/6000 loss 0.6487 177609 tok/s
+[V1R2-loop4 s2] step 1800/6000 loss 0.6476 177899 tok/s
+[V1R2-loop4 s2] step 1900/6000 loss 0.6411 178204 tok/s
+[V1R2-loop4 s2] step 2000/6000 loss 0.6319 177989 tok/s
+[V1R2-loop4 s2] step 2100/6000 loss 0.6178 177989 tok/s
+[V1R2-loop4 s2] step 2200/6000 loss 0.6199 178341 tok/s
+[V1R2-loop4 s2] step 2300/6000 loss 0.6087 178354 tok/s
+[V1R2-loop4 s2] step 2400/6000 loss 0.5865 178350 tok/s
+[V1R2-loop4 s2] step 2500/6000 loss 0.5766 178343 tok/s
+[V1R2-loop4 s2] step 2600/6000 loss 0.5508 178400 tok/s
+[V1R2-loop4 s2] step 2700/6000 loss 0.5460 178538 tok/s
+[V1R2-loop4 s2] step 2800/6000 loss 0.5401 178478 tok/s
+[V1R2-loop4 s2] step 2900/6000 loss 0.5287 177938 tok/s
+[V1R2-loop4 s2] step 3000/6000 loss 0.5317 178239 tok/s
+[V1R2-loop4 s2] step 3100/6000 loss 0.5231 178426 tok/s
+[V1R2-loop4 s2] step 3200/6000 loss 0.5234 178703 tok/s
+[V1R2-loop4 s2] step 3300/6000 loss 0.5165 178798 tok/s
+[V1R2-loop4 s2] step 3400/6000 loss 0.5018 178872 tok/s
+[V1R2-loop4 s2] step 3500/6000 loss 0.5099 179272 tok/s
+[V1R2-loop4 s2] step 3600/6000 loss 0.4941 179243 tok/s
+[V1R2-loop4 s2] step 3700/6000 loss 0.4850 178965 tok/s
+[V1R2-loop4 s2] step 3800/6000 loss 0.4731 178862 tok/s
+[V1R2-loop4 s2] step 3900/6000 loss 0.4547 178962 tok/s
+[V1R2-loop4 s2] step 4000/6000 loss 0.4474 178852 tok/s
+[V1R2-loop4 s2] step 4100/6000 loss 0.4490 178782 tok/s
+[V1R2-loop4 s2] step 4200/6000 loss 0.4397 178764 tok/s
+[V1R2-loop4 s2] step 4300/6000 loss 0.4494 178759 tok/s
+[V1R2-loop4 s2] step 4400/6000 loss 0.4229 178682 tok/s
+[V1R2-loop4 s2] step 4500/6000 loss 0.4365 178709 tok/s
+[V1R2-loop4 s2] step 4600/6000 loss 0.4282 178704 tok/s
+[V1R2-loop4 s2] step 4700/6000 loss 0.4179 178755 tok/s
+[V1R2-loop4 s2] step 4800/6000 loss 0.4201 178867 tok/s
+[V1R2-loop4 s2] step 4900/6000 loss 0.4027 178866 tok/s
+[V1R2-loop4 s2] step 5000/6000 loss 0.4246 178712 tok/s
+[V1R2-loop4 s2] step 5100/6000 loss 0.3807 178584 tok/s
+[V1R2-loop4 s2] step 5200/6000 loss 0.3860 178600 tok/s
+[V1R2-loop4 s2] step 5300/6000 loss 0.3836 178475 tok/s
+[V1R2-loop4 s2] step 5400/6000 loss 0.3750 178477 tok/s
+[V1R2-loop4 s2] step 5500/6000 loss 0.3741 178658 tok/s
+[V1R2-loop4 s2] step 5600/6000 loss 0.3859 178756 tok/s
+[V1R2-loop4 s2] step 5700/6000 loss 0.3688 178720 tok/s
+[V1R2-loop4 s2] step 5800/6000 loss 0.3751 178649 tok/s
+[V1R2-loop4 s2] step 5900/6000 loss 0.3751 178779 tok/s
+[V1R2-loop4 s2] step 6000/6000 loss 0.3715 178790 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1R2-loop4 s2] run_id=EXP-003B-V1R2-loop4-s2-e7fa2c
+  rewrite      72/200 = 0.360
+  algo_exec    86/200 = 0.430
+  flops/correct = 3.69e+10
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V1R2-loop4 s2] K-gap: K=4 acc=0.395 vs K=1 acc=0.375 (diag run EXP-003B-V1R2-loop4-s2-676f2e)
+[done rc=0] V1R2-loop4 s2
+EXP COMPLETE: 3/3 jobs ok
+[launch] B2-6L s3
+[launch] B2-6L s4
+[B2-6L s3] 20000 train sequences (0 skipped), ~5,805,064 tokens/epoch
+[B2-6L] params=17.83M hash=af1860f6c8bf
+[B2-6L s3] step 100/4000 loss 2.3883 241569 tok/s
+[B2-6L s4] 20000 train sequences (0 skipped), ~5,805,064 tokens/epoch
+[B2-6L] params=17.83M hash=af1860f6c8bf
+[B2-6L s4] step 100/4000 loss 2.2724 238098 tok/s
+[B2-6L s3] step 200/4000 loss 1.2735 255795 tok/s
+[B2-6L s4] step 200/4000 loss 1.3034 254335 tok/s
+[B2-6L s3] step 300/4000 loss 1.2184 262074 tok/s
+[B2-6L s4] step 300/4000 loss 1.2529 261581 tok/s
+[B2-6L s3] step 400/4000 loss 1.1917 265516 tok/s
+[B2-6L s4] step 400/4000 loss 1.1936 264832 tok/s
+[B2-6L s3] step 500/4000 loss 1.1585 267601 tok/s
+[B2-6L s4] step 500/4000 loss 1.1750 266976 tok/s
+[B2-6L s3] step 600/4000 loss 1.1486 268847 tok/s
+[B2-6L s4] step 600/4000 loss 1.1518 268346 tok/s
+[B2-6L s3] step 700/4000 loss 1.1395 269712 tok/s
+[B2-6L s4] step 700/4000 loss 1.1356 269396 tok/s
+[B2-6L s3] step 800/4000 loss 1.1327 270389 tok/s
+[B2-6L s4] step 800/4000 loss 1.1390 270064 tok/s
+[B2-6L s3] step 900/4000 loss 1.1392 271024 tok/s
+[B2-6L s4] step 900/4000 loss 1.1483 270678 tok/s
+[B2-6L s3] step 1000/4000 loss 1.1360 271553 tok/s
+[B2-6L s4] step 1000/4000 loss 1.1304 271219 tok/s
+[B2-6L s3] step 1100/4000 loss 1.1345 271915 tok/s
+[B2-6L s4] step 1100/4000 loss 1.1235 271556 tok/s
+[B2-6L s3] step 1200/4000 loss 1.1300 272191 tok/s
+[B2-6L s4] step 1200/4000 loss 1.1266 271943 tok/s
+[B2-6L s3] step 1300/4000 loss 1.1024 272418 tok/s
+[B2-6L s4] step 1300/4000 loss 1.1223 272247 tok/s
+[B2-6L s3] step 1400/4000 loss 1.1151 272663 tok/s
+[B2-6L s4] step 1400/4000 loss 1.1212 272485 tok/s
+[B2-6L s3] step 1500/4000 loss 1.1067 272897 tok/s
+[B2-6L s4] step 1500/4000 loss 1.1070 272705 tok/s
+[B2-6L s3] step 1600/4000 loss 1.0899 273096 tok/s
+[B2-6L s4] step 1600/4000 loss 1.1028 272820 tok/s
+[B2-6L s3] step 1700/4000 loss 1.1054 273296 tok/s
+[B2-6L s4] step 1700/4000 loss 1.1217 272994 tok/s
+[B2-6L s3] step 1800/4000 loss 1.0945 273448 tok/s
+[B2-6L s4] step 1800/4000 loss 1.1030 273193 tok/s
+[B2-6L s3] step 1900/4000 loss 1.0845 273511 tok/s
+[B2-6L s4] step 1900/4000 loss 1.0900 273344 tok/s
+[B2-6L s3] step 2000/4000 loss 1.0735 273604 tok/s
+[B2-6L s4] step 2000/4000 loss 1.0903 273480 tok/s
+[B2-6L s3] step 2100/4000 loss 1.0789 273743 tok/s
+[B2-6L s4] step 2100/4000 loss 1.0922 273618 tok/s
+[B2-6L s3] step 2200/4000 loss 1.0812 273834 tok/s
+[B2-6L s4] step 2200/4000 loss 1.1061 273704 tok/s
+[B2-6L s3] step 2300/4000 loss 1.0864 273964 tok/s
+[B2-6L s4] step 2300/4000 loss 1.0769 273813 tok/s
+[B2-6L s3] step 2400/4000 loss 1.0772 274035 tok/s
+[B2-6L s4] step 2400/4000 loss 1.0895 273893 tok/s
+[B2-6L s3] step 2500/4000 loss 1.0675 274125 tok/s
+[B2-6L s4] step 2500/4000 loss 1.0821 273893 tok/s
+[B2-6L s3] step 2600/4000 loss 1.0574 274194 tok/s
+[B2-6L s4] step 2600/4000 loss 1.0604 273989 tok/s
+[B2-6L s3] step 2700/4000 loss 1.0627 274245 tok/s
+[B2-6L s4] step 2700/4000 loss 1.0755 274041 tok/s
+[B2-6L s3] step 2800/4000 loss 1.0549 274310 tok/s
+[B2-6L s4] step 2800/4000 loss 1.0768 274111 tok/s
+[B2-6L s3] step 2900/4000 loss 1.0498 274359 tok/s
+[B2-6L s4] step 2900/4000 loss 1.0660 274204 tok/s
+[B2-6L s3] step 3000/4000 loss 1.0432 274394 tok/s
+[B2-6L s4] step 3000/4000 loss 1.0624 274255 tok/s
+[B2-6L s3] step 3100/4000 loss 1.0526 274450 tok/s
+[B2-6L s4] step 3100/4000 loss 1.0673 274321 tok/s
+[B2-6L s3] step 3200/4000 loss 1.0300 274504 tok/s
+[B2-6L s4] step 3200/4000 loss 1.0398 274365 tok/s
+[B2-6L s3] step 3300/4000 loss 1.0219 274526 tok/s
+[B2-6L s4] step 3300/4000 loss 1.0523 274434 tok/s
+[B2-6L s3] step 3400/4000 loss 1.0460 274562 tok/s
+[B2-6L s4] step 3400/4000 loss 1.0380 274481 tok/s
+[B2-6L s3] step 3500/4000 loss 1.0398 274596 tok/s
+[B2-6L s4] step 3500/4000 loss 1.0461 274544 tok/s
+[B2-6L s3] step 3600/4000 loss 1.0429 274645 tok/s
+[B2-6L s4] step 3600/4000 loss 1.0505 274598 tok/s
+[B2-6L s3] step 3700/4000 loss 1.0261 274692 tok/s
+[B2-6L s4] step 3700/4000 loss 1.0436 274638 tok/s
+[B2-6L s3] step 3800/4000 loss 1.0100 274731 tok/s
+[B2-6L s4] step 3800/4000 loss 1.0522 274679 tok/s
+[B2-6L s3] step 3900/4000 loss 1.0179 274777 tok/s
+[B2-6L s4] step 3900/4000 loss 1.0295 274692 tok/s
+[B2-6L s3] step 4000/4000 loss 1.0278 274811 tok/s
+[B2-6L s4] step 4000/4000 loss 1.0299 274798 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-6L s3] run_id=EXP-002-RS-B2-6L-s3-b898d4
+  rule_shift   21/200 = 0.105
+  flops/correct = 1.08e+11
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-6L s4] run_id=EXP-002-RS-B2-6L-s4-c01729
+  rule_shift   22/200 = 0.110
+  flops/correct = 1.03e+11
+[done rc=0] B2-6L s3
+[launch] B2-6L s5
+[done rc=0] B2-6L s4
+[B2-6L s5] 20000 train sequences (0 skipped), ~5,805,064 tokens/epoch
+[B2-6L] params=17.83M hash=af1860f6c8bf
+[B2-6L s5] step 100/4000 loss 2.3517 335384 tok/s
+[B2-6L s5] step 200/4000 loss 1.2994 357860 tok/s
+[B2-6L s5] step 300/4000 loss 1.1905 366401 tok/s
+[B2-6L s5] step 400/4000 loss 1.1913 367846 tok/s
+[B2-6L s5] step 500/4000 loss 1.1712 371094 tok/s
+[B2-6L s5] step 600/4000 loss 1.1472 373739 tok/s
+[B2-6L s5] step 700/4000 loss 1.1335 375640 tok/s
+[B2-6L s5] step 800/4000 loss 1.1316 376801 tok/s
+[B2-6L s5] step 900/4000 loss 1.1422 377553 tok/s
+[B2-6L s5] step 1000/4000 loss 1.1317 377984 tok/s
+[B2-6L s5] step 1100/4000 loss 1.1253 378689 tok/s
+[B2-6L s5] step 1200/4000 loss 1.1346 378978 tok/s
+[B2-6L s5] step 1300/4000 loss 1.1134 379343 tok/s
+[B2-6L s5] step 1400/4000 loss 1.1212 379363 tok/s
+[B2-6L s5] step 1500/4000 loss 1.1063 379930 tok/s
+[B2-6L s5] step 1600/4000 loss 1.1238 380331 tok/s
+[B2-6L s5] step 1700/4000 loss 1.0984 380487 tok/s
+[B2-6L s5] step 1800/4000 loss 1.1032 380709 tok/s
+[B2-6L s5] step 1900/4000 loss 1.0993 380875 tok/s
+[B2-6L s5] step 2000/4000 loss 1.0809 380972 tok/s
+[B2-6L s5] step 2100/4000 loss 1.0992 381153 tok/s
+[B2-6L s5] step 2200/4000 loss 1.0803 381313 tok/s
+[B2-6L s5] step 2300/4000 loss 1.0900 381484 tok/s
+[B2-6L s5] step 2400/4000 loss 1.0776 381387 tok/s
+[B2-6L s5] step 2500/4000 loss 1.0823 381520 tok/s
+[B2-6L s5] step 2600/4000 loss 1.0603 381600 tok/s
+[B2-6L s5] step 2700/4000 loss 1.0646 381660 tok/s
+[B2-6L s5] step 2800/4000 loss 1.0755 381757 tok/s
+[B2-6L s5] step 2900/4000 loss 1.0581 381754 tok/s
+[B2-6L s5] step 3000/4000 loss 1.0632 381830 tok/s
+[B2-6L s5] step 3100/4000 loss 1.0618 381910 tok/s
+[B2-6L s5] step 3200/4000 loss 1.0573 381928 tok/s
+[B2-6L s5] step 3300/4000 loss 1.0261 381743 tok/s
+[B2-6L s5] step 3400/4000 loss 1.0509 381624 tok/s
+[B2-6L s5] step 3500/4000 loss 1.0278 381141 tok/s
+[B2-6L s5] step 3600/4000 loss 1.0256 380859 tok/s
+[B2-6L s5] step 3700/4000 loss 1.0420 380964 tok/s
+[B2-6L s5] step 3800/4000 loss 1.0114 380870 tok/s
+[B2-6L s5] step 3900/4000 loss 1.0226 380520 tok/s
+[B2-6L s5] step 4000/4000 loss 1.0242 380433 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-6L s5] run_id=EXP-002-RS-B2-6L-s5-bb1a03
+  rule_shift   26/200 = 0.130
+  flops/correct = 8.74e+10
+[done rc=0] B2-6L s5
+EXP COMPLETE: 3/3 jobs ok
+=== H2 EXTEND: V2 rule_shift seeds 3-5 alone (3 workers) ===
+[launch] V2-delta s3
+[launch] V2-delta s4
+[launch] V2-delta s5
+[V2-delta s3] 20000 train sequences (0 skipped), ~5,805,064 tokens/epoch
+[V2-delta] params=17.86M hash=03995cad7e6e
+[V2-delta s3] step 100/4000 loss 2.2517 11065 tok/s
+[V2-delta s4] 20000 train sequences (0 skipped), ~5,805,064 tokens/epoch
+[V2-delta] params=17.86M hash=03995cad7e6e
+[V2-delta s4] step 100/4000 loss 2.1676 10979 tok/s
+[V2-delta s5] 20000 train sequences (0 skipped), ~5,805,064 tokens/epoch
+[V2-delta] params=17.86M hash=03995cad7e6e
+[V2-delta s5] step 100/4000 loss 2.1570 11005 tok/s
+[V2-delta s3] step 200/4000 loss 1.2471 11089 tok/s
+[V2-delta s4] step 200/4000 loss 1.2665 11038 tok/s
+[V2-delta s5] step 200/4000 loss 1.2547 11034 tok/s
+[V2-delta s3] step 300/4000 loss 1.1743 11086 tok/s
+[V2-delta s4] step 300/4000 loss 1.1864 11071 tok/s
+[V2-delta s5] step 300/4000 loss 1.1640 11047 tok/s
+[V2-delta s3] step 400/4000 loss 1.1750 11085 tok/s
+[V2-delta s4] step 400/4000 loss 1.0998 11065 tok/s
+[V2-delta s5] step 400/4000 loss 1.1528 11061 tok/s
+[V2-delta s3] step 500/4000 loss 1.1046 11100 tok/s
+[V2-delta s4] step 500/4000 loss 1.0650 11071 tok/s
+[V2-delta s5] step 500/4000 loss 1.1202 11064 tok/s
+[V2-delta s3] step 600/4000 loss 1.0797 11098 tok/s
+[V2-delta s4] step 600/4000 loss 1.0307 11081 tok/s
+[V2-delta s5] step 600/4000 loss 1.0934 11071 tok/s
+[V2-delta s3] step 700/4000 loss 1.0697 11096 tok/s
+[V2-delta s4] step 700/4000 loss 1.0096 11086 tok/s
+[V2-delta s5] step 700/4000 loss 1.0797 11076 tok/s
+[V2-delta s3] step 800/4000 loss 1.0547 11103 tok/s
+[V2-delta s4] step 800/4000 loss 1.0085 11092 tok/s
+[V2-delta s5] step 800/4000 loss 1.0759 11082 tok/s
+[V2-delta s3] step 900/4000 loss 1.0536 11105 tok/s
+[V2-delta s4] step 900/4000 loss 1.0024 11091 tok/s
+[V2-delta s5] step 900/4000 loss 1.0806 11086 tok/s
+[V2-delta s3] step 1000/4000 loss 1.0516 11111 tok/s
+[V2-delta s5] step 1000/4000 loss 1.0609 11089 tok/s
+[V2-delta s4] step 1000/4000 loss 0.9783 11094 tok/s
+[V2-delta s3] step 1100/4000 loss 1.0436 11112 tok/s
+[V2-delta s5] step 1100/4000 loss 1.0510 11097 tok/s
+[V2-delta s4] step 1100/4000 loss 0.9724 11097 tok/s
+[V2-delta s3] step 1200/4000 loss 1.0387 11114 tok/s
+[V2-delta s5] step 1200/4000 loss 1.0484 11104 tok/s
+[V2-delta s4] step 1200/4000 loss 0.9691 11103 tok/s
+[V2-delta s3] step 1300/4000 loss 1.0206 11113 tok/s
+[V2-delta s5] step 1300/4000 loss 1.0385 11108 tok/s
+[V2-delta s4] step 1300/4000 loss 0.9591 11106 tok/s
+[V2-delta s3] step 1400/4000 loss 1.0396 11117 tok/s
+[V2-delta s5] step 1400/4000 loss 1.0443 11113 tok/s
+[V2-delta s4] step 1400/4000 loss 0.9531 11104 tok/s
+[V2-delta s3] step 1500/4000 loss 1.0198 11119 tok/s
+[V2-delta s5] step 1500/4000 loss 1.0286 11114 tok/s
+[V2-delta s4] step 1500/4000 loss 0.9477 11105 tok/s
+[V2-delta s5] step 1600/4000 loss 1.0471 11113 tok/s
+[V2-delta s3] step 1600/4000 loss 1.0029 11113 tok/s
+[V2-delta s4] step 1600/4000 loss 0.9322 11104 tok/s
+[V2-delta s5] step 1700/4000 loss 1.0244 11114 tok/s
+[V2-delta s3] step 1700/4000 loss 1.0273 11114 tok/s
+[V2-delta s4] step 1700/4000 loss 0.9480 11103 tok/s
+[V2-delta s5] step 1800/4000 loss 1.0315 11114 tok/s
+[V2-delta s3] step 1800/4000 loss 1.0184 11113 tok/s
+[V2-delta s4] step 1800/4000 loss 0.9293 11104 tok/s
+[V2-delta s5] step 1900/4000 loss 1.0218 11117 tok/s
+[V2-delta s3] step 1900/4000 loss 1.0042 11112 tok/s
+[V2-delta s4] step 1900/4000 loss 0.9202 11107 tok/s
+[V2-delta s5] step 2000/4000 loss 1.0104 11118 tok/s
+[V2-delta s3] step 2000/4000 loss 0.9975 11112 tok/s
+[V2-delta s4] step 2000/4000 loss 0.9152 11109 tok/s
+[V2-delta s5] step 2100/4000 loss 1.0289 11119 tok/s
+[V2-delta s3] step 2100/4000 loss 1.0077 11115 tok/s
+[V2-delta s4] step 2100/4000 loss 0.9161 11110 tok/s
+[V2-delta s5] step 2200/4000 loss 1.0079 11119 tok/s
+[V2-delta s3] step 2200/4000 loss 1.0024 11115 tok/s
+[V2-delta s4] step 2200/4000 loss 0.9372 11111 tok/s
+[V2-delta s5] step 2300/4000 loss 1.0087 11121 tok/s
+[V2-delta s3] step 2300/4000 loss 1.0066 11115 tok/s
+[V2-delta s4] step 2300/4000 loss 0.9021 11111 tok/s
+[V2-delta s5] step 2400/4000 loss 1.0027 11122 tok/s
+[V2-delta s3] step 2400/4000 loss 1.0015 11117 tok/s
+[V2-delta s4] step 2400/4000 loss 0.9123 11112 tok/s
+[V2-delta s5] step 2500/4000 loss 0.9963 11124 tok/s
+[V2-delta s4] step 2500/4000 loss 0.9075 11112 tok/s
+[V2-delta s3] step 2500/4000 loss 0.9948 11117 tok/s
+[V2-delta s5] step 2600/4000 loss 0.9877 11124 tok/s
+[V2-delta s4] step 2600/4000 loss 0.8934 11112 tok/s
+[V2-delta s3] step 2600/4000 loss 0.9859 11117 tok/s
+[V2-delta s5] step 2700/4000 loss 0.9858 11124 tok/s
+[V2-delta s4] step 2700/4000 loss 0.8985 11114 tok/s
+[V2-delta s3] step 2700/4000 loss 0.9903 11117 tok/s
+[V2-delta s5] step 2800/4000 loss 0.9957 11123 tok/s
+[V2-delta s4] step 2800/4000 loss 0.9031 11113 tok/s
+[V2-delta s3] step 2800/4000 loss 0.9754 11118 tok/s
+[V2-delta s5] step 2900/4000 loss 0.9725 11122 tok/s
+[V2-delta s4] step 2900/4000 loss 0.8873 11115 tok/s
+[V2-delta s3] step 2900/4000 loss 0.9836 11118 tok/s
+[V2-delta s5] step 3000/4000 loss 0.9828 11123 tok/s
+[V2-delta s4] step 3000/4000 loss 0.8862 11117 tok/s
+[V2-delta s3] step 3000/4000 loss 0.9692 11119 tok/s
+[V2-delta s5] step 3100/4000 loss 0.9842 11125 tok/s
+[V2-delta s4] step 3100/4000 loss 0.8889 11118 tok/s
+[V2-delta s3] step 3100/4000 loss 0.9730 11120 tok/s
+[V2-delta s5] step 3200/4000 loss 0.9832 11125 tok/s
+[V2-delta s4] step 3200/4000 loss 0.8558 11119 tok/s
+[V2-delta s3] step 3200/4000 loss 0.9534 11121 tok/s
+[V2-delta s5] step 3300/4000 loss 0.9559 11126 tok/s
+[V2-delta s4] step 3300/4000 loss 0.8686 11120 tok/s
+[V2-delta s3] step 3300/4000 loss 0.9485 11121 tok/s
+[V2-delta s5] step 3400/4000 loss 0.9741 11127 tok/s
+[V2-delta s4] step 3400/4000 loss 0.8646 11122 tok/s
+[V2-delta s3] step 3400/4000 loss 0.9660 11122 tok/s
+[V2-delta s5] step 3500/4000 loss 0.9556 11128 tok/s
+[V2-delta s3] step 3500/4000 loss 0.9620 11123 tok/s
+[V2-delta s4] step 3500/4000 loss 0.8650 11121 tok/s
+[V2-delta s5] step 3600/4000 loss 0.9568 11128 tok/s
+[V2-delta s3] step 3600/4000 loss 0.9710 11123 tok/s
+[V2-delta s4] step 3600/4000 loss 0.8636 11122 tok/s
+[V2-delta s5] step 3700/4000 loss 0.9722 11127 tok/s
+[V2-delta s3] step 3700/4000 loss 0.9441 11124 tok/s
+[V2-delta s4] step 3700/4000 loss 0.8595 11123 tok/s
+[V2-delta s5] step 3800/4000 loss 0.9445 11127 tok/s
+[V2-delta s3] step 3800/4000 loss 0.9281 11125 tok/s
+[V2-delta s4] step 3800/4000 loss 0.8700 11123 tok/s
+[V2-delta s5] step 3900/4000 loss 0.9527 11128 tok/s
+[V2-delta s3] step 3900/4000 loss 0.9444 11125 tok/s
+[V2-delta s4] step 3900/4000 loss 0.8476 11122 tok/s
+[V2-delta s5] step 4000/4000 loss 0.9573 11128 tok/s
+[V2-delta s3] step 4000/4000 loss 0.9513 11126 tok/s
+[V2-delta s4] step 4000/4000 loss 0.8428 11123 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V2-delta s5] run_id=EXP-002-RS-V2-delta-s5-cbb781
+  rule_shift   29/200 = 0.145
+  flops/correct = 7.35e+10
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V2-delta s3] run_id=EXP-002-RS-V2-delta-s3-ded12e
+  rule_shift   29/200 = 0.145
+  flops/correct = 7.35e+10
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V2-delta s4] run_id=EXP-002-RS-V2-delta-s4-227d29
+  rule_shift   34/200 = 0.170
+  flops/correct = 6.27e+10
+[done rc=0] V2-delta s5
+[done rc=0] V2-delta s3
+[done rc=0] V2-delta s4
+EXP COMPLETE: 3/3 jobs ok
+STAGE12_ALL_DONE

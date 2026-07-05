@@ -8,16 +8,16 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 
 Two ingredients, tested separately, combined if positive:
 
-    MEMORY (H2, EXP-002)  ──┐
-      done: strong+broad     ├──> V3 "Aware" (H6, EXP-005) — memory-led
-    LOOPS+RECIPE (H3,       │      -> ablations -> 50M scale -> demo + report
-      EXP-003) instrument-  ─┘
-      fail: fix supervision first
+    DELTA LAYERS (H2 + EXP-006 attribution: delta-driven, broad, cheaper)
+      └──> V3 "Aware" (H6, EXP-005) = delta-centric, NO loops
+             -> 50M scale check -> demo + report ("when does latent depth pay?")
 
-- H1 killed (vanilla loops lose at matched FLOPs) — H3 was the evidence-backed retry;
-  EXP-003 came back INSTRUMENT-FAIL (loop-invariant model, K-gap<1pt), so H3 is
-  unresolved pending a supervision fix, and V3 proceeds memory-led.
-- If H2's instability worsens, EXTEND seeds first.
+- H1 killed; H3 PARKED PERMANENTLY (EXP-003 instrument-fail, EXP-003B retry still
+  loop-invariant + loses to own controls; timebox exhausted). Loops out of V3.
+- EXP-006 2x2: V2's win is the delta layers (+22.8), not the SWA window (+3.5);
+  efficiency edge also delta-driven. B2-SWA fails to reproduce memory-family gains.
+- H2 EXTEND (6 rule_shift seeds): 5/6 positive small deltas + 1/6 grokked to 100%
+  (0/6 for B2) — bimodal, checkpoints kept for the grokking side-study.
 - Parked/support: H4 halting (efficiency ablation later), H5 Titans (replication debt),
   H0a/H0b nulls (B2 opponent in every run; CoT control after verdicts).
 
@@ -68,8 +68,11 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
   (3/3 seeds, +8.0). Dissociation (EXP-002-AX, 2026-07-05): passes on the letter
   (+.278 rule_shift > +.218 algo_exec) but V2 also beats B2 by +21.8 on algo_exec
   (a non-memory family) at 23% fewer inference FLOPs/correct — advantage is
-  BROAD, not memory-specific. Verdict: V2 is a better generic 18M architecture;
-  "memory-consistent, not memory-proven". EXTEND question folds into EXP-005.
+  BROAD, not memory-specific. EXTEND (6 rule_shift seeds): 5/6 positive, 1/6
+  grokked to 100% (0/6 B2). Attribution (EXP-006 2x2): **delta-driven** — delta
+  effect +22.8 vs window +3.5; SWA alone reproduces nothing. Final verdict:
+  the gated delta-rule layers are a genuinely better generic component at 18M
+  on SAGE, for accuracy AND per-correct cost. H6/EXP-005 proceeds delta-centric.
 - Expected advantage: V2 beats param-matched B2 by >= 3.0 points on rule_shift +
   compress + state_guard family mean at matched training FLOPs; dissociation check:
   gain on rule_shift must exceed gain on algo_exec (memory, not generic capacity).
@@ -84,12 +87,13 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
 - Timebox: 2 revisions max.
 
 ### H3: Loops pay their FLOP cost when trained with the 2026 recipe
-- Status: **revised — instrument-fail** (EXP-003, 2026-07-05; agent/log/EXP-003.md).
-  K-gap gate FAILED (<1 pt vs 5-pt threshold): the recipe model is loop-invariant
-  (readout blind spot, arXiv:2606.24898). NOT a kill — the run cannot falsify H3.
-  Per decision mapping: fix per-loop supervision (detached readout heads /
-  loop-index conditioning / bptt_loops>2 / step-aligned targets) before any
-  further H3 spend. (Revised 2026-07-04 after owner-directed literature
+- Status: **parked permanently** (EXP-003 instrument-fail + EXP-003B retry,
+  2026-07-05; agent/log/EXP-003.md). The fixed recipe (step embedding, detached
+  weighted readouts, bptt 4) still produced a loop-invariant model (K-gap ~+1.5
+  vs 5-pt gate) that loses to its own loop1/FM controls. Timebox exhausted
+  (one retry). Residual: EXP-001B param-efficiency finding stands; latent
+  iteration remains plausible in continuous-output domains (RD-VLA) — out of
+  scope for SAGE. (Revised 2026-07-04 after owner-directed literature
   re-scan; agent/lit_scan_2026-07.md). Owner directive: H1's kill is verdict on
   vanilla loops only; loops get their evidence-backed second chance here.
 - Recipe (from lit scan): per-loop readout supervision (LOTUS +6.7 pts), randomized
@@ -104,13 +108,13 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
   blind-spot caveat arXiv:2606.24898.
 - Est. cost: ~3 GPU-h cloud | Timebox: 1 revision.
 
-### H6: Looped delta+SWA hybrid (V3 "Aware" candidate) — H2xH3 combination
-- Status: proposed (EXP-005; runs only if H2 and H3 each show >= promising signal;
-  MELT arXiv:2605.07721 validates the topology at 1.6B without per-FLOP accounting —
-  our niche is the honest-FLOP procedural-reasoning version at 15M).
-- Design: loop the {gated-delta + SWA} hybrid block with the H3 training recipe;
-  memory + computation families; vs param-matched AND training-FLOP-matched B2.
-- Expected advantage: >= 3.0 pts on >= 2 families at matched training FLOPs.
+### H6: V3 "Aware" candidate — delta-centric (loops excluded per H3 park)
+- Status: proposed (EXP-005, redesigned 2026-07-05 after EXP-006 attribution).
+- Design: delta-density sweep (delta_every 1 vs 2 vs 3) at fixed params on the
+  full family suite (memory + computation + generalization), vs param-matched
+  AND training-FLOP-matched B2 in the same batch. The winning density = V3.
+- Expected advantage: >= 3.0 pts on >= 3 of 5 families at matched training
+  FLOPs, plus flops/correct <= B2 on those families.
 - Est. cost: ~4 GPU-h cloud | Timebox: 2 revisions.
 
 ### H4: Learned halting improves compute allocation (efficiency only)

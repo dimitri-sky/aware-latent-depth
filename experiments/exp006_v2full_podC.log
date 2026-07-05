@@ -1,0 +1,148 @@
+[launch] V2-full s0
+[launch] V2-full s1
+[V2-full s1] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V2-full] params=17.86M hash=3b804f7d328e
+[V2-full s1] step 100/4000 loss 1.2914 12821 tok/s
+[V2-full s0] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V2-full] params=17.86M hash=3b804f7d328e
+[V2-full s0] step 100/4000 loss 1.3346 12747 tok/s
+[V2-full s1] step 200/4000 loss 0.6017 12884 tok/s
+[V2-full s0] step 200/4000 loss 0.6088 12848 tok/s
+[V2-full s1] step 300/4000 loss 0.5116 12941 tok/s
+[V2-full s0] step 300/4000 loss 0.5315 12927 tok/s
+[V2-full s1] step 400/4000 loss 0.4528 13027 tok/s
+[V2-full s0] step 400/4000 loss 0.4598 13009 tok/s
+[V2-full s1] step 500/4000 loss 0.4141 13038 tok/s
+[V2-full s0] step 500/4000 loss 0.4045 13021 tok/s
+[V2-full s1] step 600/4000 loss 0.3770 13035 tok/s
+[V2-full s0] step 600/4000 loss 0.3765 13018 tok/s
+[V2-full s1] step 700/4000 loss 0.3500 13040 tok/s
+[V2-full s0] step 700/4000 loss 0.3490 13027 tok/s
+[V2-full s1] step 800/4000 loss 0.3054 13063 tok/s
+[V2-full s0] step 800/4000 loss 0.3023 13054 tok/s
+[V2-full s1] step 900/4000 loss 0.3179 13066 tok/s
+[V2-full s0] step 900/4000 loss 0.2843 13058 tok/s
+[V2-full s1] step 1000/4000 loss 0.2718 13061 tok/s
+[V2-full s0] step 1000/4000 loss 0.2822 13057 tok/s
+[V2-full s1] step 1100/4000 loss 0.2596 13076 tok/s
+[V2-full s0] step 1100/4000 loss 0.2754 13060 tok/s
+[V2-full s1] step 1200/4000 loss 0.2332 13020 tok/s
+[V2-full s0] step 1200/4000 loss 0.2572 13002 tok/s
+[V2-full s1] step 1300/4000 loss 0.2177 12969 tok/s
+[V2-full s0] step 1300/4000 loss 0.2213 12955 tok/s
+[V2-full s1] step 1400/4000 loss 0.1919 12925 tok/s
+[V2-full s0] step 1400/4000 loss 0.2252 12914 tok/s
+[V2-full s1] step 1500/4000 loss 0.1729 12888 tok/s
+[V2-full s0] step 1500/4000 loss 0.1933 12878 tok/s
+[V2-full s1] step 1600/4000 loss 0.1626 12857 tok/s
+[V2-full s0] step 1600/4000 loss 0.1672 12847 tok/s
+[V2-full s1] step 1700/4000 loss 0.1322 12830 tok/s
+[V2-full s0] step 1700/4000 loss 0.1661 12822 tok/s
+[V2-full s1] step 1800/4000 loss 0.1258 12805 tok/s
+[V2-full s0] step 1800/4000 loss 0.1435 12796 tok/s
+[V2-full s1] step 1900/4000 loss 0.1214 12795 tok/s
+[V2-full s0] step 1900/4000 loss 0.1365 12780 tok/s
+[V2-full s1] step 2000/4000 loss 0.1131 12771 tok/s
+[V2-full s0] step 2000/4000 loss 0.1150 12753 tok/s
+[V2-full s1] step 2100/4000 loss 0.1071 12751 tok/s
+[V2-full s0] step 2100/4000 loss 0.1059 12736 tok/s
+[V2-full s1] step 2200/4000 loss 0.0998 12734 tok/s
+[V2-full s0] step 2200/4000 loss 0.0973 12720 tok/s
+[V2-full s1] step 2300/4000 loss 0.0832 12718 tok/s
+[V2-full s0] step 2300/4000 loss 0.0882 12703 tok/s
+[V2-full s1] step 2400/4000 loss 0.0841 12704 tok/s
+[V2-full s0] step 2400/4000 loss 0.0869 12689 tok/s
+[V2-full s1] step 2500/4000 loss 0.0786 12690 tok/s
+[V2-full s0] step 2500/4000 loss 0.0757 12675 tok/s
+[V2-full s1] step 2600/4000 loss 0.0615 12679 tok/s
+[V2-full s0] step 2600/4000 loss 0.0561 12665 tok/s
+[V2-full s1] step 2700/4000 loss 0.0599 12678 tok/s
+[V2-full s0] step 2700/4000 loss 0.0494 12666 tok/s
+[V2-full s1] step 2800/4000 loss 0.0601 12668 tok/s
+[V2-full s0] step 2800/4000 loss 0.0514 12656 tok/s
+[V2-full s1] step 2900/4000 loss 0.0434 12658 tok/s
+[V2-full s0] step 2900/4000 loss 0.0486 12646 tok/s
+[V2-full s1] step 3000/4000 loss 0.0435 12649 tok/s
+[V2-full s0] step 3000/4000 loss 0.0456 12638 tok/s
+[V2-full s1] step 3100/4000 loss 0.0360 12641 tok/s
+[V2-full s0] step 3100/4000 loss 0.0338 12630 tok/s
+[V2-full s1] step 3200/4000 loss 0.0313 12633 tok/s
+[V2-full s0] step 3200/4000 loss 0.0323 12622 tok/s
+[V2-full s1] step 3300/4000 loss 0.0242 12627 tok/s
+[V2-full s0] step 3300/4000 loss 0.0218 12616 tok/s
+[V2-full s1] step 3400/4000 loss 0.0233 12619 tok/s
+[V2-full s0] step 3400/4000 loss 0.0215 12609 tok/s
+[V2-full s1] step 3500/4000 loss 0.0206 12619 tok/s
+[V2-full s0] step 3500/4000 loss 0.0174 12609 tok/s
+[V2-full s1] step 3600/4000 loss 0.0210 12613 tok/s
+[V2-full s0] step 3600/4000 loss 0.0184 12604 tok/s
+[V2-full s1] step 3700/4000 loss 0.0164 12607 tok/s
+[V2-full s0] step 3700/4000 loss 0.0178 12599 tok/s
+[V2-full s1] step 3800/4000 loss 0.0158 12602 tok/s
+[V2-full s0] step 3800/4000 loss 0.0109 12594 tok/s
+[V2-full s1] step 3900/4000 loss 0.0143 12598 tok/s
+[V2-full s0] step 3900/4000 loss 0.0095 12589 tok/s
+[V2-full s1] step 4000/4000 loss 0.0118 12593 tok/s
+[V2-full s0] step 4000/4000 loss 0.0126 12585 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V2-full s1] run_id=EXP-006-AX-V2-full-s1-54d48f
+  algo_exec    192/200 = 0.960
+  flops/correct = 8.15e+09
+[done rc=0] V2-full s1
+[launch] V2-full s2
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V2-full s0] run_id=EXP-006-AX-V2-full-s0-19790b
+  algo_exec    196/200 = 0.980
+  flops/correct = 7.99e+09
+[done rc=0] V2-full s0
+[V2-full s2] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V2-full] params=17.86M hash=3b804f7d328e
+[V2-full s2] step 100/4000 loss 1.3133 13837 tok/s
+[V2-full s2] step 200/4000 loss 0.6173 14018 tok/s
+[V2-full s2] step 300/4000 loss 0.5184 14085 tok/s
+[V2-full s2] step 400/4000 loss 0.4319 14124 tok/s
+[V2-full s2] step 500/4000 loss 0.3832 14137 tok/s
+[V2-full s2] step 600/4000 loss 0.3416 14151 tok/s
+[V2-full s2] step 700/4000 loss 0.3114 14170 tok/s
+[V2-full s2] step 800/4000 loss 0.2901 14164 tok/s
+[V2-full s2] step 900/4000 loss 0.2641 14164 tok/s
+[V2-full s2] step 1000/4000 loss 0.2287 14158 tok/s
+[V2-full s2] step 1100/4000 loss 0.2152 14152 tok/s
+[V2-full s2] step 1200/4000 loss 0.2118 14148 tok/s
+[V2-full s2] step 1300/4000 loss 0.1859 14146 tok/s
+[V2-full s2] step 1400/4000 loss 0.1843 14151 tok/s
+[V2-full s2] step 1500/4000 loss 0.1467 14157 tok/s
+[V2-full s2] step 1600/4000 loss 0.1534 14165 tok/s
+[V2-full s2] step 1700/4000 loss 0.1411 14174 tok/s
+[V2-full s2] step 1800/4000 loss 0.1291 14174 tok/s
+[V2-full s2] step 1900/4000 loss 0.1279 14178 tok/s
+[V2-full s2] step 2000/4000 loss 0.1067 14170 tok/s
+[V2-full s2] step 2100/4000 loss 0.1019 14169 tok/s
+[V2-full s2] step 2200/4000 loss 0.1146 14166 tok/s
+[V2-full s2] step 2300/4000 loss 0.0926 14165 tok/s
+[V2-full s2] step 2400/4000 loss 0.0854 14164 tok/s
+[V2-full s2] step 2500/4000 loss 0.0685 14169 tok/s
+[V2-full s2] step 2600/4000 loss 0.0630 14177 tok/s
+[V2-full s2] step 2700/4000 loss 0.0520 14181 tok/s
+[V2-full s2] step 2800/4000 loss 0.0509 14176 tok/s
+[V2-full s2] step 2900/4000 loss 0.0483 14175 tok/s
+[V2-full s2] step 3000/4000 loss 0.0414 14172 tok/s
+[V2-full s2] step 3100/4000 loss 0.0365 14171 tok/s
+[V2-full s2] step 3200/4000 loss 0.0333 14172 tok/s
+[V2-full s2] step 3300/4000 loss 0.0216 14171 tok/s
+[V2-full s2] step 3400/4000 loss 0.0216 14173 tok/s
+[V2-full s2] step 3500/4000 loss 0.0187 14170 tok/s
+[V2-full s2] step 3600/4000 loss 0.0182 14167 tok/s
+[V2-full s2] step 3700/4000 loss 0.0151 14162 tok/s
+[V2-full s2] step 3800/4000 loss 0.0151 14160 tok/s
+[V2-full s2] step 3900/4000 loss 0.0123 14158 tok/s
+[V2-full s2] step 4000/4000 loss 0.0110 14154 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V2-full s2] run_id=EXP-006-AX-V2-full-s2-46cfc4
+  algo_exec    197/200 = 0.985
+  flops/correct = 7.95e+09
+[done rc=0] V2-full s2
+EXP COMPLETE: 3/3 jobs ok
