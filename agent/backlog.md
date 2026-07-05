@@ -8,11 +8,13 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 
 Two ingredients, tested separately, combined if positive:
 
-    DELTA LAYERS (H2 + EXP-006 attribution + EXP-007 budget-robustness)
-      └──> V3 "Aware" = d2 config, RESOLVED (EXP-005-DEN)
-             -> 50M feasibility probe + scale check -> demo + report
-             -> next arc: delta-memory retrofit on a pretrained LLM (B2-NM at
-                1-3B, adapter fine-tune) — the LLM-applications bridge
+    ARC 1 (complete): V3 "Aware" = d2 config — delta layers beat B2 at matched
+      params, 2x budget, attributed, density-optimal. 50M check skipped
+      (value/$; scan throughput risk). Ship: report + demo.
+    ARC 2 (next): EXP-004 thinking-token economics — B2-CoT budget sweep vs
+      direct vs V3 vs bigger-B2 at MATCHED inference FLOPs; exchange-rate
+      curves. Parallel side-study: grokking predictor (instrumented rule_shift
+      seeds). Fallback arc: delta-memory retrofit on a pretrained 1-2B.
 
 - H1 killed; H3 PARKED PERMANENTLY (EXP-003 instrument-fail, EXP-003B retry still
   loop-invariant + loses to own controls; timebox exhausted). Loops out of V3.
@@ -139,7 +141,9 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
 - Status: live — B2 is the reference opponent in every experiment.
 
 ### H0b (null): explicit CoT beats latent computation at matched inference FLOPs
-- Status: proposed (EXP-004; after EXP-001 verdict)
-- Minimum falsifier: B2 trained on traced data (CoT decoding, rationale budget
-  counted at full FLOPs) vs V1-loop4 at matched inference FLOPs on algo_exec +
-  dsl_learn (deterministic, loop-favored) AND a sampling-flavored family if added.
+- Status: **promoted to arc-2 centerpiece** (EXP-004, redesigned 2026-07-05;
+  loops' death re-aims the latent arm at V3). Arms at matched inference FLOPs:
+  B2-CoT (trace-trained, budget swept), B2 direct, V3 direct, bigger-B2 direct.
+  Primary deliverable: accuracy-vs-FLOPs/answer exchange-rate curves + crossover
+  points; tier 3-5 primary band. Needs trace emitters for algo_exec/rule_shift
+  first. Pre-registration in agent/log/EXP-004.md before any training.
