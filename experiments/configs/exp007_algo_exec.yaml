@@ -1,0 +1,37 @@
+# EXP-007: training-budget robustness of the delta advantage. V2 vs B2 at
+# DOUBLE the standard budget (8000 steps vs the 4000 used everywhere else),
+# algo_exec (largest, tightest-variance gap: +21.8, seed SD ~1.5 pts).
+# Kills the convergence-speed confound: if B2 catches up with more training,
+# the "better architecture" claim degrades to "faster early optimization".
+# 2 seeds pre-registered (family has the lowest seed variance of the suite;
+# budget-trend read, not a margin gate).
+exp_id: EXP-007
+
+train:
+  families: [algo_exec]
+  steps: 8000
+  lr: 4.9e-4
+seeds: [0, 1]
+
+models:
+  - id: V2-delta
+    arch: delta
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    delta_every: 2
+    window: 128
+    d_k: 384
+    d_v: 384
+    max_seq_len: 1024
+
+  - id: B2-6L
+    arch: tf_pp
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    max_seq_len: 1024
