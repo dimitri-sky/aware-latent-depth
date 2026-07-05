@@ -4,6 +4,21 @@ Statuses: proposed | testing | killed | revised | scaled | parked.
 Rules: pre-registered margins only; every claim links results.csv run_ids; timebox
 forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT.md).
 
+## Program map (updated 2026-07-05)
+
+Two ingredients, tested separately, combined if positive:
+
+    MEMORY (H2, EXP-002)  ──┐
+      done: promising        ├──> V3 "Aware" combo (H6, EXP-005)
+    LOOPS+RECIPE (H3,       │      -> ablations -> 50M scale -> demo + report
+      EXP-003) running ─────┘
+      overnight
+
+- H1 killed (vanilla loops lose at matched FLOPs) — H3 is the evidence-backed retry.
+- If H3 fails, V3 proceeds memory-only; if H2's instability worsens, EXTEND seeds first.
+- Parked/support: H4 halting (efficiency ablation later), H5 Titans (replication debt),
+  H0a/H0b nulls (B2 opponent in every run; CoT control after verdicts).
+
 ---
 
 ### H1: Shared-weight recurrent latent depth improves reasoning-per-FLOP
