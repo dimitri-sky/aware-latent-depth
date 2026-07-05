@@ -25,8 +25,8 @@ python scripts/run_exp.py --config experiments/configs/exp008_algo_exec.yaml --m
 python scripts/run_exp.py --config experiments/configs/exp008_state_guard.yaml --models B2-50M --workers 1
 wait $DL_PID
 
-echo "=== PHASE B: V3-50M solo chain ==="
-python scripts/run_exp.py --config experiments/configs/exp008_algo_exec.yaml --models V3-50M --workers 1
+echo "=== PHASE B: V3-50M algo_exec (2 workers; probe: 10.2GB/job) then state_guard solo (21.7GB) ==="
+python scripts/run_exp.py --config experiments/configs/exp008_algo_exec.yaml --models V3-50M --workers 2
 python scripts/run_exp.py --config experiments/configs/exp008_state_guard.yaml --models V3-50M --workers 1
 
 echo EXP008_ALL_DONE
