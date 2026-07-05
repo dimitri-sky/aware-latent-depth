@@ -9,13 +9,15 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 Two ingredients, tested separately, combined if positive:
 
     MEMORY (H2, EXP-002)  ──┐
-      done: promising        ├──> V3 "Aware" combo (H6, EXP-005)
+      done: strong+broad     ├──> V3 "Aware" (H6, EXP-005) — memory-led
     LOOPS+RECIPE (H3,       │      -> ablations -> 50M scale -> demo + report
-      EXP-003) running ─────┘
-      overnight
+      EXP-003) instrument-  ─┘
+      fail: fix supervision first
 
-- H1 killed (vanilla loops lose at matched FLOPs) — H3 is the evidence-backed retry.
-- If H3 fails, V3 proceeds memory-only; if H2's instability worsens, EXTEND seeds first.
+- H1 killed (vanilla loops lose at matched FLOPs) — H3 was the evidence-backed retry;
+  EXP-003 came back INSTRUMENT-FAIL (loop-invariant model, K-gap<1pt), so H3 is
+  unresolved pending a supervision fix, and V3 proceeds memory-led.
+- If H2's instability worsens, EXTEND seeds first.
 - Parked/support: H4 halting (efficiency ablation later), H5 Titans (replication debt),
   H0a/H0b nulls (B2 opponent in every run; CoT control after verdicts).
 
@@ -63,8 +65,11 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
 - Status: **testing — headline adjudicated** (EXP-002, 2026-07-05; agent/log/EXP-002.md).
   Pooled family-mean delta +13.5 pts (margin PASS by 4.5x) but stability gate
   FAIL on rule_shift seed bimodality (one seed 100%, two ~13%). compress cleanest
-  (3/3 seeds, +8.0). Verdict: PROMISING-BUT-UNSTABLE -> EXTEND policy; dissociation
-  arm EXP-002-AX (algo_exec) running on pod B alongside EXP-003.
+  (3/3 seeds, +8.0). Dissociation (EXP-002-AX, 2026-07-05): passes on the letter
+  (+.278 rule_shift > +.218 algo_exec) but V2 also beats B2 by +21.8 on algo_exec
+  (a non-memory family) at 23% fewer inference FLOPs/correct — advantage is
+  BROAD, not memory-specific. Verdict: V2 is a better generic 18M architecture;
+  "memory-consistent, not memory-proven". EXTEND question folds into EXP-005.
 - Expected advantage: V2 beats param-matched B2 by >= 3.0 points on rule_shift +
   compress + state_guard family mean at matched training FLOPs; dissociation check:
   gain on rule_shift must exceed gain on algo_exec (memory, not generic capacity).
@@ -79,8 +84,12 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
 - Timebox: 2 revisions max.
 
 ### H3: Loops pay their FLOP cost when trained with the 2026 recipe
-- Status: **testing** (EXP-003 launched 2026-07-05 on pod B, interleaved with the
-  EXP-002-AX dissociation arm; revised 2026-07-04 after owner-directed literature
+- Status: **revised — instrument-fail** (EXP-003, 2026-07-05; agent/log/EXP-003.md).
+  K-gap gate FAILED (<1 pt vs 5-pt threshold): the recipe model is loop-invariant
+  (readout blind spot, arXiv:2606.24898). NOT a kill — the run cannot falsify H3.
+  Per decision mapping: fix per-loop supervision (detached readout heads /
+  loop-index conditioning / bptt_loops>2 / step-aligned targets) before any
+  further H3 spend. (Revised 2026-07-04 after owner-directed literature
   re-scan; agent/lit_scan_2026-07.md). Owner directive: H1's kill is verdict on
   vanilla loops only; loops get their evidence-backed second chance here.
 - Recipe (from lit scan): per-loop readout supervision (LOTUS +6.7 pts), randomized
