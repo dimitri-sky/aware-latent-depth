@@ -9,8 +9,28 @@ set -u
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 export AWARE_THROTTLE=0
 
-cd /workspace/aware
-unzip -qo /workspace/aware_src.zip
+cd /workspace
+if [ ! -d /workspace/aware ]; then
+  mkdir aware && cd aware
+  unzip -q /workspace/aware_src.zip
+  pip install -q --break-system-packages numpy pyyaml pytest tqdm matplotlib
+else
+  cd /workspace/aware
+  unzip -qo /workspace/aware_src.zip
+fi
+
+# generate any missing families (fresh volume has none; seeded generation makes
+# data identical across pods)
+MISSING=""
+for fam in rewrite algo_exec rule_shift compress state_guard; do
+  [ -f "data/sage/train/${fam}.jsonl" ] || MISSING="${MISSING}${MISSING:+,}${fam}"
+done
+if [ -n "$MISSING" ]; then
+  echo "generating missing families: $MISSING"
+  python scripts/make_data.py --split train --per-family 20000 --families "$MISSING"
+  python scripts/make_data.py --split eval --per-family 400 --families "$MISSING"
+  python -m sage.contamination.audit --train-dir data/sage/train --eval-dir data/sage/eval
+fi
 
 python -m pytest tests/ -q || echo "WARN: tests failed, continuing (results flagged)"
 nvidia-smi --query-gpu=name,memory.total,memory.used --format=csv,noheader
