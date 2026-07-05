@@ -30,7 +30,11 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 - Timebox: 2 revisions max, then kill-or-park.
 
 ### H2: Gated delta-rule fast-weight memory + SWA improves in-session rule learning
-- Status: proposed (EXP-002, runs only after EXP-001 verdict)
+- Status: **testing — headline adjudicated** (EXP-002, 2026-07-05; agent/log/EXP-002.md).
+  Pooled family-mean delta +13.5 pts (margin PASS by 4.5x) but stability gate
+  FAIL on rule_shift seed bimodality (one seed 100%, two ~13%). compress cleanest
+  (3/3 seeds, +8.0). Verdict: PROMISING-BUT-UNSTABLE -> EXTEND policy; dissociation
+  arm EXP-002-AX (algo_exec) running on pod B alongside EXP-003.
 - Expected advantage: V2 beats param-matched B2 by >= 3.0 points on rule_shift +
   compress + state_guard family mean at matched training FLOPs; dissociation check:
   gain on rule_shift must exceed gain on algo_exec (memory, not generic capacity).
@@ -45,7 +49,8 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 - Timebox: 2 revisions max.
 
 ### H3: Loops pay their FLOP cost when trained with the 2026 recipe
-- Status: proposed (EXP-003, revised 2026-07-04 after owner-directed literature
+- Status: **testing** (EXP-003 launched 2026-07-05 on pod B, interleaved with the
+  EXP-002-AX dissociation arm; revised 2026-07-04 after owner-directed literature
   re-scan; agent/lit_scan_2026-07.md). Owner directive: H1's kill is verdict on
   vanilla loops only; loops get their evidence-backed second chance here.
 - Recipe (from lit scan): per-loop readout supervision (LOTUS +6.7 pts), randomized
