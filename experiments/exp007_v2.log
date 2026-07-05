@@ -1,0 +1,179 @@
+[launch] V2-delta s0
+[launch] V2-delta s1
+[V2-delta s1] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V2-delta] params=17.86M hash=03995cad7e6e
+[V2-delta s1] step 100/8000 loss 1.3102 10702 tok/s
+[V2-delta s0] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V2-delta] params=17.86M hash=03995cad7e6e
+[V2-delta s0] step 100/8000 loss 1.3454 10525 tok/s
+[V2-delta s1] step 200/8000 loss 0.5819 10817 tok/s
+[V2-delta s0] step 200/8000 loss 0.6083 10643 tok/s
+[V2-delta s1] step 300/8000 loss 0.5195 10850 tok/s
+[V2-delta s0] step 300/8000 loss 0.5345 10700 tok/s
+[V2-delta s1] step 400/8000 loss 0.4519 10865 tok/s
+[V2-delta s0] step 400/8000 loss 0.4749 10714 tok/s
+[V2-delta s1] step 500/8000 loss 0.3874 10874 tok/s
+[V2-delta s0] step 500/8000 loss 0.4121 10723 tok/s
+[V2-delta s1] step 600/8000 loss 0.3610 10844 tok/s
+[V2-delta s0] step 600/8000 loss 0.3919 10711 tok/s
+[V2-delta s1] step 700/8000 loss 0.3126 10847 tok/s
+[V2-delta s0] step 700/8000 loss 0.3522 10722 tok/s
+[V2-delta s1] step 800/8000 loss 0.2904 10848 tok/s
+[V2-delta s0] step 800/8000 loss 0.3136 10719 tok/s
+[V2-delta s1] step 900/8000 loss 0.2916 10846 tok/s
+[V2-delta s0] step 900/8000 loss 0.3046 10728 tok/s
+[V2-delta s1] step 1000/8000 loss 0.2667 10844 tok/s
+[V2-delta s0] step 1000/8000 loss 0.2737 10730 tok/s
+[V2-delta s1] step 1100/8000 loss 0.2464 10839 tok/s
+[V2-delta s0] step 1100/8000 loss 0.2652 10737 tok/s
+[V2-delta s1] step 1200/8000 loss 0.2237 10836 tok/s
+[V2-delta s0] step 1200/8000 loss 0.2397 10738 tok/s
+[V2-delta s1] step 1300/8000 loss 0.2144 10836 tok/s
+[V2-delta s0] step 1300/8000 loss 0.2197 10744 tok/s
+[V2-delta s1] step 1400/8000 loss 0.1816 10842 tok/s
+[V2-delta s0] step 1400/8000 loss 0.2474 10747 tok/s
+[V2-delta s1] step 1500/8000 loss 0.1912 10847 tok/s
+[V2-delta s0] step 1500/8000 loss 0.2088 10743 tok/s
+[V2-delta s1] step 1600/8000 loss 0.1832 10852 tok/s
+[V2-delta s0] step 1600/8000 loss 0.1844 10745 tok/s
+[V2-delta s1] step 1700/8000 loss 0.1639 10856 tok/s
+[V2-delta s0] step 1700/8000 loss 0.1577 10748 tok/s
+[V2-delta s1] step 1800/8000 loss 0.1670 10859 tok/s
+[V2-delta s0] step 1800/8000 loss 0.1714 10749 tok/s
+[V2-delta s1] step 1900/8000 loss 0.1574 10861 tok/s
+[V2-delta s0] step 1900/8000 loss 0.1737 10740 tok/s
+[V2-delta s1] step 2000/8000 loss 0.1468 10856 tok/s
+[V2-delta s0] step 2000/8000 loss 0.1491 10723 tok/s
+[V2-delta s1] step 2100/8000 loss 0.1318 10857 tok/s
+[V2-delta s0] step 2100/8000 loss 0.1463 10730 tok/s
+[V2-delta s1] step 2200/8000 loss 0.1265 10857 tok/s
+[V2-delta s0] step 2200/8000 loss 0.1476 10735 tok/s
+[V2-delta s1] step 2300/8000 loss 0.1247 10859 tok/s
+[V2-delta s0] step 2300/8000 loss 0.1266 10742 tok/s
+[V2-delta s1] step 2400/8000 loss 0.1216 10862 tok/s
+[V2-delta s0] step 2400/8000 loss 0.1440 10748 tok/s
+[V2-delta s1] step 2500/8000 loss 0.1157 10864 tok/s
+[V2-delta s0] step 2500/8000 loss 0.1348 10752 tok/s
+[V2-delta s1] step 2600/8000 loss 0.1078 10867 tok/s
+[V2-delta s0] step 2600/8000 loss 0.1239 10754 tok/s
+[V2-delta s1] step 2700/8000 loss 0.0994 10856 tok/s
+[V2-delta s0] step 2700/8000 loss 0.1085 10750 tok/s
+[V2-delta s1] step 2800/8000 loss 0.1007 10855 tok/s
+[V2-delta s0] step 2800/8000 loss 0.1057 10732 tok/s
+[V2-delta s1] step 2900/8000 loss 0.1025 10854 tok/s
+[V2-delta s0] step 2900/8000 loss 0.1067 10716 tok/s
+[V2-delta s1] step 3000/8000 loss 0.0980 10855 tok/s
+[V2-delta s0] step 3000/8000 loss 0.1071 10700 tok/s
+[V2-delta s1] step 3100/8000 loss 0.0898 10842 tok/s
+[V2-delta s0] step 3100/8000 loss 0.0837 10687 tok/s
+[V2-delta s1] step 3200/8000 loss 0.0925 10825 tok/s
+[V2-delta s0] step 3200/8000 loss 0.0903 10672 tok/s
+[V2-delta s1] step 3300/8000 loss 0.0910 10817 tok/s
+[V2-delta s0] step 3300/8000 loss 0.0906 10673 tok/s
+[V2-delta s1] step 3400/8000 loss 0.0788 10820 tok/s
+[V2-delta s0] step 3400/8000 loss 0.0849 10680 tok/s
+[V2-delta s1] step 3500/8000 loss 0.0794 10822 tok/s
+[V2-delta s0] step 3500/8000 loss 0.0785 10679 tok/s
+[V2-delta s1] step 3600/8000 loss 0.0705 10817 tok/s
+[V2-delta s0] step 3600/8000 loss 0.0781 10675 tok/s
+[V2-delta s1] step 3700/8000 loss 0.0747 10819 tok/s
+[V2-delta s0] step 3700/8000 loss 0.0739 10664 tok/s
+[V2-delta s1] step 3800/8000 loss 0.0704 10820 tok/s
+[V2-delta s0] step 3800/8000 loss 0.0713 10652 tok/s
+[V2-delta s1] step 3900/8000 loss 0.0674 10821 tok/s
+[V2-delta s0] step 3900/8000 loss 0.0656 10639 tok/s
+[V2-delta s1] step 4000/8000 loss 0.0670 10822 tok/s
+[V2-delta s0] step 4000/8000 loss 0.0656 10630 tok/s
+[V2-delta s1] step 4100/8000 loss 0.0645 10824 tok/s
+[V2-delta s0] step 4100/8000 loss 0.0733 10628 tok/s
+[V2-delta s1] step 4200/8000 loss 0.0590 10826 tok/s
+[V2-delta s0] step 4200/8000 loss 0.0594 10629 tok/s
+[V2-delta s1] step 4300/8000 loss 0.0533 10813 tok/s
+[V2-delta s0] step 4300/8000 loss 0.0644 10626 tok/s
+[V2-delta s1] step 4400/8000 loss 0.0557 10815 tok/s
+[V2-delta s0] step 4400/8000 loss 0.0534 10618 tok/s
+[V2-delta s1] step 4500/8000 loss 0.0376 10818 tok/s
+[V2-delta s0] step 4500/8000 loss 0.0393 10612 tok/s
+[V2-delta s1] step 4600/8000 loss 0.0447 10822 tok/s
+[V2-delta s0] step 4600/8000 loss 0.0467 10604 tok/s
+[V2-delta s1] step 4700/8000 loss 0.0450 10824 tok/s
+[V2-delta s1] step 4800/8000 loss 0.0469 10825 tok/s
+[V2-delta s0] step 4700/8000 loss 0.0471 10597 tok/s
+[V2-delta s1] step 4900/8000 loss 0.0425 10824 tok/s
+[V2-delta s0] step 4800/8000 loss 0.0440 10601 tok/s
+[V2-delta s0] step 4900/8000 loss 0.0399 10606 tok/s
+[V2-delta s1] step 5000/8000 loss 0.0338 10821 tok/s
+[V2-delta s1] step 5100/8000 loss 0.0366 10823 tok/s
+[V2-delta s0] step 5000/8000 loss 0.0372 10610 tok/s
+[V2-delta s1] step 5200/8000 loss 0.0282 10825 tok/s
+[V2-delta s0] step 5100/8000 loss 0.0292 10615 tok/s
+[V2-delta s1] step 5300/8000 loss 0.0289 10828 tok/s
+[V2-delta s0] step 5200/8000 loss 0.0300 10619 tok/s
+[V2-delta s1] step 5400/8000 loss 0.0274 10825 tok/s
+[V2-delta s0] step 5300/8000 loss 0.0307 10622 tok/s
+[V2-delta s1] step 5500/8000 loss 0.0255 10823 tok/s
+[V2-delta s0] step 5400/8000 loss 0.0300 10624 tok/s
+[V2-delta s0] step 5500/8000 loss 0.0226 10627 tok/s
+[V2-delta s1] step 5600/8000 loss 0.0224 10813 tok/s
+[V2-delta s0] step 5600/8000 loss 0.0246 10624 tok/s
+[V2-delta s1] step 5700/8000 loss 0.0173 10803 tok/s
+[V2-delta s0] step 5700/8000 loss 0.0223 10621 tok/s
+[V2-delta s1] step 5800/8000 loss 0.0144 10794 tok/s
+[V2-delta s0] step 5800/8000 loss 0.0190 10623 tok/s
+[V2-delta s1] step 5900/8000 loss 0.0190 10793 tok/s
+[V2-delta s0] step 5900/8000 loss 0.0169 10624 tok/s
+[V2-delta s1] step 6000/8000 loss 0.0133 10788 tok/s
+[V2-delta s0] step 6000/8000 loss 0.0180 10627 tok/s
+[V2-delta s1] step 6100/8000 loss 0.0166 10782 tok/s
+[V2-delta s0] step 6100/8000 loss 0.0140 10629 tok/s
+[V2-delta s1] step 6200/8000 loss 0.0132 10778 tok/s
+[V2-delta s0] step 6200/8000 loss 0.0172 10630 tok/s
+[V2-delta s1] step 6300/8000 loss 0.0111 10781 tok/s
+[V2-delta s0] step 6300/8000 loss 0.0120 10630 tok/s
+[V2-delta s1] step 6400/8000 loss 0.0074 10784 tok/s
+[V2-delta s0] step 6400/8000 loss 0.0091 10632 tok/s
+[V2-delta s1] step 6500/8000 loss 0.0091 10787 tok/s
+[V2-delta s0] step 6500/8000 loss 0.0093 10633 tok/s
+[V2-delta s1] step 6600/8000 loss 0.0073 10791 tok/s
+[V2-delta s0] step 6600/8000 loss 0.0095 10634 tok/s
+[V2-delta s1] step 6700/8000 loss 0.0077 10794 tok/s
+[V2-delta s1] step 6800/8000 loss 0.0087 10795 tok/s
+[V2-delta s0] step 6700/8000 loss 0.0078 10636 tok/s
+[V2-delta s1] step 6900/8000 loss 0.0056 10798 tok/s
+[V2-delta s0] step 6800/8000 loss 0.0081 10637 tok/s
+[V2-delta s1] step 7000/8000 loss 0.0048 10800 tok/s
+[V2-delta s0] step 6900/8000 loss 0.0069 10638 tok/s
+[V2-delta s1] step 7100/8000 loss 0.0034 10803 tok/s
+[V2-delta s0] step 7000/8000 loss 0.0050 10637 tok/s
+[V2-delta s1] step 7200/8000 loss 0.0035 10800 tok/s
+[V2-delta s0] step 7100/8000 loss 0.0049 10634 tok/s
+[V2-delta s1] step 7300/8000 loss 0.0036 10796 tok/s
+[V2-delta s0] step 7200/8000 loss 0.0044 10638 tok/s
+[V2-delta s1] step 7400/8000 loss 0.0034 10792 tok/s
+[V2-delta s0] step 7300/8000 loss 0.0038 10639 tok/s
+[V2-delta s1] step 7500/8000 loss 0.0031 10793 tok/s
+[V2-delta s0] step 7400/8000 loss 0.0035 10637 tok/s
+[V2-delta s1] step 7600/8000 loss 0.0025 10795 tok/s
+[V2-delta s0] step 7500/8000 loss 0.0048 10639 tok/s
+[V2-delta s1] step 7700/8000 loss 0.0025 10792 tok/s
+[V2-delta s0] step 7600/8000 loss 0.0031 10638 tok/s
+[V2-delta s1] step 7800/8000 loss 0.0025 10791 tok/s
+[V2-delta s0] step 7700/8000 loss 0.0031 10642 tok/s
+[V2-delta s1] step 7900/8000 loss 0.0025 10790 tok/s
+[V2-delta s0] step 7800/8000 loss 0.0037 10644 tok/s
+[V2-delta s1] step 8000/8000 loss 0.0024 10792 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V2-delta s1] run_id=EXP-007-V2-delta-s1-0d2ec5
+  algo_exec    198/200 = 0.990
+  flops/correct = 7.8e+09
+[done rc=0] V2-delta s1
+[V2-delta s0] step 7900/8000 loss 0.0029 10641 tok/s
+[V2-delta s0] step 8000/8000 loss 0.0030 10644 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V2-delta s0] run_id=EXP-007-V2-delta-s0-42ce99
+  algo_exec    197/200 = 0.985
+  flops/correct = 7.84e+09
+[done rc=0] V2-delta s0
+EXP COMPLETE: 2/2 jobs ok

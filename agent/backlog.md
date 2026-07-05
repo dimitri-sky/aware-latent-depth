@@ -8,9 +8,11 @@ forces kill-or-park; hardware-compat note is a design-time check (see docs/AGENT
 
 Two ingredients, tested separately, combined if positive:
 
-    DELTA LAYERS (H2 + EXP-006 attribution: delta-driven, broad, cheaper)
-      └──> V3 "Aware" (H6, EXP-005) = delta-centric, NO loops
-             -> 50M scale check -> demo + report ("when does latent depth pay?")
+    DELTA LAYERS (H2 + EXP-006 attribution + EXP-007 budget-robustness)
+      └──> V3 "Aware" = d2 config, RESOLVED (EXP-005-DEN)
+             -> 50M feasibility probe + scale check -> demo + report
+             -> next arc: delta-memory retrofit on a pretrained LLM (B2-NM at
+                1-3B, adapter fine-tune) — the LLM-applications bridge
 
 - H1 killed; H3 PARKED PERMANENTLY (EXP-003 instrument-fail, EXP-003B retry still
   loop-invariant + loses to own controls; timebox exhausted). Loops out of V3.
@@ -109,12 +111,13 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
 - Est. cost: ~3 GPU-h cloud | Timebox: 1 revision.
 
 ### H6: V3 "Aware" candidate — delta-centric (loops excluded per H3 park)
-- Status: proposed (EXP-005, redesigned 2026-07-05 after EXP-006 attribution).
-- Design: delta-density sweep (delta_every 1 vs 2 vs 3) at fixed params on the
-  full family suite (memory + computation + generalization), vs param-matched
-  AND training-FLOP-matched B2 in the same batch. The winning density = V3.
-- Expected advantage: >= 3.0 pts on >= 3 of 5 families at matched training
-  FLOPs, plus flops/correct <= B2 on those families.
+- Status: **resolved — V3 = d2 config** (EXP-005-DEN, 2026-07-05;
+  agent/log/EXP-005.md). Density sweep: d3 loses on accuracy (.938 vs .965) AND
+  flops/correct; d1 dropped as dominated (2x scan cost, logged pre-results).
+  V3 "Aware" = 6L, delta_every=2, window 128, d_k=d_v=384, 17.86M — the
+  EXP-002 design, now with attribution (EXP-006) and budget-robustness
+  (EXP-007: tier-3-5 gap +25.8 at 2x training budget, B2 improved but lost
+  ground on hard tiers) behind it. Next: 50M feasibility probe -> scale check.
 - Est. cost: ~4 GPU-h cloud | Timebox: 2 revisions.
 
 ### H4: Learned halting improves compute allocation (efficiency only)
