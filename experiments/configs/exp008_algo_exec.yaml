@@ -1,5 +1,5 @@
-# EXP-008-AX: 50M scale check, algo_exec. V3-50M vs B2-50M (param match +0.15%,
-# 50.62M vs 50.54M). Protocol matches the 18M suite except lr depth-scaled for
+# EXP-008-AX: 50M scale check, algo_exec. V3-50M vs B2-50M (param match -0.05%, 
+# 50.52M vs 50.54M). Protocol matches the 18M suite except lr depth-scaled for
 # 8L: min(6e-4, 6e-4*sqrt(4/8)) = 4.2e-4. 2 seeds (trend read; algo_exec has
 # the suite's tightest seed variance).
 exp_id: EXP-008-AX
@@ -20,8 +20,8 @@ models:
     n_layers: 8
     delta_every: 2
     window: 128
-    d_k: 512
-    d_v: 512
+    d_k: 504
+    d_v: 504
     max_seq_len: 1024
 
   - id: B2-50M

@@ -18,8 +18,8 @@ models:
     n_layers: 8
     delta_every: 2
     window: 128
-    d_k: 512
-    d_v: 512
+    d_k: 504
+    d_v: 504
     max_seq_len: 1024
 
   - id: B2-50M

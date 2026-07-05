@@ -27,7 +27,7 @@ done
 python -m sage.contamination.audit --train-dir data/sage/train --eval-dir data/sage/eval
 python -m pytest tests/ -q || echo "WARN: tests failed"
 
-VJSON='{"arch":"delta","d_model":768,"n_heads":12,"n_kv_heads":4,"d_ff":2048,"n_layers":8,"delta_every":2,"window":128,"d_k":512,"d_v":512,"max_seq_len":1024}'
+VJSON='{"arch":"delta","d_model":768,"n_heads":12,"n_kv_heads":4,"d_ff":2048,"n_layers":8,"delta_every":2,"window":128,"d_k":504,"d_v":504,"max_seq_len":1024}'
 
 probe () {
   fam=$1; steps=$2
