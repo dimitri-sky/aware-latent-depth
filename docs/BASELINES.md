@@ -12,7 +12,7 @@
 | B2-CoT | B2 trained on traced (rationale) data, evaluated with CoT decoding | explicit-CoT control |
 | B2-PM | B2 with in-context example prompt memory, no state update | prompt-memory control for H2 |
 | B2-NM | B2 with bolt-on neural memory module (if H2 scales) | bolt-on-vs-integrated control |
-| V* | Agent-discovered variants (V1 loop, V2 delta-memory, V3 deep-sup, ...) | hypotheses |
+| V* | Agent-discovered variants (V1 loop / V1R recipe-loop, V2 delta-memory, V3 loop+memory combo "Aware" candidate) | hypotheses |
 
 ## Fairness requirements (all enforced by the harness)
 
