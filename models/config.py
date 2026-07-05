@@ -29,6 +29,9 @@ class ModelConfig:
     # H3 recipe (2026 lit scan): sample training loop count from a clipped Poisson
     # with mean loop_count (min 1, max 2*loop_count). Expected FLOPs unchanged.
     loop_randomize: bool = False
+    # EXP-003B fix (readout blind spot): learned per-loop-step embedding added at
+    # each loop entry so iterations are functionally distinguishable.
+    loop_step_embed: bool = False
 
     # delta arch
     delta_every: int = 2         # every k-th layer is a gated-delta layer

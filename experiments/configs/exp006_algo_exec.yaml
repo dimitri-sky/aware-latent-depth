@@ -1,0 +1,37 @@
+# EXP-006-AX: attribution 2x2 on algo_exec (the broad-win family). V2 differs
+# from B2 in TWO ways (delta memory, SWA-128); these are the two missing cells:
+#   B2-SWA  = tf_pp + window 128  (SWA, no delta)   -> vs existing B2 (EXP-002-AX)
+#   V2-full = delta + window 4096 (delta, full attn; 4096 > max_seq_len so the
+#             sliding mask never engages)            -> vs existing V2 (EXP-002-AX)
+# Protocol identical to EXP-002: 4000 steps, lr 4.9e-4, seeds 0-2.
+exp_id: EXP-006-AX
+
+train:
+  families: [algo_exec]
+  steps: 4000
+  lr: 4.9e-4
+seeds: [0, 1, 2]
+
+models:
+  - id: B2-SWA
+    arch: tf_pp
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    window: 128
+    max_seq_len: 1024
+
+  - id: V2-full
+    arch: delta
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    delta_every: 2
+    window: 4096
+    d_k: 384
+    d_v: 384
+    max_seq_len: 1024

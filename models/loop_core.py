@@ -9,6 +9,16 @@ Design follows the simplest defensible form of the recurrent-depth hypothesis
 - optional deep supervision: logits at every loop step (V3; off for V1),
 - `loop_count` can be overridden at inference for test-time compute scaling.
 
+EXP-003B revision (readout blind spot, arXiv:2606.24898 — EXP-003 produced a
+loop-invariant model, K-gap < 1 pt):
+- loop-index conditioning: a learned per-step embedding is added at each loop
+  entry so iterations are functionally distinguishable (loop_step_embed=True),
+- auxiliary (non-final) per-loop losses run through a DETACHED hidden state so
+  early-step CE cannot pull the core toward a fixed point; only the final step
+  backprops through the loop chain,
+- per-step losses are linearly weighted (step k gets weight k/K) instead of
+  equal-weight mean, making later iterations strictly more valuable.
+
 Halting is deliberately absent (H4 is tested later as an efficiency add-on).
 """
 from __future__ import annotations
@@ -30,7 +40,12 @@ class LoopLM(nn.Module):
         self.coda = nn.ModuleList(TFBlock(cfg) for _ in range(cfg.n_coda))
         self.norm = RMSNorm(cfg.d_model)
         self.head = nn.Linear(cfg.d_model, cfg.vocab_size, bias=False)
+        if cfg.loop_step_embed:
+            # one embedding per possible loop step (randomized K can reach 2x)
+            self.step_embed = nn.Embedding(2 * cfg.loop_count, cfg.d_model)
         init_weights(self)
+        if cfg.loop_step_embed:
+            nn.init.normal_(self.step_embed.weight, std=0.02)
         self.head.weight = self.tok.weight
         self._rope = None
 
@@ -66,21 +81,31 @@ class LoopLM(nn.Module):
                 h = h.detach()
             if cfg.input_injection:
                 h = h + h0
+            if cfg.loop_step_embed:
+                h = h + self.step_embed.weight[min(step, self.step_embed.num_embeddings - 1)]
             for blk in self.core:
                 h = blk(h, rope_cs)
             if cfg.deep_supervision and targets is not None:
-                step_logits.append(self._decode(h, rope_cs))
+                # auxiliary (non-final) readouts see a DETACHED state: they train
+                # the coda/head to decode intermediate states without pulling the
+                # core toward a step-invariant fixed point (readout blind spot fix)
+                step_logits.append(self._decode(h if step == loops - 1 else h.detach(),
+                                                rope_cs))
 
         logits = step_logits[-1] if step_logits else self._decode(h, rope_cs)
 
         loss = None
         if targets is not None:
             if cfg.deep_supervision and step_logits:
-                # equal-weight CE over loop steps (TRM-style deep supervision)
+                # linearly increasing weights: step k of K gets weight (k+1)/K,
+                # so later iterations are strictly more valuable than earlier ones
                 losses = [F.cross_entropy(lg.view(-1, lg.size(-1)),
                                           targets.reshape(-1), ignore_index=-100)
                           for lg in step_logits]
-                loss = torch.stack(losses).mean()
+                k = len(losses)
+                w = torch.arange(1, k + 1, device=losses[0].device, dtype=losses[0].dtype)
+                w = w / w.sum()
+                loss = (torch.stack(losses) * w).sum()
             else:
                 loss = F.cross_entropy(logits.view(-1, logits.size(-1)),
                                        targets.reshape(-1), ignore_index=-100)

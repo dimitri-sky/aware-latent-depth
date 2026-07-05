@@ -1,0 +1,33 @@
+# EXP-003B: H3 recipe retry after the EXP-003 instrument-fail (loop-invariant
+# model, K-gap < 1 pt). Three changes vs EXP-003's V1R-loop4, per the fix list
+# pre-registered in agent/log/EXP-003.md:
+#   1. loop_step_embed: learned per-step embedding (iterations distinguishable)
+#   2. detached auxiliary readouts + linearly-weighted per-step CE (in code)
+#   3. bptt_loops 2 -> 4 (full-depth gradient at loop_count 4)
+# Controls are REUSED from EXP-003/EXP-003-FM (identical seeded data + protocol;
+# reuse declared in the pre-registration, not post-hoc). Gate unchanged:
+# K-gap > 5 pts aggregate or H3 is parked permanently.
+exp_id: EXP-003B
+
+train:
+  families: [rewrite, algo_exec]
+  steps: 6000
+  lr: 4.0e-4
+seeds: [0, 1, 2]
+
+models:
+  - id: V1R2-loop4
+    arch: loop
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_prelude: 1
+    n_core: 2
+    n_coda: 1
+    loop_count: 4
+    bptt_loops: 4
+    deep_supervision: true
+    loop_randomize: true
+    loop_step_embed: true
+    max_seq_len: 1024
