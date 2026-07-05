@@ -19,6 +19,21 @@ Two ingredients, tested separately, combined if positive:
 - Parked/support: H4 halting (efficiency ablation later), H5 Titans (replication debt),
   H0a/H0b nulls (B2 opponent in every run; CoT control after verdicts).
 
+## Naming system
+
+Three namespaces, three lifecycles (a killed hypothesis does not kill its model —
+V1 outlived H1 and is retried under H3):
+
+| tag | kind | examples | lives in |
+|---|---|---|---|
+| H# | hypothesis (claim; killable) | H2 memory, H3 recipe-loops, H0a/b nulls | this file |
+| EXP-### | experiment (pre-registered test of one H; suffix = arm) | EXP-001B (H1 control), EXP-002-RS/-CP/-SG/-AX (H2 arms) | agent/log/EXP-*.md |
+| V# / B# | model architecture (V=variant, B=baseline; suffix = config) | V1-loop4, V2-delta, V3 combo (planned), B2-6L | models/ + configs |
+
+Run IDs compose all three: `EXP-002-RS-V2-delta-s0-2581d6` =
+experiment-arm + model + seed + config hash (traceable in results.csv).
+H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
+
 ---
 
 ### H1: Shared-weight recurrent latent depth improves reasoning-per-FLOP
