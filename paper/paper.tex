@@ -75,11 +75,21 @@ RMSNorm, GQA; 17.83M) against a hybrid that replaces every second attention
 layer with a \emph{gated delta-rule fast-weight layer} --- a linear-attention
 state $S_t \in \mathbb{R}^{d_k\times d_v}$ updated token-by-token with a
 learned write/erase gate --- keeping sliding-window attention ($w{=}128$) on
-the remaining layers (17.86M, $+0.1\%$). Both are trained from scratch,
-per-family, on SAGE: five generated, contamination-audited procedural families
-(program execution, mid-session rule revision, in-session codebook learning,
-state tracking, fresh-language induction) with difficulty tiers and
-execution-checked scoring.
+the remaining layers (17.86M, $+0.1\%$; Figure~\ref{fig:arch}). Both are
+trained from scratch, per-family, on SAGE: five generated,
+contamination-audited procedural families (program execution, mid-session rule
+revision, in-session codebook learning, state tracking, fresh-language
+induction) with difficulty tiers and execution-checked scoring.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{figs/architecture_comparison.png}
+\caption{The two architectures. Left: the Transformer++ baseline. Right: the
+memory hybrid --- every second block is a gated delta-rule memory layer that
+writes to and reads from a fast-weight state $S_t$ during the forward pass;
+the remaining blocks use sliding-window attention ($w{=}128$).}
+\label{fig:arch}
+\end{figure}
 
 \section{Setup}
 
