@@ -17,3 +17,4 @@ papers_2026/pdfs/
 paper/*.aux
 paper/*.log
 paper/*.out
+paper/page*.png
