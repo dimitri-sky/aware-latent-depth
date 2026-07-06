@@ -13,3 +13,7 @@ wandb/
 aware_src.zip
 papers_2026/pdfs/
 *.tar.gz
+
+paper/*.aux
+paper/*.log
+paper/*.out
