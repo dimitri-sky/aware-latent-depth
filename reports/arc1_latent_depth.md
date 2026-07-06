@@ -1,6 +1,8 @@
 # When does latent depth pay? An honest-FLOP study at 18M parameters
 
-**Arc 1 report — aware-research-3 · 2026-07-05 · status: draft pending EXP-008 (50M) + EXP-002-DL (dsl_learn)**
+**Arc 1 report — aware-research-3 · 2026-07-06 · status: COMPLETE (8 experiments, ~$38 total cloud spend)**
+
+Reproduce the demo: `python scripts/demo.py --family algo_exec --n 8 --difficulty 3` (fresh puzzles, seeds outside the training range; typical result: AWARE 8/8 vs B2 5/8, each correct answer costing B2 ~1.7x more FLOPs).
 
 ## TL;DR
 
@@ -157,8 +159,10 @@ rerun (parked). **No uniform-scaling claim is made.**
   future work.
 - One window size (128), one delta placement sweep (every 1/2/3 layers;
   every-2nd won); lr depth-scaled but not per-arm tuned.
-- The delta scan implementation is sequential (correct, slow); training-side
-  wall-clock comparisons would favor B2 and are reported nowhere as claims.
+- The delta scan implementation is sequential (correct, slow); wall-clock
+  comparisons favor B2 (visible in the demo: ~350ms vs ~80ms per puzzle) and
+  are reported nowhere as claims. FLOP counts are implementation-independent;
+  chunked-parallel kernels for this layer family exist in production.
 - rule_shift's bimodality means its mean gap (+15.8) is seed-distribution
   sensitive; the median gap is +2.5.
 
