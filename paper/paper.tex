@@ -38,9 +38,10 @@ doubling the baseline's training budget does not close the gap ($+25.8$ on
 non-saturated difficulty tiers); and the preferred memory density is every
 second layer. At 50M parameters under a fixed recipe the advantage is
 task-dependent: it grows on program execution ($+31.7$) and reverses on state
-tracking ($-5.2$). We additionally observe bimodal skill acquisition: $1/6$
-seeds transitions discontinuously to $100\%$ accuracy on a rule-revision task
-($0/6$ for the baseline). The complete study --- eight pre-registered
+tracking ($-5.2$). We additionally report an $n{=}1$ anomaly with artifact
+checks: one of six seeds transitions discontinuously to $100\%$ accuracy on a
+rule-revision task ($0/6$ for the baseline). The complete study --- eight
+pre-registered
 experiments including two negative results on recurrent-depth loops --- cost
 \$38 of commodity cloud compute. Code, per-run results, and pre-registrations
 are public.\footnote{\url{https://github.com/dimitri-sky/fast-weight-memory-lm}
@@ -203,8 +204,13 @@ artifact. We therefore make no uniform-scaling claim.
 On \texttt{rule\_shift}, five of six hybrid seeds land at $.13$--$.17$ and one
 reaches $1.00$ (train loss $0.0014$) --- a discontinuous transition absent in
 all six baseline seeds (Figure~\ref{fig:grok}). Same data, same
-configuration, different initialization. Checkpoints are retained for a
-follow-up study on early-training predictors of the transition.
+configuration, different initialization. Artifact checks: all twelve runs
+share one eval split and scorer (a bug would inflate every seed); training
+data is identical across seeds; the contamination audit passed; and the
+transition is visible in the training loss, not only the eval score. With
+$n{=}1$ it remains an observation, not a claim; a follow-up study will test
+whether the transition reproduces and whether early-training signals predict
+it.
 
 \begin{figure}[h]
 \centering
