@@ -13,9 +13,10 @@ training budgets, on a contamination-audited procedural benchmark (SAGE):
    ignore their own iterations (K-gap < 2 pts against a pre-registered 5-pt
    gate). Three strikes, timebox exhausted, hypothesis parked.
 2. **Fast-weight memory (gated delta-rule layers) paid, broadly.** The hybrid
-   ("AWARE", 17.86M) beats a param-matched Transformer++ on **all four** SAGE
-   families tested — and delivers each correct answer **20–40% cheaper** in
-   inference FLOPs.
+   ("AWARE", 17.86M) beats a param-matched Transformer++ on **all five** SAGE
+   families at 18M — and delivers each correct answer **20–40% cheaper** in
+   inference FLOPs. At 50M (fixed recipe) the picture is honestly mixed:
+   the computation gap grows (+31.7), the state-tracking gap reverses (−5.2).
 3. The advantage is **attributed** (2×2 ablation: it is the delta mechanism,
    +22.8, not the sliding-window attention, +3.5) and **budget-robust**
    (doubling the baseline's training budget leaves a +25.8 gap on hard tiers).
@@ -74,6 +75,9 @@ FLOP-efficient) — relevant to memory-bound deployment, nothing else.
 | state_guard | .563 | **.612** | +4.8 | 3.51e10 | **2.79e10** |
 | compress | .184 | **.263** | +7.9 | 9.40e10 | **5.73e10** |
 | rule_shift (6 seeds) | .130 | **.288** | +15.8 | 9.18e10 | **6.3e10** |
+| dsl_learn (2 seeds) | .165 | **.205** | +4.0 | — | 4.18e10 |
+
+5/5 families at 18M.
 
 ![Pareto: accuracy vs FLOPs per correct answer](figs/pareto_18m.png)
 
@@ -124,11 +128,24 @@ B2: 0/6 such transitions. Same data, same config, different init. Checkpoints
 for all six AWARE seeds are retained (`checkpoints_grok/`) for the follow-up
 study (early-training predictors of the transition).
 
-## Scale trend (EXP-008 — pending)
+## Scale trend (EXP-008): task-dependent, honestly mixed
 
-50.5M head-to-head (V3-50M vs B2-50M, −0.05% param match) on algo_exec +
-state_guard, 2 seeds, running at time of writing. This section will report
-gap retention 18M → 50M. *(Placeholder — auto-filled after adjudication.)*
+50.5M head-to-head (V3-50M vs B2-50M, −0.05% param match), 2 seeds, same
+4000-step protocol (lr depth-scaled, not per-arm tuned):
+
+| family | 18M gap | 50M gap | read |
+|---|---|---|---|
+| algo_exec | +21.8 | **+31.7** (tier 3–5: +33.4) | advantage grew |
+| state_guard | +4.8 | **−5.2** | advantage reversed |
+
+Interpretation, stated carefully: under a *fixed* training recipe, the
+computation-flavored advantage scales and the state-tracking advantage does
+not. A caveat cuts both ways — B2-50M underperforms B2-18M on algo_exec
+(.665 vs .747) and both models drop on state_guard, so the 50M regime is
+likely undertrained; part of the algo_exec gap growth is baseline weakness,
+and the state_guard reversal may be a tuning artifact. Distinguishing
+"task-dependent scaling" from "undertuned 50M recipe" requires a tuned-budget
+rerun (parked). **No uniform-scaling claim is made.**
 
 ## Limitations (read before citing)
 
@@ -155,6 +172,7 @@ gap retention 18M → 50M. *(Placeholder — auto-filled after adjudication.)*
 | Advantage is delta-driven, not window-driven | EXP-006 | agent/log/EXP-006.md | PASS (interpretation 1) |
 | Advantage survives 2× baseline training budget | EXP-007 | agent/log/EXP-007.md | PASS (tier 3–5 gap +25.8) |
 | Best density = every 2nd layer | EXP-005-DEN | agent/log/EXP-005.md | d2 confirmed |
-| Advantage at 50M | EXP-008 | agent/log/EXP-008.md | RUNNING |
+| dsl_learn extension (5th family) | EXP-002-DL | agent/log/EXP-002.md | +4.0 (2 seeds) |
+| Advantage at 50M | EXP-008 | agent/log/EXP-008.md | MIXED: algo_exec grew, state_guard reversed; 50M recipe likely undertuned |
 
 Total cloud spend for everything above: **~$30**.

@@ -1,0 +1,513 @@
+dsl_learn: wrote 20000 -> data/sage/train/dsl_learn.jsonl
+dsl_learn: wrote 400 -> data/sage/eval/dsl_learn.jsonl
+{
+  "pass": true,
+  "audit_hash": "58bb77adb3bccb44",
+  "report": {
+    "canary": "ok",
+    "overlap": {
+      "ngram": 13,
+      "near_duplicates": 0,
+      "worst_coverage": 0.5,
+      "threshold": 0.8
+    }
+  }
+}
+=== PHASE A: EXP-002-DL V2 (2 workers, CPU) + GPU chain (B2-DL, B2-50M) ===
+[launch] B2-6L s0
+[B2-6L s0] 20000 train sequences (0 skipped), ~5,018,300 tokens/epoch
+[B2-6L] params=17.83M hash=af1860f6c8bf
+[B2-6L s0] step 100/4000 loss 2.0641 181571 tok/s
+[B2-6L s0] step 200/4000 loss 1.1837 188046 tok/s
+[B2-6L s0] step 300/4000 loss 1.1480 188525 tok/s
+[B2-6L s0] step 400/4000 loss 1.1416 188043 tok/s
+[B2-6L s0] step 500/4000 loss 1.1162 188577 tok/s
+[B2-6L s0] step 600/4000 loss 1.1011 187763 tok/s
+[B2-6L s0] step 700/4000 loss 1.1098 187074 tok/s
+[B2-6L s0] step 800/4000 loss 1.1012 187249 tok/s
+[B2-6L s0] step 900/4000 loss 1.0924 188200 tok/s
+[B2-6L s0] step 1000/4000 loss 1.0769 187792 tok/s
+[B2-6L s0] step 1100/4000 loss 1.0656 187679 tok/s
+[B2-6L s0] step 1200/4000 loss 1.0567 187483 tok/s
+[B2-6L s0] step 1300/4000 loss 1.0442 187140 tok/s
+[B2-6L s0] step 1400/4000 loss 1.0397 187398 tok/s
+[B2-6L s0] step 1500/4000 loss 1.0364 187183 tok/s
+[B2-6L s0] step 1600/4000 loss 1.0201 187244 tok/s
+[B2-6L s0] step 1700/4000 loss 1.0268 186767 tok/s
+[B2-6L s0] step 1800/4000 loss 1.0153 186489 tok/s
+[B2-6L s0] step 1900/4000 loss 1.0136 186359 tok/s
+[B2-6L s0] step 2000/4000 loss 0.9985 186357 tok/s
+[B2-6L s0] step 2100/4000 loss 1.0009 186109 tok/s
+[B2-6L s0] step 2200/4000 loss 0.9930 186095 tok/s
+[B2-6L s0] step 2300/4000 loss 0.9715 186097 tok/s
+[B2-6L s0] step 2400/4000 loss 0.9857 186230 tok/s
+[B2-6L s0] step 2500/4000 loss 0.9906 186389 tok/s
+[B2-6L s0] step 2600/4000 loss 0.9606 186357 tok/s
+[B2-6L s0] step 2700/4000 loss 0.9576 186672 tok/s
+[B2-6L s0] step 2800/4000 loss 0.9708 186783 tok/s
+[B2-6L s0] step 2900/4000 loss 0.9543 186928 tok/s
+[B2-6L s0] step 3000/4000 loss 0.9489 186919 tok/s
+[B2-6L s0] step 3100/4000 loss 0.9537 187021 tok/s
+[B2-6L s0] step 3200/4000 loss 0.9351 187222 tok/s
+[B2-6L s0] step 3300/4000 loss 0.9187 187310 tok/s
+[B2-6L s0] step 3400/4000 loss 0.9333 187566 tok/s
+[B2-6L s0] step 3500/4000 loss 0.9337 187581 tok/s
+[B2-6L s0] step 3600/4000 loss 0.9488 187587 tok/s
+[B2-6L s0] step 3700/4000 loss 0.9246 187498 tok/s
+[B2-6L s0] step 3800/4000 loss 0.9207 187532 tok/s
+[B2-6L s0] step 3900/4000 loss 0.9173 187594 tok/s
+[B2-6L s0] step 4000/4000 loss 0.9295 187742 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-6L s0] run_id=EXP-002-DL-B2-6L-s0-95b983
+  dsl_learn    31/200 = 0.155
+  flops/correct = 6.27e+10
+[done rc=0] B2-6L s0
+[launch] B2-6L s1
+[B2-6L s1] 20000 train sequences (0 skipped), ~5,018,300 tokens/epoch
+[B2-6L] params=17.83M hash=af1860f6c8bf
+[B2-6L s1] step 100/4000 loss 2.0091 177466 tok/s
+[B2-6L s1] step 200/4000 loss 1.1903 184637 tok/s
+[B2-6L s1] step 300/4000 loss 1.1625 188049 tok/s
+[B2-6L s1] step 400/4000 loss 1.1404 190465 tok/s
+[B2-6L s1] step 500/4000 loss 1.1212 190426 tok/s
+[B2-6L s1] step 600/4000 loss 1.1122 191018 tok/s
+[B2-6L s1] step 700/4000 loss 1.1025 190309 tok/s
+[B2-6L s1] step 800/4000 loss 1.0838 189853 tok/s
+[B2-6L s1] step 900/4000 loss 1.1006 189437 tok/s
+[B2-6L s1] step 1000/4000 loss 1.0860 189561 tok/s
+[B2-6L s1] step 1100/4000 loss 1.0845 189575 tok/s
+[B2-6L s1] step 1200/4000 loss 1.0785 189365 tok/s
+[B2-6L s1] step 1300/4000 loss 1.0677 189411 tok/s
+[B2-6L s1] step 1400/4000 loss 1.0618 189423 tok/s
+[B2-6L s1] step 1500/4000 loss 1.0303 189588 tok/s
+[B2-6L s1] step 1600/4000 loss 1.0476 189799 tok/s
+[B2-6L s1] step 1700/4000 loss 1.0275 189685 tok/s
+[B2-6L s1] step 1800/4000 loss 1.0402 189983 tok/s
+[B2-6L s1] step 1900/4000 loss 1.0190 190081 tok/s
+[B2-6L s1] step 2000/4000 loss 1.0285 190476 tok/s
+[B2-6L s1] step 2100/4000 loss 1.0021 190398 tok/s
+[B2-6L s1] step 2200/4000 loss 0.9943 190185 tok/s
+[B2-6L s1] step 2300/4000 loss 0.9943 190330 tok/s
+[B2-6L s1] step 2400/4000 loss 0.9913 190365 tok/s
+[B2-6L s1] step 2500/4000 loss 0.9823 190396 tok/s
+[B2-6L s1] step 2600/4000 loss 0.9713 190126 tok/s
+[B2-6L s1] step 2700/4000 loss 0.9585 189874 tok/s
+[B2-6L s1] step 2800/4000 loss 0.9590 189526 tok/s
+[B2-6L s1] step 2900/4000 loss 0.9639 189489 tok/s
+[B2-6L s1] step 3000/4000 loss 0.9561 189353 tok/s
+[B2-6L s1] step 3100/4000 loss 0.9604 189524 tok/s
+[B2-6L s1] step 3200/4000 loss 0.9539 189816 tok/s
+[B2-6L s1] step 3300/4000 loss 0.9309 189819 tok/s
+[B2-6L s1] step 3400/4000 loss 0.9390 189793 tok/s
+[B2-6L s1] step 3500/4000 loss 0.9429 189624 tok/s
+[B2-6L s1] step 3600/4000 loss 0.9299 189597 tok/s
+[B2-6L s1] step 3700/4000 loss 0.9297 189520 tok/s
+[B2-6L s1] step 3800/4000 loss 0.9255 189504 tok/s
+[B2-6L s1] step 3900/4000 loss 0.9317 189317 tok/s
+[B2-6L s1] step 4000/4000 loss 0.9260 189259 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-6L s1] run_id=EXP-002-DL-B2-6L-s1-8f739c
+  dsl_learn    35/200 = 0.175
+  flops/correct = 5.56e+10
+[done rc=0] B2-6L s1
+EXP COMPLETE: 2/2 jobs ok
+[launch] B2-50M s0
+[B2-50M s0] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[B2-50M] params=50.54M hash=928211109f4e
+[B2-50M s0] step 100/4000 loss 1.3197 72253 tok/s
+[B2-50M s0] step 200/4000 loss 0.6720 74560 tok/s
+[B2-50M s0] step 300/4000 loss 0.6392 75292 tok/s
+[B2-50M s0] step 400/4000 loss 0.6019 75510 tok/s
+[B2-50M s0] step 500/4000 loss 0.5866 75830 tok/s
+[B2-50M s0] step 600/4000 loss 0.5770 75961 tok/s
+[B2-50M s0] step 700/4000 loss 0.5565 76223 tok/s
+[B2-50M s0] step 800/4000 loss 0.5687 76258 tok/s
+[B2-50M s0] step 900/4000 loss 0.5627 76218 tok/s
+[B2-50M s0] step 1000/4000 loss 0.5699 76275 tok/s
+[B2-50M s0] step 1100/4000 loss 0.5525 76299 tok/s
+[B2-50M s0] step 1200/4000 loss 0.5497 76392 tok/s
+[B2-50M s0] step 1300/4000 loss 0.5287 76417 tok/s
+[B2-50M s0] step 1400/4000 loss 0.5220 76501 tok/s
+[B2-50M s0] step 1500/4000 loss 0.5199 76641 tok/s
+[B2-50M s0] step 1600/4000 loss 0.5203 76680 tok/s
+[B2-50M s0] step 1700/4000 loss 0.4938 76811 tok/s
+[B2-50M s0] step 1800/4000 loss 0.4951 76815 tok/s
+[B2-50M s0] step 1900/4000 loss 0.4806 76773 tok/s
+[B2-50M s0] step 2000/4000 loss 0.4613 76747 tok/s
+[B2-50M s0] step 2100/4000 loss 0.4552 76840 tok/s
+[B2-50M s0] step 2200/4000 loss 0.4368 76871 tok/s
+[B2-50M s0] step 2300/4000 loss 0.4202 76821 tok/s
+[B2-50M s0] step 2400/4000 loss 0.4092 76911 tok/s
+[B2-50M s0] step 2500/4000 loss 0.3883 77495 tok/s
+[B2-50M s0] step 2600/4000 loss 0.3658 77525 tok/s
+[B2-50M s0] step 2700/4000 loss 0.3606 77436 tok/s
+[B2-50M s0] step 2800/4000 loss 0.3546 77324 tok/s
+[B2-50M s0] step 2900/4000 loss 0.3382 77383 tok/s
+[B2-50M s0] step 3000/4000 loss 0.3324 77308 tok/s
+[B2-50M s0] step 3100/4000 loss 0.3261 77310 tok/s
+[B2-50M s0] step 3200/4000 loss 0.3042 77241 tok/s
+[B2-50M s0] step 3300/4000 loss 0.3005 77218 tok/s
+[B2-50M s0] step 3400/4000 loss 0.3026 77217 tok/s
+[B2-50M s0] step 3500/4000 loss 0.2912 77200 tok/s
+[B2-50M s0] step 3600/4000 loss 0.2923 77188 tok/s
+[B2-50M s0] step 3700/4000 loss 0.2912 77207 tok/s
+[B2-50M s0] step 3800/4000 loss 0.2827 77283 tok/s
+[B2-50M s0] step 3900/4000 loss 0.2719 77334 tok/s
+[B2-50M s0] step 4000/4000 loss 0.2733 77410 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-50M s0] run_id=EXP-008-AX-B2-50M-s0-ed6b05
+  algo_exec    135/200 = 0.675
+  flops/correct = 3.3e+10
+[done rc=0] B2-50M s0
+[launch] B2-50M s1
+[B2-50M s1] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[B2-50M] params=50.54M hash=928211109f4e
+[B2-50M s1] step 100/4000 loss 1.3218 74211 tok/s
+[B2-50M s1] step 200/4000 loss 0.6757 76531 tok/s
+[B2-50M s1] step 300/4000 loss 0.6463 77203 tok/s
+[B2-50M s1] step 400/4000 loss 0.6176 78240 tok/s
+[B2-50M s1] step 500/4000 loss 0.5804 79344 tok/s
+[B2-50M s1] step 600/4000 loss 0.5332 79589 tok/s
+[B2-50M s1] step 700/4000 loss 0.5231 79631 tok/s
+[B2-50M s1] step 800/4000 loss 0.5102 80038 tok/s
+[B2-50M s1] step 900/4000 loss 0.5040 80163 tok/s
+[B2-50M s1] step 1000/4000 loss 0.4896 80484 tok/s
+[B2-50M s1] step 1100/4000 loss 0.5025 80776 tok/s
+[B2-50M s1] step 1200/4000 loss 0.4872 80861 tok/s
+[B2-50M s1] step 1300/4000 loss 0.4681 80788 tok/s
+[B2-50M s1] step 1400/4000 loss 0.4618 81022 tok/s
+[B2-50M s1] step 1500/4000 loss 0.4569 81017 tok/s
+[B2-50M s1] step 1600/4000 loss 0.4955 81069 tok/s
+[B2-50M s1] step 1700/4000 loss 0.4436 81057 tok/s
+[B2-50M s1] step 1800/4000 loss 0.4391 81039 tok/s
+[B2-50M s1] step 1900/4000 loss 0.4422 81061 tok/s
+[B2-50M s1] step 2000/4000 loss 0.4067 81101 tok/s
+[B2-50M s1] step 2100/4000 loss 0.4020 81098 tok/s
+[B2-50M s1] step 2200/4000 loss 0.3958 81033 tok/s
+[B2-50M s1] step 2300/4000 loss 0.3876 80985 tok/s
+[B2-50M s1] step 2400/4000 loss 0.3570 81248 tok/s
+[B2-50M s1] step 2500/4000 loss 0.3473 81303 tok/s
+[B2-50M s1] step 2600/4000 loss 0.3322 81232 tok/s
+[B2-50M s1] step 2700/4000 loss 0.3080 81226 tok/s
+[B2-50M s1] step 2800/4000 loss 0.3107 81320 tok/s
+[B2-50M s1] step 2900/4000 loss 0.3069 81345 tok/s
+[B2-50M s1] step 3000/4000 loss 0.2930 81306 tok/s
+[B2-50M s1] step 3100/4000 loss 0.2936 81305 tok/s
+[B2-50M s1] step 3200/4000 loss 0.2763 81315 tok/s
+[B2-50M s1] step 3300/4000 loss 0.2644 81322 tok/s
+[B2-50M s1] step 3400/4000 loss 0.2553 81332 tok/s
+[B2-50M s1] step 3500/4000 loss 0.2550 81331 tok/s
+[B2-50M s1] step 3600/4000 loss 0.2581 81334 tok/s
+[B2-50M s1] step 3700/4000 loss 0.2475 81416 tok/s
+[B2-50M s1] step 3800/4000 loss 0.2394 81491 tok/s
+[B2-50M s1] step 3900/4000 loss 0.2431 81378 tok/s
+[B2-50M s1] step 4000/4000 loss 0.2349 81331 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-50M s1] run_id=EXP-008-AX-B2-50M-s1-488a9e
+  algo_exec    131/200 = 0.655
+  flops/correct = 3.4e+10
+[done rc=0] B2-50M s1
+EXP COMPLETE: 2/2 jobs ok
+[launch] B2-50M s0
+[B2-50M s0] 16000 train sequences (4000 skipped), ~5,960,982 tokens/epoch
+[B2-50M] params=50.54M hash=928211109f4e
+[B2-50M s0] step 100/4000 loss 2.1046 88115 tok/s
+[B2-50M s0] step 200/4000 loss 0.6672 89320 tok/s
+[B2-50M s0] step 300/4000 loss 0.4419 89455 tok/s
+[B2-50M s0] step 400/4000 loss 0.4158 89999 tok/s
+[B2-50M s0] step 500/4000 loss 0.3315 92438 tok/s
+[B2-50M s0] step 600/4000 loss 0.2479 95047 tok/s
+[B2-50M s0] step 700/4000 loss 0.1980 97391 tok/s
+[B2-50M s0] step 800/4000 loss 0.1829 98559 tok/s
+[B2-50M s0] step 900/4000 loss 0.1849 98173 tok/s
+[B2-50M s0] step 1000/4000 loss 0.1767 97487 tok/s
+[B2-50M s0] step 1100/4000 loss 0.1651 97062 tok/s
+[B2-50M s0] step 1200/4000 loss 0.1613 96611 tok/s
+[B2-50M s0] step 1300/4000 loss 0.1573 96205 tok/s
+[B2-50M s0] step 1400/4000 loss 0.1512 95739 tok/s
+[B2-50M s0] step 1500/4000 loss 0.1450 95469 tok/s
+[B2-50M s0] step 1600/4000 loss 0.1429 95407 tok/s
+[B2-50M s0] step 1700/4000 loss 0.1333 95354 tok/s
+[B2-50M s0] step 1800/4000 loss 0.1293 95145 tok/s
+[B2-50M s0] step 1900/4000 loss 0.1309 95100 tok/s
+[B2-50M s0] step 2000/4000 loss 0.1282 94867 tok/s
+[B2-50M s0] step 2100/4000 loss 0.1233 94725 tok/s
+[B2-50M s0] step 2200/4000 loss 0.1197 94580 tok/s
+[B2-50M s0] step 2300/4000 loss 0.1157 94575 tok/s
+[B2-50M s0] step 2400/4000 loss 0.1175 94531 tok/s
+[B2-50M s0] step 2500/4000 loss 0.1245 94668 tok/s
+[B2-50M s0] step 2600/4000 loss 0.1040 94782 tok/s
+[B2-50M s0] step 2700/4000 loss 0.1037 94819 tok/s
+[B2-50M s0] step 2800/4000 loss 0.1060 94808 tok/s
+[B2-50M s0] step 2900/4000 loss 0.1112 95127 tok/s
+[B2-50M s0] step 3000/4000 loss 0.1053 95886 tok/s
+[B2-50M s0] step 3100/4000 loss 0.0942 96463 tok/s
+[B2-50M s0] step 3200/4000 loss 0.0955 97151 tok/s
+[B2-50M s0] step 3300/4000 loss 0.0917 97676 tok/s
+[B2-50M s0] step 3400/4000 loss 0.0934 97617 tok/s
+[B2-50M s0] step 3500/4000 loss 0.0910 97530 tok/s
+[B2-50M s0] step 3600/4000 loss 0.0837 97460 tok/s
+[B2-50M s0] step 3700/4000 loss 0.0839 97410 tok/s
+[B2-50M s0] step 3800/4000 loss 0.0786 97369 tok/s
+[B2-50M s0] step 3900/4000 loss 0.0779 97264 tok/s
+[B2-50M s0] step 4000/4000 loss 0.0815 97151 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-50M s0] run_id=EXP-008-SG-B2-50M-s0-3953cf
+  state_guard  125/200 = 0.625
+  flops/correct = 8.5e+10
+[done rc=0] B2-50M s0
+[launch] B2-50M s1
+[B2-50M s1] 16000 train sequences (4000 skipped), ~5,960,982 tokens/epoch
+[B2-50M] params=50.54M hash=928211109f4e
+[B2-50M s1] step 100/4000 loss 2.1511 91685 tok/s
+[B2-50M s1] step 200/4000 loss 0.6734 93571 tok/s
+[B2-50M s1] step 300/4000 loss 0.4377 93847 tok/s
+[B2-50M s1] step 400/4000 loss 0.4197 93773 tok/s
+[B2-50M s1] step 500/4000 loss 0.4073 93732 tok/s
+[B2-50M s1] step 600/4000 loss 0.3692 93557 tok/s
+[B2-50M s1] step 700/4000 loss 0.3195 93482 tok/s
+[B2-50M s1] step 800/4000 loss 0.2902 93281 tok/s
+[B2-50M s1] step 900/4000 loss 0.2346 93239 tok/s
+[B2-50M s1] step 1000/4000 loss 0.2182 93095 tok/s
+[B2-50M s1] step 1100/4000 loss 0.2055 92948 tok/s
+[B2-50M s1] step 1200/4000 loss 0.1896 92662 tok/s
+[B2-50M s1] step 1300/4000 loss 0.1910 93796 tok/s
+[B2-50M s1] step 1400/4000 loss 0.1853 94760 tok/s
+[B2-50M s1] step 1500/4000 loss 0.1726 95954 tok/s
+[B2-50M s1] step 1600/4000 loss 0.1613 96505 tok/s
+[B2-50M s1] step 1700/4000 loss 0.1656 96628 tok/s
+[B2-50M s1] step 1800/4000 loss 0.1592 96426 tok/s
+[B2-50M s1] step 1900/4000 loss 0.1549 96412 tok/s
+[B2-50M s1] step 2000/4000 loss 0.1540 96443 tok/s
+[B2-50M s1] step 2100/4000 loss 0.1439 96439 tok/s
+[B2-50M s1] step 2200/4000 loss 0.1390 96412 tok/s
+[B2-50M s1] step 2300/4000 loss 0.1422 96310 tok/s
+[B2-50M s1] step 2400/4000 loss 0.1346 96264 tok/s
+[B2-50M s1] step 2500/4000 loss 0.1340 96270 tok/s
+[B2-50M s1] step 2600/4000 loss 0.1162 96175 tok/s
+[B2-50M s1] step 2700/4000 loss 0.1215 96183 tok/s
+[B2-50M s1] step 2800/4000 loss 0.1207 96109 tok/s
+[B2-50M s1] step 2900/4000 loss 0.1200 96078 tok/s
+[B2-50M s1] step 3000/4000 loss 0.1162 96094 tok/s
+[B2-50M s1] step 3100/4000 loss 0.1074 96094 tok/s
+[B2-50M s1] step 3200/4000 loss 0.1048 96045 tok/s
+[B2-50M s1] step 3300/4000 loss 0.1061 96067 tok/s
+[B2-50M s1] step 3400/4000 loss 0.1014 96051 tok/s
+[B2-50M s1] step 3500/4000 loss 0.0991 95991 tok/s
+[B2-50M s1] step 3600/4000 loss 0.0907 95881 tok/s
+[B2-50M s1] step 3700/4000 loss 0.0898 95820 tok/s
+[B2-50M s1] step 3800/4000 loss 0.0924 96119 tok/s
+[B2-50M s1] step 3900/4000 loss 0.0859 96510 tok/s
+[B2-50M s1] step 4000/4000 loss 0.0925 96832 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[B2-50M s1] run_id=EXP-008-SG-B2-50M-s1-5b8724
+  state_guard  129/200 = 0.645
+  flops/correct = 8.24e+10
+[done rc=0] B2-50M s1
+EXP COMPLETE: 2/2 jobs ok
+=== PHASE B: V3-50M algo_exec (2 workers; probe: 10.2GB/job) then state_guard solo (21.7GB) ===
+[launch] V3-50M s0
+[launch] V3-50M s1
+[V3-50M s0] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V3-50M] params=50.52M hash=1bc35884dfcd
+[V3-50M s0] step 100/4000 loss 1.1125 9811 tok/s
+[V3-50M s1] 20000 train sequences (0 skipped), ~4,212,546 tokens/epoch
+[V3-50M] params=50.52M hash=1bc35884dfcd
+[V3-50M s1] step 100/4000 loss 1.1538 9401 tok/s
+[V3-50M s0] step 200/4000 loss 0.5721 9184 tok/s
+[V3-50M s1] step 200/4000 loss 0.5957 9041 tok/s
+[V3-50M s0] step 300/4000 loss 0.5128 9020 tok/s
+[V3-50M s1] step 300/4000 loss 0.5111 8877 tok/s
+[V3-50M s0] step 400/4000 loss 0.4513 9077 tok/s
+[V3-50M s1] step 400/4000 loss 0.4688 8927 tok/s
+[V3-50M s0] step 500/4000 loss 0.4063 9069 tok/s
+[V3-50M s1] step 500/4000 loss 0.4033 8915 tok/s
+[V3-50M s0] step 600/4000 loss 0.3758 9038 tok/s
+[V3-50M s1] step 600/4000 loss 0.3586 8912 tok/s
+[V3-50M s0] step 700/4000 loss 0.3201 9050 tok/s
+[V3-50M s1] step 700/4000 loss 0.3266 8863 tok/s
+[V3-50M s0] step 800/4000 loss 0.3005 8846 tok/s
+[V3-50M s1] step 800/4000 loss 0.3018 8743 tok/s
+[V3-50M s0] step 900/4000 loss 0.2909 8953 tok/s
+[V3-50M s1] step 900/4000 loss 0.2629 8839 tok/s
+[V3-50M s0] step 1000/4000 loss 0.2558 9028 tok/s
+[V3-50M s1] step 1000/4000 loss 0.2425 8915 tok/s
+[V3-50M s0] step 1100/4000 loss 0.2338 9081 tok/s
+[V3-50M s1] step 1100/4000 loss 0.2323 8977 tok/s
+[V3-50M s0] step 1200/4000 loss 0.2324 9137 tok/s
+[V3-50M s1] step 1200/4000 loss 0.2033 9034 tok/s
+[V3-50M s0] step 1300/4000 loss 0.2029 8998 tok/s
+[V3-50M s1] step 1300/4000 loss 0.1878 8872 tok/s
+[V3-50M s0] step 1400/4000 loss 0.1905 8982 tok/s
+[V3-50M s1] step 1400/4000 loss 0.1751 8876 tok/s
+[V3-50M s0] step 1500/4000 loss 0.1774 8984 tok/s
+[V3-50M s1] step 1500/4000 loss 0.1508 8871 tok/s
+[V3-50M s0] step 1600/4000 loss 0.1704 8988 tok/s
+[V3-50M s1] step 1600/4000 loss 0.1475 8877 tok/s
+[V3-50M s0] step 1700/4000 loss 0.1582 9038 tok/s
+[V3-50M s1] step 1700/4000 loss 0.1263 8923 tok/s
+[V3-50M s0] step 1800/4000 loss 0.1487 9045 tok/s
+[V3-50M s1] step 1800/4000 loss 0.1333 8882 tok/s
+[V3-50M s0] step 1900/4000 loss 0.1376 9010 tok/s
+[V3-50M s1] step 1900/4000 loss 0.1122 8885 tok/s
+[V3-50M s0] step 2000/4000 loss 0.1173 9050 tok/s
+[V3-50M s1] step 2000/4000 loss 0.1054 8923 tok/s
+[V3-50M s0] step 2100/4000 loss 0.1068 9058 tok/s
+[V3-50M s1] step 2100/4000 loss 0.1040 8930 tok/s
+[V3-50M s0] step 2200/4000 loss 0.0970 9059 tok/s
+[V3-50M s1] step 2200/4000 loss 0.0902 8929 tok/s
+[V3-50M s0] step 2300/4000 loss 0.0855 9059 tok/s
+[V3-50M s1] step 2300/4000 loss 0.0824 8904 tok/s
+[V3-50M s0] step 2400/4000 loss 0.0809 8966 tok/s
+[V3-50M s1] step 2400/4000 loss 0.0814 8846 tok/s
+[V3-50M s0] step 2500/4000 loss 0.0728 8982 tok/s
+[V3-50M s1] step 2500/4000 loss 0.0666 8885 tok/s
+[V3-50M s0] step 2600/4000 loss 0.0565 9011 tok/s
+[V3-50M s1] step 2600/4000 loss 0.0557 8916 tok/s
+[V3-50M s0] step 2700/4000 loss 0.0529 9038 tok/s
+[V3-50M s1] step 2700/4000 loss 0.0539 8941 tok/s
+[V3-50M s0] step 2800/4000 loss 0.0546 9063 tok/s
+[V3-50M s1] step 2800/4000 loss 0.0475 8969 tok/s
+[V3-50M s0] step 2900/4000 loss 0.0456 9044 tok/s
+[V3-50M s1] step 2900/4000 loss 0.0415 8925 tok/s
+[V3-50M s0] step 3000/4000 loss 0.0406 9024 tok/s
+[V3-50M s1] step 3000/4000 loss 0.0324 8926 tok/s
+[V3-50M s0] step 3100/4000 loss 0.0332 9022 tok/s
+[V3-50M s1] step 3100/4000 loss 0.0300 8929 tok/s
+[V3-50M s0] step 3200/4000 loss 0.0220 9021 tok/s
+[V3-50M s1] step 3200/4000 loss 0.0251 8930 tok/s
+[V3-50M s0] step 3300/4000 loss 0.0196 9020 tok/s
+[V3-50M s1] step 3300/4000 loss 0.0215 8937 tok/s
+[V3-50M s0] step 3400/4000 loss 0.0201 9029 tok/s
+[V3-50M s1] step 3400/4000 loss 0.0176 8922 tok/s
+[V3-50M s0] step 3500/4000 loss 0.0148 9000 tok/s
+[V3-50M s1] step 3500/4000 loss 0.0158 8930 tok/s
+[V3-50M s0] step 3600/4000 loss 0.0159 9022 tok/s
+[V3-50M s1] step 3600/4000 loss 0.0152 8955 tok/s
+[V3-50M s0] step 3700/4000 loss 0.0148 9048 tok/s
+[V3-50M s1] step 3700/4000 loss 0.0109 8981 tok/s
+[V3-50M s0] step 3800/4000 loss 0.0096 9066 tok/s
+[V3-50M s1] step 3800/4000 loss 0.0089 9001 tok/s
+[V3-50M s0] step 3900/4000 loss 0.0076 9085 tok/s
+[V3-50M s1] step 3900/4000 loss 0.0090 9020 tok/s
+[V3-50M s0] step 4000/4000 loss 0.0090 9065 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V3-50M s0] run_id=EXP-008-AX-V3-50M-s0-327b77
+  algo_exec    198/200 = 0.990
+  flops/correct = 2.18e+10
+[done rc=0] V3-50M s0
+[V3-50M s1] step 4000/4000 loss 0.0073 8985 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V3-50M s1] run_id=EXP-008-AX-V3-50M-s1-e19c7b
+  algo_exec    195/200 = 0.975
+  flops/correct = 2.22e+10
+[done rc=0] V3-50M s1
+EXP COMPLETE: 2/2 jobs ok
+[launch] V3-50M s0
+[V3-50M s0] 16000 train sequences (4000 skipped), ~5,960,982 tokens/epoch
+[V3-50M] params=50.52M hash=1bc35884dfcd
+[V3-50M s0] step 100/4000 loss 1.3086 9337 tok/s
+[V3-50M s0] step 200/4000 loss 0.4796 9258 tok/s
+[V3-50M s0] step 300/4000 loss 0.4463 9158 tok/s
+[V3-50M s0] step 400/4000 loss 0.3702 9218 tok/s
+[V3-50M s0] step 500/4000 loss 0.3487 9096 tok/s
+[V3-50M s0] step 600/4000 loss 0.3398 9148 tok/s
+[V3-50M s0] step 700/4000 loss 0.3245 9060 tok/s
+[V3-50M s0] step 800/4000 loss 0.2920 9131 tok/s
+[V3-50M s0] step 900/4000 loss 0.2831 9111 tok/s
+[V3-50M s0] step 1000/4000 loss 0.2883 9115 tok/s
+[V3-50M s0] step 1100/4000 loss 0.2804 9156 tok/s
+[V3-50M s0] step 1200/4000 loss 0.2770 9114 tok/s
+[V3-50M s0] step 1300/4000 loss 0.2755 9146 tok/s
+[V3-50M s0] step 1400/4000 loss 0.2779 9125 tok/s
+[V3-50M s0] step 1500/4000 loss 0.2684 9190 tok/s
+[V3-50M s0] step 1600/4000 loss 0.2621 9243 tok/s
+[V3-50M s0] step 1700/4000 loss 0.2390 9293 tok/s
+[V3-50M s0] step 1800/4000 loss 0.2168 9330 tok/s
+[V3-50M s0] step 1900/4000 loss 0.2110 9372 tok/s
+[V3-50M s0] step 2000/4000 loss 0.1979 9409 tok/s
+[V3-50M s0] step 2100/4000 loss 0.1843 9439 tok/s
+[V3-50M s0] step 2200/4000 loss 0.1683 9471 tok/s
+[V3-50M s0] step 2300/4000 loss 0.1549 9499 tok/s
+[V3-50M s0] step 2400/4000 loss 0.1504 9526 tok/s
+[V3-50M s0] step 2500/4000 loss 0.1533 9551 tok/s
+[V3-50M s0] step 2600/4000 loss 0.1316 9575 tok/s
+[V3-50M s0] step 2700/4000 loss 0.1276 9596 tok/s
+[V3-50M s0] step 2800/4000 loss 0.1273 9615 tok/s
+[V3-50M s0] step 2900/4000 loss 0.1314 9635 tok/s
+[V3-50M s0] step 3000/4000 loss 0.1262 9653 tok/s
+[V3-50M s0] step 3100/4000 loss 0.1138 9667 tok/s
+[V3-50M s0] step 3200/4000 loss 0.1136 9682 tok/s
+[V3-50M s0] step 3300/4000 loss 0.1090 9695 tok/s
+[V3-50M s0] step 3400/4000 loss 0.1104 9709 tok/s
+[V3-50M s0] step 3500/4000 loss 0.1103 9723 tok/s
+[V3-50M s0] step 3600/4000 loss 0.1015 9734 tok/s
+[V3-50M s0] step 3700/4000 loss 0.1004 9747 tok/s
+[V3-50M s0] step 3800/4000 loss 0.0952 9755 tok/s
+[V3-50M s0] step 3900/4000 loss 0.0977 9766 tok/s
+[V3-50M s0] step 4000/4000 loss 0.1009 9775 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V3-50M s0] run_id=EXP-008-SG-V3-50M-s0-5b9fc8
+  state_guard  115/200 = 0.575
+  flops/correct = 8.28e+10
+[done rc=0] V3-50M s0
+[launch] V3-50M s1
+[V3-50M s1] 16000 train sequences (4000 skipped), ~5,960,982 tokens/epoch
+[V3-50M] params=50.52M hash=1bc35884dfcd
+[V3-50M s1] step 100/4000 loss 1.3511 10325 tok/s
+[V3-50M s1] step 200/4000 loss 0.4742 10292 tok/s
+[V3-50M s1] step 300/4000 loss 0.4422 10297 tok/s
+[V3-50M s1] step 400/4000 loss 0.4003 10307 tok/s
+[V3-50M s1] step 500/4000 loss 0.3510 10312 tok/s
+[V3-50M s1] step 600/4000 loss 0.3148 10308 tok/s
+[V3-50M s1] step 700/4000 loss 0.3026 10309 tok/s
+[V3-50M s1] step 800/4000 loss 0.3023 10309 tok/s
+[V3-50M s1] step 900/4000 loss 0.2865 10312 tok/s
+[V3-50M s1] step 1000/4000 loss 0.2860 10307 tok/s
+[V3-50M s1] step 1100/4000 loss 0.2812 10310 tok/s
+[V3-50M s1] step 1200/4000 loss 0.2629 10313 tok/s
+[V3-50M s1] step 1300/4000 loss 0.2745 10315 tok/s
+[V3-50M s1] step 1400/4000 loss 0.2319 10314 tok/s
+[V3-50M s1] step 1500/4000 loss 0.1995 10310 tok/s
+[V3-50M s1] step 1600/4000 loss 0.1761 10307 tok/s
+[V3-50M s1] step 1700/4000 loss 0.1720 10307 tok/s
+[V3-50M s1] step 1800/4000 loss 0.1671 10307 tok/s
+[V3-50M s1] step 1900/4000 loss 0.1627 10307 tok/s
+[V3-50M s1] step 2000/4000 loss 0.1547 10307 tok/s
+[V3-50M s1] step 2100/4000 loss 0.1484 10308 tok/s
+[V3-50M s1] step 2200/4000 loss 0.1392 10305 tok/s
+[V3-50M s1] step 2300/4000 loss 0.1445 10302 tok/s
+[V3-50M s1] step 2400/4000 loss 0.1384 10301 tok/s
+[V3-50M s1] step 2500/4000 loss 0.1398 10301 tok/s
+[V3-50M s1] step 2600/4000 loss 0.1248 10302 tok/s
+[V3-50M s1] step 2700/4000 loss 0.1229 10303 tok/s
+[V3-50M s1] step 2800/4000 loss 0.1231 10305 tok/s
+[V3-50M s1] step 2900/4000 loss 0.1247 10305 tok/s
+[V3-50M s1] step 3000/4000 loss 0.1189 10307 tok/s
+[V3-50M s1] step 3100/4000 loss 0.1079 10309 tok/s
+[V3-50M s1] step 3200/4000 loss 0.1055 10310 tok/s
+[V3-50M s1] step 3300/4000 loss 0.1042 10310 tok/s
+[V3-50M s1] step 3400/4000 loss 0.1042 10311 tok/s
+[V3-50M s1] step 3500/4000 loss 0.0978 10312 tok/s
+[V3-50M s1] step 3600/4000 loss 0.0902 10314 tok/s
+[V3-50M s1] step 3700/4000 loss 0.0873 10314 tok/s
+[V3-50M s1] step 3800/4000 loss 0.0914 10315 tok/s
+[V3-50M s1] step 3900/4000 loss 0.0860 10315 tok/s
+[V3-50M s1] step 4000/4000 loss 0.0910 10315 tok/s
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[V3-50M s1] run_id=EXP-008-SG-V3-50M-s1-cf7f02
+  state_guard  118/200 = 0.590
+  flops/correct = 8.07e+10
+[done rc=0] V3-50M s1
+EXP COMPLETE: 2/2 jobs ok
+EXP008_ALL_DONE
