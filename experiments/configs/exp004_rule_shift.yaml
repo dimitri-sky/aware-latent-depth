@@ -1,0 +1,54 @@
+# EXP-004-RS: thinking-token economics on rule_shift (memory family).
+# B2 direct and V3 direct REUSED from EXP-002-RS (6 seeds; V3 bimodal — median
+# primary). No "short" CoT tier: FLOP-indistinguishable from med on this family
+# (logged design change #4). B2-wide is the SAME config as on algo_exec (one shared
+# size, sized to algo_exec CoT-long; on rule_shift it lands at ~1.27x that family's
+# CoT-long FLOPs — generous to the bigger-model strategy, logged design change #2).
+# Protocol: 4000 steps x 32 x 768, lr 4.9e-4 (B2-wide lr from the same probe).
+exp_id: EXP-004-RS
+
+train:
+  families: [rule_shift]
+  steps: 4000
+  lr: 4.9e-4
+seeds: [0, 1, 2]
+
+models:
+  - id: B2-CoT-med
+    arch: tf_pp
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    max_seq_len: 1024
+    extra: {trace_level: med}
+
+  - id: B2-CoT-long
+    arch: tf_pp
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    max_seq_len: 1024
+    extra: {trace_level: long}
+
+  - id: B2-filler-long
+    arch: tf_pp
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    max_seq_len: 1024
+    extra: {trace_level: filler}
+
+  - id: B2-wide
+    arch: tf_pp
+    d_model: 672
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1856
+    n_layers: 6
+    max_seq_len: 1024

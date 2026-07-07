@@ -21,7 +21,7 @@ from models import ModelConfig, build_model  # noqa: E402
 from models.zoo import n_params  # noqa: E402
 from sage.contamination.audit import run_audit  # noqa: E402
 from sage.flops.accounting import training_flops  # noqa: E402
-from train.data import SageDataset  # noqa: E402
+from train.data import SageDataset, cot_decode_budget  # noqa: E402
 
 
 @dataclass
@@ -36,6 +36,8 @@ class TrainConfig:
     grad_clip: float = 1.0
     seed: int = 0
     traced: bool = False           # CoT-format training (B2-CoT baseline)
+    trace_level: str = "long"      # long | med | short | filler (EXP-004 budget knob)
+    diag: bool = False             # EXP-009 grokking diagnostics (JSONL sidecar)
     data_dir: str = "data/sage/train"
     eval_dir: str = "data/sage/eval"
     eval_limit: int | None = 300
@@ -63,13 +65,22 @@ def train_one(mcfg: ModelConfig, tc: TrainConfig, exp_id: str, model_id: str,
     if not ok:
         raise RuntimeError(f"contamination audit FAILED: {report}")
 
-    ds = SageDataset(Path(tc.data_dir), tc.families, tc.seq_len, traced=tc.traced)
+    ds = SageDataset(Path(tc.data_dir), tc.families, tc.seq_len, traced=tc.traced,
+                     trace_level=tc.trace_level)
     print(f"[{model_id} s{tc.seed}] {len(ds.sequences)} train sequences "
-          f"({ds.skipped} skipped), ~{ds.tokens_per_epoch():,} tokens/epoch")
+          f"({ds.skipped} skipped), ~{ds.tokens_per_epoch():,} tokens/epoch"
+          + (f", traced={tc.trace_level}" if tc.traced else ""))
 
     model = build_model(mcfg).to(device)
     params = n_params(model)
     print(f"[{model_id}] params={params / 1e6:.2f}M hash={mcfg.config_hash()}")
+
+    diag = None
+    if tc.diag:
+        from train.diagnostics import DiagRecorder
+        diag = DiagRecorder(exp_id, model_id, tc.seed, tc.families, device,
+                            total_steps=tc.steps)
+        print(f"[{model_id} s{tc.seed}] diagnostics on -> {diag.path}", flush=True)
 
     decay = [p for p in model.parameters() if p.dim() >= 2]
     nodecay = [p for p in model.parameters() if p.dim() < 2]
@@ -97,7 +108,7 @@ def train_one(mcfg: ModelConfig, tc: TrainConfig, exp_id: str, model_id: str,
                     loss = loss + 1e-4 * (z ** 2).mean()
             opt.zero_grad(set_to_none=True)
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), tc.grad_clip)
+            grad_norm = torch.nn.utils.clip_grad_norm_(model.parameters(), tc.grad_clip)
             opt.step()
             # FLOPs are paid on every processed token, not just supervised ones
             tokens_seen += int(x.numel())
@@ -107,6 +118,10 @@ def train_one(mcfg: ModelConfig, tc: TrainConfig, exp_id: str, model_id: str,
                 time.sleep(min(0.2, step_dt * tc.throttle))
             losses.append(loss.item())
             step += 1
+            if diag is not None:
+                diag.log_step(step, losses[-1], float(grad_norm))
+                diag.heavy(step, model, mcfg)
+                diag.maybe_ckpt(step, model, mcfg)
             if step % tc.log_every == 0:
                 dt = time.time() - t0
                 print(f"[{model_id} s{tc.seed}] step {step}/{tc.steps} "
@@ -123,9 +138,18 @@ def train_one(mcfg: ModelConfig, tc: TrainConfig, exp_id: str, model_id: str,
     tf = training_flops(mcfg.flops_cfg(), tokens_seen, tc.seq_len // 2,
                         loop_count=getattr(mcfg, "loop_count", None)
                         if mcfg.arch == "loop" else None)
+    # CoT arms (EXP-004): per-arm decode budget = p99 of the trained suffix length
+    # over the eval split + 16 slack. Self-adjusting per trace level; charged
+    # honestly by generation_flops either way.
+    cot_max_new = None
+    if tc.traced:
+        cot_max_new = cot_decode_budget(Path(tc.eval_dir), tc.families,
+                                        tc.trace_level)
+        print(f"[{model_id} s{tc.seed}] CoT eval: trace_level={tc.trace_level} "
+              f"max_new={cot_max_new}", flush=True)
     results = evaluate_model(model, mcfg, Path(tc.eval_dir), tc.families, device,
                              max_seq=mcfg.max_seq_len, loop_count=eval_loop_count,
-                             limit=tc.eval_limit)
+                             limit=tc.eval_limit, cot=tc.traced, max_new=cot_max_new)
     run_id = log_results(results, exp_id=exp_id, model_id=model_id, params=params,
                          config_hash=mcfg.config_hash(), seed=tc.seed,
                          train_tokens=tokens_seen, train_flops=tf,

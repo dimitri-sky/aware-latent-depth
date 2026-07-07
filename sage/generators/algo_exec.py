@@ -57,6 +57,7 @@ def generate(seed: int, difficulty: int) -> Instance:
     acc = rng.randint(2, 7)
     program: list[str] = [f"SET {acc}"]
     trace_lines: list[str] = [f"SET {acc} -> {acc}"]
+    values: list[int] = [acc]  # accumulator after each program line (for trace variants)
     for _ in range(n_ops):
         op = rng.choice(ops_pool)
         if op in ("ADD", "SUB"):
@@ -77,7 +78,22 @@ def generate(seed: int, difficulty: int) -> Instance:
             acc = _apply(op, None, acc)
             program.append(op)
             trace_lines.append(f"{op} -> {acc}")
+        values.append(acc)
     answer = acc
+
+    # EXP-004 trace-budget variants, derived deterministically from already-drawn
+    # state (ZERO extra RNG calls — prompt/answer identity is a reuse contract,
+    # enforced by tests/test_trace_emitters.py):
+    #   long (the `trace` field): per-op lines "ADD 3 -> 7"
+    #   med:  running accumulator values only, one per line ("SET 5" step included)
+    #   short: every 3rd value (always including the first and last)
+    #   filler: contentless '.' tokens, length-matched to the long trace
+    long_trace = "\n".join(trace_lines)
+    med = " ".join(str(v) for v in values)
+    short_idx = sorted(set(range(0, len(values), 3)) | {len(values) - 1})
+    short = " ".join(str(values[i]) for i in short_idx)
+    filler = ". " * (len(long_trace) // 2)
+    trace_variants = {"med": med, "short": short, "filler": filler.strip()}
 
     prog_text = "\n".join(program)
     prompt = (
@@ -88,7 +104,7 @@ def generate(seed: int, difficulty: int) -> Instance:
     )
     return Instance(
         family=FAMILY, difficulty=difficulty, seed=seed,
-        prompt=prompt, answer=str(answer), trace="\n".join(trace_lines),
+        prompt=prompt, answer=str(answer), trace=long_trace,
         scoring={"type": "numeric"},
-        meta={"chain_len": n_ops + 1},
+        meta={"chain_len": n_ops + 1, "trace_variants": trace_variants},
     )

@@ -40,7 +40,11 @@ def _strip_header(prompt: str) -> str:
     return parts[1] if len(parts) > 1 else parts[0]
 
 
-def _iter_texts(path: Path):
+def _iter_texts(path: Path, include_trace: bool = False):
+    """`include_trace=True` is used for TRAIN corpora (EXP-004): CoT-trained models
+    see trace text, so an eval body leaked inside a training trace is contamination
+    just like one in a prompt. Trace variants (meta.trace_variants) are derived
+    subsets of `trace` plus contentless filler, so auditing `trace` covers them."""
     for f in sorted(path.glob("*.jsonl")):
         for ln in f.read_text(encoding="utf-8").splitlines():
             if not ln.strip():
@@ -48,7 +52,10 @@ def _iter_texts(path: Path):
             rec = json.loads(ln)
             if rec.get("kind") == "canary":
                 continue
-            yield _strip_header(rec.get("prompt", "")) + " " + rec.get("answer", "")
+            text = _strip_header(rec.get("prompt", "")) + " " + rec.get("answer", "")
+            if include_trace and rec.get("trace"):
+                text += " " + rec["trace"]
+            yield text
 
 
 def _ngrams(text: str, n: int):
@@ -65,7 +72,7 @@ def run_audit(train_dir: Path, eval_dir: Path, extra_corpora: list[Path]) -> tup
     if CANARY_PREFIX not in eval_raw:
         ok, report["canary"] = False, "missing canaries in eval"
 
-    train_texts = list(_iter_texts(train_dir))
+    train_texts = list(_iter_texts(train_dir, include_trace=True))
     extra_texts = [p.read_text(encoding="utf-8", errors="ignore") for p in extra_corpora]
     if any(CANARY_PREFIX in t for t in train_texts + extra_texts):
         ok, report["canary"] = False, "CANARY FOUND IN TRAINING CORPUS"

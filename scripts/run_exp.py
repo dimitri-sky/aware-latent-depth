@@ -50,6 +50,8 @@ def main() -> None:
     ap.add_argument("--seeds", default=None)
     ap.add_argument("--models", default=None,
                     help="comma-separated model ids; run only these (scheduling aid)")
+    ap.add_argument("--lr", type=float, default=None,
+                    help="override train.lr (EXP-004 B2-wide probe decision)")
     args = ap.parse_args()
 
     spec = yaml.safe_load(args.config.read_text())
@@ -61,6 +63,8 @@ def main() -> None:
     exp_id = spec["exp_id"]
     seeds = [int(s) for s in args.seeds.split(",")] if args.seeds else spec.get("seeds", [0])
     train = spec["train"]
+    if args.lr is not None:
+        train["lr"] = args.lr
     header = RESULTS.open(encoding="utf-8").readline()
 
     def run_job(m: dict, seed: int, shard: Path) -> int:
@@ -73,6 +77,13 @@ def main() -> None:
                "--steps", str(train.get("steps", 4000)),
                "--seed", str(seed),
                "--lr", str(train.get("lr", 3e-4))]
+        # CoT arms declare their budget in the model's extra.trace_level (which
+        # also feeds config_hash, keeping arm hashes distinct — EXP-004).
+        trace_level = mkw.get("extra", {}).get("trace_level")
+        if trace_level:
+            cmd += ["--traced", "--trace-level", trace_level]
+        if train.get("diag"):
+            cmd += ["--diag"]
         print(f"[launch] {m['id']} s{seed}", flush=True)
         rc = subprocess.run(cmd, env=env).returncode
         print(f"[done rc={rc}] {m['id']} s{seed}", flush=True)

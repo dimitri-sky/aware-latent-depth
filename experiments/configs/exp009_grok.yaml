@@ -1,0 +1,30 @@
+# EXP-009: grokking predictor side-study. 16 FRESH instrumented V2-delta seeds
+# (6-21) on rule_shift — disjoint from the EXP-002-RS seeds 0-5 so the reproduction
+# rate estimate is independent. train.diag turns on the EXP-009 diagnostics sidecar
+# (per-25/100-step loss+curvature+grad norms, per-200-step probe mini-eval +
+# delta-state stats + weight norms, per-1000-step checkpoints). Model config is
+# BYTE-IDENTICAL to V3/V2-delta (EXP-002) — verify the hash matches V2-delta's at
+# launch, per the pre-registration. Bonus: seed 2 re-run (--seeds 2) is labeled
+# rerun-of-grokked-seed and EXCLUDED from the rate estimate.
+exp_id: EXP-009
+
+train:
+  families: [rule_shift]
+  steps: 4000
+  lr: 4.9e-4
+  diag: true
+seeds: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+
+models:
+  - id: V2-delta
+    arch: delta
+    d_model: 512
+    n_heads: 8
+    n_kv_heads: 4
+    d_ff: 1408
+    n_layers: 6
+    delta_every: 2
+    window: 128
+    d_k: 384
+    d_v: 384
+    max_seq_len: 1024

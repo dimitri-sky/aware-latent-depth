@@ -96,7 +96,20 @@ def generate(seed: int, difficulty: int) -> Instance:
     else:
         q = rng.choice(observable) + "".join(rng.choice(pool) for _ in range(wlen - 1))
     answer = _apply(table2, q)
-    trace = "\n".join(f"{c} -> {table2[c]}" for c in q)
+
+    # EXP-004 trace budgets, derived deterministically from already-drawn state
+    # (ZERO extra RNG calls — prompt/answer identity enforced by
+    # tests/test_trace_emitters.py). No "short" tier: it would be
+    # FLOP-indistinguishable from med (logged design change #4).
+    #   long (the `trace` field): reconstruct the full current rule table, then
+    #     resolve the query char by char
+    #   med:  per-char query mapping only (the pre-EXP-004 trace)
+    #   filler: contentless '.' tokens, length-matched to the long trace
+    med = "\n".join(f"{c} -> {table2[c]}" for c in q)
+    trace = ("rule:\n" + "\n".join(f"{k} -> {table2[k]}" for k in symbols)
+             + "\nquery:\n" + med)
+    filler = ". " * (len(trace) // 2)
+    trace_variants = {"med": med, "filler": filler.strip()}
 
     prompt = (
         "Each line maps a word through a hidden letter-substitution rule. "
@@ -109,5 +122,6 @@ def generate(seed: int, difficulty: int) -> Instance:
         prompt=prompt, answer=answer, trace=trace,
         scoring={"type": "exact"},
         meta={"post_shift_examples": n_post,
-              "query_changed_syms": sum(c in changed_syms for c in q)},
+              "query_changed_syms": sum(c in changed_syms for c in q),
+              "trace_variants": trace_variants},
     )

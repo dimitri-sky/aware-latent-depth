@@ -38,13 +38,23 @@ def load_sage_records(path: Path, expect_train: bool) -> list[dict]:
     return records
 
 
-def record_to_ids(rec: dict, traced: bool = False) -> tuple[list[int], int]:
+def trace_text(rec: dict, trace_level: str = "long") -> str:
+    """Select the trace budget for CoT training (EXP-004). 'long' is the canonical
+    `trace` field; other levels ('med', 'short', 'filler') come from
+    meta.trace_variants written by the generators."""
+    if trace_level == "long":
+        return rec["trace"]
+    return rec["meta"]["trace_variants"][trace_level]
+
+
+def record_to_ids(rec: dict, traced: bool = False,
+                  trace_level: str = "long") -> tuple[list[int], int]:
     """Returns (ids, supervised_suffix_len). The suffix includes EOS."""
     prompt = rec["prompt"]
     assert prompt.rstrip().endswith("ANSWER:"), "generator contract violated"
     if traced:
         prefix = prompt[: prompt.rindex("ANSWER:")]
-        sup = "THINK:\n" + rec["trace"] + "\nANSWER: " + rec["answer"]
+        sup = "THINK:\n" + trace_text(rec, trace_level) + "\nANSWER: " + rec["answer"]
     else:
         prefix = prompt
         sup = " " + rec["answer"]
@@ -52,15 +62,30 @@ def record_to_ids(rec: dict, traced: bool = False) -> tuple[list[int], int]:
     return ids, len(encode(sup)) + 1  # +1 for EOS
 
 
+def cot_decode_budget(eval_dir: Path, families: list[str], trace_level: str,
+                      slack: int = 16) -> int:
+    """Per-arm CoT decode budget (EXP-004): p99 of the trained suffix token length
+    ('THINK:\\n<trace>\\nANSWER: <x>' + EOS) over the eval split, plus slack."""
+    lens = []
+    for fam in families:
+        for rec in load_sage_records(eval_dir / f"{fam}.jsonl", expect_train=False):
+            sup = "THINK:\n" + trace_text(rec, trace_level) + "\nANSWER: " + rec["answer"]
+            lens.append(len(encode(sup)) + 1)
+    lens.sort()
+    p99 = lens[min(len(lens) - 1, int(0.99 * len(lens)))]
+    return p99 + slack
+
+
 class SageDataset:
     def __init__(self, data_dir: Path, families: list[str], seq_len: int,
-                 traced: bool = False, expect_train: bool = True):
+                 traced: bool = False, expect_train: bool = True,
+                 trace_level: str = "long"):
         self.seq_len = seq_len
         self.sequences: list[tuple[list[int], int]] = []
         self.skipped = 0
         for fam in families:
             for rec in load_sage_records(data_dir / f"{fam}.jsonl", expect_train):
-                ids, sup_len = record_to_ids(rec, traced)
+                ids, sup_len = record_to_ids(rec, traced, trace_level)
                 if len(ids) > seq_len:
                     self.skipped += 1
                     continue

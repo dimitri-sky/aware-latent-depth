@@ -11,10 +11,11 @@ Two ingredients, tested separately, combined if positive:
     ARC 1 (complete): V3 "Aware" = d2 config — delta layers beat B2 at matched
       params, 2x budget, attributed, density-optimal. 50M check skipped
       (value/$; scan throughput risk). Ship: report + demo.
-    ARC 2 (next): EXP-004 thinking-token economics — B2-CoT budget sweep vs
-      direct vs V3 vs bigger-B2 at MATCHED inference FLOPs; exchange-rate
-      curves. Parallel side-study: grokking predictor (instrumented rule_shift
-      seeds). Fallback arc: delta-memory retrofit on a pretrained 1-2B.
+    ARC 2 (running, 2026-07-06): EXP-004 thinking-token economics — B2-CoT
+      trace-budget sweep vs direct vs V3 vs B2-wide (+ filler control) at
+      matched inference FLOPs; exchange-rate curves (H0b). Parallel: EXP-009
+      grokking predictor, 16 instrumented rule_shift seeds (H7). Fallback arc:
+      delta-memory retrofit on a pretrained 1-2B.
 
 - H1 killed; H3 PARKED PERMANENTLY (EXP-003 instrument-fail, EXP-003B retry still
   loop-invariant + loses to own controls; timebox exhausted). Loops out of V3.
@@ -141,9 +142,25 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
 - Status: live — B2 is the reference opponent in every experiment.
 
 ### H0b (null): explicit CoT beats latent computation at matched inference FLOPs
-- Status: **promoted to arc-2 centerpiece** (EXP-004, redesigned 2026-07-05;
-  loops' death re-aims the latent arm at V3). Arms at matched inference FLOPs:
-  B2-CoT (trace-trained, budget swept), B2 direct, V3 direct, bigger-B2 direct.
-  Primary deliverable: accuracy-vs-FLOPs/answer exchange-rate curves + crossover
-  points; tier 3-5 primary band. Needs trace emitters for algo_exec/rule_shift
-  first. Pre-registration in agent/log/EXP-004.md before any training.
+- Status: **testing** (EXP-004 pre-registered 2026-07-06; agent/log/EXP-004.md).
+  Design revised at pre-registration (reasons logged there): CoT budget knob is
+  trace granularity at TRAINING time (eval-time truncation is an invalid
+  instrument); B2-wide (30.76M, d672) sized to CoT-LONG per-answer FLOPs
+  (prefill dominance makes CoT-med only 1.15x direct); B2-filler control added
+  (content vs compute); rule_shift gets med+long budgets only. Reused arms:
+  EXP-002-AX (B2/V3 direct on algo_exec), EXP-002-RS (B2/V3 direct on
+  rule_shift, 6 seeds, V3 bimodal - median primary). Gates G1-G4 + exchange-rate
+  curves fixed before any training; tier 3-5 primary band.
+- Est. cost: ~$5-7 (23 jobs + 2 optional, 1-2 pod sessions shared with EXP-009)
+- Timebox: adjudicate after sessions A/B; EXTEND only per near-miss policy.
+
+### H7: early-training signals predict the rule_shift grokking transition
+- Status: **testing** (EXP-009 pre-registered 2026-07-06; agent/log/EXP-009.md).
+  From the EXP-002 EXTEND anomaly (1/6 V2 seeds grokked to 100%, 0/6 B2).
+  16 fresh instrumented V2-delta seeds (6-21) + 1 labeled seed-2 re-run.
+  Q1 reproduction rate (Wilson CI, descriptive); Q2 seven pre-registered
+  first-1000-step signals (loss curvature, grad norms, delta-state norm/rank,
+  gate drift, weight-norm ratio, tier-1 probe lift); "candidate predictor"
+  requires perfect separation with k>=2 grokked and >2x flat-group SD.
+- Est. cost: ~$5-6 (17 CPU-bound jobs interleaved with EXP-004's GPU lane)
+- Timebox: one arc; deliverable is the note either way.

@@ -34,6 +34,13 @@ def main() -> None:
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--lr", type=float, default=6e-4)
     ap.add_argument("--notes", default="")
+    ap.add_argument("--traced", action="store_true",
+                    help="CoT training: supervise THINK:<trace> ANSWER:<x>; eval in CoT mode")
+    ap.add_argument("--trace-level", default="long",
+                    choices=["long", "med", "short", "filler"],
+                    help="trace budget for --traced (EXP-004 knob)")
+    ap.add_argument("--diag", action="store_true",
+                    help="opt-in early-training diagnostics (EXP-009 grokking study)")
     ap.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     args = ap.parse_args()
 
@@ -46,7 +53,9 @@ def main() -> None:
                            d_ff=args.d_ff, max_seq_len=1024)
     tc = TrainConfig(families=args.families.split(","), steps=args.steps,
                      batch_size=32, seq_len=768, seed=args.seed, lr=args.lr,
-                     warmup=300, eval_limit=200)
+                     warmup=300, eval_limit=200,
+                     traced=args.traced, trace_level=args.trace_level,
+                     diag=args.diag)
     train_one(mcfg, tc, exp_id=args.exp_id, model_id=args.model_id,
               device=args.device, notes=args.notes)
 
