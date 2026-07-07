@@ -64,3 +64,18 @@ these; check before designing any new experiment.
   per-lane: 3 delta workers + 2 B2 GPU-lane jobs = ~31.9GB -> startup OOM killed
   6 jobs in step 1. Recheck the arc-1 plan (max 2 delta + 1 GPU job, or 3 delta
   ALONE) whenever lanes overlap, including transient overlaps at session start.
+- (infra, EXP-004 sessions B/C) Watcher hard caps must be sized from the LAST
+  job's expected finish, not the watcher's start: a 9h cap nearly killed both
+  the session-C supplement (starts only after ~5h main lanes) and session B.
+  Also: a leftover /workspace/PULLED marker from one session silently defeats
+  the next session's pickup gate on the same pod — clear it before relaunch.
+- (EXP-004, method) Eval-time decode truncation is an invalid CoT budget knob:
+  a full-trace model cut mid-trace never emits ANSWER: and scores 0, faking a
+  steep budget curve. Sweep trace granularity at TRAINING time instead.
+- (EXP-004, method) At short-prompt scales the FLOP axis is prefill-dominated
+  (CoT-med = 1.15x direct); size any params-matched control to the LONGEST CoT
+  arm or the contrast drowns in seed noise.
+- (EXP-009) Same-seed re-runs of a grokked run need not re-grok (1.000 -> .695
+  across hardware/sessions): the transition onset is trajectory-sensitive
+  beyond the seed. Never treat single-seed grokking outcomes as reproducible
+  constants; report onset distributions.

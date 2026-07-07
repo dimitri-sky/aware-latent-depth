@@ -11,11 +11,16 @@ Two ingredients, tested separately, combined if positive:
     ARC 1 (complete): V3 "Aware" = d2 config — delta layers beat B2 at matched
       params, 2x budget, attributed, density-optimal. 50M check skipped
       (value/$; scan throughput risk). Ship: report + demo.
-    ARC 2 (running, 2026-07-06): EXP-004 thinking-token economics — B2-CoT
-      trace-budget sweep vs direct vs V3 vs B2-wide (+ filler control) at
-      matched inference FLOPs; exchange-rate curves (H0b). Parallel: EXP-009
-      grokking predictor, 16 instrumented rule_shift seeds (H7). Fallback arc:
-      delta-memory retrofit on a pretrained 1-2B.
+    ARC 2 (complete, 2026-07-07): H0b RESOLVED pro-CoT — trained rationale
+      tokens beat FLOP-matched width (buys nothing) and V3 latent memory
+      (cheaper but less accurate/reliable); content-driven (filler null),
+      granularity-sensitive (sparse traces don't pay); V3-CoT stacks to 100
+      at 5% less cost than B2-CoT. H7 grokking predictor NEGATIVE at the bar
+      (3/16 grokked, CI [.07,.43]; onset trajectory-sensitive). Ship:
+      reports/arc2_thinking_tokens.md. Arc-3 candidates: transition-speed
+      study (warm-start extends, cheap); delta-memory retrofit on a
+      pretrained 1-2B (buildable fallback, now with the stacking result as
+      motivation).
 
 - H1 killed; H3 PARKED PERMANENTLY (EXP-003 instrument-fail, EXP-003B retry still
   loop-invariant + loses to own controls; timebox exhausted). Loops out of V3.
@@ -142,25 +147,32 @@ H#-to-EXP-### numbering is NOT aligned (H6 -> EXP-005); check the map above.
 - Status: live — B2 is the reference opponent in every experiment.
 
 ### H0b (null): explicit CoT beats latent computation at matched inference FLOPs
-- Status: **testing** (EXP-004 pre-registered 2026-07-06; agent/log/EXP-004.md).
-  Design revised at pre-registration (reasons logged there): CoT budget knob is
-  trace granularity at TRAINING time (eval-time truncation is an invalid
-  instrument); B2-wide (30.76M, d672) sized to CoT-LONG per-answer FLOPs
-  (prefill dominance makes CoT-med only 1.15x direct); B2-filler control added
-  (content vs compute); rule_shift gets med+long budgets only. Reused arms:
-  EXP-002-AX (B2/V3 direct on algo_exec), EXP-002-RS (B2/V3 direct on
-  rule_shift, 6 seeds, V3 bimodal - median primary). Gates G1-G4 + exchange-rate
-  curves fixed before any training; tier 3-5 primary band.
-- Est. cost: ~$5-7 (23 jobs + 2 optional, 1-2 pod sessions shared with EXP-009)
-- Timebox: adjudicate after sessions A/B; EXTEND only per near-miss policy.
+- Status: **RESOLVED PRO-CoT** (EXP-004 adjudicated 2026-07-07;
+  agent/log/EXP-004.md, reports/arc2_thinking_tokens.md). All four
+  pre-registered gates decisive: G1 CoT pays (+32.8 algo_exec / +96.8
+  rule_shift over direct, tier 3-5); G2 content-not-compute (filler control
+  null on rule_shift, NEGATIVE -27.2 on algo_exec — no pause-token effect);
+  G3 tokens beat params (FLOP-matched 30.76M B2-wide bought +0.0/+1.8); G4
+  visible beats latent on accuracy (B2-CoT-med passes V3 at 1.20x its cost;
+  full-table trace converts rule_shift's 1/6 lottery into 99.7 every seed).
+  Non-monotone budget curve: sparse traces don't pay (CoT-short 65.3 <= direct).
+  Stacking addendum: V3-CoT-long = 100.0 both seeds at ~5% less than
+  B2-CoT-long — latent memory + visible traces are complements. Scope: trained
+  in-distribution rationales, greedy decode, 18-30M, prefill-dominated FLOP
+  axis (1.0-1.7x).
+- Actual cost: ~$21 / 3 sessions (incl. $4.5 session-A stranding; deviations
+  logged pre-results in EXP-004.md).
 
 ### H7: early-training signals predict the rule_shift grokking transition
-- Status: **testing** (EXP-009 pre-registered 2026-07-06; agent/log/EXP-009.md).
-  From the EXP-002 EXTEND anomaly (1/6 V2 seeds grokked to 100%, 0/6 B2).
-  16 fresh instrumented V2-delta seeds (6-21) + 1 labeled seed-2 re-run.
-  Q1 reproduction rate (Wilson CI, descriptive); Q2 seven pre-registered
-  first-1000-step signals (loss curvature, grad norms, delta-state norm/rank,
-  gate drift, weight-norm ratio, tier-1 probe lift); "candidate predictor"
-  requires perfect separation with k>=2 grokked and >2x flat-group SD.
-- Est. cost: ~$5-6 (17 CPU-bound jobs interleaved with EXP-004's GPU lane)
-- Timebox: one arc; deliverable is the note either way.
+- Status: **killed at the pre-registered bar; reframed** (EXP-009 adjudicated
+  2026-07-07; agent/log/EXP-009.md). Q1: 3/16 fresh seeds grokked (Wilson CI
+  [.07,.43], consistent with prior 1/6) + 2 caught mid-transition at budget
+  end — 5/16 entered the transition, so "rare event" may really be "slow
+  transition vs fixed budget". Seed-2 re-run reached only .695 (was 1.000):
+  onset is trajectory-sensitive, not seed-determined. Q2: no first-1000-step
+  signal survived k=3 (the k=2 delta-state-norm separation broke); directional
+  trends (lower S-norm, higher eff-rank, earlier tier-1 lift) logged as
+  hypothesis-generating. Residual for arc 3: predict transition SPEED, not
+  occurrence — warm-start extends from retained checkpoints
+  (checkpoints_grok/exp009/) are the cheap falsifier.
+- Actual cost: ~$8 share (17 instrumented CPU-bound jobs, incl. re-runs).

@@ -18,3 +18,5 @@ paper/*.aux
 paper/*.log
 paper/*.out
 paper/page*.png
+
+experiments/session_*_pull/
