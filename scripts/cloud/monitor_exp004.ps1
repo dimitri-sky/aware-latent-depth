@@ -3,7 +3,7 @@
 param(
     [Parameter(Mandatory = $true)][int]$SshPort,
     [Parameter(Mandatory = $true)][string]$SshHost,
-    [ValidateSet('A', 'B')][string]$Session = 'A'
+    [ValidateSet('A', 'B', 'C')][string]$Session = 'A'
 )
 $key = "$env:USERPROFILE\.ssh\runpod_aware"
 $marker = "/workspace/EXP004${Session}_FINAL_DONE"

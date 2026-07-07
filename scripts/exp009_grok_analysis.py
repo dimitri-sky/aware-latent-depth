@@ -23,7 +23,8 @@ import matplotlib  # noqa: E402
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
-RATE_SEEDS = set(range(6, 22))          # fresh seeds; s2 re-run excluded from Q1
+RATE_SEEDS = set(range(14, 30))         # fresh seeds; s2 re-run excluded from Q1
+                                        # (6-13 stranded in session A, see EXP-009.md)
 GROK_AT, FLAT_AT = 0.9, 0.3             # final-eval all-tier thresholds
 TRANSITION_AT = 0.5                     # probe all-tier crossing
 WINDOW_END = 1000

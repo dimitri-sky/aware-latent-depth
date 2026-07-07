@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# EXP-004/EXP-009 session B: remaining grok seeds 14-21 + labeled seed-2 re-run
-# (3 CPU-bound workers; session-A timing showed ~1.75h/seed, 2 workers would blow
-# the 9h cap), THEN the optional V3-CoT-long arm (2 workers; also delta VRAM —
-# max 3 delta workers at once per the arc-1 memory plan, so it runs after).
+# EXP-004/EXP-009 session B (runs after session C, the canonical EXP-004 re-run):
+# remaining grok seeds 22-29 + labeled seed-2 re-run (3 CPU-bound workers), THEN
+# the optional V3-CoT-long arm (2 workers; max 3 delta workers at once per the
+# arc-1 memory plan, so it runs after).
 # No `set -e`: the sentinel must appear even after partial failure.
 set -u
 
@@ -29,9 +29,9 @@ python -m sage.contamination.audit --train-dir data/sage/train --eval-dir data/s
 python -m pytest tests/ -q || echo "WARN: tests failed, continuing (results flagged)"
 nvidia-smi --query-gpu=name,memory.total,memory.used --format=csv,noheader
 
-echo "=== CPU lane: EXP-009 grok seeds 14-21 + seed-2 bonus (3 workers) ==="
+echo "=== CPU lane: EXP-009 grok seeds 22-29 + seed-2 bonus (3 workers) ==="
 python scripts/run_exp.py --config experiments/configs/exp009_grok.yaml \
-  --seeds 14,15,16,17,18,19,20,21 --workers 3
+  --seeds 22,23,24,25,26,27,28,29 --workers 3
 echo "=== EXP-009 bonus: labeled re-run of grokked seed 2 (excluded from rate) ==="
 python scripts/run_exp.py --config experiments/configs/exp009_grok.yaml \
   --seeds 2 --workers 1

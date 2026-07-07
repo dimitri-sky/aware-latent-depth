@@ -49,3 +49,18 @@ these; check before designing any new experiment.
 - (infra) /sbin/shutdown works in some RunPod containers and not others (systemd
   shim, "Host is down"); pod self-stop must use the RunPod API (runpodctl or MCP
   stop-pod) with shutdown only as a fallback. Cost of the failure: ~9h idle 4090.
+- (infra, EXP-004 session A) **NEVER delete/terminate a RunPod pod until its
+  results are verified locally.** A STOPPED community pod whose GPU was re-rented
+  can often still be started CPU-ONLY (0 GPUs) — usually only from the RunPod
+  website UI; the API/MCP `start-pod` just errors "not enough free GPUs" — which
+  is enough to SSH in and pull /workspace. Terminating destroys the volume and
+  everything on it. Owner directive (2026-07-07): stopped-not-terminated is the
+  default end state; terminate only after adjudication. Cost of the failure:
+  ~$4.5 of session-A results stranded then destroyed.
+- (infra, EXP-004 session A) Auto-stop watchers must not stop the pod right
+  after archiving: wait for a /workspace/PULLED marker dropped by the local side
+  (60-min window, ~$0.69 worst case) so results are pulled from a LIVE pod.
+- (infra, EXP-004 session C) The 32GB memory plan is per-GPU global, not
+  per-lane: 3 delta workers + 2 B2 GPU-lane jobs = ~31.9GB -> startup OOM killed
+  6 jobs in step 1. Recheck the arc-1 plan (max 2 delta + 1 GPU job, or 3 delta
+  ALONE) whenever lanes overlap, including transient overlaps at session start.

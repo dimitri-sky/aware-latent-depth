@@ -39,8 +39,14 @@ tar czf /workspace/exp004a_results_${STAMP}.tar.gz \
   2>/dev/null || true
 echo "EXP004A_READY_FOR_PICKUP $(date -u -Iseconds)" | tee /workspace/EXP004A_FINAL_DONE
 
-echo "Stopping pod via RunPod API in 15s..."
-sleep 15
+# Session-A lesson (2026-07-07): stopping right after archiving stranded results on
+# an unrestartable community pod. Wait up to 60 min for a /workspace/PULLED marker.
+PICKUP_DEADLINE=$(( $(date +%s) + 3600 ))
+while [ ! -f /workspace/PULLED ] && [ "$(date +%s)" -lt "$PICKUP_DEADLINE" ]; do
+  sleep 30
+done
+echo "pickup marker: $([ -f /workspace/PULLED ] && echo found || echo TIMEOUT) $(date -u -Iseconds)"
+sleep 5
 if command -v runpodctl >/dev/null 2>&1 && [ -n "${RUNPOD_POD_ID:-}" ]; then
   runpodctl stop pod "$RUNPOD_POD_ID" && echo "runpodctl stop issued" && exit 0
 fi
